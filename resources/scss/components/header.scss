@@ -1,0 +1,37 @@
+.header {
+    padding: 32px 2vw 56px 0;
+
+    &__list {
+        gap: 26px;
+
+        &__item {
+            font-size: 16px;
+
+            border-radius: 5px;
+            cursor: pointer;
+
+            background-color: transparent;
+            color: $white;
+
+            &:focus {
+                outline: none;
+            }
+
+            & option {
+                color: #000;
+            }
+
+            -webkit-appearance: none;
+            position: relative;
+
+            &::before {
+                content: "▼";
+                position: absolute;
+                top: 0;
+                right: 100%;
+                transform: translateY(-10%);
+            }
+        }
+    }
+}
+
