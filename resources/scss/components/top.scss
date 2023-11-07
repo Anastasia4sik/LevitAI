@@ -1,0 +1,470 @@
+.top {
+    background-image: url('../../../public/src/img/bc.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+    height: 150vh;
+    width: 100vw;
+
+    &__title {
+        font-size: 120px;
+        line-height: 175%;
+        font-weight: 700;
+        margin-bottom: 0;
+    }
+
+    &__desc {
+        &__title {
+            margin-bottom: 15px;
+
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 140%;
+        }
+
+        &__text {
+            width: 43vw;
+            margin-bottom: 40px;
+
+            font-size: 14px;
+            font-weight: 700;
+        }
+
+        &__btns {
+            gap: 32px;
+
+            &__left {
+                gap: 9px;
+
+                padding-right: 24px;
+
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 136%;
+
+                border-radius: 50px;
+                border: 1.5px solid $white;
+
+                transition: all 0.5s ease-in-out;
+
+                &:hover {
+                    animation: BtnColor 0.5s both;
+                }
+
+                &__img {
+                    border-radius: 50%;
+                    background-color: $white;
+                }
+            }
+        }
+    }
+}
+
+@keyframes BtnColor {
+    from {
+      background-color: transparent;
+      color: $white;
+    }
+
+    1% {
+        background: linear-gradient(to right, $white 1%, transparent 99%);
+    }
+
+    2% {
+        background: linear-gradient(to right, $white 2%, transparent 98%);
+    }
+
+    3% {
+        background: linear-gradient(to right, $white 3%, transparent 97%);
+    }
+
+    4% {
+        background: linear-gradient(to right, $white 4%, transparent 96%);
+    }
+
+    5% {
+        background: linear-gradient(to right, $white 5%, transparent 95%);
+    }
+
+    6% {
+        background: linear-gradient(to right, $white 6%, transparent 94%);
+    }
+
+    7% {
+        background: linear-gradient(to right, $white 7%, transparent 93%);
+    }
+
+    8% {
+        background: linear-gradient(to right, $white 8%, transparent 92%);
+    }
+
+    9% {
+        background: linear-gradient(to right, $white 9%, transparent 91%);
+    }
+
+    10% {
+        background: linear-gradient(to right, $white 10%, transparent 90%);
+    }
+
+    11% {
+        background: linear-gradient(to right, $white 11%, transparent 89%);
+    }
+
+    12% {
+        background: linear-gradient(to right, $white 12%, transparent 88%);
+    }
+
+    13% {
+        background: linear-gradient(to right, $white 13%, transparent 87%);
+    }
+
+    14% {
+        background: linear-gradient(to right, $white 14%, transparent 86%);
+    }
+
+    15% {
+        background: linear-gradient(to right, $white 15%, transparent 85%);
+    }
+
+    16% {
+        background: linear-gradient(to right, $white 16%, transparent 84%);
+    }
+
+    17% {
+        background: linear-gradient(to right, $white 17%, transparent 83%);
+    }
+
+    18% {
+        background: linear-gradient(to right, $white 18%, transparent 82%);
+    }
+
+    19% {
+        background: linear-gradient(to right, $white 19%, transparent 81%);
+    }
+
+    20% {
+        background: linear-gradient(to right, $white 20%, transparent 80%);
+    }
+
+    21% {
+        background: linear-gradient(to right, $white 21%, transparent 79%);
+    }
+
+    22% {
+        background: linear-gradient(to right, $white 22%, transparent 78%);
+    }
+
+    23% {
+        background: linear-gradient(to right, $white 23%, transparent 77%);
+    }
+
+    24% {
+        background: linear-gradient(to right, $white 24%, transparent 76%);
+    }
+
+    25% {
+        background: linear-gradient(to right, $white 25%, transparent 75%);
+    }
+
+    26% {
+        background: linear-gradient(to right, $white 26%, transparent 74%);
+    }
+
+    27% {
+        background: linear-gradient(to right, $white 27%, transparent 73%);
+    }
+
+    28% {
+        background: linear-gradient(to right, $white 28%, transparent 72%);
+    }
+
+    29% {
+        background: linear-gradient(to right, $white 29%, transparent 71%);
+    }
+
+    30% {
+        background: linear-gradient(to right, $white 30%, transparent 70%);
+    }
+
+    31% {
+        background: linear-gradient(to right, $white 31%, transparent 69%);
+    }
+
+    32% {
+        background: linear-gradient(to right, $white 32%, transparent 68%);
+    }
+
+    33% {
+        background: linear-gradient(to right, $white 33%, transparent 67%);
+    }
+
+    34% {
+        background: linear-gradient(to right, $white 34%, transparent 66%);
+    }
+
+    35% {
+        background: linear-gradient(to right, $white 35%, transparent 65%);
+    }
+
+    36% {
+        background: linear-gradient(to right, $white 36%, transparent 64%);
+    }
+
+    37% {
+        background: linear-gradient(to right, $white 37%, transparent 63%);
+    }
+
+    38% {
+        background: linear-gradient(to right, $white 38%, transparent 62%);
+    }
+
+    39% {
+        background: linear-gradient(to right, $white 39%, transparent 61%);
+    }
+
+    40% {
+        background: linear-gradient(to right, $white 40%, transparent 60%);
+    }
+
+    41% {
+        background: linear-gradient(to right, $white 41%, transparent 59%);
+    }
+
+    42% {
+        background: linear-gradient(to right, $white 42%, transparent 58%);
+    }
+
+    43% {
+        background: linear-gradient(to right, $white 43%, transparent 57%);
+    }
+
+    44% {
+        background: linear-gradient(to right, $white 44%, transparent 56%);
+    }
+
+    45% {
+        background: linear-gradient(to right, $white 45%, transparent 55%);
+    }
+
+    46% {
+        background: linear-gradient(to right, $white 46%, transparent 54%);
+    }
+
+    47% {
+        background: linear-gradient(to right, $white 47%, transparent 53%);
+    }
+
+    48% {
+        background: linear-gradient(to right, $white 48%, transparent 52%);
+    }
+
+    49% {
+        background: linear-gradient(to right, $white 49%, transparent 51%);
+    }
+
+    50% {
+        background: linear-gradient(to right, $white 50%, transparent 50%);
+    }
+
+    51% {
+        background: linear-gradient(to right, $white 51%, transparent 49%);
+    }
+
+    52% {
+        background: linear-gradient(to right, $white 52%, transparent 48%);
+    }
+
+    53% {
+        background: linear-gradient(to right, $white 53%, transparent 47%);
+    }
+
+    54% {
+        background: linear-gradient(to right, $white 54%, transparent 46%);
+    }
+
+    55% {
+        background: linear-gradient(to right, $white 55%, transparent 45%);
+    }
+
+    56% {
+        background: linear-gradient(to right, $white 56%, transparent 44%);
+    }
+
+    57% {
+        background: linear-gradient(to right, $white 57%, transparent 43%);
+    }
+
+    58% {
+        background: linear-gradient(to right, $white 58%, transparent 42%);
+    }
+
+    59% {
+        background: linear-gradient(to right, $white 59%, transparent 41%);
+    }
+
+    60% {
+        background: linear-gradient(to right, $white 60%, transparent 40%);
+    }
+
+    61% {
+        background: linear-gradient(to right, $white 61%, transparent 39%);
+    }
+
+    62% {
+        background: linear-gradient(to right, $white 62%, transparent 38%);
+    }
+
+    63% {
+        background: linear-gradient(to right, $white 63%, transparent 37%);
+    }
+
+    64% {
+        background: linear-gradient(to right, $white 64%, transparent 36%);
+    }
+
+    65% {
+        background: linear-gradient(to right, $white 65%, transparent 35%);
+    }
+
+    66% {
+        background: linear-gradient(to right, $white 66%, transparent 34%);
+    }
+
+    67% {
+        background: linear-gradient(to right, $white 67%, transparent 33%);
+    }
+
+    68% {
+        background: linear-gradient(to right, $white 68%, transparent 32%);
+    }
+
+    69% {
+        background: linear-gradient(to right, $white 69%, transparent 31%);
+    }
+
+    70% {
+        background: linear-gradient(to right, $white 70%, transparent 30%);
+    }
+
+    71% {
+        background: linear-gradient(to right, $white 71%, transparent 29%);
+    }
+
+    72% {
+        background: linear-gradient(to right, $white 72%, transparent 28%);
+    }
+
+    73% {
+        background: linear-gradient(to right, $white 73%, transparent 27%);
+    }
+
+    74% {
+        background: linear-gradient(to right, $white 74%, transparent 26%);
+    }
+
+    75% {
+        background: linear-gradient(to right, $white 75%, transparent 25%);
+    }
+
+    76% {
+        background: linear-gradient(to right, $white 76%, transparent 24%);
+    }
+
+    77% {
+        background: linear-gradient(to right, $white 77%, transparent 23%);
+    }
+
+    78% {
+        background: linear-gradient(to right, $white 78%, transparent 22%);
+    }
+
+    79% {
+        background: linear-gradient(to right, $white 79%, transparent 21%);
+    }
+
+    80% {
+        background: linear-gradient(to right, $white 80%, transparent 20%);
+    }
+
+    81% {
+        background: linear-gradient(to right, $white 81%, transparent 19%);
+    }
+
+    82% {
+        background: linear-gradient(to right, $white 82%, transparent 18%);
+    }
+
+    83% {
+        background: linear-gradient(to right, $white 83%, transparent 17%);
+    }
+
+    84% {
+        background: linear-gradient(to right, $white 84%, transparent 16%);
+    }
+
+    85% {
+        background: linear-gradient(to right, $white 85%, transparent 15%);
+    }
+
+    86% {
+        background: linear-gradient(to right, $white 86%, transparent 14%);
+    }
+
+    87% {
+        background: linear-gradient(to right, $white 87%, transparent 13%);
+    }
+
+    88% {
+        background: linear-gradient(to right, $white 88%, transparent 12%);
+    }
+
+    89% {
+        background: linear-gradient(to right, $white 89%, transparent 11%);
+    }
+
+    90% {
+        background: linear-gradient(to right, $white 90%, transparent 10%);
+    }
+
+    91% {
+        background: linear-gradient(to right, $white 91%, transparent 9%);
+    }
+
+    92% {
+        background: linear-gradient(to right, $white 92%, transparent 8%);
+    }
+
+    93% {
+        background: linear-gradient(to right, $white 93%, transparent 7%);
+    }
+
+    94% {
+        background: linear-gradient(to right, $white 94%, transparent 6%);
+    }
+
+    95% {
+        background: linear-gradient(to right, $white 95%, transparent 5%);
+    }
+
+    96% {
+        background: linear-gradient(to right, $white 96%, transparent 4%);
+    }
+
+    97% {
+        background: linear-gradient(to right, $white 97%, transparent 3%);
+    }
+
+    98% {
+        background: linear-gradient(to right, $white 98%, transparent 2%);
+    }
+
+    99% {
+        background: linear-gradient(to right, $white 99%, transparent 1%);
+    }
+
+    to {
+        background-color: $white;
+        color: $main-bc;
+    }
+}

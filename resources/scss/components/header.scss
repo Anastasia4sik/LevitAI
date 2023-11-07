@@ -1,37 +1,57 @@
 .header {
-    padding: 32px 2vw 56px 0;
+    padding: 26px 60px 50px 0;
 
     &__list {
-        gap: 26px;
+        gap: 25px;
+        margin-bottom: 0;
+        padding-left: 0;
+    }
 
-        &__item {
+    &__dropdown {
+        position: relative;
+        display: inline-block;
+
+        &__label {
+            background-color: transparent;
+            border: none;
+            padding: 5px 10px;
+
+            font-size: 16px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &__options {
+            display: none;
+            position: absolute;
+
             font-size: 16px;
 
+            padding: 25px 30px;
+            margin: 0;
+
+            background-color: #fff;
+            color: #000;
+
             border-radius: 5px;
+            list-style-type: none;
+            text-decoration: none;
             cursor: pointer;
 
-            background-color: transparent;
-            color: $white;
+            &.open {
+                display: block;
 
-            &:focus {
-                outline: none;
-            }
-
-            & option {
-                color: #000;
-            }
-
-            -webkit-appearance: none;
-            position: relative;
-
-            &::before {
-                content: "▼";
-                position: absolute;
-                top: 0;
-                right: 100%;
-                transform: translateY(-10%);
-            }
-        }
+                & .arrow-down {
+                    transform: rotate(180deg);
+                }
+              }
+          }
     }
 }
 
+.arrow-down {
+    transform: rotate(0deg);
+    transition: transform 0.3s;
+    padding-left: 6px;
+}
