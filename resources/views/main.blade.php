@@ -92,12 +92,13 @@
         </p>
         <div class="top__desc__btns d-flex flex-row align-items-center">
             <button class="top__desc__btns__left d-flex flex-row align-items-center button">
-                <img src="{{asset('src/img/icons/play.png')}}" alt="Play" class="top__desc__btns__left__img">
+                <img src="{{asset('src/img/icons/play.svg')}}" alt="What is ICO LevitAI?" class="top__desc__btns__left__img">
                 What is ICO LevitAI
             </button>
 
-            <a href="" class="top__desc__btns__right">
-                White Papers >
+            <a href="" class="top__desc__btns__right d-flex flex-row align-items-center">
+                White Papers
+                <img src="{{asset('src/img/icons/arrow_right_short.svg')}}" alt="White Papers" class="top__desc__btns__right__img">
             </a>
         </div>
     </div>
