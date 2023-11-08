@@ -1,10 +1,12 @@
 .top {
     background-image: url('../../../public/src/img/bc.png');
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: top center;
     background-size: contain;
 
-    height: 150vh;
+    padding-left: 45px;
+
+    height: 140vh;
     width: 100vw;
 
     &__title {
@@ -15,6 +17,8 @@
     }
 
     &__desc {
+        margin-bottom: 360px;
+
         &__title {
             margin-bottom: 15px;
 
@@ -29,6 +33,7 @@
 
             font-size: 14px;
             font-weight: 700;
+            line-height: 112%;
         }
 
         &__btns {

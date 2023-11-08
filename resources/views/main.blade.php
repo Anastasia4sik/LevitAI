@@ -104,6 +104,20 @@
     </div>
   </div>
 
+  <div class="about d-flex flex-column align-items-center">
+    <h3 class="about__small">
+        About ICO
+    </h3>
+
+    <h2 class="about__title">
+        About Crypto ICO
+    </h2>
+
+    <p class="about__desc text-center">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+    </p>
+  </div>
+
   <script>
     const dropdowns = document.querySelectorAll(".header__dropdown");
 
