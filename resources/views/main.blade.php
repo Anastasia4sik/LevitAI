@@ -91,7 +91,7 @@
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
         </p>
         <div class="top__desc__btns d-flex flex-row align-items-center">
-            <button class="top__desc__btns__left d-flex flex-row align-items-center">
+            <button class="top__desc__btns__left d-flex flex-row align-items-center button">
                 <img src="{{asset('src/img/icons/play.png')}}" alt="Play" class="top__desc__btns__left__img">
                 What is ICO LevitAI
             </button>
