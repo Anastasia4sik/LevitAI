@@ -1,0 +1,139 @@
+.top {
+    background-image: url('../../../public/src/img/bc.png');
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: contain;
+
+    padding-left: 45px;
+
+    height: 140vh;
+    width: 100vw;
+
+    margin-bottom: 120px;
+
+    &__title {
+        font-size: 120px;
+        line-height: 175%;
+        font-weight: 700;
+        margin-bottom: 0;
+    }
+
+    &__desc {
+        margin-bottom: 360px;
+
+        &__title {
+            margin-bottom: 15px;
+
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 140%;
+        }
+
+        &__text {
+            width: 43vw;
+            margin-bottom: 40px;
+
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 112%;
+        }
+
+        &__btns {
+            gap: 32px;
+
+            &__left {
+                gap: 9px;
+
+                padding-right: 24px;
+
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 136%;
+
+                border-radius: 50px;
+                border: 1.5px solid $white;
+
+                transition: all .3s;
+                position: relative;
+                z-index: 1;
+
+                &:before {
+                    content: '';
+                    position: absolute;
+                    bottom: 0;
+                    left: 14px;
+                    width: 0%;
+                    height: 100%;
+                    background-color: $white;
+                    transition: all .3s;
+                    border-radius: 50px;
+                    z-index: -1;
+                }
+
+                &:hover {
+                    color: $main-bc;
+
+                    &:before {
+                        left: -1px;
+                        width: 100.8%;
+                    }
+                }
+
+                &__img {
+                    border-radius: 50px;
+                    background-color: $white;
+                }
+            }
+
+            &__right {
+                font-size: 16px;
+                font-weight: 700;
+
+                gap: 8px;
+
+                color: $white-darker;
+
+
+                position: relative;
+                z-index: 1;
+                transition: all 1s;
+
+                &__img {
+                    transition: all 1s;
+                    transition-timing-function: cubic-bezier(.45,1,.53,.96);
+                    opacity: 1;
+                }
+
+                &:hover {
+                    color: $white;
+
+                    & img {
+                        animation: Move 1s forwards;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@keyframes Move {
+    0% {
+        transform: translateX(0);
+        content: url('../../../public/src/img/icons/arrow_right_short.svg');
+    }
+
+    33% {
+        transform: translateX(8%);
+        content: url('../../../public/src/img/icons/arrow_right_short.svg');
+    }
+
+    66% {
+        transform: translateX(5%);
+        content: url('../../../public/src/img/icons/arrow_right_long.svg');
+    }
+
+    100% {
+        transform: translateX(0);
+        content: url('../../../public/src/img/icons/arrow_right_long.svg');
+    }
+}

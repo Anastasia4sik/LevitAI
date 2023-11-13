@@ -1,102 +1,374 @@
 <x-base>
-    <div class="header align-items-end">
-        <ul
-            class="
-                header__list
-                d-flex
-                flex-row
-                justify-content-end
-                align-items-center
-            "
-        >
-            <li class="header__list__item">
-                Home
-            </li>
+  <div class="header d-flex flex-row justify-content-end">
+    <ul class="header__list d-flex flex-row align-items-center">
+        <a href="/" class="header__list__item">
+            Home
+        </a>
 
-            <select class="header__list__item header__list__item__select">
-                <option
-                    class="
-                        header__list__item__option
-                        header__list__item__option--first
-                    "
-                    value="option1"
-                    hidden
-                >
-                    My Account
-                </option>
-                <option value="option2">Documentation</option>
-                <option value="option3">Discover</option>
-                <option value="option4">Your LevitAI World</option>
-                <option value="option4">Community</option>
-            </select>
+      <div class="header__dropdown">
+        <div class="header__dropdown__label">
+          My Account
+          <span class="arrow-down">&#9662;</span>
+        </div>
 
-            <select class="header__list__item header__list__item__select">
-                <option
-                    class="
-                        header__list__item__option
-                        header__list__item__option--first
-                    "
-                    value="option1"
-                    hidden
-                >
-                    Documentation
-                </option>
-                <option value="option2">My Account</option>
-                <option value="option3">Discover</option>
-                <option value="option4">Your LevitAI World</option>
-                <option value="option4">Community</option>
-            </select>
-
-            <select class="header__list__item header__list__item__select">
-                <option
-                    class="
-                        header__list__item__option
-                        header__list__item__option--first
-                    "
-                    value="option1"
-                    hidden
-                >
-                    Discover
-                </option>
-                <option value="option2">My Account</option>
-                <option value="option3">Documentation</option>
-                <option value="option4">Your LevitAI World</option>
-                <option value="option5">Community</option>
-            </select>
-
-            <select class="header__list__item header__list__item__select">
-                <option
-                    class="
-                        header__list__item__option
-                        header__list__item__option--first
-                    "
-                    value="option1"
-                    hidden
-                >
-                    Your LevitAI World
-                </option>
-                <option value="option2">My Account</option>
-                <option value="option3">Documentation</option>
-                <option value="option4">Discover</option>
-                <option value="option5">Community</option>
-            </select>
-
-            <select class="header__list__item header__list__item__select">
-                <option
-                    class="
-                        header__list__item__option
-                        header__list__item__option--first
-                    "
-                    value="option1"
-                    hidden
-                >
-                    Community
-                </option>
-                <option value="option2">My Account</option>
-                <option value="option3">Documentation</option>
-                <option value="option4">Discover</option>
-                <option value="option5">Your LevitAI World</option>
-            </select>
+        <ul class="header__dropdown__options">
+          <li>Documentation</li>
+          <li>Discover</li>
+          <li>Your LevitAI World</li>
+          <li>Community</li>
         </ul>
+      </div>
+
+      <div class="header__dropdown">
+        <div class="header__dropdown__label">
+          Documentation
+          <span class="arrow-down">&#9662;</span>
+        </div>
+
+        <ul class="header__dropdown__options">
+          <li>My Account</li>
+          <li>Discover</li>
+          <li>Your LevitAI World</li>
+          <li>Community</li>
+        </ul>
+      </div>
+
+      <div class="header__dropdown">
+        <div class="header__dropdown__label">
+          Discover
+          <span class="arrow-down">&#9662;</span>
+        </div>
+
+        <ul class="header__dropdown__options">
+          <li>My Account</li>
+          <li>Documentation</li>
+          <li>Your LevitAI World</li>
+          <li>Community</li>
+        </ul>
+      </div>
+
+      <div class="header__dropdown">
+        <div class="header__dropdown__label">
+          Your LevitAI World
+          <span class="arrow-down">&#9662;</span>
+        </div>
+
+        <ul class="header__dropdown__options">
+          <li>My Account</li>
+          <li>Documentation</li>
+          <li>Discover</li>
+          <li>Community</li>
+        </ul>
+      </div>
+
+      <div class="header__dropdown">
+        <div class="header__dropdown__label">
+          Community
+          <span class="arrow-down">&#9662;</span>
+        </div>
+
+        <ul class="header__dropdown__options">
+          <li>My Account</li>
+          <li>Documentation</li>
+          <li>Discover</li>
+          <li>Your LevitAI World</li>
+        </ul>
+      </div>
+    </ul>
+  </div>
+
+  <div class="top">
+    <h1 class="top__title">
+        WelCome to ICO LEVITAI
+    </h1>
+
+    <div class="top__desc d-flex flex-column">
+        <h3 class="top__desc__title">
+            NFT Metaverse for Coin
+        </h3>
+
+        <p class="top__desc__text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <div class="top__desc__btns d-flex flex-row align-items-center">
+            <button class="top__desc__btns__left d-flex flex-row align-items-center button">
+                <img src="{{asset('src/img/icons/play.svg')}}" alt="What is ICO LevitAI?" class="top__desc__btns__left__img">
+                What is ICO LevitAI
+            </button>
+
+            <a href="" class="top__desc__btns__right d-flex flex-row align-items-center">
+                White Papers
+                <img src="{{asset('src/img/icons/arrow_right_short.svg')}}" alt="White Papers" class="top__desc__btns__right__img">
+            </a>
+        </div>
     </div>
+  </div>
+
+  <div class="about d-flex flex-column align-items-center">
+    <h4 class="about__small">
+        About ICO
+    </h4>
+
+    <h3 class="about__title">
+        About Crypto ICO
+    </h3>
+
+    <p class="about__desc text-center">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+    </p>
+  </div>
+
+  <div class="aboutBig">
+    <div class="aboutBig__top d-flex flex-row align-items-center">
+        <h2 class="aboutBig__title">
+            About
+        </h2>
+
+        <p class="aboutBig__desc">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
+    </div>
+
+    <h2 class="aboutBig__title aboutBig__title--crypto">
+        Crypto ICO
+    </h2>
+
+    <div class="aboutBig__cards d-flex flex-row">
+        <div class="aboutBig__cards__item d-flex flex-column justify-content-between">
+            <div class="aboutBig__cards__item__top d-flex flex-row justify-content-between align-items-center">
+                <p class="aboutBig__cards__item__top__title">
+                    Silver Visas<br>
+                    USD 00,002.00
+                </p>
+
+                <div class="aboutBig__cards__item__top__percentage d-flex flex-row align-items-center">
+                    <img src="{{ asset('src/img/icons/graph-top.svg')}}" alt="Graph Up">
+                    <p
+                        class="
+                            aboutBig__cards__item__top__percentage__text
+                        "
+                    >
+                        1.90%
+                    </p>
+                </div>
+            </div>
+
+            <img src="{{ asset('src/img/graph.png')}}" alt="Graph" class="aboutBig__cards__item__graph">
+        </div>
+
+        <div class="aboutBig__cards__item d-flex flex-column justify-content-between">
+            <div class="aboutBig__cards__item__top d-flex flex-row justify-content-between align-items-center">
+                <p class="aboutBig__cards__item__top__title">
+                    Silver Visas<br>
+                    USD 00,002.00
+                </p>
+
+                <div class="aboutBig__cards__item__top__percentage d-flex flex-row align-items-center">
+                    <img src="{{ asset('src/img/icons/graph-top.svg')}}" alt="Graph Up">
+                    <p
+                        class="
+                            aboutBig__cards__item__top__percentage__text
+                        "
+                    >
+                        1.90%
+                    </p>
+                </div>
+            </div>
+
+            <img src="{{ asset('src/img/graph.png')}}" alt="Graph" class="aboutBig__cards__item__graph">
+        </div>
+
+        <div class="aboutBig__cards__item d-flex flex-column justify-content-between">
+            <div class="aboutBig__cards__item__top d-flex flex-row justify-content-between align-items-center">
+                <p class="aboutBig__cards__item__top__title">
+                    Silver Visas<br>
+                    USD 00,002.00
+                </p>
+
+                <div class="aboutBig__cards__item__top__percentage d-flex flex-row align-items-center">
+                    <img src="{{ asset('src/img/icons/graph-top.svg')}}" alt="Graph Up">
+                    <p
+                        class="
+                            aboutBig__cards__item__top__percentage__text
+                        "
+                    >
+                        1.90%
+                    </p>
+                </div>
+            </div>
+
+            <img src="{{ asset('src/img/graph.png')}}" alt="Graph" class="aboutBig__cards__item__graph">
+        </div>
+
+        <div class="aboutBig__cards__item d-flex flex-column justify-content-between">
+            <div class="aboutBig__cards__item__top d-flex flex-row justify-content-between align-items-center">
+                <p class="aboutBig__cards__item__top__title">
+                    Silver Visas<br>
+                    USD 00,002.00
+                </p>
+
+                <div class="aboutBig__cards__item__top__percentage d-flex flex-row align-items-center">
+                    <img src="{{ asset('src/img/icons/graph-top.svg')}}" alt="Graph Up">
+                    <p
+                        class="
+                            aboutBig__cards__item__top__percentage__text
+                        "
+                    >
+                        1.90%
+                    </p>
+                </div>
+            </div>
+
+            <img src="{{ asset('src/img/graph.png')}}" alt="Graph" class="aboutBig__cards__item__graph">
+        </div>
+
+        <div class="aboutBig__cards__item d-flex flex-column justify-content-between">
+            <div class="aboutBig__cards__item__top d-flex flex-row justify-content-between align-items-center">
+                <p class="aboutBig__cards__item__top__title">
+                    Silver Visas<br>
+                    USD 00,002.00
+                </p>
+
+                <div class="aboutBig__cards__item__top__percentage d-flex flex-row align-items-center">
+                    <img src="{{ asset('src/img/icons/graph-top.svg')}}" alt="Graph Up">
+                    <p
+                        class="
+                            aboutBig__cards__item__top__percentage__text
+                        "
+                    >
+                        1.90%
+                    </p>
+                </div>
+            </div>
+
+            <img src="{{ asset('src/img/graph.png')}}" alt="Graph" class="aboutBig__cards__item__graph">
+        </div>
+
+        <div class="aboutBig__cards__item d-flex flex-column justify-content-between">
+            <div class="aboutBig__cards__item__top d-flex flex-row justify-content-between align-items-center">
+                <p class="aboutBig__cards__item__top__title">
+                    Silver Visas<br>
+                    USD 00,002.00
+                </p>
+
+                <div class="aboutBig__cards__item__top__percentage d-flex flex-row align-items-center">
+                    <img src="{{ asset('src/img/icons/graph-top.svg')}}" alt="Graph Up">
+                    <p
+                        class="
+                            aboutBig__cards__item__top__percentage__text
+                        "
+                    >
+                        1.90%
+                    </p>
+                </div>
+            </div>
+
+            <img src="{{ asset('src/img/graph.png')}}" alt="Graph" class="aboutBig__cards__item__graph">
+        </div>
+
+        <div class="aboutBig__cards__item d-flex flex-column justify-content-between">
+            <div class="aboutBig__cards__item__top d-flex flex-row justify-content-between align-items-center">
+                <p class="aboutBig__cards__item__top__title">
+                    Silver Visas<br>
+                    USD 00,002.00
+                </p>
+
+                <div class="aboutBig__cards__item__top__percentage d-flex flex-row align-items-center">
+                    <img src="{{ asset('src/img/icons/graph-top.svg')}}" alt="Graph Up">
+                    <p
+                        class="
+                            aboutBig__cards__item__top__percentage__text
+                        "
+                    >
+                        1.90%
+                    </p>
+                </div>
+            </div>
+
+            <img src="{{ asset('src/img/graph.png')}}" alt="Graph" class="aboutBig__cards__item__graph">
+        </div>
+
+        <div class="aboutBig__cards__item d-flex flex-column justify-content-between">
+            <div class="aboutBig__cards__item__top d-flex flex-row justify-content-between align-items-center">
+                <p class="aboutBig__cards__item__top__title">
+                    Silver Visas<br>
+                    USD 00,002.00
+                </p>
+
+                <div class="aboutBig__cards__item__top__percentage d-flex flex-row align-items-center">
+                    <img src="{{ asset('src/img/icons/graph-top.svg')}}" alt="Graph Up">
+                    <p
+                        class="
+                            aboutBig__cards__item__top__percentage__text
+                        "
+                    >
+                        1.90%
+                    </p>
+                </div>
+            </div>
+
+            <img src="{{ asset('src/img/graph.png')}}" alt="Graph" class="aboutBig__cards__item__graph">
+        </div>
+
+        <div class="aboutBig__cards__item d-flex flex-column justify-content-between">
+            <div class="aboutBig__cards__item__top d-flex flex-row justify-content-between align-items-center">
+                <p class="aboutBig__cards__item__top__title">
+                    Silver Visas<br>
+                    USD 00,002.00
+                </p>
+
+                <div class="aboutBig__cards__item__top__percentage d-flex flex-row align-items-center">
+                    <img src="{{ asset('src/img/icons/graph-top.svg')}}" alt="Graph Up">
+                    <p
+                        class="
+                            aboutBig__cards__item__top__percentage__text
+                        "
+                    >
+                        1.90%
+                    </p>
+                </div>
+            </div>
+
+            <img src="{{ asset('src/img/graph.png')}}" alt="Graph" class="aboutBig__cards__item__graph">
+        </div>
+
+        <div class="aboutBig__cards__item d-flex flex-column justify-content-between">
+            <div class="aboutBig__cards__item__top d-flex flex-row justify-content-between align-items-center">
+                <p class="aboutBig__cards__item__top__title">
+                    Silver Visas<br>
+                    USD 00,002.00
+                </p>
+
+                <div class="aboutBig__cards__item__top__percentage d-flex flex-row align-items-center">
+                    <img src="{{ asset('src/img/icons/graph-top.svg')}}" alt="Graph Up">
+                    <p
+                        class="
+                            aboutBig__cards__item__top__percentage__text
+                        "
+                    >
+                        1.90%
+                    </p>
+                </div>
+            </div>
+
+            <img src="{{ asset('src/img/graph.png')}}" alt="Graph" class="aboutBig__cards__item__graph">
+        </div>
+    </div>
+  </div>
+
+  <script>
+    const dropdowns = document.querySelectorAll(".header__dropdown");
+
+    dropdowns.forEach((dropdown) => {
+      const dropdownOptions = dropdown.querySelector(".header__dropdown__options");
+
+      dropdown.addEventListener("mouseenter", function() {
+        dropdownOptions.classList.add("open");
+      });
+
+      dropdown.addEventListener("mouseleave", function() {
+        dropdownOptions.classList.remove("open");
+      });
+    });
+  </script>
 </x-base>

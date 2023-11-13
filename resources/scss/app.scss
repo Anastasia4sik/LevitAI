@@ -1,7 +1,10 @@
-@import './reset';
 @import 'bootstrap';
+@import './reset';
 @import './vars';
 @import './mixins';
 @import './normalize';
 
 @import './components/header.scss';
+@import './components/top.scss';
+@import './components/about.scss';
+@import './components/aboutBig.scss';
