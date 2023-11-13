@@ -243,6 +243,116 @@
 
             <img src="{{ asset('src/img/graph.png')}}" alt="Graph" class="aboutBig__cards__item__graph">
         </div>
+
+        <div class="aboutBig__cards__item d-flex flex-column justify-content-between">
+            <div class="aboutBig__cards__item__top d-flex flex-row justify-content-between align-items-center">
+                <p class="aboutBig__cards__item__top__title">
+                    Silver Visas<br>
+                    USD 00,002.00
+                </p>
+
+                <div class="aboutBig__cards__item__top__percentage d-flex flex-row align-items-center">
+                    <img src="{{ asset('src/img/icons/graph-top.svg')}}" alt="Graph Up">
+                    <p
+                        class="
+                            aboutBig__cards__item__top__percentage__text
+                        "
+                    >
+                        1.90%
+                    </p>
+                </div>
+            </div>
+
+            <img src="{{ asset('src/img/graph.png')}}" alt="Graph" class="aboutBig__cards__item__graph">
+        </div>
+
+        <div class="aboutBig__cards__item d-flex flex-column justify-content-between">
+            <div class="aboutBig__cards__item__top d-flex flex-row justify-content-between align-items-center">
+                <p class="aboutBig__cards__item__top__title">
+                    Silver Visas<br>
+                    USD 00,002.00
+                </p>
+
+                <div class="aboutBig__cards__item__top__percentage d-flex flex-row align-items-center">
+                    <img src="{{ asset('src/img/icons/graph-top.svg')}}" alt="Graph Up">
+                    <p
+                        class="
+                            aboutBig__cards__item__top__percentage__text
+                        "
+                    >
+                        1.90%
+                    </p>
+                </div>
+            </div>
+
+            <img src="{{ asset('src/img/graph.png')}}" alt="Graph" class="aboutBig__cards__item__graph">
+        </div>
+
+        <div class="aboutBig__cards__item d-flex flex-column justify-content-between">
+            <div class="aboutBig__cards__item__top d-flex flex-row justify-content-between align-items-center">
+                <p class="aboutBig__cards__item__top__title">
+                    Silver Visas<br>
+                    USD 00,002.00
+                </p>
+
+                <div class="aboutBig__cards__item__top__percentage d-flex flex-row align-items-center">
+                    <img src="{{ asset('src/img/icons/graph-top.svg')}}" alt="Graph Up">
+                    <p
+                        class="
+                            aboutBig__cards__item__top__percentage__text
+                        "
+                    >
+                        1.90%
+                    </p>
+                </div>
+            </div>
+
+            <img src="{{ asset('src/img/graph.png')}}" alt="Graph" class="aboutBig__cards__item__graph">
+        </div>
+
+        <div class="aboutBig__cards__item d-flex flex-column justify-content-between">
+            <div class="aboutBig__cards__item__top d-flex flex-row justify-content-between align-items-center">
+                <p class="aboutBig__cards__item__top__title">
+                    Silver Visas<br>
+                    USD 00,002.00
+                </p>
+
+                <div class="aboutBig__cards__item__top__percentage d-flex flex-row align-items-center">
+                    <img src="{{ asset('src/img/icons/graph-top.svg')}}" alt="Graph Up">
+                    <p
+                        class="
+                            aboutBig__cards__item__top__percentage__text
+                        "
+                    >
+                        1.90%
+                    </p>
+                </div>
+            </div>
+
+            <img src="{{ asset('src/img/graph.png')}}" alt="Graph" class="aboutBig__cards__item__graph">
+        </div>
+
+        <div class="aboutBig__cards__item d-flex flex-column justify-content-between">
+            <div class="aboutBig__cards__item__top d-flex flex-row justify-content-between align-items-center">
+                <p class="aboutBig__cards__item__top__title">
+                    Silver Visas<br>
+                    USD 00,002.00
+                </p>
+
+                <div class="aboutBig__cards__item__top__percentage d-flex flex-row align-items-center">
+                    <img src="{{ asset('src/img/icons/graph-top.svg')}}" alt="Graph Up">
+                    <p
+                        class="
+                            aboutBig__cards__item__top__percentage__text
+                        "
+                    >
+                        1.90%
+                    </p>
+                </div>
+            </div>
+
+            <img src="{{ asset('src/img/graph.png')}}" alt="Graph" class="aboutBig__cards__item__graph">
+        </div>
     </div>
   </div>
 
