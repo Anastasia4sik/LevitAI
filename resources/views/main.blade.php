@@ -105,17 +105,145 @@
   </div>
 
   <div class="about d-flex flex-column align-items-center">
-    <h3 class="about__small">
+    <h4 class="about__small">
         About ICO
-    </h3>
+    </h4>
 
-    <h2 class="about__title">
+    <h3 class="about__title">
         About Crypto ICO
-    </h2>
+    </h3>
 
     <p class="about__desc text-center">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
     </p>
+  </div>
+
+  <div class="aboutBig">
+    <div class="aboutBig__top d-flex flex-row align-items-center">
+        <h2 class="aboutBig__title">
+            About
+        </h2>
+
+        <p class="aboutBig__desc">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
+    </div>
+
+    <h2 class="aboutBig__title aboutBig__title--crypto">
+        Crypto ICO
+    </h2>
+
+    <div class="aboutBig__cards d-flex flex-row">
+        <div class="aboutBig__cards__item d-flex flex-column justify-content-between">
+            <div class="aboutBig__cards__item__top d-flex flex-row justify-content-between align-items-center">
+                <p class="aboutBig__cards__item__top__title">
+                    Silver Visas<br>
+                    USD 00,002.00
+                </p>
+
+                <div class="aboutBig__cards__item__top__percentage d-flex flex-row align-items-center">
+                    <img src="{{ asset('src/img/icons/graph-top.svg')}}" alt="Graph Up">
+                    <p
+                        class="
+                            aboutBig__cards__item__top__percentage__text
+                        "
+                    >
+                        1.90%
+                    </p>
+                </div>
+            </div>
+
+            <img src="{{ asset('src/img/graph.png')}}" alt="Graph" class="aboutBig__cards__item__graph">
+        </div>
+
+        <div class="aboutBig__cards__item d-flex flex-column justify-content-between">
+            <div class="aboutBig__cards__item__top d-flex flex-row justify-content-between align-items-center">
+                <p class="aboutBig__cards__item__top__title">
+                    Silver Visas<br>
+                    USD 00,002.00
+                </p>
+
+                <div class="aboutBig__cards__item__top__percentage d-flex flex-row align-items-center">
+                    <img src="{{ asset('src/img/icons/graph-top.svg')}}" alt="Graph Up">
+                    <p
+                        class="
+                            aboutBig__cards__item__top__percentage__text
+                        "
+                    >
+                        1.90%
+                    </p>
+                </div>
+            </div>
+
+            <img src="{{ asset('src/img/graph.png')}}" alt="Graph" class="aboutBig__cards__item__graph">
+        </div>
+
+        <div class="aboutBig__cards__item d-flex flex-column justify-content-between">
+            <div class="aboutBig__cards__item__top d-flex flex-row justify-content-between align-items-center">
+                <p class="aboutBig__cards__item__top__title">
+                    Silver Visas<br>
+                    USD 00,002.00
+                </p>
+
+                <div class="aboutBig__cards__item__top__percentage d-flex flex-row align-items-center">
+                    <img src="{{ asset('src/img/icons/graph-top.svg')}}" alt="Graph Up">
+                    <p
+                        class="
+                            aboutBig__cards__item__top__percentage__text
+                        "
+                    >
+                        1.90%
+                    </p>
+                </div>
+            </div>
+
+            <img src="{{ asset('src/img/graph.png')}}" alt="Graph" class="aboutBig__cards__item__graph">
+        </div>
+
+        <div class="aboutBig__cards__item d-flex flex-column justify-content-between">
+            <div class="aboutBig__cards__item__top d-flex flex-row justify-content-between align-items-center">
+                <p class="aboutBig__cards__item__top__title">
+                    Silver Visas<br>
+                    USD 00,002.00
+                </p>
+
+                <div class="aboutBig__cards__item__top__percentage d-flex flex-row align-items-center">
+                    <img src="{{ asset('src/img/icons/graph-top.svg')}}" alt="Graph Up">
+                    <p
+                        class="
+                            aboutBig__cards__item__top__percentage__text
+                        "
+                    >
+                        1.90%
+                    </p>
+                </div>
+            </div>
+
+            <img src="{{ asset('src/img/graph.png')}}" alt="Graph" class="aboutBig__cards__item__graph">
+        </div>
+
+        <div class="aboutBig__cards__item d-flex flex-column justify-content-between">
+            <div class="aboutBig__cards__item__top d-flex flex-row justify-content-between align-items-center">
+                <p class="aboutBig__cards__item__top__title">
+                    Silver Visas<br>
+                    USD 00,002.00
+                </p>
+
+                <div class="aboutBig__cards__item__top__percentage d-flex flex-row align-items-center">
+                    <img src="{{ asset('src/img/icons/graph-top.svg')}}" alt="Graph Up">
+                    <p
+                        class="
+                            aboutBig__cards__item__top__percentage__text
+                        "
+                    >
+                        1.90%
+                    </p>
+                </div>
+            </div>
+
+            <img src="{{ asset('src/img/graph.png')}}" alt="Graph" class="aboutBig__cards__item__graph">
+        </div>
+    </div>
   </div>
 
   <script>
