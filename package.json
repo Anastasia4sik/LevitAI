@@ -1,6 +1,9 @@
 {
-    "private": true,
+    "name": "levitai",
     "type": "module",
+    "engines": {
+        "node": "6.14.*"
+    },
     "scripts": {
         "dev": "vite",
         "build": "vite build",
