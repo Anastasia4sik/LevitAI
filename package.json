@@ -1,9 +1,6 @@
 {
     "name": "levitai",
     "type": "module",
-    "engines": {
-        "node": "14.x"
-    },
     "scripts": {
         "dev": "vite",
         "build": "vite build",
