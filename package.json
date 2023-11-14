@@ -2,7 +2,7 @@
     "name": "levitai",
     "type": "module",
     "engines": {
-        "node": "6.14.*"
+        "node": "14.x"
     },
     "scripts": {
         "dev": "vite",
