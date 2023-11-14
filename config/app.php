@@ -55,8 +55,7 @@ return [
     |
     */
 
-    'url' => env('APP_URL', 'https://levitai-billionaire-42d508739ff8.herokuapp.com/build/assets/app-63789fa5.css
-    '),
+    'url' => env('APP_URL', 'http://localhost'),
 
     'asset_url' => env('ASSET_URL'),
 
@@ -185,4 +184,5 @@ return [
     'aliases' => Facade::defaultAliases()->merge([
         // 'Example' => App\Facades\Example::class,
     ])->toArray(),
+
 ];
