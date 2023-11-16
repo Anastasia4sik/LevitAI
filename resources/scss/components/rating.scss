@@ -1,6 +1,21 @@
 .rating {
-    padding: 255px 40px 254px 45px;
+    padding: 255px 30px 254px 45px;
     margin-bottom: 50px;
 
-    background-image: url('');
+    background-image: url('../../../public/src/img/bc-rating.png');
+    background-repeat: no-repeat;
+    background-position: center;
+
+    gap: 11vw;
+
+    &__img {
+        width: 38vw;
+    }
+
+    &__text {
+        &__title {
+            margin-bottom: 25px;
+            font-size: 7vw;
+        }
+    }
 }

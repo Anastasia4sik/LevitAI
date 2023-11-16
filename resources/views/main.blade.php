@@ -90,13 +90,14 @@
         <p class="top__desc__text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
         </p>
+
         <div class="top__desc__btns d-flex flex-row align-items-center">
             <button class="top__desc__btns__left d-flex flex-row align-items-center button">
                 <img src="{{asset('src/img/icons/play.svg')}}" alt="What is ICO LevitAI?" class="top__desc__btns__left__img">
                 What is ICO LevitAI
             </button>
 
-            <a href="" class="top__desc__btns__right d-flex flex-row align-items-center">
+            <a href="" class="top__desc__btns__right d-flex flex-row align-items-center desc">
                 White Papers
                 <img src="{{asset('src/img/icons/arrow_right_short.svg')}}" alt="White Papers" class="top__desc__btns__right__img">
             </a>
@@ -120,16 +121,16 @@
 
   <div class="aboutBig">
     <div class="aboutBig__top d-flex flex-row align-items-center">
-        <h2 class="aboutBig__title">
+        <h2 class="aboutBig__title title-main">
             About
         </h2>
 
-        <p class="aboutBig__desc">
+        <p class="aboutBig__desc desc">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
         </p>
     </div>
 
-    <h2 class="aboutBig__title aboutBig__title--crypto">
+    <h2 class="aboutBig__title aboutBig__title--crypto title-main title-main--stroke">
         Crypto ICO
     </h2>
 
@@ -357,20 +358,128 @@
   </div>
 
   <div class="rating d-flex flex-row justify-content-between align-items-center">
-    <img src="{{ asset('src/img/photo/rating-cards.png')}}" alt="ICO Watchlist">
+    <img src="{{ asset('src/img/photo/rating-cards.png')}}" alt="ICO Watchlist" class="rating__img">
 
-    <div class="rating__text">
-        <h2 class="rating__text__title">
+    <div class="rating__text text-end">
+        <h2 class="rating__text__title title-main">
             Rating
         </h2>
 
-        <h2 class="rating__text__title rating__text__title--crypto">
+        <h2 class="rating__text__title rating__text__title--crypto title-main title-main--stroke">
             Crypto Token
         </h2>
 
-        <p class="rating__text__desc">
+        <p class="rating__text__desc desc">
             Lorem ipsum lor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
         </p>
+    </div>
+  </div>
+
+  <div class="whatCrypto d-flex flex-row justify-content-between align-items-center">
+    <div class="whatCrypto__text">
+        <h2 class="whatCrypto__text__title title-main">
+            What Is
+        </h2>
+
+        <h2 class="whatCrypto__text__title whatCrypto__text__title--crypto title-main--stroke title-main">
+            ICO Crypto?
+        </h2>
+
+        <p class="whatCrypto__text__desc desc">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
+    </div>
+
+    <div class="whatCrypto__list d-flex flex-row align-items-center">
+        <div class="whatCrypto__list__container flex-column">
+            <div class="whatCrypto__list__item d-flex flex-row align-items-center">
+                <div class="whatCrypto__list__item__imgs d-flex flex-row align-items-center position-relative">
+                    <img src="{{ asset('src/img/icons/category-bigLine-1.png')}}" alt="Line" class="whatCrypto__list__item__imgs__line--up position-absolute">
+
+                    <img
+                        src="{{asset('src/img/icons/category.png')}}"
+                        alt="Category"
+                        class="whatCrypto__list__item__img"
+                    >
+                </div>
+
+                <div class="whatCrypto__list__item__text">
+                    <h3 class="whatCrypto__list__item__text__title title-little">
+                        Secure Storage
+                    </h3>
+
+                    <p class="whatCrypto__list__item__text__desc">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                </div>
+            </div>
+
+            <div class="whatCrypto__list__item d-flex flex-row align-items-center">
+                <div class="whatCrypto__list__item__imgs d-flex flex-row align-items-center position-relative">
+                    <img src="{{ asset('src/img/icons/category-littleLine-2.png')}}" alt="Line" class="whatCrypto__list__item__imgs__line--up position-absolute">
+
+                    <img
+                        src="{{asset('src/img/icons/category.png')}}"
+                        alt="Category"
+                        class="whatCrypto__list__item__img"
+                    >
+                </div>
+
+                <div class="whatCrypto__list__item__text">
+                    <h3 class="whatCrypto__list__item__text__title title-little">
+                        Secure Storage
+                    </h3>
+
+                    <p class="whatCrypto__list__item__text__desc">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                </div>
+            </div>
+
+            <div class="whatCrypto__list__item d-flex flex-row align-items-center">
+                <div class="whatCrypto__list__item__imgs d-flex flex-row align-items-center position-relative">
+                    <img src="{{ asset('src/img/icons/category-littleLine-3.png')}}" alt="Line" class="whatCrypto__list__item__imgs__line--down position-absolute">
+
+                    <img
+                        src="{{asset('src/img/icons/category.png')}}"
+                        alt="Category"
+                        class="whatCrypto__list__item__img"
+                    >
+                </div>
+
+                <div class="whatCrypto__list__item__text">
+                    <h3 class="whatCrypto__list__item__text__title title-little">
+                        Secure Storage
+                    </h3>
+
+                    <p class="whatCrypto__list__item__text__desc">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                </div>
+            </div>
+
+            <div class="whatCrypto__list__item d-flex flex-row align-items-center">
+                <div class="whatCrypto__list__item__imgs d-flex flex-row align-items-center position-relative">
+                    <img src="{{ asset('src/img/icons/category-bigLine-4.png')}}" alt="Line" class="whatCrypto__list__item__imgs__line--down position-absolute">
+
+                    <img
+                        src="{{asset('src/img/icons/category.png')}}"
+                        alt="Category"
+                        class="whatCrypto__list__item__img"
+                    >
+                </div>
+
+                <div class="whatCrypto__list__item__text">
+                    <h3 class="whatCrypto__list__item__text__title title-little">
+                        Secure Storage
+                    </h3>
+
+                    <p class="whatCrypto__list__item__text__desc">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                </div>
+            </div>
+        </div>
     </div>
   </div>
 

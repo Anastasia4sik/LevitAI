@@ -5,7 +5,7 @@
     position: relative;
 
     &:before {
-        content: url('/src/img/bc-hand.png');
+        content: url('../../../public/src/img/bc-hand.png');
 
         position: absolute;
         bottom: 109px;
@@ -17,28 +17,15 @@
     }
 
     &__title {
-        font-size: 128px;
-        font-weight: 700;
-
         &--crypto {
-            top: -43px;
             display: inline-block;
             position: relative;
-            color: transparent;
-
-            -webkit-text-stroke: 2.5px;
-            background-image: linear-gradient(175deg, rgba(74, 16, 239, 1) 43%, rgba(149, 45, 246, 1) 49%, rgba(241, 81, 255, 1) 86%, rgba(241, 81, 255, 1) 89%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: $main-bc;
+            top: -43px;
         }
     }
 
     &__desc {
         width: 555px;
-
-        font-size: 16px;
-        font-weight: 700;
-        line-height: 137.5%;
     }
 
     &__cards {

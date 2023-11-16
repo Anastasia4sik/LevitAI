@@ -1,0 +1,68 @@
+.whatCrypto {
+    margin-bottom: 50px;
+    padding: 0 2vw 0 45px;
+
+    gap: 94px;
+
+    &__text {
+        width: 38vw;
+
+        &__title {
+            font-size: 6vw;
+
+            &--crypto {
+                display: inline-block;
+                position: relative;
+                top: -24px;
+
+                margin-bottom: 25px;
+            }
+        }
+    }
+
+    &__list {
+        &__item {
+            margin-bottom: 37px;
+
+            gap: 1vw;
+
+            &__imgs {
+                &__line {
+                    &--up {
+                        top: 50%;
+                    }
+
+                    &--down {
+                        bottom: 50%;
+                    }
+
+                    &--up,
+                    &--down {
+                        right: 100%;
+                    }
+                }
+            }
+
+            &__img {
+                padding: 0.6vw;
+
+                background: $violet;
+                border-radius: 3px;
+            }
+
+            &__text {
+                &__title {
+                    margin-bottom: 5px;
+                }
+
+                &__desc {
+                    font-size: 14px;
+                    font-weight: 700;
+                    line-height: 135%;
+
+                    width: 34vw;
+                }
+            }
+        }
+    }
+}

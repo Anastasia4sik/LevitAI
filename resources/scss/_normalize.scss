@@ -23,3 +23,33 @@ body {
 a {
     color: $white;
 }
+
+h1, h2, h3, p {
+    margin-bottom: 0;
+}
+
+.title-main {
+    font-size: 128px;
+    font-weight: 700;
+
+    &--stroke {
+        color: transparent;
+
+        -webkit-text-stroke: 2.5px;
+        background-image: linear-gradient(175deg, rgba(74, 16, 239, 1) 43%, rgba(149, 45, 246, 1) 49%, rgba(241, 81, 255, 1) 86%, rgba(241, 81, 255, 1) 89%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: $main-bc;
+    }
+}
+
+.title-little {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 140%;
+}
+
+.desc {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 137.5%;
+}
