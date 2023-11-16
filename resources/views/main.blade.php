@@ -1,5 +1,5 @@
 <x-base>
-  <div class="header d-flex flex-row justify-content-end">
+  <header class="header d-flex flex-row justify-content-end">
     <ul class="header__list d-flex flex-row align-items-center">
         <a href="/" class="header__list__item">
             Home
@@ -75,7 +75,7 @@
         </ul>
       </div>
     </ul>
-  </div>
+  </header>
 
   <div class="top">
     <h1 class="top__title">
@@ -353,6 +353,24 @@
 
             <img src="{{ asset('src/img/graph.png')}}" alt="Graph" class="aboutBig__cards__item__graph">
         </div>
+    </div>
+  </div>
+
+  <div class="rating d-flex flex-row justify-content-between align-items-center">
+    <img src="{{ asset('src/img/photo/rating-cards.png')}}" alt="ICO Watchlist">
+
+    <div class="rating__text">
+        <h2 class="rating__text__title">
+            Rating
+        </h2>
+
+        <h2 class="rating__text__title rating__text__title--crypto">
+            Crypto Token
+        </h2>
+
+        <p class="rating__text__desc">
+            Lorem ipsum lor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+        </p>
     </div>
   </div>
 
