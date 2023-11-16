@@ -483,6 +483,30 @@
     </div>
   </div>
 
+  <div class="complete">
+        <h2 class="complete__title complete__title--complete title title--stroke">
+            We Complete
+        </h2>
+
+        <h2 class="complete__title title">
+            Every Project Extra Care As Customer
+        </h2>
+
+        <p class="complete__desc desc">
+            Globally transition of ours multidisciplinary applications for bleeding-edge vortals. harness o ours plug-and-plays networks without stand-alone bandwidth market harness competitive channels.
+        </p>
+
+        <p class="complete__desc desc">
+            Seamlessly redefine ethical materials through inours high-payoff growth strategie appropriately envisioneer robust infrastructures before robust for the aynergistically generate B2B alignments after.
+        </p>
+
+        <button class="complete__btn top__desc__btns__left d-flex flex-row align-items-center button">
+            <img src="{{asset('src/img/icons/play.svg')}}" alt="Read More" class="top__desc__btns__left__img">
+
+            Read More
+        </button>
+  </div>
+
   <script>
     const dropdowns = document.querySelectorAll(".header__dropdown");
 
