@@ -1,6 +1,6 @@
 .whatCrypto {
     margin-bottom: 50px;
-    padding: 0 2vw 0 45px;
+    padding: 0 2vw 0 42px;
 
     gap: 94px;
 
@@ -8,8 +8,6 @@
         width: 38vw;
 
         &__title {
-            font-size: 6vw;
-
             &--crypto {
                 display: inline-block;
                 position: relative;
@@ -57,7 +55,6 @@
 
                 &__desc {
                     font-size: 14px;
-                    font-weight: 700;
                     line-height: 135%;
 
                     width: 34vw;

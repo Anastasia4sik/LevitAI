@@ -1,0 +1,39 @@
+.face {
+    padding: 8px 2vw 58px 45px;
+    margin-bottom: 107px;
+
+    &__text {
+        &__top {
+            gap: 34px;
+
+            &__desc {
+                width: 555px;
+            }
+        }
+
+        &__title {
+            &--crypto {
+                display: inline-block;
+                position: relative;
+                top: -1.2vw;
+
+                margin-bottom: 65px;
+            }
+        }
+
+        &__table {
+            grid-template-columns: repeat(2, 366px);
+            grid-gap: 75px;
+
+            &__item {
+                &__title {
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+
+    &__img {
+        width: 32.6vw;
+    }
+}

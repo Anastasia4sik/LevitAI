@@ -92,10 +92,16 @@
         </p>
 
         <div class="top__desc__btns d-flex flex-row align-items-center">
-            <button class="top__desc__btns__left d-flex flex-row align-items-center button">
-                <img src="{{asset('src/img/icons/play.svg')}}" alt="What is ICO LevitAI?" class="top__desc__btns__left__img">
+            <x-button
+                img="src/img/icons/play.svg"
+                gap="9px"
+                pr="24px"
+                fs="14px"
+                width="inherit"
+                padding="0"
+            >
                 What is ICO LevitAI
-            </button>
+            </x-button>
 
             <a href="" class="top__desc__btns__right d-flex flex-row align-items-center desc">
                 White Papers
@@ -484,14 +490,15 @@
   </div>
 
   <div class="complete">
-        <h2 class="complete__title complete__title--complete title title--stroke">
-            We Complete
-        </h2>
+    <h2 class="complete__title--complete title-main title-main--stroke">
+        We Complete
+    </h2>
 
-        <h2 class="complete__title title">
-            Every Project Extra Care As Customer
-        </h2>
+    <h2 class="complete__title title-main d-flex justify-content-center">
+        Every Project Extra <br>Care As Customer
+    </h2>
 
+    <div class="complete__text">
         <p class="complete__desc desc">
             Globally transition of ours multidisciplinary applications for bleeding-edge vortals. harness o ours plug-and-plays networks without stand-alone bandwidth market harness competitive channels.
         </p>
@@ -500,12 +507,232 @@
             Seamlessly redefine ethical materials through inours high-payoff growth strategie appropriately envisioneer robust infrastructures before robust for the aynergistically generate B2B alignments after.
         </p>
 
-        <button class="complete__btn top__desc__btns__left d-flex flex-row align-items-center button">
-            <img src="{{asset('src/img/icons/play.svg')}}" alt="Read More" class="top__desc__btns__left__img">
-
+        <x-button
+            img="src/img/icons/arrow-black.svg"
+            gap="21px"
+            pr="0"
+            fs="16px"
+            width="189px"
+            padding="15px"
+        >
             Read More
-        </button>
+        </x-button>
+    </div>
   </div>
+
+  <div class="choose d-flex flex-row">
+    <div class="choose__list d-flex flex-column">
+        <div class="choose__list__item">
+            <h3 class="choose__list__item__reason title-little">
+                reason
+            </h3>
+
+            <p class="choose__list__item__num">
+                1
+            </p>
+
+            <div class="choose__list__item__text d-flex flex-column">
+                <h3 class="choose__list__item__text__title title-little">
+                    Mobile Payment Make Easy
+                </h3>
+
+                <p class="choose__list__item__text__desc desc">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+            </div>
+        </div>
+
+        <div class="choose__list__item">
+            <h3 class="choose__list__item__reason title-little">
+                reason
+            </h3>
+
+            <p class="choose__list__item__num">
+                2
+            </p>
+
+            <div class="choose__list__item__text d-flex flex-column">
+                <h3 class="choose__list__item__text__title title-little">
+                    Sercurity & control over money
+                </h3>
+
+                <p class="choose__list__item__text__desc desc">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+            </div>
+        </div>
+
+        <div class="choose__list__item">
+            <h3 class="choose__list__item__reason title-little">
+                reason
+            </h3>
+
+            <p class="choose__list__item__num">
+                3
+            </p>
+
+            <div class="choose__list__item__text d-flex flex-column">
+                <h3 class="choose__list__item__text__title title-little">
+                    Protect your Privacy
+                </h3>
+
+                <p class="choose__list__item__text__desc desc">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+            </div>
+        </div>
+
+        <div class="choose__list__item">
+            <h3 class="choose__list__item__reason title-little">
+                reason
+            </h3>
+
+            <p class="choose__list__item__num">
+                4
+            </p>
+
+            <div class="choose__list__item__text d-flex flex-column">
+                <h3 class="choose__list__item__text__title title-little">
+                    Lifetime free transaction
+                </h3>
+
+                <p class="choose__list__item__text__desc desc">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="choose__right">
+        <h2 class="choose__right__title title-main">
+            Why Choose
+        </h2>
+
+        <h2 class="choose__right__title--token title-main title-main--stroke">
+            Our Token?
+        </h2>
+
+        <img
+            src="{{ asset('src/img/photo/choose-img.jpg')}}"
+            alt="Why choose our token?"
+            class="choose__right__img"
+        >
+    </div>
+  </div>
+
+  <div class="face d-flex flex-row justify-content-between align-items-center">
+    <div class="face__text">
+        <div class="face__text__top d-flex flex-row align-items-center">
+            <h2 class="face__text__top__title title-main">
+                Rating
+            </h2>
+
+            <p class="face__text__top__desc desc">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+        </div>
+
+        <h2 class="face__text__title face__text__title--crypto title-main title-main--stroke">
+            Crypto Token
+        </h2>
+
+        <div class="face__text__table d-grid">
+            <div class="face__text__table__item">
+                <h3 class="face__text__table__item__title title-little">
+                    Secure Payment
+                </h3>
+
+                <p class="face__text__table__item__desc desc">
+                    Competently formula accurate value vertical outsourcing.Competently formula accurate value vertical outsourcing.
+                </p>
+            </div>
+
+            <div class="face__text__table__item">
+                <h3 class="face__text__table__item__title title-little">
+                    Secure Payment
+                </h3>
+
+                <p class="face__text__table__item__desc desc">
+                    Competently formula accurate value vertical outsourcing.Competently formula accurate value vertical outsourcing.
+                </p>
+            </div>
+
+            <div class="face__text__table__item">
+                <h3 class="face__text__table__item__title title-little">
+                    Secure Payment
+                </h3>
+
+                <p class="face__text__table__item__desc desc">
+                    Competently formula accurate value vertical outsourcing.Competently formula accurate value vertical outsourcing.
+                </p>
+            </div>
+
+            <div class="face__text__table__item">
+                <h3 class="face__text__table__item__title title-little">
+                    Secure Payment
+                </h3>
+
+                <p class="face__text__table__item__desc desc">
+                    Competently formula accurate value vertical outsourcing.Competently formula accurate value vertical outsourcing.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <img
+        src="{{ asset('src/img/photo/face.png')}}"
+        alt="Face"
+        class="face__img"
+    >
+  </div>
+
+  <!-- <div class="market">
+    <div class="market__top d-flex flex-row">
+        <h2 class="market__top__title title-main title-main--stroke">
+            Current
+        </h2>
+
+        <h2 class="market__top__title title-main">
+            Market
+        </h2>
+    </div>
+
+    <div class="market__last d-flex flex-row">
+        <p class="market__last__num desc">
+            +0.36%
+        </p>
+
+        <p class="market__last__text desc">
+            Market up in the last 24 hours
+        </p>
+    </div>
+
+    <div class="market__table d-grid">
+        <p class="market__table__text market__table__text__top">
+            All tokens
+        </p>
+
+        <p class="market__table__text market__table__text__top">
+            Savailable
+        </p>
+
+        <p class="market__table__text market__table__text__top">
+            Gainers
+        </p>
+
+        <p class="market__table__text market__table__text__top">
+            Losers
+        </p>
+
+        <p class="market__table__text market__table__text__top">
+            T.Supply
+        </p>
+
+        <p class="market__table__text market__table__text__top">
+            24h Volume
+        </p>
+    </div>
+  </div> -->
 
   <script>
     const dropdowns = document.querySelectorAll(".header__dropdown");

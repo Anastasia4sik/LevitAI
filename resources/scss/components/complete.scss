@@ -1,0 +1,32 @@
+.complete {
+    padding: 220px 2vw 220px 42px;
+    background-image: url('/src/img/bc-complete.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+    &__title {
+        margin-bottom: 25px;
+
+        font-size: 4vw;
+        line-height: 100%;
+
+        margin-top: -18px;
+    }
+
+    &__desc {
+        width: 36vw;
+
+        &:not(:last-of-type) {
+            margin-bottom: 10px;
+        }
+
+        &:last-of-type {
+            margin-bottom: 35px;
+        }
+    }
+
+    &__text {
+        margin-left: 57vw;
+    }
+}
