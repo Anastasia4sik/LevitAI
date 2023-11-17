@@ -1,0 +1,61 @@
+.choose {
+    margin-bottom: 200px;
+    padding: 0 2vw 0 1.4vw;
+
+    gap: 5vw;
+
+    &__list {
+        gap: 37px;
+
+        &__item {
+            width: 40vw;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+            &__reason {
+                letter-spacing: 2px;
+                background: linear-gradient(89deg, #8538FF 1.67%, #C203FF 98.33%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+
+                writing-mode: vertical-rl;
+                text-orientation: mixed;
+                transform: rotate(180deg)
+            }
+
+            &__num {
+                padding: 23px 12px;
+                margin-right: 25px;
+
+                font-size: 3.3vw;
+
+                background: $violet;
+
+                border-radius: 3px;
+            }
+
+            &__text {
+                &__title {
+                    margin-bottom: 5px;
+                }
+            }
+        }
+    }
+
+    &__right {
+        width: 100%;
+
+        &__title {
+            &--token {
+                text-align: end;
+                line-height: 100%;
+            }
+        }
+
+        &__img {
+            margin: 50px 20% 0;
+            width: 580px;
+        }
+    }
+}
