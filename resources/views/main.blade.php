@@ -686,6 +686,54 @@
     >
   </div>
 
+  <!-- <div class="market">
+    <div class="market__top d-flex flex-row">
+        <h2 class="market__top__title title-main title-main--stroke">
+            Current
+        </h2>
+
+        <h2 class="market__top__title title-main">
+            Market
+        </h2>
+    </div>
+
+    <div class="market__last d-flex flex-row">
+        <p class="market__last__num desc">
+            +0.36%
+        </p>
+
+        <p class="market__last__text desc">
+            Market up in the last 24 hours
+        </p>
+    </div>
+
+    <div class="market__table d-grid">
+        <p class="market__table__text market__table__text__top">
+            All tokens
+        </p>
+
+        <p class="market__table__text market__table__text__top">
+            Savailable
+        </p>
+
+        <p class="market__table__text market__table__text__top">
+            Gainers
+        </p>
+
+        <p class="market__table__text market__table__text__top">
+            Losers
+        </p>
+
+        <p class="market__table__text market__table__text__top">
+            T.Supply
+        </p>
+
+        <p class="market__table__text market__table__text__top">
+            24h Volume
+        </p>
+    </div>
+  </div> -->
+
   <script>
     const dropdowns = document.querySelectorAll(".header__dropdown");
 
