@@ -620,88 +620,70 @@
     </div>
   </div>
 
-  <div class="choose d-flex flex-row">
-    <div class="choose__list d-flex flex-column">
-        <div class="choose__list__item">
-            <h3 class="choose__list__item__reason title-little">
-                reason
-            </h3>
+  <div class="face d-flex flex-row justify-content-between align-items-center">
+    <div class="face__text">
+        <div class="face__text__top d-flex flex-row align-items-center">
+            <h2 class="face__text__top__title title-main">
+                Rating
+            </h2>
 
-            <p class="choose__list__item__num">
-                1
+            <p class="face__text__top__desc desc">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
             </p>
-
-            <div class="choose__list__item__text d-flex flex-column">
-                <h3 class="choose__list__item__text__title title-little">
-                    Mobile Payment Make Easy
-                </h3>
-
-                <p class="choose__list__item__text__desc desc">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                </p>
-            </div>
         </div>
 
-        <div class="choose__list__item">
-            <h3 class="choose__list__item__reason title-little">
-                reason
-            </h3>
+        <h2 class="face__text__title face__text__title--crypto title-main title-main--stroke">
+            Crypto Token
+        </h2>
 
-            <p class="choose__list__item__num">
-                2
-            </p>
-
-            <div class="choose__list__item__text d-flex flex-column">
-                <h3 class="choose__list__item__text__title title-little">
-                    Sercurity & control over money
+        <div class="face__text__table d-grid">
+            <div class="face__text__table__item">
+                <h3 class="face__text__table__item__title title-little">
+                    Secure Payment
                 </h3>
 
-                <p class="choose__list__item__text__desc desc">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                <p class="face__text__table__item__desc desc">
+                    Competently formula accurate value vertical outsourcing.Competently formula accurate value vertical outsourcing.
                 </p>
             </div>
-        </div>
 
-        <div class="choose__list__item">
-            <h3 class="choose__list__item__reason title-little">
-                reason
-            </h3>
-
-            <p class="choose__list__item__num">
-                3
-            </p>
-
-            <div class="choose__list__item__text d-flex flex-column">
-                <h3 class="choose__list__item__text__title title-little">
-                    Protect your Privacy
+            <div class="face__text__table__item">
+                <h3 class="face__text__table__item__title title-little">
+                    Secure Payment
                 </h3>
 
-                <p class="choose__list__item__text__desc desc">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                <p class="face__text__table__item__desc desc">
+                    Competently formula accurate value vertical outsourcing.Competently formula accurate value vertical outsourcing.
                 </p>
             </div>
-        </div>
 
-        <div class="choose__list__item">
-            <h3 class="choose__list__item__reason title-little">
-                reason
-            </h3>
-
-            <p class="choose__list__item__num">
-                4
-            </p>
-
-            <div class="choose__list__item__text d-flex flex-column">
-                <h3 class="choose__list__item__text__title title-little">
-                    Lifetime free transaction
+            <div class="face__text__table__item">
+                <h3 class="face__text__table__item__title title-little">
+                    Secure Payment
                 </h3>
 
-                <p class="choose__list__item__text__desc desc">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                <p class="face__text__table__item__desc desc">
+                    Competently formula accurate value vertical outsourcing.Competently formula accurate value vertical outsourcing.
+                </p>
+            </div>
+
+            <div class="face__text__table__item">
+                <h3 class="face__text__table__item__title title-little">
+                    Secure Payment
+                </h3>
+
+                <p class="face__text__table__item__desc desc">
+                    Competently formula accurate value vertical outsourcing.Competently formula accurate value vertical outsourcing.
                 </p>
             </div>
         </div>
     </div>
+
+    <img
+        src="{{ asset('src/img/photo/face.png')}}"
+        alt="Face"
+        class="face__img"
+    >
   </div>
 
   <script>
