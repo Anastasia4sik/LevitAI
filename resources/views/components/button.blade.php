@@ -11,6 +11,7 @@
         padding-right: {{$pr}};
         font-size: {{$fs}};
         width: {{$width}};
+        margin: {{$margin}}
     "
 >
     <img

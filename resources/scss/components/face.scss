@@ -35,11 +35,11 @@
     }
 
     &__img {
+        top: 0;
+        left: 0;
         height: 100%;
+
+        transition: opacity 1s ease-in-out;
     }
 }
 
-#face-img {
-    height: auto;
-    transition: all 0.5s ease;
-}

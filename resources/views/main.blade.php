@@ -99,6 +99,7 @@
                 fs="14px"
                 width="inherit"
                 padding="0"
+                margin=""
             >
                 What is ICO LevitAI
             </x-button>
@@ -514,6 +515,7 @@
             fs="16px"
             width="189px"
             padding="15px"
+            margin=""
         >
             Read More
         </x-button>
@@ -679,12 +681,28 @@
         </div>
     </div>
 
-    <img
-        src="{{ asset('src/img/photo/face/face-white.png')}}"
-        alt="Face"
-        class="face__img"
-        id="face-img"
-    >
+    <div class="face__image position-relative">
+        <img
+            src="{{ asset('src/img/photo/face/face-white.png')}}"
+            alt="Face"
+            class="face__img face__img--whiteposition-absolute"
+            id="face-white"
+        >
+
+        <img
+            src="{{ asset('src/img/photo/face/face-main.png')}}"
+            alt="Face"
+            class="face__img face__img--main position-absolute"
+            id="face-main"
+        >
+
+        <img
+            src="{{ asset('src/img/photo/face/face-color.png')}}"
+            alt="Face"
+            class="face__img face__img--color position-absolute"
+            id="face-color"
+        >
+    </div>
   </section>
 
   <section class="market">
@@ -1047,6 +1065,76 @@
     </button>
   </section>
 
+  <section class="coin d-flex flex-row align-items-center justify-content-between">
+    <div class="coin__images">
+        <div class="coin__images__top d-flex flex-row">
+            <img src="{{ asset('src/img/photo/coin-abstract.jpg')}}" alt="What is LevtAI coin?" class="coin__images__img coin__images__img--1">
+
+            <img src="{{ asset('src/img/photo/coins.jpg')}}" alt="What is LevtAI coin?" class="coin__images__img coin__images__img--2">
+        </div>
+
+        <img src="{{ asset('src/img/photo/choose-img.jpg')}}" alt="What is LevtAI coin?" class="coin__images__img coin__images__img--3">
+    </div>
+
+    <div class="coin__text">
+        <h3 class="coin__text__titleLittle title-little">
+            Exchange your ICO
+        </h3>
+
+        <div class="coin__text__white d-flex flex-row align-items-center">
+            <h2 class="coin__text__white__title title-main">
+                What Is
+            </h2>
+
+            <p class="coin__text__white__desc desc">
+                Monotonectally productivate virtual benefits vis-a-vis clicks-and-mortar lead ship. Seamlessly generate user friendly opportunitie after principle-centered e-markets. Proactively visualize functional
+            </p>
+        </div>
+
+        <h2 class="coin__text__title title-main title-main--stroke">
+            LevitAI Coin?
+        </h2>
+
+        <x-button
+            img="src/img/icons/telegram.svg"
+            gap="21px"
+            pr="0"
+            fs="16px"
+            width="254px"
+            padding="17px"
+            margin="0 0 25px auto"
+        >
+            Join us on telegram
+        </x-button>
+
+        <div class="coin__text__blocks d-flex flex-row">
+            <div class="coin__text__blocks__item">
+                <img src="{{ asset('src/img/icons/category.png')}}" alt="Secure Payment" class="coin__text__blocks__item__img">
+
+                <h3 class="coin__text__blocks__item__title title-little">
+                    Secure Payment
+                </h3>
+
+                <p class="coin__text__blocks__item__desc desc">
+                    Competently formula accurate value vertical outsourcing. Competently formula accurate value vertical outsourcing.
+                </p>
+            </div>
+
+            <div class="coin__text__blocks__item">
+                <img src="{{ asset('src/img/icons/category.png')}}" alt="Secure Payment" class="coin__text__blocks__item__img">
+
+                <h3 class="coin__text__blocks__item__title title-little">
+                    Secure Payment
+                </h3>
+
+                <p class="coin__text__blocks__item__desc desc">
+                    Competently formula accurate value vertical outsourcing. Competently formula accurate value vertical outsourcing.
+                </p>
+            </div>
+        </div>
+    </div>
+  </section>
+
   <script>
     const dropdowns = document.querySelectorAll(".header__dropdown");
 
@@ -1083,7 +1171,9 @@
     });
 
     window.addEventListener('scroll', function() {
-        const img = document.getElementById('face-img');
+        const faceWhite = document.getElementById('face-white');
+        const faceMain = document.getElementById('face-main');
+        const faceColor = document.getElementById('face-color');
         const scrollPosition = window.scrollY;
 
         const triggerDiv = document.getElementById('face');
@@ -1093,31 +1183,27 @@
 
         const limitedOpacity = Math.min(1, Math.max(0, opacity));
 
-        if (limitedOpacity === 1) {
-            img.style.opacity = 0.3;
-        } else if (
-            (limitedOpacity <= 0.99999 && limitedOpacity >= 0.88) ||
-            (limitedOpacity < 0.67 && limitedOpacity >= 0.26)
-        ) {
-            img.style.opacity = 0.5;
-        } else if (
-            (limitedOpacity < 0.88 && limitedOpacity >= 0.84) ||
-            (limitedOpacity < 0.74 && limitedOpacity >= 0.66)
-        ) {
-            img.style.opacity = 0.6;
-        } else if (limitedOpacity < 0.84 && limitedOpacity >= 0.74) {
-            img.style.opacity = 1;
-        }
+        console.log(limitedOpacity)
 
-        if (
-            (limitedOpacity <= 0.99999 && limitedOpacity >= 0.98) ||
-            (limitedOpacity < 0.36 && limitedOpacity >= 0.1)
+        if (limitedOpacity === 1 || limitedOpacity <= 0.2) {
+            faceWhite.style.opacity = 0;
+            faceMain.style.opacity = 0;
+            faceColor.style.opacity = 0.7;
+        } else if (limitedOpacity === 1) {
+            faceColor.style.opacity = 0.6;
+        } else if (
+            (limitedOpacity <= 0.99 && limitedOpacity >= 0.85) ||
+            (limitedOpacity < 0.4 && limitedOpacity >= 0.26)
         ) {
-            img.src = '{{ asset('src/img/photo/face/face-white.png')}}';
-        } else if (limitedOpacity < 0.98 && limitedOpacity >= 0.36) {
-            img.src = '{{ asset('src/img/photo/face/face-main.png')}}';
-        } else {
-            img.src = '{{ asset('src/img/photo/face/face-color.png')}}';
+            faceWhite.style.opacity = 0.8;
+            faceMain.style.opacity = 0;
+            faceColor.style.opacity = 0;
+        } else if (
+            (limitedOpacity < 0.85 && limitedOpacity >= 0.4)
+        ) {
+            faceWhite.style.opacity = 0;
+            faceMain.style.opacity = 1;
+            faceColor.style.opacity = 0;
         }
     });
   </script>

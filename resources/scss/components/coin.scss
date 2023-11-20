@@ -1,0 +1,60 @@
+.coin {
+    padding: 0 2vw 0 45px;
+    margin-bottom: 230px;
+
+    &__images {
+        &__top {
+            margin-bottom: 60px;
+        }
+
+        &__img {
+            &--1 {
+                width: 260px;
+                height: 241px;
+
+                margin-right: 97px;
+            }
+
+            &--2 {
+                margin-top: 43px;
+            }
+
+            &--3 {
+                width: 35vw;
+            }
+        }
+    }
+
+    &__text {
+        &__white {
+            &__desc {
+                margin-left: 34px;
+                width: 23.5vw;
+            }
+        }
+
+        &__btn {
+            margin-bottom: 25px;
+        }
+
+        &__blocks {
+            gap: 62px;
+
+            &__item {
+                width: 22vw;
+
+                &__img {
+                    padding: 12px;
+                    margin-bottom: 10px;
+
+                    background: $violet;
+                    border-radius: 100px;
+                }
+
+                &__title {
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+}
