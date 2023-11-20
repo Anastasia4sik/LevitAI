@@ -620,7 +620,7 @@
     </div>
   </section>
 
-  <section class="face d-flex flex-row justify-content-between align-items-center">
+  <section id="face" class="face d-flex flex-row align-items-center justify-content-between">
     <div class="face__text">
         <div class="face__text__top d-flex flex-row align-items-center">
             <h2 class="face__text__top__title title-main">
@@ -680,9 +680,10 @@
     </div>
 
     <img
-        src="{{ asset('src/img/photo/face.png')}}"
+        src="{{ asset('src/img/photo/face/face-white.png')}}"
         alt="Face"
         class="face__img"
+        id="face-img"
     >
   </section>
 
@@ -1062,23 +1063,62 @@
     });
 
     document.addEventListener('DOMContentLoaded', function() {
-            const blocks = document.querySelectorAll('.market__table__body__row--hide');
+        const blocks = document.querySelectorAll('.market__table__body__row--hide');
 
-            blocks.forEach((block) => {
-                const button = document.querySelector('.market__btn');
+        blocks.forEach((block) => {
+            const button = document.querySelector('.market__btn');
 
-                button.addEventListener('click', function() {
-                    if (block.style.display != 'table-row') {
-                        block.style.display = 'table-row';
+            button.addEventListener('click', function() {
+                if (block.style.display != 'table-row') {
+                    block.style.display = 'table-row';
 
-                        button.innerHTML = 'Show less <img src="{{ asset('src/img/icons/arrow-up.svg') }}" alt="Show less">';
-                    } else {
-                        block.style.display = 'none';
+                    button.innerHTML = 'Show less <img src="{{ asset('src/img/icons/arrow-up.svg') }}" alt="Show less">';
+                } else {
+                    block.style.display = 'none';
 
-                        button.innerHTML = 'Show more <img src="{{ asset('src/img/icons/arrow-down.svg') }}" alt="Show more">';
-                    }
-                });
+                    button.innerHTML = 'Show more <img src="{{ asset('src/img/icons/arrow-down.svg') }}" alt="Show more">';
+                }
             });
         });
+    });
+
+    window.addEventListener('scroll', function() {
+        const img = document.getElementById('face-img');
+        const scrollPosition = window.scrollY;
+
+        const triggerDiv = document.getElementById('face');
+        const triggerDivPosition = triggerDiv.offsetTop;
+
+        const opacity = 0.79 - (scrollPosition - triggerDivPosition) / triggerDiv.clientHeight;
+
+        const limitedOpacity = Math.min(1, Math.max(0, opacity));
+
+        if (limitedOpacity === 1) {
+            img.style.opacity = 0.3;
+        } else if (
+            (limitedOpacity <= 0.99999 && limitedOpacity >= 0.88) ||
+            (limitedOpacity < 0.67 && limitedOpacity >= 0.26)
+        ) {
+            img.style.opacity = 0.5;
+        } else if (
+            (limitedOpacity < 0.88 && limitedOpacity >= 0.84) ||
+            (limitedOpacity < 0.74 && limitedOpacity >= 0.66)
+        ) {
+            img.style.opacity = 0.6;
+        } else if (limitedOpacity < 0.84 && limitedOpacity >= 0.74) {
+            img.style.opacity = 1;
+        }
+
+        if (
+            (limitedOpacity <= 0.99999 && limitedOpacity >= 0.98) ||
+            (limitedOpacity < 0.36 && limitedOpacity >= 0.1)
+        ) {
+            img.src = '{{ asset('src/img/photo/face/face-white.png')}}';
+        } else if (limitedOpacity < 0.98 && limitedOpacity >= 0.36) {
+            img.src = '{{ asset('src/img/photo/face/face-main.png')}}';
+        } else {
+            img.src = '{{ asset('src/img/photo/face/face-color.png')}}';
+        }
+    });
   </script>
 </x-base>

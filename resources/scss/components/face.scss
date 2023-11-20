@@ -1,5 +1,6 @@
 .face {
-    padding: 8px 2vw 58px 45px;
+    padding: 8px 4vw 58px 45px;
+    margin-top: 200px;
     margin-bottom: 107px;
 
     &__text {
@@ -34,6 +35,11 @@
     }
 
     &__img {
-        width: 32.6vw;
+        height: 100%;
     }
+}
+
+#face-img {
+    height: auto;
+    transition: all 0.5s ease;
 }
