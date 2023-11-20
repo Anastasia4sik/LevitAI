@@ -77,7 +77,7 @@
     </ul>
   </header>
 
-  <div class="top">
+  <section class="top">
     <h1 class="top__title">
         WelCome to ICO LEVITAI
     </h1>
@@ -109,9 +109,9 @@
             </a>
         </div>
     </div>
-  </div>
+  </section>
 
-  <div class="about d-flex flex-column align-items-center">
+  <section class="about d-flex flex-column align-items-center">
     <h4 class="about__small">
         About ICO
     </h4>
@@ -123,9 +123,9 @@
     <p class="about__desc text-center">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
     </p>
-  </div>
+  </section>
 
-  <div class="aboutBig">
+  <section class="aboutBig">
     <div class="aboutBig__top d-flex flex-row align-items-center">
         <h2 class="aboutBig__title title-main">
             About
@@ -361,9 +361,9 @@
             <img src="{{ asset('src/img/graph.png')}}" alt="Graph" class="aboutBig__cards__item__graph">
         </div>
     </div>
-  </div>
+  </section>
 
-  <div class="rating d-flex flex-row justify-content-between align-items-center">
+  <section class="rating d-flex flex-row justify-content-between align-items-center">
     <img src="{{ asset('src/img/photo/rating-cards.png')}}" alt="ICO Watchlist" class="rating__img">
 
     <div class="rating__text text-end">
@@ -379,9 +379,9 @@
             Lorem ipsum lor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
         </p>
     </div>
-  </div>
+  </section>
 
-  <div class="whatCrypto d-flex flex-row justify-content-between align-items-center">
+  <section class="whatCrypto d-flex flex-row justify-content-between align-items-center">
     <div class="whatCrypto__text">
         <h2 class="whatCrypto__text__title title-main">
             What Is
@@ -487,9 +487,9 @@
             </div>
         </div>
     </div>
-  </div>
+  </section>
 
-  <div class="complete">
+  <section class="complete">
     <h2 class="complete__title--complete title-main title-main--stroke">
         We Complete
     </h2>
@@ -518,9 +518,9 @@
             Read More
         </x-button>
     </div>
-  </div>
+  </section>
 
-  <div class="choose d-flex flex-row">
+  <section class="choose d-flex flex-row">
     <div class="choose__list d-flex flex-column">
         <div class="choose__list__item">
             <h3 class="choose__list__item__reason title-little">
@@ -618,9 +618,9 @@
             class="choose__right__img"
         >
     </div>
-  </div>
+  </section>
 
-  <div class="face d-flex flex-row justify-content-between align-items-center">
+  <section class="face d-flex flex-row justify-content-between align-items-center">
     <div class="face__text">
         <div class="face__text__top d-flex flex-row align-items-center">
             <h2 class="face__text__top__title title-main">
@@ -684,9 +684,9 @@
         alt="Face"
         class="face__img"
     >
-  </div>
+  </section>
 
-  <!-- <div class="market">
+  <section class="market">
     <div class="market__top d-flex flex-row">
         <h2 class="market__top__title title-main title-main--stroke">
             Current
@@ -697,7 +697,7 @@
         </h2>
     </div>
 
-    <div class="market__last d-flex flex-row">
+    <div class="market__last d-flex flex-row align-items-center">
         <p class="market__last__num desc">
             +0.36%
         </p>
@@ -707,32 +707,344 @@
         </p>
     </div>
 
-    <div class="market__table d-grid">
-        <p class="market__table__text market__table__text__top">
-            All tokens
-        </p>
+    <table class="market__table">
+        <thead>
+            <tr class="market__table__head">
+                <th class="market__table__head__item">
+                    All tokens
+                </th>
 
-        <p class="market__table__text market__table__text__top">
-            Savailable
-        </p>
+                <th class="market__table__head__item">
+                    Savailable
+                </th>
 
-        <p class="market__table__text market__table__text__top">
-            Gainers
-        </p>
+                <th class="market__table__head__item">
+                    Gainers
+                </th>
 
-        <p class="market__table__text market__table__text__top">
-            Losers
-        </p>
+                <th class="market__table__head__item">
+                    Losers
+                </th>
 
-        <p class="market__table__text market__table__text__top">
-            T.Supply
-        </p>
+                <th class="market__table__head__item">
+                    T.Supply
+                </th>
 
-        <p class="market__table__text market__table__text__top">
-            24h Volume
-        </p>
-    </div>
-  </div> -->
+                <th class="market__table__head__item">
+                    24h Volume
+                </th>
+            </tr>
+        </thead>
+
+        <tbody class="market__table__body">
+            <tr class="market__table__body__row">
+                <td class="market__table__body__row__item market__table__body__row__item--1">
+                    <img src="{{ asset('src/img/icons/market/market-1.png')}}" alt="Market first" class="market__table__body__row__item--1__img">
+
+                    Binance Coin BNC
+                </td>
+
+                <td class="market__table__body__row__item">
+                    $46967.00
+                </td>
+
+                <td class="market__table__body__row__item">
+                    <img src="{{ asset('src/img/icons/graph-top.svg')}}" alt="Graph top" class="market__table__body__row__item--3__img">
+
+                    1.90%
+                </td>
+
+                <td class="market__table__body__row__item">
+                    $43,9656200.00
+                </td>
+
+                <td class="market__table__body__row__item">
+                    23M
+                </td>
+
+                <td class="market__table__body__row__item">
+                    $93,967,200.30
+                </td>
+            </tr>
+
+            <tr class="market__table__body__row">
+                <td class="market__table__body__row__item market__table__body__row__item--1">
+                    <img src="{{ asset('src/img/icons/market/market-1.png')}}" alt="Market first" class="market__table__body__row__item--1__img">
+
+                    Binance Coin BNC
+                </td>
+
+                <td class="market__table__body__row__item">
+                    $46967.00
+                </td>
+
+                <td class="market__table__body__row__item">
+                    <img src="{{ asset('src/img/icons/graph-top.svg')}}" alt="Graph top" class="market__table__body__row__item--3__img">
+
+                    1.90%
+                </td>
+
+                <td class="market__table__body__row__item">
+                    $43,9656200.00
+                </td>
+
+                <td class="market__table__body__row__item">
+                    23M
+                </td>
+
+                <td class="market__table__body__row__item">
+                    $93,967,200.30
+                </td>
+            </tr>
+
+            <tr class="market__table__body__row">
+                <td class="market__table__body__row__item market__table__body__row__item--1">
+                    <img src="{{ asset('src/img/icons/market/market-1.png')}}" alt="Market first" class="market__table__body__row__item--1__img">
+
+                    Binance Coin BNC
+                </td>
+
+                <td class="market__table__body__row__item">
+                    $46967.00
+                </td>
+
+                <td class="market__table__body__row__item">
+                    <img src="{{ asset('src/img/icons/graph-top.svg')}}" alt="Graph top" class="market__table__body__row__item--3__img">
+
+                    1.90%
+                </td>
+
+                <td class="market__table__body__row__item">
+                    $43,9656200.00
+                </td>
+
+                <td class="market__table__body__row__item">
+                    23M
+                </td>
+
+                <td class="market__table__body__row__item">
+                    $93,967,200.30
+                </td>
+            </tr>
+
+            <tr class="market__table__body__row">
+                <td class="market__table__body__row__item market__table__body__row__item--1">
+                    <img src="{{ asset('src/img/icons/market/market-1.png')}}" alt="Market first" class="market__table__body__row__item--1__img">
+
+                    Binance Coin BNC
+                </td>
+
+                <td class="market__table__body__row__item">
+                    $46967.00
+                </td>
+
+                <td class="market__table__body__row__item">
+                    <img src="{{ asset('src/img/icons/graph-top.svg')}}" alt="Graph top" class="market__table__body__row__item--3__img">
+
+                    1.90%
+                </td>
+
+                <td class="market__table__body__row__item">
+                    $43,9656200.00
+                </td>
+
+                <td class="market__table__body__row__item">
+                    23M
+                </td>
+
+                <td class="market__table__body__row__item">
+                    $93,967,200.30
+                </td>
+            </tr>
+
+            <tr class="market__table__body__row">
+                <td class="market__table__body__row__item market__table__body__row__item--1">
+                    <img src="{{ asset('src/img/icons/market/market-1.png')}}" alt="Market first" class="market__table__body__row__item--1__img">
+
+                    Binance Coin BNC
+                </td>
+
+                <td class="market__table__body__row__item">
+                    $46967.00
+                </td>
+
+                <td class="market__table__body__row__item">
+                    <img src="{{ asset('src/img/icons/graph-top.svg')}}" alt="Graph top" class="market__table__body__row__item--3__img">
+
+                    1.90%
+                </td>
+
+                <td class="market__table__body__row__item">
+                    $43,9656200.00
+                </td>
+
+                <td class="market__table__body__row__item">
+                    23M
+                </td>
+
+                <td class="market__table__body__row__item">
+                    $93,967,200.30
+                </td>
+            </tr>
+
+            <!-- hidden -->
+
+            <tr class="market__table__body__row market__table__body__row--hide">
+                <td class="market__table__body__row__item market__table__body__row__item--1">
+                    <img src="{{ asset('src/img/icons/market/market-1.png')}}" alt="Market first" class="market__table__body__row__item--1__img">
+
+                    Binance Coin BNC
+                </td>
+
+                <td class="market__table__body__row__item">
+                    $46967.00
+                </td>
+
+                <td class="market__table__body__row__item">
+                    <img src="{{ asset('src/img/icons/graph-top.svg')}}" alt="Graph top" class="market__table__body__row__item--3__img">
+
+                    1.90%
+                </td>
+
+                <td class="market__table__body__row__item">
+                    $43,9656200.00
+                </td>
+
+                <td class="market__table__body__row__item">
+                    23M
+                </td>
+
+                <td class="market__table__body__row__item">
+                    $93,967,200.30
+                </td>
+            </tr>
+
+            <tr class="market__table__body__row market__table__body__row--hide">
+                <td class="market__table__body__row__item market__table__body__row__item--1">
+                    <img src="{{ asset('src/img/icons/market/market-1.png')}}" alt="Market first" class="market__table__body__row__item--1__img">
+
+                    Binance Coin BNC
+                </td>
+
+                <td class="market__table__body__row__item">
+                    $46967.00
+                </td>
+
+                <td class="market__table__body__row__item">
+                    <img src="{{ asset('src/img/icons/graph-top.svg')}}" alt="Graph top" class="market__table__body__row__item--3__img">
+
+                    1.90%
+                </td>
+
+                <td class="market__table__body__row__item">
+                    $43,9656200.00
+                </td>
+
+                <td class="market__table__body__row__item">
+                    23M
+                </td>
+
+                <td class="market__table__body__row__item">
+                    $93,967,200.30
+                </td>
+            </tr>
+
+            <tr class="market__table__body__row market__table__body__row--hide">
+                <td class="market__table__body__row__item market__table__body__row__item--1">
+                    <img src="{{ asset('src/img/icons/market/market-1.png')}}" alt="Market first" class="market__table__body__row__item--1__img">
+
+                    Binance Coin BNC
+                </td>
+
+                <td class="market__table__body__row__item">
+                    $46967.00
+                </td>
+
+                <td class="market__table__body__row__item">
+                    <img src="{{ asset('src/img/icons/graph-top.svg')}}" alt="Graph top" class="market__table__body__row__item--3__img">
+
+                    1.90%
+                </td>
+
+                <td class="market__table__body__row__item">
+                    $43,9656200.00
+                </td>
+
+                <td class="market__table__body__row__item">
+                    23M
+                </td>
+
+                <td class="market__table__body__row__item">
+                    $93,967,200.30
+                </td>
+            </tr>
+
+            <tr class="market__table__body__row market__table__body__row--hide">
+                <td class="market__table__body__row__item market__table__body__row__item--1">
+                    <img src="{{ asset('src/img/icons/market/market-1.png')}}" alt="Market first" class="market__table__body__row__item--1__img">
+
+                    Binance Coin BNC
+                </td>
+
+                <td class="market__table__body__row__item">
+                    $46967.00
+                </td>
+
+                <td class="market__table__body__row__item">
+                    <img src="{{ asset('src/img/icons/graph-top.svg')}}" alt="Graph top" class="market__table__body__row__item--3__img">
+
+                    1.90%
+                </td>
+
+                <td class="market__table__body__row__item">
+                    $43,9656200.00
+                </td>
+
+                <td class="market__table__body__row__item">
+                    23M
+                </td>
+
+                <td class="market__table__body__row__item">
+                    $93,967,200.30
+                </td>
+            </tr>
+
+            <tr class="market__table__body__row market__table__body__row--hide">
+                <td class="market__table__body__row__item market__table__body__row__item--1">
+                    <img src="{{ asset('src/img/icons/market/market-1.png')}}" alt="Market first" class="market__table__body__row__item--1__img">
+
+                    Binance Coin BNC
+                </td>
+
+                <td class="market__table__body__row__item">
+                    $46967.00
+                </td>
+
+                <td class="market__table__body__row__item">
+                    <img src="{{ asset('src/img/icons/graph-top.svg')}}" alt="Graph top" class="market__table__body__row__item--3__img">
+
+                    1.90%
+                </td>
+
+                <td class="market__table__body__row__item">
+                    $43,9656200.00
+                </td>
+
+                <td class="market__table__body__row__item">
+                    23M
+                </td>
+
+                <td class="market__table__body__row__item">
+                    $93,967,200.30
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <button class="market__btn desc d-flex flex-row align-items-center">
+        Show more <img src="{{asset('src/img/icons/arrow-down.svg')}}" alt="Show more">
+    </button>
+  </section>
 
   <script>
     const dropdowns = document.querySelectorAll(".header__dropdown");
@@ -748,5 +1060,25 @@
         dropdownOptions.classList.remove("open");
       });
     });
+
+    document.addEventListener('DOMContentLoaded', function() {
+            const blocks = document.querySelectorAll('.market__table__body__row--hide');
+
+            blocks.forEach((block) => {
+                const button = document.querySelector('.market__btn');
+
+                button.addEventListener('click', function() {
+                    if (block.style.display != 'table-row') {
+                        block.style.display = 'table-row';
+
+                        button.innerHTML = 'Show less <img src="{{ asset('src/img/icons/arrow-up.svg') }}" alt="Show less">';
+                    } else {
+                        block.style.display = 'none';
+
+                        button.innerHTML = 'Show more <img src="{{ asset('src/img/icons/arrow-down.svg') }}" alt="Show more">';
+                    }
+                });
+            });
+        });
   </script>
 </x-base>
