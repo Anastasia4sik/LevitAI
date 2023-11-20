@@ -1,0 +1,25 @@
+.available {
+    padding: 325px 6.3vw 254px 9.5vw;
+
+    background-image: url('/src/img/bc-available.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+    &__title {
+        padding: 75px 7vw 75px 8vw;
+        margin-bottom: 40px;
+
+        background-color: #0a0126;
+    }
+
+    &__desk {
+        margin-bottom: 25px;
+
+        text-transform: uppercase;
+    }
+
+    &__links {
+        gap: 25px;
+    }
+}

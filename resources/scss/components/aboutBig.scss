@@ -31,6 +31,7 @@
     &__cards {
         gap: 30px;
         overflow-x: scroll;
+
         &::-webkit-scrollbar {
             display: none;
         }
