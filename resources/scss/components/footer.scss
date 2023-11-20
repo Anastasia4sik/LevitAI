@@ -1,0 +1,61 @@
+.footer {
+    padding: 40px 0 40px 45px;
+
+    background-image: url('../../../public/src/img/bc-footer.png');
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+
+    &__top {
+        margin-bottom: 162px;
+        margin-right: 2vw;
+
+        gap: 25px;
+
+        &__desc {
+            width: 388px;
+        }
+
+        &__btn {
+            p {
+                writing-mode: vertical-rl;
+                transform: rotate(180deg)
+            }
+        }
+    }
+
+    &__levitai {
+        margin-bottom: 15px;
+
+        font-size: 14px;
+
+        text-transform: uppercase;
+    }
+
+    &__rights {
+        margin-bottom: 15px;
+
+        font-weight: 600;
+    }
+
+    &__bottom {
+        width: 100%;
+
+        overflow-x: scroll;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+
+        &__title {
+            width: 150vw;
+
+            letter-spacing: 4.5px;
+            text-transform: uppercase;
+
+            font-size: 150px;
+            font-weight: 600;
+        }
+    }
+
+}
