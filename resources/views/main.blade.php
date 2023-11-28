@@ -1,3 +1,6 @@
+@php
+    $array = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+@endphp
 <x-base>
     <header id="head" class="header d-flex flex-row justify-content-end">
         <ul class="header__list d-flex flex-row align-items-center">
@@ -1135,6 +1138,86 @@
         </div>
     </section>
 
+    <section class="sales d-flex flex-row align-items-center">
+        <div class="">
+            <h2 class="sales__header--token title-main title-main--stroke">
+                ICO Token
+            </h2>
+
+            <h2 class="sales__header title-main">
+                Sales?
+            </h2>
+
+            <h3 class="sales__desc title-little">
+                SALES INFO
+            </h3>
+        </div>
+
+        <div class="sales__block">
+            <div class="sales__block__btns d-flex flex-row justify-content-end align-items-center">
+                <img
+                    src="{{ asset('src/img/icons/arrow_right_short.svg')}}"
+                    alt="Arrow Left"
+                    class="
+                        sales__block__btns__img
+                        sales__block__btns__img--left
+                    "
+                    onclick="scrollCards(-1200)"
+                >
+
+                <img
+                    src="{{ asset('src/img/icons/arrow_right_short.svg')}}"
+                    alt="Arrow Right"
+                    class="
+                        sales__block__btns__img
+                        sales__block__btns__img--right
+                    "
+                    onclick="scrollCards(1200)"
+                >
+            </div>
+
+            <div class="sales__block__cards d-flex flex-row position-relative text-center">
+                @foreach($array as $key => $number)
+                    <div class="sales__block__cards__item">
+                        <div class="sales__block__cards__item__top">
+                            <p class="sales__block__cards__item__top__text desc">
+                                0.5% Bonus <br> $2009/token
+                            </p>
+                        </div>
+
+                        <h3 class="sales__block__cards__item__date title-little">
+                            Jul 08 - Jul 2{{ $number }}
+                        </h3>
+                    </div>
+                @endforeach
+            </div>
+        </div>
+    </section>
+
+    <section class="roadmap">
+        <div class="roadmap__top d-flex flex-row justify-content-between">
+            <div class="roadmap__top__text">
+                <h2 class="title-main">
+                    Our <span class="title-main--stroke">Strategy</span>
+                </h2>
+
+                <div class="roadmap__top__text__bottom d-flex flex-row">
+                    <p class="roadmap__top__text__bottom__desc desc">
+                        Monotonectally productivate virtual benefits vis-a-vis clicks-and-mortar lead ship. Seamlessly generate user friendly opportunitie after principle-centered e-markets. Proactively visualize functional
+                    </p>
+
+                    <h2 class="title-main">
+                        & Roadmap
+                    </h2>
+                </div>
+            </div>
+
+            <img src="{{ asset('src/img/photo/choose-img.jpg')}}" alt="Our Strategy & Roadmap" class="roadmap__top__img">
+        </div>
+
+        <img src="{{ asset('src/img/roadmap.png')}}" alt="" class="roadmap__img">
+    </section>
+
     <section class="available text-center">
         <h2 class="available__title title-main">
             Also Available <span class=" title-main--stroke">LevitAI</span> <br>
@@ -1153,6 +1236,141 @@
             <a target="_blank" href="https://play.google.com/store/games?hl=uk&gl=US" class="available__links__item">
                 <img src="{{ asset('src/img/icons/download/google-play.png')}}" alt="Get it on Google Play">
             </a>
+        </div>
+    </section>
+
+    <section class="team">
+        <h2 class="team__title title-main">
+            Met Our <span class=" title-main--stroke">LevitAI</span> <br>
+            <span class=" title-main--stroke">Team</span> Players
+        </h2>
+
+        <div class="team__list">
+            <div class="team__list__item d-flex flex-row justify-content-between align-items-center">
+                <div class="team__list__item__text">
+                    <h2 class="team__list__item__title title-main">
+                        Artem
+                    </h2>
+
+                    <h3 class="team__list__item__small title-little">
+                        HEAD OF CEO
+                    </h3>
+
+                    <p class="team__list__item__desc desc">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt labore dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit ese cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+
+                    <div class="team__list__item__btns d-flex flex-row align-items-center">
+                        <x-button
+                            img="src/img/icons/arrow-black.svg"
+                            gap="21px"
+                            pr="32px"
+                            fs="16px"
+                            width="149px"
+                            padding="15px"
+                            margin=""
+                        >
+                            Email
+                        </x-button>
+
+                        <a href="twitter.com" target="_blank" class="team__list__item__btns__item">
+                            <img src="{{ asset('src/img/icons/twitter.png')}}" alt="Twitter">
+                        </a>
+
+                        <a href="pinterest.com" target="_blank" class="team__list__item__btns__item">
+                            <img src="{{ asset('src/img/icons/pinterest.png')}}" alt="Pinterest">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="border-bottom"></div>
+
+                <img src="{{ asset('src/img/photo/team.jpg')}}" alt="Team member" class="team__list__item__img">
+            </div>
+
+            <div class="team__list__item d-flex flex-row justify-content-between align-items-center">
+                <div class="team__list__item__text">
+                    <h2 class="team__list__item__title title-main">
+                        Artem
+                    </h2>
+
+                    <h3 class="team__list__item__small title-little">
+                        HEAD OF CEO
+                    </h3>
+
+                    <p class="team__list__item__desc desc">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt labore dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit ese cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+
+                    <div class="team__list__item__btns d-flex flex-row align-items-center">
+                        <x-button
+                            img="src/img/icons/arrow-black.svg"
+                            gap="21px"
+                            pr="32px"
+                            fs="16px"
+                            width="149px"
+                            padding="15px"
+                            margin=""
+                        >
+                            Email
+                        </x-button>
+
+                        <a href="twitter.com" target="_blank" class="team__list__item__btns__item">
+                            <img src="{{ asset('src/img/icons/twitter.png')}}" alt="Twitter">
+                        </a>
+
+                        <a href="pinterest.com" target="_blank" class="team__list__item__btns__item">
+                            <img src="{{ asset('src/img/icons/pinterest.png')}}" alt="Pinterest">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="border-bottom"></div>
+
+                <img src="{{ asset('src/img/photo/team.jpg')}}" alt="Team member" class="team__list__item__img">
+            </div>
+
+            <div class="team__list__item d-flex flex-row justify-content-between align-items-center">
+                <div class="team__list__item__text">
+                    <h2 class="team__list__item__title title-main">
+                        Artem
+                    </h2>
+
+                    <h3 class="team__list__item__small title-little">
+                        HEAD OF CEO
+                    </h3>
+
+                    <p class="team__list__item__desc desc">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt labore dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit ese cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+
+                    <div class="team__list__item__btns d-flex flex-row align-items-center">
+                        <x-button
+                            img="src/img/icons/arrow-black.svg"
+                            gap="21px"
+                            pr="32px"
+                            fs="16px"
+                            width="149px"
+                            padding="15px"
+                            margin=""
+                        >
+                            Email
+                        </x-button>
+
+                        <a href="twitter.com" target="_blank" class="team__list__item__btns__item">
+                            <img src="{{ asset('src/img/icons/twitter.png')}}" alt="Twitter">
+                        </a>
+
+                        <a href="pinterest.com" target="_blank" class="team__list__item__btns__item">
+                            <img src="{{ asset('src/img/icons/pinterest.png')}}" alt="Pinterest">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="border-bottom"></div>
+
+                <img src="{{ asset('src/img/photo/team.jpg')}}" alt="Team member" class="team__list__item__img">
+            </div>
         </div>
     </section>
 
@@ -1223,6 +1441,8 @@
             });
         });
 
+        //face
+
         window.addEventListener('scroll', function() {
             const faceWhite = document.getElementById('face-white');
             const faceMain = document.getElementById('face-main');
@@ -1259,5 +1479,26 @@
                 faceColor.style.opacity = 0;
             }
         });
+
+        //sales
+
+        const cardsContainer = document.querySelector('.sales__block__cards');
+        const leftButton = document.querySelector('.sales__block__btns__img--left');
+        const rightButton = document.querySelector('.sales__block__btns__img--right');
+
+        function updateButtonPadding() {
+            const canScrollLeft = cardsContainer.scrollLeft > 0;
+            const canScrollRight = cardsContainer.scrollLeft < (cardsContainer.scrollWidth - cardsContainer.clientWidth);
+
+            leftButton.style.padding = canScrollLeft ? '25px 27px' : '18px 20px';
+            rightButton.style.padding = canScrollRight ? '25px 27px' : '18px 20px';
+        }
+
+        function scrollCards(scrollAmount) {
+            cardsContainer.scrollLeft += scrollAmount;
+        }
+
+        cardsContainer.addEventListener('scroll', updateButtonPadding);
+
     </script>
 </x-base>
