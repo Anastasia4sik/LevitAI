@@ -1239,6 +1239,141 @@
         </div>
     </section>
 
+    <section class="team">
+        <h2 class="team__title title-main">
+            Met Our <span class=" title-main--stroke">LevitAI</span> <br>
+            <span class=" title-main--stroke">Team</span> Players
+        </h2>
+
+        <div class="team__list">
+            <div class="team__list__item d-flex flex-row justify-content-between align-items-center">
+                <div class="team__list__item__text">
+                    <h2 class="team__list__item__title title-main">
+                        Artem
+                    </h2>
+
+                    <h3 class="team__list__item__small title-little">
+                        HEAD OF CEO
+                    </h3>
+
+                    <p class="team__list__item__desc desc">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt labore dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit ese cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+
+                    <div class="team__list__item__btns d-flex flex-row align-items-center">
+                        <x-button
+                            img="src/img/icons/arrow-black.svg"
+                            gap="21px"
+                            pr="32px"
+                            fs="16px"
+                            width="149px"
+                            padding="15px"
+                            margin=""
+                        >
+                            Email
+                        </x-button>
+
+                        <a href="twitter.com" target="_blank" class="team__list__item__btns__item">
+                            <img src="{{ asset('src/img/icons/twitter.png')}}" alt="Twitter">
+                        </a>
+
+                        <a href="pinterest.com" target="_blank" class="team__list__item__btns__item">
+                            <img src="{{ asset('src/img/icons/pinterest.png')}}" alt="Pinterest">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="border-bottom"></div>
+
+                <img src="{{ asset('src/img/photo/team.jpg')}}" alt="Team member" class="team__list__item__img">
+            </div>
+
+            <div class="team__list__item d-flex flex-row justify-content-between align-items-center">
+                <div class="team__list__item__text">
+                    <h2 class="team__list__item__title title-main">
+                        Artem
+                    </h2>
+
+                    <h3 class="team__list__item__small title-little">
+                        HEAD OF CEO
+                    </h3>
+
+                    <p class="team__list__item__desc desc">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt labore dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit ese cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+
+                    <div class="team__list__item__btns d-flex flex-row align-items-center">
+                        <x-button
+                            img="src/img/icons/arrow-black.svg"
+                            gap="21px"
+                            pr="32px"
+                            fs="16px"
+                            width="149px"
+                            padding="15px"
+                            margin=""
+                        >
+                            Email
+                        </x-button>
+
+                        <a href="twitter.com" target="_blank" class="team__list__item__btns__item">
+                            <img src="{{ asset('src/img/icons/twitter.png')}}" alt="Twitter">
+                        </a>
+
+                        <a href="pinterest.com" target="_blank" class="team__list__item__btns__item">
+                            <img src="{{ asset('src/img/icons/pinterest.png')}}" alt="Pinterest">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="border-bottom"></div>
+
+                <img src="{{ asset('src/img/photo/team.jpg')}}" alt="Team member" class="team__list__item__img">
+            </div>
+
+            <div class="team__list__item d-flex flex-row justify-content-between align-items-center">
+                <div class="team__list__item__text">
+                    <h2 class="team__list__item__title title-main">
+                        Artem
+                    </h2>
+
+                    <h3 class="team__list__item__small title-little">
+                        HEAD OF CEO
+                    </h3>
+
+                    <p class="team__list__item__desc desc">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt labore dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit ese cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+
+                    <div class="team__list__item__btns d-flex flex-row align-items-center">
+                        <x-button
+                            img="src/img/icons/arrow-black.svg"
+                            gap="21px"
+                            pr="32px"
+                            fs="16px"
+                            width="149px"
+                            padding="15px"
+                            margin=""
+                        >
+                            Email
+                        </x-button>
+
+                        <a href="twitter.com" target="_blank" class="team__list__item__btns__item">
+                            <img src="{{ asset('src/img/icons/twitter.png')}}" alt="Twitter">
+                        </a>
+
+                        <a href="pinterest.com" target="_blank" class="team__list__item__btns__item">
+                            <img src="{{ asset('src/img/icons/pinterest.png')}}" alt="Pinterest">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="border-bottom"></div>
+
+                <img src="{{ asset('src/img/photo/team.jpg')}}" alt="Team member" class="team__list__item__img">
+            </div>
+        </div>
+    </section>
+
     <footer class="footer ">
         <div class="footer__top d-flex flex-row justify-content-end align-items-center">
             <p class="footer__top__desc text-end">

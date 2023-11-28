@@ -1,0 +1,82 @@
+.team {
+    padding: 54px 2vw 0 45px;
+
+    background-image: url('../../../public/src/img/bc-team.png');
+    background-repeat: no-repeat;
+    background-position: center -280px;
+    background-size: cover;
+
+    &__title {
+        line-height: 1;
+    }
+
+    &__list {
+        &__item {
+            height: 471px;
+            margin-bottom: 25px;
+            padding: 56px 0 43px 0;
+
+            &__title {
+                margin-bottom: 10px;
+
+                font-size: 96px;
+                line-height: 137%;
+            }
+
+            &__small {
+                margin-bottom: 15px;
+
+                font-size: 24px;
+                line-height: 137%;
+            }
+
+            &__desc {
+                width: 52vw;
+                margin-bottom: 40px;
+            }
+
+            &__btns {
+                gap: 15px;
+
+                margin-bottom: 43px;
+            }
+
+            &__img {
+                opacity: 0;
+                width: 27.2vw;
+                z-index: 1;
+
+                transition: opacity 0.5s ease-in-out;
+            }
+
+            .border-bottom {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 0;
+                height: 2px;
+                background-color: #d9d9d9;
+                z-index: 2;
+
+                opacity: 0;
+
+                transition: all 0.5s ease;
+            }
+
+            transition: all 0.7s ease-in-out;
+            position: relative;
+
+            &:hover {
+                & .team__list__item__img {
+                    opacity: 1;
+                }
+                position: relative;
+
+                .border-bottom {
+                    width: 100%;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
