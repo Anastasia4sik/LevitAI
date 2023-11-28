@@ -1,0 +1,19 @@
+.roadmap {
+    padding: 100px 0 100px 45px;
+
+    &__top {
+        &__text {
+            &__bottom {
+                gap: 0;
+
+                &__desc {
+                    width: 452px;
+                }
+            }
+        }
+
+        &__img {
+            width: 365px;
+        }
+    }
+}

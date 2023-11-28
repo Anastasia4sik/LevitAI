@@ -1193,6 +1193,31 @@
             </div>
         </div>
     </section>
+
+    <section class="roadmap">
+        <div class="roadmap__top d-flex flex-row justify-content-between">
+            <div class="roadmap__top__text">
+                <h2 class="title-main">
+                    Our <span class="title-main--stroke">Strategy</span>
+                </h2>
+
+                <div class="roadmap__top__text__bottom d-flex flex-row">
+                    <p class="roadmap__top__text__bottom__desc desc">
+                        Monotonectally productivate virtual benefits vis-a-vis clicks-and-mortar lead ship. Seamlessly generate user friendly opportunitie after principle-centered e-markets. Proactively visualize functional
+                    </p>
+
+                    <h2 class="title-main">
+                        & Roadmap
+                    </h2>
+                </div>
+            </div>
+
+            <img src="{{ asset('src/img/photo/choose-img.jpg')}}" alt="Our Strategy & Roadmap" class="roadmap__top__img">
+        </div>
+
+        <img src="" alt="" class="roadmap__img">
+    </section>
+
     <section class="available text-center">
         <h2 class="available__title title-main">
             Also Available <span class=" title-main--stroke">LevitAI</span> <br>
