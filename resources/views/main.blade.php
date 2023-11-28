@@ -1215,7 +1215,7 @@
             <img src="{{ asset('src/img/photo/choose-img.jpg')}}" alt="Our Strategy & Roadmap" class="roadmap__top__img">
         </div>
 
-        <img src="" alt="" class="roadmap__img">
+        <img src="{{ asset('src/img/roadmap.png')}}" alt="" class="roadmap__img">
     </section>
 
     <section class="available text-center">
