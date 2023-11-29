@@ -1273,11 +1273,11 @@
                             Email
                         </x-button>
 
-                        <a href="twitter.com" target="_blank" class="team__list__item__btns__item">
+                        <a href="https://twitter.com/?lang=uk" target="_blank" class="team__list__item__btns__item">
                             <img src="{{ asset('src/img/icons/twitter.png')}}" alt="Twitter">
                         </a>
 
-                        <a href="pinterest.com" target="_blank" class="team__list__item__btns__item">
+                        <a href="https://www.pinterest.com/" target="_blank" class="team__list__item__btns__item">
                             <img src="{{ asset('src/img/icons/pinterest.png')}}" alt="Pinterest">
                         </a>
                     </div>
@@ -1315,11 +1315,11 @@
                             Email
                         </x-button>
 
-                        <a href="twitter.com" target="_blank" class="team__list__item__btns__item">
+                        <a href="https://twitter.com/?lang=uk" target="_blank" class="team__list__item__btns__item">
                             <img src="{{ asset('src/img/icons/twitter.png')}}" alt="Twitter">
                         </a>
 
-                        <a href="pinterest.com" target="_blank" class="team__list__item__btns__item">
+                        <a href="https://www.pinterest.com/" target="_blank" class="team__list__item__btns__item">
                             <img src="{{ asset('src/img/icons/pinterest.png')}}" alt="Pinterest">
                         </a>
                     </div>
@@ -1357,11 +1357,11 @@
                             Email
                         </x-button>
 
-                        <a href="twitter.com" target="_blank" class="team__list__item__btns__item">
+                        <a href="https://twitter.com/?lang=uk" target="_blank" class="team__list__item__btns__item">
                             <img src="{{ asset('src/img/icons/twitter.png')}}" alt="Twitter">
                         </a>
 
-                        <a href="pinterest.com" target="_blank" class="team__list__item__btns__item">
+                        <a href="https://www.pinterest.com/" target="_blank" class="team__list__item__btns__item">
                             <img src="{{ asset('src/img/icons/pinterest.png')}}" alt="Pinterest">
                         </a>
                     </div>
@@ -1370,6 +1370,90 @@
                 <div class="border-bottom"></div>
 
                 <img src="{{ asset('src/img/photo/team.jpg')}}" alt="Team member" class="team__list__item__img">
+            </div>
+        </div>
+    </section>
+
+    <section class="strategy">
+        <div class="strategy__top d-flex flex-column justify-content-end align-items-end">
+            <div class="strategy__top__big d-flex flex-row align-items-end">
+                <h2 class="title-main">
+                    Our <span class="title-main--stroke">Strategy</span>
+                </h2>
+
+                <p class="strategy__top__big__desc desc">
+                    Monotonectally productivate virtual benefits vis-a-vis clicks-and-mortar lead ship. Seamlessly generate user friendly opportunitie after principle-centered e-markets. Proactively visualize functional
+                </p>
+            </div>
+
+                <h2 class="title-main">
+                    & Roadmap
+                </h2>
+        </div>
+
+        <div class="strategy__content d-flex flex-row align-items-center justify-content-between">
+            <img src="{{ asset('src/img/photo/strategy.png')}}" alt="Our Strategy & Roadmap" class="strategy__content__img">
+
+            <div class="strategy__content__list">
+                <div class="strategy__content__list__item">
+                    <p class="strategy__content__list__item__text desc">
+                        Contingency: 40%
+                    </p>
+
+                    <div class="strategy__content__list__item__line">
+                        <div class="strategy__content__list__item__line__color strategy__content__list__item__line__color--40"></div>
+                    </div>
+                </div>
+
+                <div class="strategy__content__list__item">
+                    <p class="strategy__content__list__item__text desc">
+                        Partner/Investor: 20%
+                    </p>
+
+                    <div class="strategy__content__list__item__line">
+                        <div class="strategy__content__list__item__line__color strategy__content__list__item__line__color--20"></div>
+                    </div>
+                </div>
+
+                <div class="strategy__content__list__item">
+                    <p class="strategy__content__list__item__text desc">
+                        legal & Regulation: 15%
+                    </p>
+
+                    <div class="strategy__content__list__item__line">
+                        <div class="strategy__content__list__item__line__color strategy__content__list__item__line__color--15"></div>
+                    </div>
+                </div>
+
+                <div class="strategy__content__list__item">
+                    <p class="strategy__content__list__item__text desc">
+                        Operational: 15%
+                    </p>
+
+                    <div class="strategy__content__list__item__line">
+                        <div class="strategy__content__list__item__line__color strategy__content__list__item__line__color--15"></div>
+                    </div>
+                </div>
+
+                <div class="strategy__content__list__item">
+                    <p class="strategy__content__list__item__text desc">
+                        Product Development: 10%
+                    </p>
+
+                    <div class="strategy__content__list__item__line">
+                        <div class="strategy__content__list__item__line__color strategy__content__list__item__line__color--10"></div>
+                    </div>
+                </div>
+
+                <div class="strategy__content__list__item">
+                    <p class="strategy__content__list__item__text desc">
+                        Marketing: 5%
+                    </p>
+
+                    <div class="strategy__content__list__item__line">
+                        <div class="strategy__content__list__item__line__color strategy__content__list__item__line__color--5"></div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
