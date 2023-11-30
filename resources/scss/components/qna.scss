@@ -1,0 +1,85 @@
+.qna {
+    padding: 104px 0 200px 45px;
+
+    // background-image: url('../../../public/src/img/bc-blog.png');
+    // background-repeat: no-repeat;
+    // background-position: center top;
+    // background-size: cover;
+
+    &__top {
+        margin-bottom: 75px;
+
+        &__first {
+            gap: 36px;
+
+            &__desc {
+                width: 395px;
+            }
+        }
+    }
+
+    &__block {
+        &__img {
+            padding-left: 61px;
+        }
+
+        &__content {
+            width: 67vw;
+
+            &__btns {
+                margin-bottom: 50px;
+                gap: 11px;
+
+                &__item {
+                    border-radius: 100px;
+                    padding: 14px 27px;
+                    transition: all 0.8s ease-in-out;
+
+                    &:hover {
+                        cursor: pointer;
+                        color: $main-bc;
+                        background-color: #ffffff79;
+                    }
+
+                    &.active {
+                        color: $main-bc;
+                        background-color: $white;
+
+                    }
+                }
+            }
+
+            &__list {
+                &--token,
+                &--client,
+                &--ico,
+                &--legal {
+                    display: none;
+                }
+
+                &__item {
+                    padding-bottom: 40px;
+
+                    border-bottom: 1.5px solid $white;
+
+                    &:not(:last-of-type) {
+                        margin-bottom: 40px;
+                    }
+
+                    &__title {
+                        margin-bottom: 10px;
+
+                        font-size: 24px;
+                        line-height: 137.5%;
+                    }
+
+                    &__desc {
+                        opacity: 0.75;
+                        line-height: 137.5%;
+                    }
+                }
+            }
+        }
+
+    }
+}

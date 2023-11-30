@@ -1556,6 +1556,214 @@
         </div>
     </section>
 
+    <section class="qna">
+        <div class="qna__top">
+            <div class="qna__top__first d-flex flex-row align-items-center">
+                <h2 class="qna__top__first__title title-main title-main--stroke">
+                    Frequently
+                </h2>
+
+                <p class="qna__top__first__desc desc">
+                    Monotonectally productivate virtual benefits vis-a-vis clicks-and-mortar lead ship. Seamlessly generate user friendly opportunitie after principle-centered e-markets. Proactively visualize functional
+                </p>
+            </div>
+
+            <h2 class="qna__top__title title-main">
+                Asked Question
+            </h2>
+        </div>
+
+        <div class="qna__block d-flex flex-row align-items-center justify-content-between">
+            <img src="{{ asset('src/img/photo/qna.png')}}" alt="Photos for QnA block" class="qna__block__img">
+
+            <div class="qna__block__content">
+                <div class="qna__block__content__btns d-flex flex-row align-items-center">
+                    <p class="qna__block__content__btns__item desc active">
+                        General
+                    </p>
+
+                    <p class="qna__block__content__btns__item desc">
+                        Token
+                    </p>
+
+                    <p class="qna__block__content__btns__item desc">
+                        Client
+                    </p>
+
+                    <p class="qna__block__content__btns__item desc">
+                        Pre ICO
+                    </p>
+
+                    <p class="qna__block__content__btns__item desc">
+                        Legal
+                    </p>
+                </div>
+
+                <div class="qna__block__content__list">
+                    <div class="qna__block__content__list--general">
+                        <div class="qna__block__content__list__item">
+                            <h3 class="qna__block__content__list__item__title title-little">
+                                01 Content One ?
+                            </h3>
+
+                            <p class="qna__block__content__list__item__desc desc">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt labore dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit ese cillum dolore eu fugiat nulla pariatur.
+                            </p>
+                        </div>
+
+                        <div class="qna__block__content__list__item">
+                            <h3 class="qna__block__content__list__item__title title-little">
+                                02 What cryptocurrencies can I use to purchase?
+                            </h3>
+
+                            <p class="qna__block__content__list__item__desc desc">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt labore dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit ese cillum dolore eu fugiat nulla pariatur.
+                            </p>
+                        </div>
+
+                        <div class="qna__block__content__list__item">
+                            <h3 class="qna__block__content__list__item__title title-little">
+                                03 How can I participate in the ICO Token sale?
+                            </h3>
+
+                            <p class="qna__block__content__list__item__desc desc">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt labore dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit ese cillum dolore eu fugiat nulla pariatur.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="qna__block__content__list--token">
+                        <div class="qna__block__content__list__item">
+                            <h3 class="qna__block__content__list__item__title title-little">
+                                01 Content One ?
+                            </h3>
+
+                            <p class="qna__block__content__list__item__desc desc">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt labore dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit ese cillum dolore eu fugiat nulla pariatur.
+                            </p>
+                        </div>
+
+                        <div class="qna__block__content__list__item">
+                            <h3 class="qna__block__content__list__item__title title-little">
+                                02 What cryptocurrencies can I use to purchase?
+                            </h3>
+
+                            <p class="qna__block__content__list__item__desc desc">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt labore dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit ese cillum dolore eu fugiat nulla pariatur.
+                            </p>
+                        </div>
+
+                        <div class="qna__block__content__list__item">
+                            <h3 class="qna__block__content__list__item__title title-little">
+                                03 How can I participate in the ICO Token sale?
+                            </h3>
+
+                            <p class="qna__block__content__list__item__desc desc">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt labore dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit ese cillum dolore eu fugiat nulla pariatur.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="qna__block__content__list--client">
+                        <div class="qna__block__content__list__item">
+                            <h3 class="qna__block__content__list__item__title title-little">
+                                01 Content One ?
+                            </h3>
+
+                            <p class="qna__block__content__list__item__desc desc">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt labore dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit ese cillum dolore eu fugiat nulla pariatur.
+                            </p>
+                        </div>
+
+                        <div class="qna__block__content__list__item">
+                            <h3 class="qna__block__content__list__item__title title-little">
+                                02 What cryptocurrencies can I use to purchase?
+                            </h3>
+
+                            <p class="qna__block__content__list__item__desc desc">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt labore dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit ese cillum dolore eu fugiat nulla pariatur.
+                            </p>
+                        </div>
+
+                        <div class="qna__block__content__list__item">
+                            <h3 class="qna__block__content__list__item__title title-little">
+                                03 How can I participate in the ICO Token sale?
+                            </h3>
+
+                            <p class="qna__block__content__list__item__desc desc">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt labore dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit ese cillum dolore eu fugiat nulla pariatur.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="qna__block__content__list--ico">
+                        <div class="qna__block__content__list__item">
+                            <h3 class="qna__block__content__list__item__title title-little">
+                                01 Content One ?
+                            </h3>
+
+                            <p class="qna__block__content__list__item__desc desc">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt labore dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit ese cillum dolore eu fugiat nulla pariatur.
+                            </p>
+                        </div>
+
+                        <div class="qna__block__content__list__item">
+                            <h3 class="qna__block__content__list__item__title title-little">
+                                02 What cryptocurrencies can I use to purchase?
+                            </h3>
+
+                            <p class="qna__block__content__list__item__desc desc">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt labore dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit ese cillum dolore eu fugiat nulla pariatur.
+                            </p>
+                        </div>
+
+                        <div class="qna__block__content__list__item">
+                            <h3 class="qna__block__content__list__item__title title-little">
+                                03 How can I participate in the ICO Token sale?
+                            </h3>
+
+                            <p class="qna__block__content__list__item__desc desc">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt labore dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit ese cillum dolore eu fugiat nulla pariatur.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="qna__block__content__list--legal">
+                        <div class="qna__block__content__list__item">
+                            <h3 class="qna__block__content__list__item__title title-little">
+                                01 Content One ?
+                            </h3>
+
+                            <p class="qna__block__content__list__item__desc desc">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt labore dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit ese cillum dolore eu fugiat nulla pariatur.
+                            </p>
+                        </div>
+
+                        <div class="qna__block__content__list__item">
+                            <h3 class="qna__block__content__list__item__title title-little">
+                                02 What cryptocurrencies can I use to purchase?
+                            </h3>
+
+                            <p class="qna__block__content__list__item__desc desc">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt labore dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit ese cillum dolore eu fugiat nulla pariatur.
+                            </p>
+                        </div>
+
+                        <div class="qna__block__content__list__item">
+                            <h3 class="qna__block__content__list__item__title title-little">
+                                03 How can I participate in the ICO Token sale?
+                            </h3>
+
+                            <p class="qna__block__content__list__item__desc desc">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt labore dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit ese cillum dolore eu fugiat nulla pariatur.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <footer class="footer ">
         <div class="footer__top d-flex flex-row justify-content-end align-items-center">
             <p class="footer__top__desc text-end">
