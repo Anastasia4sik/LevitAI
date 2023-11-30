@@ -1458,6 +1458,104 @@
         </div>
     </section>
 
+    <section class="blog">
+        <div class="blog__top">
+            <div class="blog__top__first d-flex flex-row align-items-center">
+                <h2 class="blog__top__first__title title-main">
+                    Recent
+                </h2>
+
+                <p class="blog__top__first__desc desc">
+                    Monotonectally productivate virtual benefits vis-a-vis clicks-and-mortar lead ship. Seamlessly generate user friendly opportunitie after principle-centered e-markets. Proactively visualize functional
+                </p>
+            </div>
+
+            <div class="blog__top__second d-flex flex-row align-items-center">
+                <h2 class="blog__top__second__title title-main title-main--stroke">
+                    Blog Post
+                </h2>
+
+                <x-button
+                    img="src/img/icons/arrow-black.svg"
+                    gap="20px"
+                    pr="0"
+                    fs="16px"
+                    width="209px"
+                    padding="16px"
+                    margin=""
+                >
+                    Go to all posts
+                </x-button>
+            </div>
+        </div>
+
+        <div class="blog__swiper swiper-container">
+            <div class="swiper-wrapper">
+                <div class="blog__swiper__slide swiper-slide">
+                    <img src="{{ asset('src/img/photo/choose-img.jpg')}}" alt="slide">
+
+                    <h3 class="blog__swiper__slide__title title-little">
+                        Cryptocash Is A Clean & Modern Coin Service - Levitai
+                    </h3>
+
+                    <p class="blog__swiper__slide__desc desc">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt labore dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                </div>
+
+                <div class="blog__swiper__slide swiper-slide">
+                    <img src="{{ asset('src/img/photo/slide2.jpg')}}" alt="slide">
+
+                    <h3 class="blog__swiper__slide__title title-little">
+                        Cryptocash Is A Clean & Modern Coin Service - Levitai
+                    </h3>
+
+                    <p class="blog__swiper__slide__desc desc">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt labore dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                </div>
+
+                <div class="blog__swiper__slide swiper-slide">
+                    <img src="{{ asset('src/img/photo/choose-img.jpg')}}" alt="slide">
+
+                    <h3 class="blog__swiper__slide__title title-little">
+                        Cryptocash Is A Clean & Modern Coin Service - Levitai
+                    </h3>
+
+                    <p class="blog__swiper__slide__desc desc">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt labore dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                </div>
+
+                <div class="blog__swiper__slide swiper-slide">
+                    <img src="{{ asset('src/img/photo/slide2.jpg')}}" alt="slide">
+
+                    <h3 class="blog__swiper__slide__title title-little">
+                        Cryptocash Is A Clean & Modern Coin Service - Levitai
+                    </h3>
+
+                    <p class="blog__swiper__slide__desc desc">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt labore dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                </div>
+
+                <div class="blog__swiper__slide swiper-slide">
+                    <img src="{{ asset('src/img/photo/choose-img.jpg')}}" alt="slide">
+
+                    <h3 class="blog__swiper__slide__title title-little">
+                        Cryptocash Is A Clean & Modern Coin Service - Levitai
+                    </h3>
+
+                    <p class="blog__swiper__slide__desc desc">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt labore dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                </div>
+            </div>
+
+            <div class="blog__swiper__pagination swiper-pagination"></div>
+        </div>
+    </section>
+
     <footer class="footer ">
         <div class="footer__top d-flex flex-row justify-content-end align-items-center">
             <p class="footer__top__desc text-end">
