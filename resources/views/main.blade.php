@@ -1578,29 +1578,29 @@
 
             <div class="qna__block__content">
                 <div class="qna__block__content__btns d-flex flex-row align-items-center">
-                    <p class="qna__block__content__btns__item desc active">
+                    <p class="qna__block__content__btns__item desc active" id="general">
                         General
                     </p>
 
-                    <p class="qna__block__content__btns__item desc">
+                    <p class="qna__block__content__btns__item desc" id="token">
                         Token
                     </p>
 
-                    <p class="qna__block__content__btns__item desc">
+                    <p class="qna__block__content__btns__item desc" id="client">
                         Client
                     </p>
 
-                    <p class="qna__block__content__btns__item desc">
+                    <p class="qna__block__content__btns__item desc" id="ico">
                         Pre ICO
                     </p>
 
-                    <p class="qna__block__content__btns__item desc">
+                    <p class="qna__block__content__btns__item desc" id="legal">
                         Legal
                     </p>
                 </div>
 
                 <div class="qna__block__content__list">
-                    <div class="qna__block__content__list--general">
+                    <div class="qna__block__content__list__group qna__block__content__list--general">
                         <div class="qna__block__content__list__item">
                             <h3 class="qna__block__content__list__item__title title-little">
                                 01 Content One ?
@@ -1632,10 +1632,10 @@
                         </div>
                     </div>
 
-                    <div class="qna__block__content__list--token">
+                    <div class="qna__block__content__list__group qna__block__content__list--token">
                         <div class="qna__block__content__list__item">
                             <h3 class="qna__block__content__list__item__title title-little">
-                                01 Content One ?
+                                04 Content One ?
                             </h3>
 
                             <p class="qna__block__content__list__item__desc desc">
@@ -1645,7 +1645,7 @@
 
                         <div class="qna__block__content__list__item">
                             <h3 class="qna__block__content__list__item__title title-little">
-                                02 What cryptocurrencies can I use to purchase?
+                                05 What cryptocurrencies can I use to purchase?
                             </h3>
 
                             <p class="qna__block__content__list__item__desc desc">
@@ -1655,39 +1655,7 @@
 
                         <div class="qna__block__content__list__item">
                             <h3 class="qna__block__content__list__item__title title-little">
-                                03 How can I participate in the ICO Token sale?
-                            </h3>
-
-                            <p class="qna__block__content__list__item__desc desc">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt labore dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit ese cillum dolore eu fugiat nulla pariatur.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="qna__block__content__list--client">
-                        <div class="qna__block__content__list__item">
-                            <h3 class="qna__block__content__list__item__title title-little">
-                                01 Content One ?
-                            </h3>
-
-                            <p class="qna__block__content__list__item__desc desc">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt labore dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit ese cillum dolore eu fugiat nulla pariatur.
-                            </p>
-                        </div>
-
-                        <div class="qna__block__content__list__item">
-                            <h3 class="qna__block__content__list__item__title title-little">
-                                02 What cryptocurrencies can I use to purchase?
-                            </h3>
-
-                            <p class="qna__block__content__list__item__desc desc">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt labore dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit ese cillum dolore eu fugiat nulla pariatur.
-                            </p>
-                        </div>
-
-                        <div class="qna__block__content__list__item">
-                            <h3 class="qna__block__content__list__item__title title-little">
-                                03 How can I participate in the ICO Token sale?
+                                06 How can I participate in the ICO Token sale?
                             </h3>
 
                             <p class="qna__block__content__list__item__desc desc">
@@ -1696,10 +1664,10 @@
                         </div>
                     </div>
 
-                    <div class="qna__block__content__list--ico">
+                    <div class="qna__block__content__list__group qna__block__content__list--client">
                         <div class="qna__block__content__list__item">
                             <h3 class="qna__block__content__list__item__title title-little">
-                                01 Content One ?
+                                07 Content One ?
                             </h3>
 
                             <p class="qna__block__content__list__item__desc desc">
@@ -1709,7 +1677,7 @@
 
                         <div class="qna__block__content__list__item">
                             <h3 class="qna__block__content__list__item__title title-little">
-                                02 What cryptocurrencies can I use to purchase?
+                                08 What cryptocurrencies can I use to purchase?
                             </h3>
 
                             <p class="qna__block__content__list__item__desc desc">
@@ -1719,7 +1687,7 @@
 
                         <div class="qna__block__content__list__item">
                             <h3 class="qna__block__content__list__item__title title-little">
-                                03 How can I participate in the ICO Token sale?
+                                09 How can I participate in the ICO Token sale?
                             </h3>
 
                             <p class="qna__block__content__list__item__desc desc">
@@ -1728,10 +1696,10 @@
                         </div>
                     </div>
 
-                    <div class="qna__block__content__list--legal">
+                    <div class="qna__block__content__list__group qna__block__content__list--ico">
                         <div class="qna__block__content__list__item">
                             <h3 class="qna__block__content__list__item__title title-little">
-                                01 Content One ?
+                                10 Content One ?
                             </h3>
 
                             <p class="qna__block__content__list__item__desc desc">
@@ -1741,7 +1709,7 @@
 
                         <div class="qna__block__content__list__item">
                             <h3 class="qna__block__content__list__item__title title-little">
-                                02 What cryptocurrencies can I use to purchase?
+                                11 What cryptocurrencies can I use to purchase?
                             </h3>
 
                             <p class="qna__block__content__list__item__desc desc">
@@ -1751,7 +1719,39 @@
 
                         <div class="qna__block__content__list__item">
                             <h3 class="qna__block__content__list__item__title title-little">
-                                03 How can I participate in the ICO Token sale?
+                                12 How can I participate in the ICO Token sale?
+                            </h3>
+
+                            <p class="qna__block__content__list__item__desc desc">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt labore dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit ese cillum dolore eu fugiat nulla pariatur.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="qna__block__content__list__group qna__block__content__list--legal">
+                        <div class="qna__block__content__list__item">
+                            <h3 class="qna__block__content__list__item__title title-little">
+                                13 Content One ?
+                            </h3>
+
+                            <p class="qna__block__content__list__item__desc desc">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt labore dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit ese cillum dolore eu fugiat nulla pariatur.
+                            </p>
+                        </div>
+
+                        <div class="qna__block__content__list__item">
+                            <h3 class="qna__block__content__list__item__title title-little">
+                                14 What cryptocurrencies can I use to purchase?
+                            </h3>
+
+                            <p class="qna__block__content__list__item__desc desc">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt labore dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit ese cillum dolore eu fugiat nulla pariatur.
+                            </p>
+                        </div>
+
+                        <div class="qna__block__content__list__item">
+                            <h3 class="qna__block__content__list__item__title title-little">
+                                15 How can I participate in the ICO Token sale?
                             </h3>
 
                             <p class="qna__block__content__list__item__desc desc">
@@ -1797,21 +1797,23 @@
     </footer>
 
     <script>
+        // header
         const dropdowns = document.querySelectorAll(".header__dropdown");
 
         dropdowns.forEach((dropdown) => {
-        const dropdownOptions = dropdown.querySelector(".header__dropdown__options");
+            const dropdownOptions = dropdown.querySelector(".header__dropdown__options");
 
-        dropdown.addEventListener("mouseenter", function() {
-            dropdownOptions.classList.add("open");
-        });
+            dropdown.addEventListener("mouseenter", function() {
+                dropdownOptions.classList.add("open");
+            });
 
-        dropdown.addEventListener("mouseleave", function() {
-            dropdownOptions.classList.remove("open");
-        });
+            dropdown.addEventListener("mouseleave", function() {
+                dropdownOptions.classList.remove("open");
+            });
         });
 
         document.addEventListener('DOMContentLoaded', function() {
+            // ShowMore/ShowLess
             const blocks = document.querySelectorAll('.market__table__body__row--hide');
 
             blocks.forEach((block) => {
@@ -1829,10 +1831,42 @@
                     }
                 });
             });
+
+            //qna
+            const qnaBtns = document.querySelectorAll('.qna__block__content__btns__item');
+
+            const listItems = document.querySelectorAll('.qna__block__content__list__group')
+
+            qnaBtns.forEach((button) => {
+                button.addEventListener('click', function() {
+                    qnaBtns.forEach((btn) => {
+                        btn.classList.remove('active')
+                    });
+
+                    button.classList.add('active');
+
+
+                    listItems.forEach((item) => {
+                        const categoryClass = 'qna__block__content__list--' + button.id.toLowerCase();
+
+                        if (item.classList.contains(categoryClass)) {
+                            item.style.display = 'block';
+
+                            setTimeout(() => {
+                                item.style.transform = 'translateX(0)';
+                                item.style.opacity = '1';
+                            }, 50);
+                        } else {
+                            item.style.display = 'none';
+                            item.style.transform = 'translateX(100%)';
+                            item.style.opacity = '0';
+                        }
+                    });
+                })
+            })
         });
 
         //face
-
         window.addEventListener('scroll', function() {
             const faceWhite = document.getElementById('face-white');
             const faceMain = document.getElementById('face-main');
@@ -1845,8 +1879,6 @@
             const opacity = 0.79 - (scrollPosition - triggerDivPosition) / triggerDiv.clientHeight;
 
             const limitedOpacity = Math.min(1, Math.max(0, opacity));
-
-            console.log(limitedOpacity)
 
             if (limitedOpacity === 1 || limitedOpacity <= 0.2) {
                 faceWhite.style.opacity = 0;
@@ -1871,7 +1903,6 @@
         });
 
         //sales
-
         const cardsContainer = document.querySelector('.sales__block__cards');
         const leftButton = document.querySelector('.sales__block__btns__img--left');
         const rightButton = document.querySelector('.sales__block__btns__img--right');
@@ -1889,6 +1920,5 @@
         }
 
         cardsContainer.addEventListener('scroll', updateButtonPadding);
-
     </script>
 </x-base>

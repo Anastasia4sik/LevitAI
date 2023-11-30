@@ -50,11 +50,18 @@
             }
 
             &__list {
+
+                &__group {
+                    transition: transform 1.5s cubic-bezier(.2,-0.39,.11,1.54), opacity 0.3s ease-in-out;
+                }
+
                 &--token,
                 &--client,
                 &--ico,
                 &--legal {
+                    transform: translateX(100%);
                     display: none;
+                    opacity: 0
                 }
 
                 &__item {
