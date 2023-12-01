@@ -44,8 +44,10 @@
                 }
 
                 &__title {
+                    display: flex;
+
                     margin-right: 40px;
-                    display: ruby;
+                    width: 30%;
                 }
 
                 &__date {
