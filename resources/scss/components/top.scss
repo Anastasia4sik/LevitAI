@@ -1,5 +1,5 @@
 .top {
-    background-image: url('/src/img/bc.png');
+    background-image: url('../../../public/src/img/bc.png');
     background-repeat: no-repeat;
     background-position: top center;
     background-size: contain;
@@ -70,21 +70,21 @@
 @keyframes Move {
     0% {
         transform: translateX(0);
-        content: url('/src/img/icons/arrow_right_short.svg');
+        content: url('../../../public/src/img/icons/arrow_right_short.svg');
     }
 
     33% {
         transform: translateX(8%);
-        content: url('/src/img/icons/arrow_right_short.svg');
+        content: url('../../../public/src/img/icons/arrow_right_short.svg');
     }
 
     66% {
         transform: translateX(5%);
-        content: url('/src/img/icons/arrow_right_long.svg');
+        content: url('../../../public/src/img/icons/arrow_right_long.svg');
     }
 
     100% {
         transform: translateX(0);
-        content: url('/src/img/icons/arrow_right_long.svg');
+        content: url('../../../public/src/img/icons/arrow_right_long.svg');
     }
 }

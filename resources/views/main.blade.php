@@ -1789,7 +1789,7 @@
                     <img src="{{ asset('src/img/icons/docs-icon.png')}}" alt="First Doc" class="docs__content__list__item__img">
 
                     <p class="docs__content__list__item__title desc">
-                        White Paper
+                        First Paper
                     </p>
 
                     <p class="docs__content__list__item__date desc">
@@ -1802,7 +1802,7 @@
 
                     <div class="docs__content__list__item__line"></div>
 
-                    <button class="docs__content__list__item__btn d-flex flex-row align-items-center">
+                    <button class="docs__content__list__item__btn d-flex flex-row align-items-center" id="First Paper">
                         <img src="{{ asset('src/img/icons/arrow-download.svg')}}" alt="Download file" class="docs__content__list__item__btn__img">
 
                         Document
@@ -1813,7 +1813,7 @@
                     <img src="{{ asset('src/img/icons/docs-icon.png')}}" alt="First Doc" class="docs__content__list__item__img">
 
                     <p class="docs__content__list__item__title desc">
-                        White Paper
+                        Second Paper
                     </p>
 
                     <p class="docs__content__list__item__date desc">
@@ -1826,7 +1826,7 @@
 
                     <div class="docs__content__list__item__line"></div>
 
-                    <button class="docs__content__list__item__btn d-flex flex-row align-items-center">
+                    <button class="docs__content__list__item__btn d-flex flex-row align-items-center" id="Second Paper">
                         <img src="{{ asset('src/img/icons/arrow-download.svg')}}" alt="Download file" class="docs__content__list__item__btn__img">
 
                         Document
@@ -1837,7 +1837,7 @@
                     <img src="{{ asset('src/img/icons/docs-icon.png')}}" alt="First Doc" class="docs__content__list__item__img">
 
                     <p class="docs__content__list__item__title desc">
-                        White Paper
+                        Third Paper
                     </p>
 
                     <p class="docs__content__list__item__date desc">
@@ -1850,7 +1850,7 @@
 
                     <div class="docs__content__list__item__line"></div>
 
-                    <button class="docs__content__list__item__btn d-flex flex-row align-items-center">
+                    <button class="docs__content__list__item__btn d-flex flex-row align-items-center" id="Third Paper">
                         <img src="{{ asset('src/img/icons/arrow-download.svg')}}" alt="Download file" class="docs__content__list__item__btn__img">
 
                         Document
@@ -1861,7 +1861,7 @@
                     <img src="{{ asset('src/img/icons/docs-icon.png')}}" alt="First Doc" class="docs__content__list__item__img">
 
                     <p class="docs__content__list__item__title desc">
-                        White Paper
+                        Fourth Paper
                     </p>
 
                     <p class="docs__content__list__item__date desc">
@@ -1874,7 +1874,7 @@
 
                     <div class="docs__content__list__item__line"></div>
 
-                    <button class="docs__content__list__item__btn d-flex flex-row align-items-center">
+                    <button class="docs__content__list__item__btn d-flex flex-row align-items-center" id="Fourth Paper">
                         <img src="{{ asset('src/img/icons/arrow-download.svg')}}" alt="Download file" class="docs__content__list__item__btn__img">
 
                         Document
@@ -1882,6 +1882,54 @@
                 </div>
             </div>
         </div>
+    </section>
+
+    <section class="contact d-flex flex-column align-items-center">
+        <h2 class="contact__title title-main">
+            Contact Us
+        </h2>
+
+        <div class="contact__media d-flex flex-row align-items-center">
+            <a href="mailto:test@test.com" target="_blank" class="contact__media__link">
+                <img src="{{ asset('src/img/icons/contact/mail.svg')}}" alt="Email" class="contact__media__img">
+            </a>
+
+            <a href="tel:0500000000" target="_blank" class="contact__media__link">
+                <img src="{{ asset('src/img/icons/contact/phone.svg')}}" alt="Phone" class="contact__media__img">
+            </a>
+
+            <a href="https://t.me/snoopwest" target="_blank" class="contact__media__link">
+                <img src="{{ asset('src/img/icons/contact/telegram.svg')}}" alt="Telegram" class="contact__media__img">
+            </a>
+        </div>
+
+        <form action="#" class="contact__form d-flex flex-column align-items-center">
+            <div class="contact__form__group d-flex flex-row align-items-row">
+                <input type="text" placeholder="Name" name="Name" class="contact__form__input contact__form__group__input">
+
+                <input type="email" placeholder="Email" name="Email" class="contact__form__input contact__form__group__input">
+            </div>
+
+            <div class="contact__form__group d-flex flex-row align-items-row">
+                <input type="phone" placeholder="Number" name="Number" class="contact__form__input contact__form__group__input">
+
+                <input type="url" placeholder="Website" name="Website" class="contact__form__input contact__form__group__input">
+            </div>
+
+            <textarea name="Message" placeholder="Message" class="contact__form__input"></textarea>
+
+            <x-button
+                img="src/img/icons/arrow-black.svg"
+                gap="101px"
+                pr="0"
+                fs="20px"
+                width="360px"
+                padding="13px"
+                margin=""
+            >
+                Send
+            </x-button>
+        </form>
     </section>
 
     <footer class="footer ">
@@ -2040,5 +2088,33 @@
         }
 
         cardsContainer.addEventListener('scroll', updateButtonPadding);
+
+        // download file
+        const downloadButtons = document.querySelectorAll('.docs__content__list__item__btn');
+
+        downloadButtons.forEach((button) => {
+            button.addEventListener('click', function() {
+                const fileUrl = `./src/docs/${button.id}.pdf`;
+
+                fetch(fileUrl)
+                .then(response => response.blob())
+                .then(blob => {
+                    const link = document.createElement('a');
+
+                    link.download = `${button.id}.pdf`;
+
+                    link.href = URL.createObjectURL(blob);
+
+                    document.body.appendChild(link);
+
+                    link.click();
+
+                    document.body.removeChild(link);
+                })
+                .catch(error => {
+                    console.error('Error fetching the file:', error);
+                });
+            });
+        })
     </script>
 </x-base>
