@@ -17,10 +17,20 @@
 
         &__img {
             width: 365px;
+
         }
     }
 
     &__img {
         width: 100vw;
+
+
+        &--map {
+            transition: opacity 1.5s ease-in-out;
+        }
+
+        &--line {
+            transition: opacity 2s ease-in-out;
+        }
     }
 }
