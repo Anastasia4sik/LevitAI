@@ -1,0 +1,79 @@
+.docs {
+    padding-left: 45px;
+
+    background-image: url('/src/img/bc-docs.png');
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: contain;
+
+    &__top {
+        margin-bottom: 25px;
+
+        &__block {
+            gap: 40px;
+
+            &__desc {
+                width: 388px;
+            }
+        }
+    }
+
+    &__content {
+        &__img {
+            width: 39vw;
+        }
+
+        &__list {
+            width: 49.4vw;
+
+            &__item {
+                height: 59px;
+                width: 100%;
+
+                padding: 12px 0 12px 12px;
+
+                border-radius: 5px 0px 0px 5px;
+                background: rgba(255, 255, 255, 0.05);
+
+                &:not(:last-of-type) {
+                    margin-bottom: 15px;
+                }
+
+                &__img {
+                    margin-right: 10px;
+                }
+
+                &__title {
+                    display: flex;
+
+                    margin-right: 40px;
+                    width: 30%;
+                }
+
+                &__date {
+                    margin-right: 15px;
+                }
+
+                &__lang {
+                    margin-right: 72px;
+                }
+
+                &__line {
+                    margin-right: 68px;
+                    width: 39%;
+
+                    border-bottom: 1.5px dashed $white;
+                    opacity: .15;
+                }
+
+                &__btn {
+                    margin-right: 52px;
+
+                    gap: 7px;
+                    background-color: transparent;
+                    border: none;
+                }
+            }
+        }
+    }
+}

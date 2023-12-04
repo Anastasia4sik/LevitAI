@@ -1,0 +1,64 @@
+.blog {
+    padding: 176px 0 209px 45px;
+
+    background-image: url('/src/img/bc-blog.png');
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+
+    &__top {
+        margin-bottom: 75px;
+
+        &__first {
+            gap: 35px;
+
+            &__desc {
+                width: 395px;
+            }
+        }
+
+        &__second {
+            gap: 37px;
+        }
+    }
+
+    &__swiper {
+        position: relative;
+
+        &__slide {
+            padding-bottom: 75px;
+            width: 733px !important;
+
+            img {
+                margin-bottom: 35px;
+                width: 100%;
+                height: 412px;
+            }
+
+            &__title {
+                margin-bottom: 15px;
+
+                font-size: 24px;
+            }
+
+            &__desc {
+                opacity: 0.75;
+            }
+        }
+    }
+}
+
+div.blog__swiper__pagination.swiper-pagination {
+    & .swiper-pagination-bullet {
+        opacity: 1;
+
+        &-active {
+            background-color: white;
+        }
+
+        &:not(.swiper-pagination-bullet-active) {
+            background: transparent;
+            border: 1.5px solid white;
+        }
+    }
+}

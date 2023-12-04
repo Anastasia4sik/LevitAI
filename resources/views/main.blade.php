@@ -1194,7 +1194,7 @@
         </div>
     </section>
 
-    <section class="roadmap">
+    <section id="roadmap" class="roadmap">
         <div class="roadmap__top d-flex flex-row justify-content-between">
             <div class="roadmap__top__text">
                 <h2 class="title-main">
@@ -1215,7 +1215,9 @@
             <img src="{{ asset('src/img/photo/choose-img.jpg')}}" alt="Our Strategy & Roadmap" class="roadmap__top__img">
         </div>
 
-        <img src="{{ asset('src/img/roadmap.png')}}" alt="" class="roadmap__img">
+        <img id="map" src="{{ asset('src/img//photo/roadmap/roadmap.png')}}" alt="" class="roadmap__img roadmap__img--map">
+
+        <img id="line" src="{{ asset('src/img//photo/roadmap/line.png')}}" alt="" class="roadmap__img roadmap__img--line">
     </section>
 
     <section class="available text-center">
@@ -1273,11 +1275,11 @@
                             Email
                         </x-button>
 
-                        <a href="twitter.com" target="_blank" class="team__list__item__btns__item">
+                        <a href="https://twitter.com/?lang=uk" target="_blank" class="team__list__item__btns__item">
                             <img src="{{ asset('src/img/icons/twitter.png')}}" alt="Twitter">
                         </a>
 
-                        <a href="pinterest.com" target="_blank" class="team__list__item__btns__item">
+                        <a href="https://www.pinterest.com/" target="_blank" class="team__list__item__btns__item">
                             <img src="{{ asset('src/img/icons/pinterest.png')}}" alt="Pinterest">
                         </a>
                     </div>
@@ -1315,11 +1317,11 @@
                             Email
                         </x-button>
 
-                        <a href="twitter.com" target="_blank" class="team__list__item__btns__item">
+                        <a href="https://twitter.com/?lang=uk" target="_blank" class="team__list__item__btns__item">
                             <img src="{{ asset('src/img/icons/twitter.png')}}" alt="Twitter">
                         </a>
 
-                        <a href="pinterest.com" target="_blank" class="team__list__item__btns__item">
+                        <a href="https://www.pinterest.com/" target="_blank" class="team__list__item__btns__item">
                             <img src="{{ asset('src/img/icons/pinterest.png')}}" alt="Pinterest">
                         </a>
                     </div>
@@ -1357,11 +1359,11 @@
                             Email
                         </x-button>
 
-                        <a href="twitter.com" target="_blank" class="team__list__item__btns__item">
+                        <a href="https://twitter.com/?lang=uk" target="_blank" class="team__list__item__btns__item">
                             <img src="{{ asset('src/img/icons/twitter.png')}}" alt="Twitter">
                         </a>
 
-                        <a href="pinterest.com" target="_blank" class="team__list__item__btns__item">
+                        <a href="https://www.pinterest.com/" target="_blank" class="team__list__item__btns__item">
                             <img src="{{ asset('src/img/icons/pinterest.png')}}" alt="Pinterest">
                         </a>
                     </div>
@@ -1372,6 +1374,564 @@
                 <img src="{{ asset('src/img/photo/team.jpg')}}" alt="Team member" class="team__list__item__img">
             </div>
         </div>
+    </section>
+
+    <section class="strategy">
+        <div class="strategy__top d-flex flex-column justify-content-end align-items-end">
+            <div class="strategy__top__big d-flex flex-row align-items-end">
+                <h2 class="title-main">
+                    Our <span class="title-main--stroke">Strategy</span>
+                </h2>
+
+                <p class="strategy__top__big__desc desc">
+                    Monotonectally productivate virtual benefits vis-a-vis clicks-and-mortar lead ship. Seamlessly generate user friendly opportunitie after principle-centered e-markets. Proactively visualize functional
+                </p>
+            </div>
+
+                <h2 class="title-main">
+                    & Roadmap
+                </h2>
+        </div>
+
+        <div class="strategy__content d-flex flex-row align-items-center justify-content-between">
+            <img src="{{ asset('src/img/photo/strategy.png')}}" alt="Our Strategy & Roadmap" class="strategy__content__img">
+
+            <div class="strategy__content__list">
+                <div class="strategy__content__list__item">
+                    <p class="strategy__content__list__item__text desc">
+                        Contingency: 40%
+                    </p>
+
+                    <div class="strategy__content__list__item__line">
+                        <div class="strategy__content__list__item__line__color strategy__content__list__item__line__color--40"></div>
+                    </div>
+                </div>
+
+                <div class="strategy__content__list__item">
+                    <p class="strategy__content__list__item__text desc">
+                        Partner/Investor: 20%
+                    </p>
+
+                    <div class="strategy__content__list__item__line">
+                        <div class="strategy__content__list__item__line__color strategy__content__list__item__line__color--20"></div>
+                    </div>
+                </div>
+
+                <div class="strategy__content__list__item">
+                    <p class="strategy__content__list__item__text desc">
+                        legal & Regulation: 15%
+                    </p>
+
+                    <div class="strategy__content__list__item__line">
+                        <div class="strategy__content__list__item__line__color strategy__content__list__item__line__color--15"></div>
+                    </div>
+                </div>
+
+                <div class="strategy__content__list__item">
+                    <p class="strategy__content__list__item__text desc">
+                        Operational: 15%
+                    </p>
+
+                    <div class="strategy__content__list__item__line">
+                        <div class="strategy__content__list__item__line__color strategy__content__list__item__line__color--15"></div>
+                    </div>
+                </div>
+
+                <div class="strategy__content__list__item">
+                    <p class="strategy__content__list__item__text desc">
+                        Product Development: 10%
+                    </p>
+
+                    <div class="strategy__content__list__item__line">
+                        <div class="strategy__content__list__item__line__color strategy__content__list__item__line__color--10"></div>
+                    </div>
+                </div>
+
+                <div class="strategy__content__list__item">
+                    <p class="strategy__content__list__item__text desc">
+                        Marketing: 5%
+                    </p>
+
+                    <div class="strategy__content__list__item__line">
+                        <div class="strategy__content__list__item__line__color strategy__content__list__item__line__color--5"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="blog">
+        <div class="blog__top">
+            <div class="blog__top__first d-flex flex-row align-items-center">
+                <h2 class="blog__top__first__title title-main">
+                    Recent
+                </h2>
+
+                <p class="blog__top__first__desc desc">
+                    Monotonectally productivate virtual benefits vis-a-vis clicks-and-mortar lead ship. Seamlessly generate user friendly opportunitie after principle-centered e-markets. Proactively visualize functional
+                </p>
+            </div>
+
+            <div class="blog__top__second d-flex flex-row align-items-center">
+                <h2 class="blog__top__second__title title-main title-main--stroke">
+                    Blog Post
+                </h2>
+
+                <x-button
+                    img="src/img/icons/arrow-black.svg"
+                    gap="20px"
+                    pr="0"
+                    fs="16px"
+                    width="209px"
+                    padding="16px"
+                    margin=""
+                >
+                    Go to all posts
+                </x-button>
+            </div>
+        </div>
+
+        <div class="blog__swiper swiper-container">
+            <div class="swiper-wrapper">
+                <div class="blog__swiper__slide swiper-slide">
+                    <img src="{{ asset('src/img/photo/choose-img.jpg')}}" alt="slide">
+
+                    <h3 class="blog__swiper__slide__title title-little">
+                        Cryptocash Is A Clean & Modern Coin Service - Levitai
+                    </h3>
+
+                    <p class="blog__swiper__slide__desc desc">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt labore dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                </div>
+
+                <div class="blog__swiper__slide swiper-slide">
+                    <img src="{{ asset('src/img/photo/slide2.jpg')}}" alt="slide">
+
+                    <h3 class="blog__swiper__slide__title title-little">
+                        Cryptocash Is A Clean & Modern Coin Service - Levitai
+                    </h3>
+
+                    <p class="blog__swiper__slide__desc desc">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt labore dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                </div>
+
+                <div class="blog__swiper__slide swiper-slide">
+                    <img src="{{ asset('src/img/photo/choose-img.jpg')}}" alt="slide">
+
+                    <h3 class="blog__swiper__slide__title title-little">
+                        Cryptocash Is A Clean & Modern Coin Service - Levitai
+                    </h3>
+
+                    <p class="blog__swiper__slide__desc desc">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt labore dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                </div>
+
+                <div class="blog__swiper__slide swiper-slide">
+                    <img src="{{ asset('src/img/photo/slide2.jpg')}}" alt="slide">
+
+                    <h3 class="blog__swiper__slide__title title-little">
+                        Cryptocash Is A Clean & Modern Coin Service - Levitai
+                    </h3>
+
+                    <p class="blog__swiper__slide__desc desc">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt labore dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                </div>
+
+                <div class="blog__swiper__slide swiper-slide">
+                    <img src="{{ asset('src/img/photo/choose-img.jpg')}}" alt="slide">
+
+                    <h3 class="blog__swiper__slide__title title-little">
+                        Cryptocash Is A Clean & Modern Coin Service - Levitai
+                    </h3>
+
+                    <p class="blog__swiper__slide__desc desc">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt labore dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                </div>
+            </div>
+
+            <div class="blog__swiper__pagination swiper-pagination"></div>
+        </div>
+    </section>
+
+    <section class="qna">
+        <div class="qna__top">
+            <div class="qna__top__first d-flex flex-row align-items-center">
+                <h2 class="qna__top__first__title title-main title-main--stroke">
+                    Frequently
+                </h2>
+
+                <p class="qna__top__first__desc desc">
+                    Monotonectally productivate virtual benefits vis-a-vis clicks-and-mortar lead ship. Seamlessly generate user friendly opportunitie after principle-centered e-markets. Proactively visualize functional
+                </p>
+            </div>
+
+            <h2 class="qna__top__title title-main">
+                Asked Question
+            </h2>
+        </div>
+
+        <div class="qna__block d-flex flex-row align-items-center justify-content-between">
+            <img src="{{ asset('src/img/photo/qna.png')}}" alt="Photos for QnA block" class="qna__block__img">
+
+            <div class="qna__block__content">
+                <div class="qna__block__content__btns d-flex flex-row align-items-center">
+                    <p class="qna__block__content__btns__item desc active" id="general">
+                        General
+                    </p>
+
+                    <p class="qna__block__content__btns__item desc" id="token">
+                        Token
+                    </p>
+
+                    <p class="qna__block__content__btns__item desc" id="client">
+                        Client
+                    </p>
+
+                    <p class="qna__block__content__btns__item desc" id="ico">
+                        Pre ICO
+                    </p>
+
+                    <p class="qna__block__content__btns__item desc" id="legal">
+                        Legal
+                    </p>
+                </div>
+
+                <div class="qna__block__content__list">
+                    <div class="qna__block__content__list__group qna__block__content__list--general">
+                        <div class="qna__block__content__list__item">
+                            <h3 class="qna__block__content__list__item__title title-little">
+                                01 Content One ?
+                            </h3>
+
+                            <p class="qna__block__content__list__item__desc desc">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt labore dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit ese cillum dolore eu fugiat nulla pariatur.
+                            </p>
+                        </div>
+
+                        <div class="qna__block__content__list__item">
+                            <h3 class="qna__block__content__list__item__title title-little">
+                                02 What cryptocurrencies can I use to purchase?
+                            </h3>
+
+                            <p class="qna__block__content__list__item__desc desc">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt labore dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit ese cillum dolore eu fugiat nulla pariatur.
+                            </p>
+                        </div>
+
+                        <div class="qna__block__content__list__item">
+                            <h3 class="qna__block__content__list__item__title title-little">
+                                03 How can I participate in the ICO Token sale?
+                            </h3>
+
+                            <p class="qna__block__content__list__item__desc desc">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt labore dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit ese cillum dolore eu fugiat nulla pariatur.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="qna__block__content__list__group qna__block__content__list--token">
+                        <div class="qna__block__content__list__item">
+                            <h3 class="qna__block__content__list__item__title title-little">
+                                04 Content One ?
+                            </h3>
+
+                            <p class="qna__block__content__list__item__desc desc">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt labore dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit ese cillum dolore eu fugiat nulla pariatur.
+                            </p>
+                        </div>
+
+                        <div class="qna__block__content__list__item">
+                            <h3 class="qna__block__content__list__item__title title-little">
+                                05 What cryptocurrencies can I use to purchase?
+                            </h3>
+
+                            <p class="qna__block__content__list__item__desc desc">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt labore dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit ese cillum dolore eu fugiat nulla pariatur.
+                            </p>
+                        </div>
+
+                        <div class="qna__block__content__list__item">
+                            <h3 class="qna__block__content__list__item__title title-little">
+                                06 How can I participate in the ICO Token sale?
+                            </h3>
+
+                            <p class="qna__block__content__list__item__desc desc">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt labore dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit ese cillum dolore eu fugiat nulla pariatur.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="qna__block__content__list__group qna__block__content__list--client">
+                        <div class="qna__block__content__list__item">
+                            <h3 class="qna__block__content__list__item__title title-little">
+                                07 Content One ?
+                            </h3>
+
+                            <p class="qna__block__content__list__item__desc desc">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt labore dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit ese cillum dolore eu fugiat nulla pariatur.
+                            </p>
+                        </div>
+
+                        <div class="qna__block__content__list__item">
+                            <h3 class="qna__block__content__list__item__title title-little">
+                                08 What cryptocurrencies can I use to purchase?
+                            </h3>
+
+                            <p class="qna__block__content__list__item__desc desc">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt labore dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit ese cillum dolore eu fugiat nulla pariatur.
+                            </p>
+                        </div>
+
+                        <div class="qna__block__content__list__item">
+                            <h3 class="qna__block__content__list__item__title title-little">
+                                09 How can I participate in the ICO Token sale?
+                            </h3>
+
+                            <p class="qna__block__content__list__item__desc desc">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt labore dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit ese cillum dolore eu fugiat nulla pariatur.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="qna__block__content__list__group qna__block__content__list--ico">
+                        <div class="qna__block__content__list__item">
+                            <h3 class="qna__block__content__list__item__title title-little">
+                                10 Content One ?
+                            </h3>
+
+                            <p class="qna__block__content__list__item__desc desc">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt labore dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit ese cillum dolore eu fugiat nulla pariatur.
+                            </p>
+                        </div>
+
+                        <div class="qna__block__content__list__item">
+                            <h3 class="qna__block__content__list__item__title title-little">
+                                11 What cryptocurrencies can I use to purchase?
+                            </h3>
+
+                            <p class="qna__block__content__list__item__desc desc">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt labore dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit ese cillum dolore eu fugiat nulla pariatur.
+                            </p>
+                        </div>
+
+                        <div class="qna__block__content__list__item">
+                            <h3 class="qna__block__content__list__item__title title-little">
+                                12 How can I participate in the ICO Token sale?
+                            </h3>
+
+                            <p class="qna__block__content__list__item__desc desc">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt labore dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit ese cillum dolore eu fugiat nulla pariatur.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="qna__block__content__list__group qna__block__content__list--legal">
+                        <div class="qna__block__content__list__item">
+                            <h3 class="qna__block__content__list__item__title title-little">
+                                13 Content One ?
+                            </h3>
+
+                            <p class="qna__block__content__list__item__desc desc">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt labore dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit ese cillum dolore eu fugiat nulla pariatur.
+                            </p>
+                        </div>
+
+                        <div class="qna__block__content__list__item">
+                            <h3 class="qna__block__content__list__item__title title-little">
+                                14 What cryptocurrencies can I use to purchase?
+                            </h3>
+
+                            <p class="qna__block__content__list__item__desc desc">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt labore dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit ese cillum dolore eu fugiat nulla pariatur.
+                            </p>
+                        </div>
+
+                        <div class="qna__block__content__list__item">
+                            <h3 class="qna__block__content__list__item__title title-little">
+                                15 How can I participate in the ICO Token sale?
+                            </h3>
+
+                            <p class="qna__block__content__list__item__desc desc">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt labore dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit ese cillum dolore eu fugiat nulla pariatur.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="docs">
+        <div class="docs__top">
+            <h2 class="docs__top__title title-main">
+                Read <span class="title-main--stroke">LevitAI</span>
+            </h2>
+
+            <div class="docs__top__block d-flex flex-row align-items-center">
+                <p class="docs__top__block__desc desc">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.
+                </p>
+
+                <h2 class="docs__top__block__title title-main">
+                    Documents
+                </h2>
+            </div>
+        </div>
+
+        <div class="docs__content d-flex flex-row align-items-center justify-content-between">
+            <img src="{{ asset('src/img/photo/docs.png')}}" alt="Read LevitAI Documents" class="docs__content__img">
+
+            <div class="docs__content__list">
+                <div class="docs__content__list__item d-flex flex-row align-items-center">
+                    <img src="{{ asset('src/img/icons/docs-icon.png')}}" alt="First Doc" class="docs__content__list__item__img">
+
+                    <p class="docs__content__list__item__title desc">
+                        First Paper
+                    </p>
+
+                    <p class="docs__content__list__item__date desc">
+                        2021
+                    </p>
+
+                    <p class="docs__content__list__item__lang desc">
+                        English
+                    </p>
+
+                    <div class="docs__content__list__item__line"></div>
+
+                    <button class="docs__content__list__item__btn d-flex flex-row align-items-center" id="First Paper">
+                        <img src="{{ asset('src/img/icons/arrow-download.svg')}}" alt="Download file" class="docs__content__list__item__btn__img">
+
+                        Document
+                    </button>
+                </div>
+
+                <div class="docs__content__list__item d-flex flex-row align-items-center">
+                    <img src="{{ asset('src/img/icons/docs-icon.png')}}" alt="First Doc" class="docs__content__list__item__img">
+
+                    <p class="docs__content__list__item__title desc">
+                        Second Paper
+                    </p>
+
+                    <p class="docs__content__list__item__date desc">
+                        2021
+                    </p>
+
+                    <p class="docs__content__list__item__lang desc">
+                        English
+                    </p>
+
+                    <div class="docs__content__list__item__line"></div>
+
+                    <button class="docs__content__list__item__btn d-flex flex-row align-items-center" id="Second Paper">
+                        <img src="{{ asset('src/img/icons/arrow-download.svg')}}" alt="Download file" class="docs__content__list__item__btn__img">
+
+                        Document
+                    </button>
+                </div>
+
+                <div class="docs__content__list__item d-flex flex-row align-items-center">
+                    <img src="{{ asset('src/img/icons/docs-icon.png')}}" alt="First Doc" class="docs__content__list__item__img">
+
+                    <p class="docs__content__list__item__title desc">
+                        Third Paper
+                    </p>
+
+                    <p class="docs__content__list__item__date desc">
+                        2021
+                    </p>
+
+                    <p class="docs__content__list__item__lang desc">
+                        English
+                    </p>
+
+                    <div class="docs__content__list__item__line"></div>
+
+                    <button class="docs__content__list__item__btn d-flex flex-row align-items-center" id="Third Paper">
+                        <img src="{{ asset('src/img/icons/arrow-download.svg')}}" alt="Download file" class="docs__content__list__item__btn__img">
+
+                        Document
+                    </button>
+                </div>
+
+                <div class="docs__content__list__item d-flex flex-row align-items-center">
+                    <img src="{{ asset('src/img/icons/docs-icon.png')}}" alt="First Doc" class="docs__content__list__item__img">
+
+                    <p class="docs__content__list__item__title desc">
+                        Fourth Paper
+                    </p>
+
+                    <p class="docs__content__list__item__date desc">
+                        2021
+                    </p>
+
+                    <p class="docs__content__list__item__lang desc">
+                        English
+                    </p>
+
+                    <div class="docs__content__list__item__line"></div>
+
+                    <button class="docs__content__list__item__btn d-flex flex-row align-items-center" id="Fourth Paper">
+                        <img src="{{ asset('src/img/icons/arrow-download.svg')}}" alt="Download file" class="docs__content__list__item__btn__img">
+
+                        Document
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact d-flex flex-column align-items-center">
+        <h2 class="contact__title title-main">
+            Contact Us
+        </h2>
+
+        <div class="contact__media d-flex flex-row align-items-center">
+            <a href="mailto:test@test.com" target="_blank" class="contact__media__link">
+                <img src="{{ asset('src/img/icons/contact/mail.svg')}}" alt="Email" class="contact__media__img">
+            </a>
+
+            <a href="tel:0500000000" target="_blank" class="contact__media__link">
+                <img src="{{ asset('src/img/icons/contact/phone.svg')}}" alt="Phone" class="contact__media__img">
+            </a>
+
+            <a href="https://t.me/snoopwest" target="_blank" class="contact__media__link">
+                <img src="{{ asset('src/img/icons/contact/telegram.svg')}}" alt="Telegram" class="contact__media__img">
+            </a>
+        </div>
+
+        <form action="#" class="contact__form d-flex flex-column align-items-center">
+            <div class="contact__form__group d-flex flex-row align-items-row">
+                <input type="text" placeholder="Name" name="Name" class="contact__form__input contact__form__group__input">
+
+                <input type="email" placeholder="Email" name="Email" class="contact__form__input contact__form__group__input">
+            </div>
+
+            <div class="contact__form__group d-flex flex-row align-items-row">
+                <input type="phone" placeholder="Number" name="Number" class="contact__form__input contact__form__group__input">
+
+                <input type="url" placeholder="Website" name="Website" class="contact__form__input contact__form__group__input">
+            </div>
+
+            <textarea name="Message" placeholder="Message" class="contact__form__input"></textarea>
+
+            <x-button
+                img="src/img/icons/arrow-black.svg"
+                gap="101px"
+                pr="0"
+                fs="20px"
+                width="360px"
+                padding="13px"
+                margin=""
+            >
+                Send
+            </x-button>
+        </form>
     </section>
 
     <footer class="footer ">
@@ -1407,21 +1967,23 @@
     </footer>
 
     <script>
+        // header
         const dropdowns = document.querySelectorAll(".header__dropdown");
 
         dropdowns.forEach((dropdown) => {
-        const dropdownOptions = dropdown.querySelector(".header__dropdown__options");
+            const dropdownOptions = dropdown.querySelector(".header__dropdown__options");
 
-        dropdown.addEventListener("mouseenter", function() {
-            dropdownOptions.classList.add("open");
-        });
+            dropdown.addEventListener("mouseenter", function() {
+                dropdownOptions.classList.add("open");
+            });
 
-        dropdown.addEventListener("mouseleave", function() {
-            dropdownOptions.classList.remove("open");
-        });
+            dropdown.addEventListener("mouseleave", function() {
+                dropdownOptions.classList.remove("open");
+            });
         });
 
         document.addEventListener('DOMContentLoaded', function() {
+            // ShowMore/ShowLess
             const blocks = document.querySelectorAll('.market__table__body__row--hide');
 
             blocks.forEach((block) => {
@@ -1439,10 +2001,42 @@
                     }
                 });
             });
+
+            //qna
+            const qnaBtns = document.querySelectorAll('.qna__block__content__btns__item');
+
+            const listItems = document.querySelectorAll('.qna__block__content__list__group')
+
+            qnaBtns.forEach((button) => {
+                button.addEventListener('click', function() {
+                    qnaBtns.forEach((btn) => {
+                        btn.classList.remove('active')
+                    });
+
+                    button.classList.add('active');
+
+
+                    listItems.forEach((item) => {
+                        const categoryClass = 'qna__block__content__list--' + button.id.toLowerCase();
+
+                        if (item.classList.contains(categoryClass)) {
+                            item.style.display = 'block';
+
+                            setTimeout(() => {
+                                item.style.transform = 'translateX(0)';
+                                item.style.opacity = '1';
+                            }, 50);
+                        } else {
+                            item.style.display = 'none';
+                            item.style.transform = 'translateX(100%)';
+                            item.style.opacity = '0';
+                        }
+                    });
+                })
+            })
         });
 
         //face
-
         window.addEventListener('scroll', function() {
             const faceWhite = document.getElementById('face-white');
             const faceMain = document.getElementById('face-main');
@@ -1455,8 +2049,6 @@
             const opacity = 0.79 - (scrollPosition - triggerDivPosition) / triggerDiv.clientHeight;
 
             const limitedOpacity = Math.min(1, Math.max(0, opacity));
-
-            console.log(limitedOpacity)
 
             if (limitedOpacity === 1 || limitedOpacity <= 0.2) {
                 faceWhite.style.opacity = 0;
@@ -1481,7 +2073,6 @@
         });
 
         //sales
-
         const cardsContainer = document.querySelector('.sales__block__cards');
         const leftButton = document.querySelector('.sales__block__btns__img--left');
         const rightButton = document.querySelector('.sales__block__btns__img--right');
@@ -1500,5 +2091,66 @@
 
         cardsContainer.addEventListener('scroll', updateButtonPadding);
 
+        // download file
+        const downloadButtons = document.querySelectorAll('.docs__content__list__item__btn');
+
+        downloadButtons.forEach((button) => {
+            button.addEventListener('click', function() {
+                const fileUrl = `./src/docs/${button.id}.pdf`;
+
+                fetch(fileUrl)
+                .then(response => response.blob())
+                .then(blob => {
+                    const link = document.createElement('a');
+
+                    link.download = `${button.id}.pdf`;
+
+                    link.href = URL.createObjectURL(blob);
+
+                    document.body.appendChild(link);
+
+                    link.click();
+
+                    document.body.removeChild(link);
+                })
+                .catch(error => {
+                    console.error('Error fetching the file:', error);
+                });
+            });
+        })
+
+        //roadmap
+        window.addEventListener('scroll', function() {
+            const line = document.getElementById('line');
+            const map = document.getElementById('map');
+            const scrollPosition = window.scrollY;
+
+            const triggerDiv = document.getElementById('roadmap');
+            const triggerDivPosition = triggerDiv.offsetTop;
+
+            const opacity = 0.79 - (scrollPosition - triggerDivPosition) / triggerDiv.clientHeight;
+
+            const limitedOpacity = Math.min(1, Math.max(0, opacity));
+
+            console.log(limitedOpacity);
+
+            if (limitedOpacity > 0.85 || limitedOpacity <= 0.001) {
+                line.style.opacity = 1;
+                map.style.opacity = 0;
+
+                setTimeout(() => {
+                    map.style.display = 'none';
+                    line.style.display = 'block';
+                }, 1800);
+            }else {
+                line.style.opacity = 0;
+                map.style.opacity = 1;
+
+                setTimeout(() => {
+                    line.style.display = 'none';
+                    map.style.display = 'block';
+                }, 1800);
+            }
+        });
     </script>
 </x-base>
