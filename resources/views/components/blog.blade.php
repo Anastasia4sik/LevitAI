@@ -15,17 +15,32 @@
                 Blog Post
             </h2>
 
-            <x-button
-                img="src/img/icons/arrow-black.svg"
-                gap="20px"
-                pr="0"
-                fs="16px"
-                width="209px"
-                padding="16px"
-                margin=""
+            <a
+                href="#"
+                class="
+                    complete__btn
+                    d-flex
+                    flex-row
+                    align-items-center
+                    button
+                "
+                style="
+                    gap: 20px;
+                    font-size: 16px;
+                    width: 209px;
+                "
             >
+                <img
+                    src="{{asset('src/img/icons/arrow-black.svg')}}"
+                    alt="Read More"
+                    class="complete__btn__img"
+                    style="
+                        padding: 16px;
+                    "
+                >
+
                 Go to all posts
-            </x-button>
+            </a>
         </div>
     </div>
 

@@ -50,17 +50,33 @@
                     </p>
 
                     <div class="team__list__item__btns d-flex flex-row align-items-center">
-                        <x-button
-                            img="src/img/icons/arrow-black.svg"
-                            gap="21px"
-                            pr="32px"
-                            fs="16px"
-                            width="149px"
-                            padding="15px"
-                            margin=""
+                        <a
+                            href="mailto:test@test.com"
+                            class="
+                                complete__btn
+                                d-flex
+                                flex-row
+                                align-items-center
+                                button
+                            "
+                            style="
+                                gap: 21px;
+                                font-size: 16px;
+                                width: 149px;
+                                padding-right: 32px;
+                            "
                         >
+                            <img
+                                src="{{asset('src/img/icons/arrow-black.svg')}}"
+                                alt="Email"
+                                class="complete__btn__img"
+                                style="
+                                    padding: 16px;
+                                "
+                            >
+
                             Email
-                        </x-button>
+                        </a>
 
                         <a
                             href="{{ $item['twitter'] }}"

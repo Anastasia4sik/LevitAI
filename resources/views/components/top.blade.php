@@ -13,17 +13,33 @@
         </p>
 
         <div class="top__desc__btns d-flex flex-row align-items-center">
-            <x-button
-                img="src/img/icons/play.svg"
-                gap="9px"
-                pr="24px"
-                fs="14px"
-                width="inherit"
-                padding="0"
-                margin=""
+            <a
+                href="#"
+                class="
+                    complete__btn
+                    d-flex
+                    flex-row
+                    align-items-center
+                    button
+                "
+                style="
+                    gap: 9px;
+                    font-size: 14px;
+                    width: inherit;
+                    padding-right: 24px;
+                "
             >
+                <img
+                    src="{{asset('src/img/icons/play.svg')}}"
+                    alt="ICO LevitAI"
+                    class="complete__btn__img"
+                    style="
+                        padding: 0;
+                    "
+                >
+
                 What is ICO LevitAI
-            </x-button>
+            </a>
 
             <a href="" class="top__desc__btns__right d-flex flex-row align-items-center desc">
                 White Papers

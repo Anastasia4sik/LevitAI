@@ -32,16 +32,31 @@
 
         <textarea name="Message" placeholder="Message" class="contact__form__input"></textarea>
 
-        <x-button
-            img="src/img/icons/arrow-black.svg"
-            gap="101px"
-            pr="0"
-            fs="20px"
-            width="360px"
-            padding="13px"
-            margin=""
+        <button
+            type="submit"
+            class="
+                complete__btn
+                d-flex
+                flex-row
+                align-items-center
+                button
+            "
+            style="
+                gap: 101px;
+                font-size: 20px;
+                width: 360px;
+            "
         >
+            <img
+                src="{{asset('src/img/icons/arrow-black.svg')}}"
+                alt="Send"
+                class="complete__btn__img"
+                style="
+                    padding: 16px;
+                "
+            >
+
             Send
-        </x-button>
+        </button>
     </form>
 </section>

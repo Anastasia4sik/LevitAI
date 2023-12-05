@@ -28,17 +28,33 @@
             LevitAI Coin?
         </h2>
 
-        <x-button
-            img="src/img/icons/telegram.svg"
-            gap="21px"
-            pr="0"
-            fs="16px"
-            width="254px"
-            padding="17px"
-            margin="0 0 25px auto"
+        <a
+            href="#"
+            class="
+                complete__btn
+                d-flex
+                flex-row
+                align-items-center
+                button
+            "
+            style="
+                gap: 21px;
+                font-size: 16px;
+                width: 254px;
+                margin: 0 0 25px auto;
+            "
         >
+            <img
+                src="{{asset('src/img/icons/telegram.svg')}}"
+                alt="Read More"
+                class="complete__btn__img"
+                style="
+                    padding: 16px;
+                "
+            >
+
             Join us on telegram
-        </x-button>
+        </a>
 
         <div class="coin__text__blocks d-flex flex-row">
             <div class="coin__text__blocks__item">

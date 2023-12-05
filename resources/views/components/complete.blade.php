@@ -16,16 +16,31 @@
             Seamlessly redefine ethical materials through inours high-payoff growth strategie appropriately envisioneer robust infrastructures before robust for the aynergistically generate B2B alignments after.
         </p>
 
-        <x-button
-            img="src/img/icons/arrow-black.svg"
-            gap="21px"
-            pr="0"
-            fs="16px"
-            width="189px"
-            padding="15px"
-            margin=""
+        <a
+            href="#"
+            class="
+                complete__btn
+                d-flex
+                flex-row
+                align-items-center
+                button
+            "
+            style="
+                gap: 21px;
+                font-size: 16px;
+                width: 189px;
+            "
         >
+            <img
+                src="{{asset('src/img/icons/arrow-black.svg')}}"
+                alt="Read More"
+                class="complete__btn__img"
+                style="
+                    padding: 16px;
+                "
+            >
+
             Read More
-        </x-button>
+        </a>
     </div>
 </section>
