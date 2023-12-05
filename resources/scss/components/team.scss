@@ -1,7 +1,7 @@
 .team {
     padding: 54px 2vw 0 45px;
 
-    background-image: url('/src/img/bc-team.png');
+    background-image: url('../../../public/src/img/bc-team.png');
     background-repeat: no-repeat;
     background-position: center -280px;
     background-size: cover;
@@ -28,6 +28,8 @@
 
                 font-size: 24px;
                 line-height: 137%;
+
+                text-transform: uppercase;
             }
 
             &__desc {

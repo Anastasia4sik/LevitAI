@@ -1,0 +1,47 @@
+<section class="contact d-flex flex-column align-items-center">
+    <h2 class="contact__title title-main">
+        Contact Us
+    </h2>
+
+    <div class="contact__media d-flex flex-row align-items-center">
+        <a href="mailto:test@test.com" target="_blank" class="contact__media__link">
+            <img src="{{ asset('src/img/icons/contact/mail.svg')}}" alt="Email" class="contact__media__img">
+        </a>
+
+        <a href="tel:0500000000" target="_blank" class="contact__media__link">
+            <img src="{{ asset('src/img/icons/contact/phone.svg')}}" alt="Phone" class="contact__media__img">
+        </a>
+
+        <a href="https://t.me/snoopwest" target="_blank" class="contact__media__link">
+            <img src="{{ asset('src/img/icons/contact/telegram.svg')}}" alt="Telegram" class="contact__media__img">
+        </a>
+    </div>
+
+    <form action="#" class="contact__form d-flex flex-column align-items-center">
+        <div class="contact__form__group d-flex flex-row align-items-row">
+            <input type="text" placeholder="Name" name="Name" class="contact__form__input contact__form__group__input">
+
+            <input type="email" placeholder="Email" name="Email" class="contact__form__input contact__form__group__input">
+        </div>
+
+        <div class="contact__form__group d-flex flex-row align-items-row">
+            <input type="phone" placeholder="Number" name="Number" class="contact__form__input contact__form__group__input">
+
+            <input type="url" placeholder="Website" name="Website" class="contact__form__input contact__form__group__input">
+        </div>
+
+        <textarea name="Message" placeholder="Message" class="contact__form__input"></textarea>
+
+        <x-button
+            img="src/img/icons/arrow-black.svg"
+            gap="101px"
+            pr="0"
+            fs="20px"
+            width="360px"
+            padding="13px"
+            margin=""
+        >
+            Send
+        </x-button>
+    </form>
+</section>
