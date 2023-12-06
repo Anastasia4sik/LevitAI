@@ -37,7 +37,7 @@
                 <div class="docs__content__list__item__line"></div>
 
                 <button class="docs__content__list__item__btn d-flex flex-row align-items-center" id="First Paper">
-                    <img src="{{ asset('src/img/icons/arrow-download.svg')}}" alt="Download file" class="docs__content__list__item__btn__img">
+                    <img src="{{ asset('src/img/icons/arrows/arrow-download.svg')}}" alt="Download file" class="docs__content__list__item__btn__img">
 
                     Document
                 </button>
@@ -61,7 +61,7 @@
                 <div class="docs__content__list__item__line"></div>
 
                 <button class="docs__content__list__item__btn d-flex flex-row align-items-center" id="Second Paper">
-                    <img src="{{ asset('src/img/icons/arrow-download.svg')}}" alt="Download file" class="docs__content__list__item__btn__img">
+                    <img src="{{ asset('src/img/icons/arrows/arrow-download.svg')}}" alt="Download file" class="docs__content__list__item__btn__img">
 
                     Document
                 </button>
@@ -85,7 +85,7 @@
                 <div class="docs__content__list__item__line"></div>
 
                 <button class="docs__content__list__item__btn d-flex flex-row align-items-center" id="Third Paper">
-                    <img src="{{ asset('src/img/icons/arrow-download.svg')}}" alt="Download file" class="docs__content__list__item__btn__img">
+                    <img src="{{ asset('src/img/icons/arrows/arrow-download.svg')}}" alt="Download file" class="docs__content__list__item__btn__img">
 
                     Document
                 </button>
@@ -109,7 +109,7 @@
                 <div class="docs__content__list__item__line"></div>
 
                 <button class="docs__content__list__item__btn d-flex flex-row align-items-center" id="Fourth Paper">
-                    <img src="{{ asset('src/img/icons/arrow-download.svg')}}" alt="Download file" class="docs__content__list__item__btn__img">
+                    <img src="{{ asset('src/img/icons/arrows/arrow-download.svg')}}" alt="Download file" class="docs__content__list__item__btn__img">
 
                     Document
                 </button>

@@ -5,22 +5,22 @@
         'item1' => [
             'title' => 'Secure Storage',
             'desc' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-            'img' => 'src/img/icons/category-bigLine-1.png',
+            'img' => 'src/img/icons/category/category-bigLine-1.png',
         ],
         'item2' => [
             'title' => 'Secure Stora',
             'desc' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-            'img' => 'src/img/icons/category-littleLine-2.png',
+            'img' => 'src/img/icons/category/category-littleLine-2.png',
         ],
         'item3' => [
             'title' => 'Secure Storage',
             'desc' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-            'img' => 'src/img/icons/category-littleLine-3.png',
+            'img' => 'src/img/icons/category/category-littleLine-3.png',
         ],
         'item4' => [
             'title' => 'Secure Storage',
             'desc' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-            'img' => 'src/img/icons/category-bigLine-4.png',
+            'img' => 'src/img/icons/category/category-bigLine-4.png',
         ],
     ];
 
@@ -314,6 +314,229 @@
 @endphp
 
 <x-base>
+    <aside class="menu">
+        <div class="menu__main">
+            <img
+                src="{{ asset('src/img/icons/sidemenu/menu.svg')}}"
+                alt="Open Sidemenu"
+                class="menu__main__btn"
+            >
+
+            <img
+                src="{{ asset('src/img/icons/sidemenu/logo-white.png')}}"
+                alt=""
+                class="menu__main__logo"
+                >
+        </div>
+
+        <div class="menu__container d-flex flex-column justify-content-between">
+            <div class="">
+                <img
+                    src="{{ asset('src/img/icons/sidemenu/cross.svg')}}"
+                    alt="Close Sidemenu"
+                    class="
+                        menu__container__btn
+                        menu__container__btn--cross
+                    "
+                >
+
+                <ul class="menu__container__list d-flex flex-column">
+                    <li class="menu__container__list__item">
+                        <a href="#">
+                            Home
+                        </a>
+                    </li>
+
+                    <li class="menu__container__list__item">
+                        <div class="menu__container__list__item__select">
+                            <div class="menu__container__list__item__select__label">
+                                My Account
+
+                                <span class="arrow-down">&#9662;</span>
+                            </div>
+
+                            <ul class="menu__container__list__item__select__options">
+                                <li>
+                                    <a href="#">
+                                        Building the Future
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#">
+                                        What is LevitAI
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#">
+                                        The NFT Gallery
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#">
+                                        The Exchange Market
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="menu__container__list__item">
+                        <div class="menu__container__list__item__select">
+                            <div class="menu__container__list__item__select__label">
+                                Documentation
+
+                                <span class="arrow-down">&#9662;</span>
+                            </div>
+
+                            <ul class="menu__container__list__item__select__options">
+                                <li>
+                                    <a href="#">
+                                        Building the Future
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#">
+                                        What is LevitAI
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#">
+                                        The NFT Gallery
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#">
+                                        The Exchange Market
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="menu__container__list__item">
+                        <div class="menu__container__list__item__select">
+                            <div class="menu__container__list__item__select__label">
+                                Discover
+
+                                <span class="arrow-down">&#9662;</span>
+                            </div>
+
+                            <ul class="menu__container__list__item__select__options">
+                                <li>
+                                    <a href="#">
+                                        Building the Future
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#">
+                                        What is LevitAI
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#">
+                                        The NFT Gallery
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#">
+                                        The Exchange Market
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="menu__container__list__item">
+                        <div class="menu__container__list__item__select">
+                            <div class="menu__container__list__item__select__label">
+                                Your LevitAI World
+
+                                <span class="arrow-down">&#9662;</span>
+                            </div>
+
+                            <ul class="menu__container__list__item__select__options">
+                                <li>
+                                    <a href="#">
+                                        Building the Future
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#">
+                                        What is LevitAI
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#">
+                                        The NFT Gallery
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#">
+                                        The Exchange Market
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="menu__container__list__item">
+                        <div class="menu__container__list__item__select">
+                            <div class="menu__container__list__item__select__label">
+                                Community
+
+                                <span class="arrow-down">&#9662;</span>
+                            </div>
+
+                            <ul class="menu__container__list__item__select__options">
+                                <li>
+                                    <a href="#">
+                                        Building the Future
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#">
+                                        What is LevitAI
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#">
+                                        The NFT Gallery
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#">
+                                        The Exchange Market
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <img
+                src="{{ asset('src/img/icons/sidemenu/logo.png')}}"
+                alt="Logo"
+                class="menu__container__logo"
+            >
+        </div>
+    </aside>
+
     <x-header />
 
     <x-top />
@@ -383,11 +606,11 @@
                     if (block.style.display != 'table-row') {
                         block.style.display = 'table-row';
 
-                        button.innerHTML = 'Show less <img src="{{ asset('src/img/icons/arrow-up.svg') }}" alt="Show less">';
+                        button.innerHTML = 'Show less <img src="{{ asset('src/img/icons/arrows/arrow-up.svg') }}" alt="Show less">';
                     } else {
                         block.style.display = 'none';
 
-                        button.innerHTML = 'Show more <img src="{{ asset('src/img/icons/arrow-down.svg') }}" alt="Show more">';
+                        button.innerHTML = 'Show more <img src="{{ asset('src/img/icons/arrows/arrow-down.svg') }}" alt="Show more">';
                     }
                 });
             });
@@ -425,6 +648,54 @@
                 })
             })
         });
+
+        //menu dropdown
+        const menulist = document.querySelectorAll(".menu__container__list__item__select");
+
+        menulist.forEach((menuitem) => {
+            const menulistOption = menuitem.querySelector(".menu__container__list__item__select__options");
+
+            menuitem.addEventListener("click", function() {
+                if (menulistOption?.classList.contains("open")) {
+                    menulistOption.classList.remove("open");
+                } else {
+                    menulistOption.classList.add("open");
+                }
+            });
+        });
+
+        //menu visible
+        const menuOpenBtn = document.querySelector(".menu__main__btn");
+        const menuCloseBtn = document.querySelector(".menu__container__btn");
+        const menuContainer = document.querySelector(".menu__container");
+
+        menuOpenBtn.addEventListener("click", function() {
+            menuContainer.style.transform = "translateX(0)";
+        })
+
+        menuOpenBtn.addEventListener("mouseenter", function() {
+            menuOpenBtn.style.opacity = "0.6";
+
+            setTimeout(() => {
+                menuOpenBtn.style.opacity = "1";
+                menuOpenBtn.src = 'src/img/icons/sidemenu/menu-hover.svg';
+            }, 300);
+
+        })
+
+        menuOpenBtn.addEventListener("mouseleave", function() {
+            menuOpenBtn.style.opacity = "0.6";
+
+            setTimeout(() => {
+                menuOpenBtn.style.opacity = "1";
+                menuOpenBtn.src = 'src/img/icons/sidemenu/menu.svg';
+            }, 300);
+
+        })
+
+        menuCloseBtn.addEventListener("click", function() {
+            menuContainer.style.transform = "translateX(-100%)";
+        })
 
         //face
         window.addEventListener('scroll', function() {

@@ -16,7 +16,7 @@
     <div class="sales__block">
         <div class="sales__block__btns d-flex flex-row justify-content-end align-items-center">
             <img
-                src="{{ asset('src/img/icons/arrow_right_short.svg')}}"
+                src="{{ asset('src/img/icons/arrows/arrow_right_short.svg')}}"
                 alt="Arrow Left"
                 class="
                     sales__block__btns__img
@@ -26,7 +26,7 @@
             >
 
             <img
-                src="{{ asset('src/img/icons/arrow_right_short.svg')}}"
+                src="{{ asset('src/img/icons/arrows/arrow_right_short.svg')}}"
                 alt="Arrow Right"
                 class="
                     sales__block__btns__img

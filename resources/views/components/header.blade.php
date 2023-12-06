@@ -11,10 +11,29 @@
             </div>
 
             <ul class="header__dropdown__options">
-            <li>Documentation</li>
-            <li>Discover</li>
-            <li>Your LevitAI World</li>
-            <li>Community</li>
+                <li>
+                    <a href="#">
+                        Documentation
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        Discover
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        Your LevitAI World
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        Community
+                    </a>
+                </li>
             </ul>
         </div>
 
@@ -25,10 +44,29 @@
             </div>
 
             <ul class="header__dropdown__options">
-            <li>My Account</li>
-            <li>Discover</li>
-            <li>Your LevitAI World</li>
-            <li>Community</li>
+                <li>
+                    <a href="#">
+                        My Account
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        Discover
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        Your LevitAI World
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        Community
+                    </a>
+                </li>
             </ul>
         </div>
 
@@ -39,10 +77,29 @@
             </div>
 
             <ul class="header__dropdown__options">
-            <li>My Account</li>
-            <li>Documentation</li>
-            <li>Your LevitAI World</li>
-            <li>Community</li>
+                <li>
+                    <a href="#">
+                        My Account
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        Documentation
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        Your LevitAI World
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        Community
+                    </a>
+                </li>
             </ul>
         </div>
 
@@ -53,10 +110,29 @@
             </div>
 
             <ul class="header__dropdown__options">
-            <li>My Account</li>
-            <li>Documentation</li>
-            <li>Discover</li>
-            <li>Community</li>
+                <li>
+                    <a href="#">
+                        My Account
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        Discover
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        Documentation
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        Community
+                    </a>
+                </li>
             </ul>
         </div>
 
@@ -67,10 +143,29 @@
             </div>
 
             <ul class="header__dropdown__options">
-            <li>My Account</li>
-            <li>Documentation</li>
-            <li>Discover</li>
-            <li>Your LevitAI World</li>
+                <li>
+                    <a href="#">
+                        My Account
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        Discover
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        Your LevitAI World
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        Documentation
+                    </a>
+                </li>
             </ul>
         </div>
     </ul>
