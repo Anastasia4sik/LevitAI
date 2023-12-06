@@ -1,7 +1,7 @@
 .footer {
     padding: 40px 0 40px 45px;
 
-    background-image: url('../../../public/src/img/bc-footer.png');
+    background-image: url('../../../public/src/img/bc/bc-footer.png');
     background-repeat: no-repeat;
     background-position: center bottom;
     background-size: cover;
@@ -46,6 +46,10 @@
         &::-webkit-scrollbar {
             display: none;
         }
+
+        overflow: -ms-scrollbars-none;
+        scrollbar-width: none;
+        -webkit-overflow-scrolling: touch;
 
         &__title {
             width: 150vw;

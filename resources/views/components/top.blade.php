@@ -43,7 +43,7 @@
 
             <a href="" class="top__desc__btns__right d-flex flex-row align-items-center desc">
                 White Papers
-                <img src="{{asset('src/img/icons/arrow_right_short.svg')}}" alt="White Papers" class="top__desc__btns__right__img">
+                <img src="{{asset('src/img/icons/arrows/arrow_right_short.svg')}}" alt="White Papers" class="top__desc__btns__right__img">
             </a>
         </div>
     </div>

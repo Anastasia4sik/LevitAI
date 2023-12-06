@@ -67,7 +67,7 @@
                             "
                         >
                             <img
-                                src="{{asset('src/img/icons/arrow-black.svg')}}"
+                                src="{{asset('src/img/icons/arrows/arrow-black.svg')}}"
                                 alt="Email"
                                 class="complete__btn__img"
                                 style="
@@ -83,7 +83,7 @@
                             target="_blank"
                             class="team__list__item__btns__item"
                         >
-                            <img src="{{ asset('src/img/icons/twitter.png')}}" alt="Twitter">
+                            <img src="{{ asset('src/img/icons/media/twitter.png')}}" alt="Twitter">
                         </a>
 
                         <a
@@ -91,7 +91,7 @@
                             target="_blank"
                             class="team__list__item__btns__item"
                         >
-                            <img src="{{ asset('src/img/icons/pinterest.png')}}" alt="Pinterest">
+                            <img src="{{ asset('src/img/icons/media/pinterest.png')}}" alt="Pinterest">
                         </a>
                     </div>
                 </div>

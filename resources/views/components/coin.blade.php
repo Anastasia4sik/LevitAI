@@ -45,7 +45,7 @@
             "
         >
             <img
-                src="{{asset('src/img/icons/telegram.svg')}}"
+                src="{{asset('src/img/icons/media/telegram.svg')}}"
                 alt="Read More"
                 class="complete__btn__img"
                 style="
@@ -58,7 +58,7 @@
 
         <div class="coin__text__blocks d-flex flex-row">
             <div class="coin__text__blocks__item">
-                <img src="{{ asset('src/img/icons/category.png')}}" alt="Secure Payment" class="coin__text__blocks__item__img">
+                <img src="{{ asset('src/img/icons/category/category.png')}}" alt="Secure Payment" class="coin__text__blocks__item__img">
 
                 <h3 class="coin__text__blocks__item__title title-little">
                     Secure Payment
@@ -70,7 +70,7 @@
             </div>
 
             <div class="coin__text__blocks__item">
-                <img src="{{ asset('src/img/icons/category.png')}}" alt="Secure Payment" class="coin__text__blocks__item__img">
+                <img src="{{ asset('src/img/icons/category/category.png')}}" alt="Secure Payment" class="coin__text__blocks__item__img">
 
                 <h3 class="coin__text__blocks__item__title title-little">
                     Secure Payment

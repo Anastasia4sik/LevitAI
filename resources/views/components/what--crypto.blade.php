@@ -35,7 +35,7 @@
                         >
 
                         <img
-                            src="{{asset('src/img/icons/category.png')}}"
+                            src="{{asset('src/img/icons/category/category.png')}}"
                             alt="Category"
                             class="whatCrypto__list__item__img"
                         >

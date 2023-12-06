@@ -48,7 +48,7 @@
             "
         >
             <img
-                src="{{asset('src/img/icons/arrow-black.svg')}}"
+                src="{{asset('src/img/icons/arrows/arrow-black.svg')}}"
                 alt="Send"
                 class="complete__btn__img"
                 style="

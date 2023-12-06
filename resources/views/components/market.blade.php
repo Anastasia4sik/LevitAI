@@ -93,6 +93,6 @@
     </table>
 
     <button class="market__btn desc d-flex flex-row align-items-center">
-        Show more <img src="{{asset('src/img/icons/arrow-down.svg')}}" alt="Show more">
+        Show more <img src="{{asset('src/img/icons/arrows/arrow-down.svg')}}" alt="Show more">
     </button>
 </section>
