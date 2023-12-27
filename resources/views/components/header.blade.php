@@ -12,7 +12,7 @@
 
             <ul class="header__dropdown__options">
                 <li>
-                    <a href="#">
+                    <a href="/documentation">
                         Documentation
                     </a>
                 </li>
@@ -38,10 +38,10 @@
         </div>
 
         <div class="header__dropdown">
-            <div class="header__dropdown__label">
-            Documentation
+            <a href="/documentation" class="header__dropdown__label">
+                Documentation
             <span class="arrow-down">&#9662;</span>
-            </div>
+            </a>
 
             <ul class="header__dropdown__options">
                 <li>
@@ -84,7 +84,7 @@
                 </li>
 
                 <li>
-                    <a href="#">
+                    <a href="/documentation">
                         Documentation
                     </a>
                 </li>
@@ -123,7 +123,7 @@
                 </li>
 
                 <li>
-                    <a href="#">
+                    <a href="/documentation">
                         Documentation
                     </a>
                 </li>
@@ -162,7 +162,7 @@
                 </li>
 
                 <li>
-                    <a href="#">
+                    <a href="/documentation">
                         Documentation
                     </a>
                 </li>

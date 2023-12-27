@@ -1,0 +1,51 @@
+.paper {
+    padding-left: 105px;
+    padding-top: 77px;
+
+    &__main {
+        background-image: url('../../../public/src/img/bc/bc-docs-doc.png');
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-size: contain;
+    }
+
+    &__undertitle {
+        margin-bottom: 5px;
+    }
+
+    &__title {
+        &--sec {
+            margin-top: -15px;
+            margin-bottom: 75px;
+        }
+    }
+
+    &__list {
+        margin-bottom: 100px;
+
+        gap: 75px;
+
+        &__item {
+            gap: 25px;
+
+            &__img {
+                width: 97.2px;
+                height: 115px;
+            }
+
+            &__content {
+                &__title {
+                    margin-bottom: 15px;
+                }
+
+                &__desc {
+                    margin-bottom: 30px;
+                }
+
+                &__btns {
+                    gap: 15px;
+                }
+            }
+        }
+    }
+}
