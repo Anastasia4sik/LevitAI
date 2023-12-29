@@ -78,8 +78,8 @@
 
       <ul class="header__dropdown__options">
         <li>
-          <a href="#">
-            My Account
+          <a href="/contact-us">
+            Contact Us
           </a>
         </li>
 
