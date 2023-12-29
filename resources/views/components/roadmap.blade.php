@@ -4,6 +4,11 @@
     @if(request()->is('roadmap'))
         style="
             padding: 0;
+
+            background-image: url('{{asset('/src/img/bc/bc-roadmap-page.png')}}');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
         "
     @else
         style="
@@ -12,13 +17,15 @@
     @endif
 >
     @if(request()->is('roadmap'))
+    <x-header />
+
         <div
-            class="roadmap__top d-flex flex-row justify-content-center align-items-center"
+            class="roadmap__top d-flex flex-column justify-content-center align-items-center"
             style="
-                background-image: url('{{asset('/src/img/bc/bc-strategy.png')}}');
-                background-repeat: no-repeat;
-                background-position: left top;
-                background-size: auto;
+
+
+                margin-bottom: 0;
+                height: 100vh;
             "
         >
             <div class="roadmap__top__text">
@@ -41,7 +48,13 @@
                     </p>
                 </div>
             </div>
+
+            <a href="#map" class="roadmap__top__arrowDown">
+                <img src="{{ asset('src/img/icons/arrows/arrow-down-circle.png')}}" alt="To map">
+            </a>
         </div>
+
+        <img id="map" src="{{ asset('src/img/photo/roadmap/roadmap.png')}}" alt="" class="roadmap__img roadmap__img--map">
     @else
         <div class="roadmap__top d-flex flex-row justify-content-between">
             <div class="roadmap__top__text">
@@ -67,9 +80,9 @@
 
             <img src="{{ asset('src/img/photo/choose-img.jpg')}}" alt="Our Strategy & Roadmap" class="roadmap__top__img">
         </div>
+
+        <img id="map" src="{{ asset('src/img//photo/roadmap/roadmap.png')}}" alt="" class="roadmap__img roadmap__img--map">
+
+        <img id="line" src="{{ asset('src/img//photo/roadmap/line.png')}}" alt="" class="roadmap__img roadmap__img--line">
     @endif
-
-    <img id="map" src="{{ asset('src/img//photo/roadmap/roadmap.png')}}" alt="" class="roadmap__img roadmap__img--map">
-
-    <img id="line" src="{{ asset('src/img//photo/roadmap/line.png')}}" alt="" class="roadmap__img roadmap__img--line">
 </section>

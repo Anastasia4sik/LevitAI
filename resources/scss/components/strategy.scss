@@ -21,6 +21,9 @@
     }
 
     &__content {
+        &__img {
+            width: 30.2vw;
+        }
         &__list {
             &__item {
                 &:not(:last-of-type) {
