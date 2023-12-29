@@ -1,4 +1,5 @@
-.terms {
+.terms,
+.privacy {
     background-image: url('../../../../public/src/img/bc/bc-docs-doc.png');
     background-size: contain;
     background-repeat: no-repeat;
@@ -17,8 +18,13 @@
     }
 
     &__desc {
+        opacity: 0.75;
         &:not(:last-of-type) {
             margin-bottom: 30px;
+        }
+
+        a {
+            text-decoration: underline;
         }
     }
 }

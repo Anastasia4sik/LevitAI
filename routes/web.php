@@ -29,8 +29,11 @@ Route::get('/roadmap', function () {
     return view('roadmapPage');
 });
 
-Route::get('/terms-of-use', function () {
+Route::get('/terms-use', function () {
     return view('terms');
 });
 
+Route::get('/privacy-policy', function () {
+    return view('privacy');
+});
 

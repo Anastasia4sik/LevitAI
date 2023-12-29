@@ -1,172 +1,172 @@
 <header id="head" class="header d-flex flex-row justify-content-end">
-    <ul class="header__list d-flex flex-row align-items-center">
-        <a href="/" class="header__list__item">
-            Home
-        </a>
+  <ul class="header__list d-flex flex-row align-items-center">
+    <a href="/" class="header__list__item">
+      Home
+    </a>
 
-        <div class="header__dropdown">
-            <div class="header__dropdown__label">
-            My Account
-            <span class="arrow-down">&#9662;</span>
-            </div>
+    <div class="header__dropdown">
+      <div class="header__dropdown__label">
+        My Account
+        <span class="arrow-down">&#9662;</span>
+      </div>
 
-            <ul class="header__dropdown__options">
-                <li>
-                    <a href="/documentation">
-                        Documentation
-                    </a>
-                </li>
+      <ul class="header__dropdown__options">
+        <li>
+          <a href="/documentation">
+            Documentation
+          </a>
+        </li>
 
-                <li>
-                    <a href="#">
-                        Discover
-                    </a>
-                </li>
-
-                <li>
-                    <a href="#">
-                        Your LevitAI World
-                    </a>
-                </li>
-
-                <li>
-                    <a href="#">
-                        Community
-                    </a>
-                </li>
-            </ul>
-        </div>
-
-        <div class="header__dropdown">
-            <a href="/documentation" class="header__dropdown__label">
-                Documentation
-            <span class="arrow-down">&#9662;</span>
-            </a>
-
-            <ul class="header__dropdown__options">
-                <li>
-                    <a href="/roadmap">
-                        Roadmap
-                    </a>
-                </li>
-
-                <li>
-                    <a href="/terms-of-use">
-                        Terms Of Use
-                    </a>
-                </li>
-
-                <li>
-                    <a href="#">
-                        Your LevitAI World
-                    </a>
-                </li>
-
-                <li>
-                    <a href="#">
-                        Community
-                    </a>
-                </li>
-            </ul>
-        </div>
-
-        <div class="header__dropdown">
-            <div class="header__dropdown__label">
+        <li>
+          <a href="#">
             Discover
-            <span class="arrow-down">&#9662;</span>
-            </div>
+          </a>
+        </li>
 
-            <ul class="header__dropdown__options">
-                <li>
-                    <a href="#">
-                        My Account
-                    </a>
-                </li>
-
-                <li>
-                    <a href="/documentation">
-                        Documentation
-                    </a>
-                </li>
-
-                <li>
-                    <a href="#">
-                        Your LevitAI World
-                    </a>
-                </li>
-
-                <li>
-                    <a href="#">
-                        Community
-                    </a>
-                </li>
-            </ul>
-        </div>
-
-        <div class="header__dropdown">
-            <div class="header__dropdown__label">
+        <li>
+          <a href="#">
             Your LevitAI World
-            <span class="arrow-down">&#9662;</span>
-            </div>
+          </a>
+        </li>
 
-            <ul class="header__dropdown__options">
-                <li>
-                    <a href="#">
-                        My Account
-                    </a>
-                </li>
-
-                <li>
-                    <a href="#">
-                        Discover
-                    </a>
-                </li>
-
-                <li>
-                    <a href="/documentation">
-                        Documentation
-                    </a>
-                </li>
-
-                <li>
-                    <a href="#">
-                        Community
-                    </a>
-                </li>
-            </ul>
-        </div>
-
-        <div class="header__dropdown">
-            <div class="header__dropdown__label">
+        <li>
+          <a href="#">
             Community
-            <span class="arrow-down">&#9662;</span>
-            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
 
-            <ul class="header__dropdown__options">
-                <li>
-                    <a href="#">
-                        My Account
-                    </a>
-                </li>
+    <div class="header__dropdown">
+      <a href="/documentation" class="header__dropdown__label">
+        Documentation
+        <span class="arrow-down">&#9662;</span>
+      </a>
 
-                <li>
-                    <a href="#">
-                        Discover
-                    </a>
-                </li>
+      <ul class="header__dropdown__options">
+        <li>
+          <a href="/roadmap">
+            Roadmap
+          </a>
+        </li>
 
-                <li>
-                    <a href="#">
-                        Your LevitAI World
-                    </a>
-                </li>
+        <li>
+          <a href="/terms-use">
+            Terms Of Use
+          </a>
+        </li>
 
-                <li>
-                    <a href="/documentation">
-                        Documentation
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </ul>
+        <li>
+          <a href="/privacy-policy">
+            Privacy Policy
+          </a>
+        </li>
+
+        <li>
+          <a href="/documentation">
+            Your LevitAI World
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="header__dropdown">
+      <div class="header__dropdown__label">
+        Discover
+        <span class="arrow-down">&#9662;</span>
+      </div>
+
+      <ul class="header__dropdown__options">
+        <li>
+          <a href="#">
+            My Account
+          </a>
+        </li>
+
+        <li>
+          <a href="/documentation">
+            Documentation
+          </a>
+        </li>
+
+        <li>
+          <a href="#">
+            Your LevitAI World
+          </a>
+        </li>
+
+        <li>
+          <a href="#">
+            Community
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="header__dropdown">
+      <div class="header__dropdown__label">
+        Your LevitAI World
+        <span class="arrow-down">&#9662;</span>
+      </div>
+
+      <ul class="header__dropdown__options">
+        <li>
+          <a href="#">
+            My Account
+          </a>
+        </li>
+
+        <li>
+          <a href="#">
+            Discover
+          </a>
+        </li>
+
+        <li>
+          <a href="/documentation">
+            Documentation
+          </a>
+        </li>
+
+        <li>
+          <a href="#">
+            Community
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="header__dropdown">
+      <div class="header__dropdown__label">
+        Community
+        <span class="arrow-down">&#9662;</span>
+      </div>
+
+      <ul class="header__dropdown__options">
+        <li>
+          <a href="#">
+            My Account
+          </a>
+        </li>
+
+        <li>
+          <a href="#">
+            Discover
+          </a>
+        </li>
+
+        <li>
+          <a href="#">
+            Your LevitAI World
+          </a>
+        </li>
+
+        <li>
+          <a href="/documentation">
+            Documentation
+          </a>
+        </li>
+      </ul>
+    </div>
+  </ul>
 </header>

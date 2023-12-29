@@ -105,7 +105,7 @@
                 The Games and our websites may include third party website links and other third party materials such as posts, comments, videos, images and other content such as other user-generated content. We are not responsible for this content. We may moderate or otherwise check such content in some instances, but we are not required to do so. Depending upon the particular Game or website and the content involved, we may be solely a mere conduit for the transmission, storage and retrieval of the relevant content. In other words, we may not review content for its legality, tastefulness or its com-pliance with these T&Cs.
                 <br>
                 <br>
-                We may rely upon a reporting system whereby players and users can report third party or user-generated content to us, such as because it is illegal content or as it is content which breaches these T&Cs. A reporting mechanism may be made available for these purposes in the relevant website or Game, and you can also let us know by contacting us at: <a href="mailto:info@levitai.com" class="text-decoration-underline">info@levitai.com</a>.
+                We may rely upon a reporting system whereby players and users can report third party or user-generated content to us, such as because it is illegal content or as it is content which breaches these T&Cs. A reporting mechanism may be made available for these purposes in the relevant website or Game, and you can also let us know by contacting us at: <a target="_blank" href="mailto:info@levitai.com">info@levitai.com</a>.
                 <br>
                 <br>
                 Where we provide the functionality for you to upload any content, including any user generated content, to our Games and/or websites such as, without limitation, posts, photos, videos, images, voice communications, text and other communications, comments or other content or files, you agree and undertake that the content:
@@ -197,7 +197,7 @@
                 If we release a version of a Game which is not yet complete, because we want to give you early ac-cess, then you’ll need to bear in mind that it may have some errors, bugs or interruptions.
                 <br>
                 <br>
-                Please do let us know straight away if you discover any problems with a Game, so we are aware and can decide whether it is something we need to address in a future release or update (if there is a future release or update). You can contact us to let us know about any problems with a Game the following email address <a href="mailto:info@levitai.com" class="text-decoration-underline">info@levitai.com</a>.
+                Please do let us know straight away if you discover any problems with a Game, so we are aware and can decide whether it is something we need to address in a future release or update (if there is a future release or update). You can contact us to let us know about any problems with a Game the following email address <a target="_blank" href="mailto:info@levitai.com"">info@levitai.com</a>.
                 <br>
                 <br>
                 Any views expressed in the Games or our websites are the views of the authors and not of us, unless we expressly specify otherwise.
