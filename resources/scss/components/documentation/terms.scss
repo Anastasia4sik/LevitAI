@@ -1,0 +1,24 @@
+.terms {
+    background-image: url('../../../../public/src/img/bc/bc-docs-doc.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    &__text {
+        margin: 77px 52px 150px 105px;
+    }
+    &__title {
+        margin-bottom: 75px;
+        font-size: 128px;
+
+        &-sec {
+            margin-bottom: 15px;
+
+            font-size: 24px;
+        }
+    }
+
+    &__desc {
+        &:not(:last-of-type) {
+            margin-bottom: 30px;
+        }
+    }
+}

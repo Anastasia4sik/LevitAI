@@ -89,8 +89,8 @@
                             </li>
 
                             <li>
-                                <a href="#">
-                                    The NFT Gallery
+                                <a href="/terms-of-use">
+                                    Terms Of Use
                                 </a>
                             </li>
 

@@ -28,3 +28,9 @@ Route::get('/documentation', function () {
 Route::get('/roadmap', function () {
     return view('roadmapPage');
 });
+
+Route::get('/terms-of-use', function () {
+    return view('terms');
+});
+
+

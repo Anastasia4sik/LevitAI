@@ -51,8 +51,8 @@
                 </li>
 
                 <li>
-                    <a href="#">
-                        Discover
+                    <a href="/terms-of-use">
+                        Terms Of Use
                     </a>
                 </li>
 
