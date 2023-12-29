@@ -1,14 +1,11 @@
 .docs {
     padding-left: 105px;
 
-    background-image: url('/src/img/bc/bc-docs.png');
     background-repeat: no-repeat;
     background-position: center top;
     background-size: contain;
 
     &__top {
-        margin-bottom: 25px;
-
         &__block {
             gap: 40px;
 

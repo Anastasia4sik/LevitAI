@@ -2,7 +2,7 @@
     padding: 150px 0 0 105px;
     margin-bottom: 56px;
 
-    background-image: url('/src/img/bc/bc-strategy.png');
+    background-image: url('src/img/bc/bc-strategy.png');
     background-repeat: no-repeat;
     background-position: left top;
     background-size: auto;
@@ -21,6 +21,9 @@
     }
 
     &__content {
+        &__img {
+            width: 30.2vw;
+        }
         &__list {
             &__item {
                 &:not(:last-of-type) {

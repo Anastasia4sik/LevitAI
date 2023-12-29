@@ -13,10 +13,31 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
 Route::get('/', function () {
     return view('main');
 });
+
+Route::get('/documentation', function () {
+    return view('documentation');
+});
+
+Route::get('/roadmap', function () {
+    return view('roadmapPage');
+});
+
+Route::get('/terms-use', function () {
+    return view('terms');
+});
+
+Route::get('/privacy-policy', function () {
+    return view('privacy');
+});
+
+Route::get('/contact-us', function () {
+    return view('contactPage');
+});
+

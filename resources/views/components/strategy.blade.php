@@ -1,4 +1,11 @@
-<section class="strategy">
+<section
+    class="strategy"
+    @if(request()->is('roadmap'))
+        style="
+            margin-bottom: 150px;
+        "
+    @endif
+>
     <div class="strategy__top d-flex flex-column justify-content-end align-items-end">
         <div class="strategy__top__big d-flex flex-row align-items-end">
             <h2 class="title-main">
