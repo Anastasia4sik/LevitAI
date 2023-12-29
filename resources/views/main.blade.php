@@ -412,5 +412,24 @@
                 });
             });
         })
+
+        //sales
+        const cardsContainer = document.querySelector('.sales__block__cards');
+        const leftButton = document.querySelector('.sales__block__btns__img--left');
+        const rightButton = document.querySelector('.sales__block__btns__img--right');
+
+        function updateButtonPadding() {
+            const canScrollLeft = cardsContainer.scrollLeft > 0;
+            const canScrollRight = cardsContainer.scrollLeft < (cardsContainer.scrollWidth - cardsContainer.clientWidth);
+
+            leftButton.style.padding = canScrollLeft ? '25px 27px' : '18px 20px';
+            rightButton.style.padding = canScrollRight ? '25px 27px' : '18px 20px';
+        }
+
+        function scrollCards(scrollAmount) {
+            cardsContainer.scrollLeft += scrollAmount;
+        }
+
+        cardsContainer.addEventListener('scroll', updateButtonPadding);
     </script>
 </x-base>
