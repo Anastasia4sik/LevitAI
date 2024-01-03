@@ -46,3 +46,7 @@ Route::get('/faq', function () {
     return view('community/faq');
 });
 
+Route::get('/blog', function () {
+    return view('community/blog');
+});
+

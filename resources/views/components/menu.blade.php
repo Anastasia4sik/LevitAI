@@ -185,8 +185,8 @@
                 </li>
 
               <li>
-                <a href="#">
-                  The NFT Gallery
+                <a href="/blog">
+                  Blog
                 </a>
               </li>
 

@@ -156,9 +156,9 @@
         </li>
 
         <li>
-          <a href="#">
-            Your LevitAI World
-          </a>
+            <a href="/blog">
+                Blog
+            </a>
         </li>
 
         <li>
