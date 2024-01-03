@@ -101,8 +101,8 @@
 
             <ul class="menu__container__list__item__select__options">
               <li>
-                <a href="/contact-us">
-                    Contact Us
+                <a href="#">
+                    LevitAI
                 </a>
               </li>
 
@@ -172,17 +172,17 @@
             </div>
 
             <ul class="menu__container__list__item__select__options">
-              <li>
-                <a href="#">
-                  Building the Future
-                </a>
-              </li>
+                <li>
+                    <a href="/contact-us">
+                        Contact Us
+                    </a>
+                </li>
 
-              <li>
-                <a href="#">
-                  What is LevitAI
-                </a>
-              </li>
+                <li>
+                    <a href="/faq">
+                        FAQ
+                    </a>
+                </li>
 
               <li>
                 <a href="#">

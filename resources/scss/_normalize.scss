@@ -1,6 +1,6 @@
 @font-face {
 	font-family: 'Fixel';
-	src: url('/src/fonts/FixelDisplay-Regular.ttf') format('ttf');
+	src: url('../../../public/src/fonts/FixelDisplay-Regular.ttf') format('ttf');
 	font-weight: 700;
 	font-style: normal;
 }
@@ -55,4 +55,30 @@ h1, h2, h3, p {
 .desc {
     font-size: 16px;
     line-height: 137.5%;
+}
+
+.topPage {
+    height: 100vh;
+    width: 100vw;
+
+    margin: 0 auto;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &__top {
+        height: max-content;
+        width: max-content;
+        margin-bottom: 84px;
+
+        &__text {
+            &__title {
+                margin-right: 35px;
+            }
+
+            &__desc {
+                width: 499px;
+            }
+        }
+    }
 }

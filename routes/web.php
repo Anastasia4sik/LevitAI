@@ -22,22 +22,27 @@ Route::get('/', function () {
 });
 
 Route::get('/documentation', function () {
-    return view('documentation');
+    return view('documentation/documentation');
 });
 
 Route::get('/roadmap', function () {
-    return view('roadmapPage');
+    return view('documentation/roadmapPage');
 });
 
 Route::get('/terms-use', function () {
-    return view('terms');
+    return view('documentation/terms');
 });
 
 Route::get('/privacy-policy', function () {
-    return view('privacy');
+    return view('documentation/privacy');
 });
 
+
 Route::get('/contact-us', function () {
-    return view('contactPage');
+    return view('community/contactPage');
+});
+
+Route::get('/faq', function () {
+    return view('community/faq');
 });
 

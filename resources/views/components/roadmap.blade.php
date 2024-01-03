@@ -20,26 +20,17 @@
     <x-header />
 
         <div
-            class="roadmap__top d-flex flex-column justify-content-center align-items-center"
-            style="
-
-
-                margin-bottom: 0;
-                height: 100vh;
-            "
+            class="roadmap__top topPage d-flex flex-column justify-content-center align-items-center"
         >
-            <div class="roadmap__top__text">
+            <div class="roadmap__top__text topPage__top">
                 <h2 class="title-main">
                     Our Strategy &
                 </h2>
 
                 <div
-                    class="roadmap__top__text__bottom d-flex flex-row align-items-center"
-                    style="
-                        gap: 35px;
-                    "
+                    class="roadmap__top__text__bottom  d-flex flex-row align-items-center"
                 >
-                    <h2 class="title-main title-main--stroke">
+                    <h2 class="title-main title-main--stroke topPage__top__text__title">
                         Roadmap
                     </h2>
 

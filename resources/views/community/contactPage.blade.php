@@ -4,32 +4,32 @@
         <x-header />
 
         <section class="contactPage">
-            <div class="contactPage__container d-flex flex-column align-items-center justify-content-center">
+            <div class="contactPage__container topPage d-flex flex-column align-items-center justify-content-center">
                 <div
                     class="
-                        contactPage__top
+                        topPage__top
                         d-flex
                         flex-column
                         justify-content-center
                     "
                 >
-                    <h2 class="contactPage__top__title title-main">
+                    <h2 class="topPage__top__title title-main">
                         Contact
                     </h2>
 
-                    <div class="contactPage__top__text d-flex flex-row align-items-center">
-                        <h2 class="contactPage__top__text__title title-main title-main--stroke">
+                    <div class="topPage__top__text d-flex flex-row align-items-center">
+                        <h2 class="topPage__top__text__title title-main title-main--stroke">
                             us
                         </h2>
 
-                        <p class="contactPage__top__text__desc">
+                        <p class="topPage__top__text__desc desc">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt labore dolore magna aliqua. Ut ad minim veniam,  nostrud exercitation ullamco laboris ut ea consequat. Lorem  amet, sed do  tempor aliqua.
                         </p>
                     </div>
 
                 </div>
 
-                <a href="#contact-form" class="contactPage__top__arrowDown">
+                <a href="#contact-form" class="topPage__top__arrowDown">
                     <img src="{{ asset('src/img/icons/arrows/arrow-down-circle.png')}}" alt="To map">
                 </a>
             </div>
@@ -150,5 +150,4 @@
         </section>
 
         <x-footer />
-    </section>
 </x-base>

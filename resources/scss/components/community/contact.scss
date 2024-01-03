@@ -2,30 +2,8 @@
     margin-bottom: 150px;
 
     &__container {
-        height: 100vh;
-        width: 100vw;
+        background-image: url('../../../../public/src/img/bc/bc-contactPage-top.png');
 
-        margin: 0 auto;
-        background-image: url('/src/img/bc/bc-contactPage-top.png');
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-
-    &__top {
-        height: max-content;
-        width: max-content;
-        margin-bottom: 84px;
-
-        &__text {
-
-            &__title {
-                margin-right: 35px;
-            }
-
-            &__desc {
-                width: 499px;
-            }
-        }
     }
 
     &__bottom {
@@ -62,7 +40,7 @@
         width: 36.6vw;
 
         &__input {
-            padding: 15px 0;
+            padding-bottom: 15px;
 
             background-color: transparent;
             border-bottom: 1.5px solid $white;
@@ -71,6 +49,8 @@
             font-size: 20px;
             font-weight: 500;
             line-height: 140%;
+
+            overflow-y: hidden;
 
             &::placeholder {
                 color: $white;
@@ -90,10 +70,12 @@
 
         textarea {
             margin-bottom: 75px;
-            padding: 15px 0;
+            padding-bottom: 15px;
             height: 44.5px;
 
             width: 100%;
+
+            resize: vertical;
         }
     }
 }

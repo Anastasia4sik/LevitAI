@@ -78,8 +78,8 @@
 
       <ul class="header__dropdown__options">
         <li>
-          <a href="/contact-us">
-            Contact Us
+          <a href="#">
+            LevitAI
           </a>
         </li>
 
@@ -144,14 +144,14 @@
 
       <ul class="header__dropdown__options">
         <li>
-          <a href="#">
-            My Account
-          </a>
+            <a href="/contact-us">
+                Contact Us
+            </a>
         </li>
 
         <li>
-          <a href="#">
-            Discover
+          <a href="/faq">
+            FAQ
           </a>
         </li>
 

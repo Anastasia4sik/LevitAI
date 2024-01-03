@@ -1,4 +1,4 @@
-<section class="qna">
+<section id="faq" class="qna">
     <div class="qna__top">
         <div class="qna__top__first d-flex flex-row align-items-center">
             <h2 class="qna__top__first__title title-main title-main--stroke">
