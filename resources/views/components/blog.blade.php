@@ -1,5 +1,5 @@
 @if(request()->is('blog'))
-<section class="blog" style="padding: 0 0 100px 105px">
+<section id="blog" class="blog" style="padding: 0 0 100px 105px">
     <div class="blog__top">
             <div class="blog__top__first d-flex flex-row align-items-center">
                 <h2 class="blog__top__first__title title-main">
@@ -10,7 +10,7 @@
                     Posts
                 </h2>
             </div>
-        @else
+@else
     <section class="blog" style="padding: 176px 0 209px 105px; background-image: url('../../../public/src/img/bc/bc-blog.png');">
         <div class="blog__top">
             <div class="blog__top__first d-flex flex-row align-items-center">
@@ -29,7 +29,7 @@
                 </h2>
 
                 <a
-                    href="#"
+                    href="/blog"
                     class="
                         complete__btn
                         d-flex
@@ -62,17 +62,19 @@
         <div class="swiper-wrapper">
             @foreach($blogInfo as $key => $item)
                 <div class="blog__swiper__slide swiper-slide">
-                    <img src="{{ asset($item['photo'])}}" alt="slide">
+                        <a href="/blog/post-">
+                        <img src="{{ asset($item['photo'])}}" alt="slide">
 
-                    <h3 class="blog__swiper__slide__title title-little">
-                        {{ $item['title']}}
-                    </h3>
+                        <h3 class="blog__swiper__slide__title title-little">
+                            {{ $item['title']}}
+                        </h3>
 
-                    <p class="blog__swiper__slide__desc desc">
-                        {{ $item['desc']}}
-                    </p>
+                        <p class="blog__swiper__slide__desc desc">
+                            {{ $item['desc']}}
+                        </p>
+                    </a>
                 </div>
-            @endforeach
+@endforeach
         </div>
 
         <div class="blog__swiper__pagination swiper-pagination"></div>

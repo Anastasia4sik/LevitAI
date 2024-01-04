@@ -183,31 +183,37 @@
 
     $blogInfo = [
         'item1' => [
+            'id' => 1,
             'photo' => 'src/img/photo/choose-img.jpg',
             'title' => 'Cryptocash Is A Clean & Modern Coin Service - Levitai',
             'desc' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt labore dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
         ],
         'item2' => [
+            'id' => 2,
             'photo' => 'src/img/photo/slide2.jpg',
             'title' => 'Cryptocash Is A Clean & Modern Coin Service - Levitai',
             'desc' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt labore dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
         ],
         'item3' => [
+            'id' => 3,
             'photo' => 'src/img/photo/choose-img.jpg',
             'title' => 'Cryptocash Is A Clean & Modern Coin Service - Levitai',
             'desc' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt labore dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
         ],
         'item4' => [
+            'id' => 4,
             'photo' => 'src/img/photo/slide2.jpg',
             'title' => 'Cryptocash Is A Clean & Modern Coin Service - Levitai',
             'desc' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt labore dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
         ],
         'item5' => [
+            'id' => 5,
             'photo' => 'src/img/photo/choose-img.jpg',
             'title' => 'Cryptocash Is A Clean & Modern Coin Service - Levitai',
             'desc' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt labore dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
         ],
     ];
+
 
     $qnaInfo = [
         'block1' => [
