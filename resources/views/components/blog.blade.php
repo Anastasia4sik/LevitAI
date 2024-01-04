@@ -11,7 +11,7 @@
                 </h2>
             </div>
 @else
-    <section class="blog" style="padding: 176px 0 209px 105px; background-image: url('src/img/bc/bc-blog.png');">
+    <section class="blog" style="padding: 176px 0 209px 105px; background-image: url('/src/img/bc/bc-blog.png');">
         <div class="blog__top">
             <div class="blog__top__first d-flex flex-row align-items-center">
                 <h2 class="blog__top__first__title title-main">
