@@ -16,3 +16,29 @@ new Swiper('.blog__swiper', {
     speed: 1500,
     slidesPerView: 'auto',
 });
+
+new Swiper('.teamPage__experts__swiper', {
+    pagination: {
+        el: '.teamPage__experts__swiper__pagination',
+        clickable: true,
+    },
+
+    initialSlide: 0,
+    centeredSlides: false,
+    spaceBetween: 125,
+    speed: 1500,
+    slidesPerView: 'auto',
+});
+
+new Swiper('.teamPage__advisor__swiper', {
+    pagination: {
+        el: '.teamPage__advisor__swiper__pagination',
+        clickable: true,
+    },
+
+    initialSlide: 0,
+    centeredSlides: false,
+    spaceBetween: 125,
+    speed: 1500,
+    slidesPerView: 'auto',
+});

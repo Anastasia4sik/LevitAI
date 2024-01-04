@@ -1,0 +1,142 @@
+.teamPage {
+    background-image: url('../../../../public/src/img/bc/bc-teamPage.png');
+    background-repeat: no-repeat;
+    background-position: top top;
+    background-size: contain;
+
+    &__experts {
+        padding: 0 52px 0 105px;
+        margin-bottom: 75px;
+
+        &__title {
+            display: block;
+
+            width: 48vw;
+            margin-bottom: 75px;
+        }
+
+        &__swiper {
+            position: relative;
+
+            &__card {
+                width: 382px !important;
+                padding-bottom: 75px;
+
+                &__img {
+                    width: 100%;
+                    height: 534px;
+
+                    margin-bottom: 20px;
+                }
+
+                &__name {
+                    margin-bottom: 15px;
+                }
+
+                &__position {
+                    margin-bottom: 10px;
+                }
+
+                &__desc {
+                    width: 100%;
+
+                    margin-bottom: 30px;
+
+                    display: -webkit-box;
+                    -webkit-box-orient: vertical;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    -webkit-line-clamp: 3;
+                    white-space: normal;
+                }
+
+                &__btns {
+                    gap: 15px;
+                }
+            }
+        }
+    }
+
+    &__advisor {
+        padding: 0 52px 0 105px;
+        margin-bottom: 100px;
+
+        &__title {
+            display: block;
+
+            width: 48vw;
+            margin-bottom: 75px;
+        }
+
+        &__swiper {
+            position: relative;
+
+            &__card {
+                width: 382px !important;
+                padding-bottom: 75px;
+
+                &__img {
+                    width: 100%;
+                    height: 534px;
+
+                    margin-bottom: 20px;
+                }
+
+                &__name {
+                    margin-bottom: 15px;
+                }
+
+                &__position {
+                    margin-bottom: 10px;
+                }
+
+                &__desc {
+                    width: 100%;
+
+                    margin-bottom: 30px;
+
+                    display: -webkit-box;
+                    -webkit-box-orient: vertical;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    -webkit-line-clamp: 3;
+                    white-space: normal;
+                }
+
+                &__btns {
+                    gap: 15px;
+                }
+            }
+        }
+    }
+}
+
+div.teamPage__experts__swiper__pagination.swiper-pagination {
+    & .swiper-pagination-bullet {
+        opacity: 1;
+
+        &-active {
+            background-color: white;
+        }
+
+        &:not(.swiper-pagination-bullet-active) {
+            background: transparent;
+            border: 1.5px solid white;
+        }
+    }
+}
+
+div.teamPage__advisor__swiper__pagination.swiper-pagination {
+    & .swiper-pagination-bullet {
+        opacity: 1;
+
+        &-active {
+            background-color: white;
+        }
+
+        &:not(.swiper-pagination-bullet-active) {
+            background: transparent;
+            border: 1.5px solid white;
+        }
+    }
+}

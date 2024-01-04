@@ -53,3 +53,7 @@ Route::get('/blog', function () {
 Route::get('/blog/post-', function () {
     return view('community/postPage');
 });
+
+Route::get('/team', function () {
+    return view('community/teamPage');
+});

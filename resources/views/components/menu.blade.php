@@ -191,8 +191,8 @@
               </li>
 
               <li>
-                <a href="#">
-                  The Exchange Market
+                <a href="/team">
+                    Our Team
                 </a>
               </li>
             </ul>

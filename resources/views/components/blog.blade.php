@@ -74,7 +74,7 @@
                         </p>
                     </a>
                 </div>
-@endforeach
+            @endforeach
         </div>
 
         <div class="blog__swiper__pagination swiper-pagination"></div>

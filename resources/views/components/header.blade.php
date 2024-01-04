@@ -150,9 +150,9 @@
         </li>
 
         <li>
-          <a href="/faq">
-            FAQ
-          </a>
+            <a href="/faq">
+                FAQ
+            </a>
         </li>
 
         <li>
@@ -162,9 +162,9 @@
         </li>
 
         <li>
-          <a href="/documentation">
-            Documentation
-          </a>
+            <a href="/team">
+                Our Team
+            </a>
         </li>
       </ul>
     </div>
