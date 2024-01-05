@@ -30,7 +30,23 @@
     ];
 @endphp
 
-<section class="team">
+<section
+    class="team"
+    @if(request()->is('about-us'))
+        style="
+            padding: 100px 2vw 0 105px;
+
+            background-image: url('{{asset('src/img/bc/bc-team-aboutPage.png')}}');
+        "
+    @else
+        style="
+            padding: 54px 2vw 0 105px;
+
+            background-image: url('{{asset('src/img/bc/bc-team.png')}}');
+            background-position: center -280px;
+        "
+    @endif
+>
     <h2 class="team__title title-main">
         Met Our <span class=" title-main--stroke">LevitAI</span> <br>
         <span class=" title-main--stroke">Team</span> Players

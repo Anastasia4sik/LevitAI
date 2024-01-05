@@ -166,6 +166,18 @@
                 Our Team
             </a>
         </li>
+
+        <li>
+            <a href="/about-us">
+                About Us
+            </a>
+        </li>
+
+        <li>
+            <a href="/events">
+                The Events
+            </a>
+        </li>
       </ul>
     </div>
   </ul>
