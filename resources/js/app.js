@@ -24,11 +24,11 @@ new Swiper('.teamPage__experts__swiper', {
     },
 
     initialSlide: 0,
-    centeredSlides: false,
     spaceBetween: 125,
     speed: 1500,
     slidesPerView: 'auto',
 });
+
 
 new Swiper('.teamPage__advisor__swiper', {
     pagination: {
@@ -37,7 +37,6 @@ new Swiper('.teamPage__advisor__swiper', {
     },
 
     initialSlide: 0,
-    centeredSlides: false,
     spaceBetween: 125,
     speed: 1500,
     slidesPerView: 'auto',

@@ -79,4 +79,42 @@
             id="face-color"
         >
     </div>
+
+    <script>
+        //face
+        window.addEventListener('scroll', function() {
+            const faceWhite = document.getElementById('face-white');
+            const faceMain = document.getElementById('face-main');
+            const faceColor = document.getElementById('face-color');
+            const scrollPosition = window.scrollY;
+
+            const triggerDiv = document.getElementById('face');
+            const triggerDivPosition = triggerDiv.offsetTop;
+
+            const opacity = 0.79 - (scrollPosition - triggerDivPosition) / triggerDiv.clientHeight;
+
+            const limitedOpacity = Math.min(1, Math.max(0, opacity));
+
+            if (limitedOpacity === 1 || limitedOpacity <= 0.2) {
+                faceWhite.style.opacity = 0;
+                faceMain.style.opacity = 0;
+                faceColor.style.opacity = 0.7;
+            } else if (limitedOpacity === 1) {
+                faceColor.style.opacity = 0.6;
+            } else if (
+                (limitedOpacity <= 0.99 && limitedOpacity >= 0.85) ||
+                (limitedOpacity < 0.4 && limitedOpacity >= 0.26)
+            ) {
+                faceWhite.style.opacity = 0.8;
+                faceMain.style.opacity = 0;
+                faceColor.style.opacity = 0;
+            } else if (
+                (limitedOpacity < 0.85 && limitedOpacity >= 0.4)
+            ) {
+                faceWhite.style.opacity = 0;
+                faceMain.style.opacity = 1;
+                faceColor.style.opacity = 0;
+            }
+        });
+    </script>
 </section>

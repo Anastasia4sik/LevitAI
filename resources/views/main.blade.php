@@ -393,7 +393,6 @@
 
         downloadButtons.forEach((button) => {
             button.addEventListener('click', function() {
-                console.log('click');
                 const name = button.getAttribute('data-name');
                 const fileUrl = `./src/docs/${name}.pdf`;
 
