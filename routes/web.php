@@ -57,3 +57,7 @@ Route::get('/blog/post-', function () {
 Route::get('/team', function () {
     return view('community/teamPage');
 });
+
+Route::get('/about-us', function () {
+    return view('community/aboutPage');
+});

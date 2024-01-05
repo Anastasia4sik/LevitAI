@@ -1,0 +1,64 @@
+.aboutPage {
+    &__top {
+        padding-left: 105px;
+        margin-bottom: 100px;
+
+        height: 85vh;
+
+        background-image: url('../../../../public/src/img/bc/bc-aboutPage-top.png');
+        background-repeat: no-repeat;
+        background-size: 46vw ;
+        background-position: right bottom;
+
+        &__bottom {
+            gap: 35px;
+
+            &__desc {
+                width: 33vw;
+            }
+        }
+    }
+
+    &__content {
+        padding: 0 52px 0 105px;
+
+
+        background-image: url('../../../../public/src/img/bc/bc-logo-aboutPage.png');
+        background-repeat: no-repeat;
+        background-size: auto ;
+        background-position: center;
+
+        &__block {
+            gap: 3.5vw;
+
+            &:first-of-type {
+                margin-bottom: 100px;
+            }
+
+            &__img {
+                width: 35.5vw;
+            }
+
+            &__text {
+                &__title {
+                    margin-bottom: 10px;
+
+                    font-size: 96px;
+                    text-transform: uppercase;
+                }
+
+                &__undertitle {
+                    margin-bottom: 15px;
+
+                    font-size: 24px;
+                    text-transform: uppercase;
+                }
+
+                &__desc {
+                    line-height: 155%;
+                }
+
+            }
+        }
+    }
+}

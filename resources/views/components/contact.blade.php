@@ -1,6 +1,6 @@
 <section
     class="contact d-flex flex-column align-items-center"
-    @if(request()->is('team'))
+    @if(request()->is('team') || request()->is('about-us'))
         style="
             background-image: url('{{asset('src/img/bc/bc-teamPage-contact.png')}}');
         "

@@ -195,6 +195,12 @@
                     Our Team
                 </a>
               </li>
+
+              <li>
+                <a href="/about-us">
+                    About Us
+                </a>
+              </li>
             </ul>
           </div>
         </li>
