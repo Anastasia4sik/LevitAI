@@ -61,3 +61,7 @@ Route::get('/team', function () {
 Route::get('/about-us', function () {
     return view('community/aboutPage');
 });
+
+Route::get('/events', function () {
+    return view('community/eventsPage');
+});
