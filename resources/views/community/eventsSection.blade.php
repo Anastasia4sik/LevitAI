@@ -236,7 +236,7 @@
                         <div class="eventsSection__content__block__bottom d-flex flex-column">
                             <a
                                 href="
-                                    /events/{{ $category }}/event-{{-- $event['id'] --}}
+                                    /events/{{-- $category /--}}event-{{-- $event['id'] --}}
                                 "
                                 class="
                                     eventsSection__content__block__bottom__btn

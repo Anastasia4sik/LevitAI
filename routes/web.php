@@ -70,3 +70,7 @@ Route::match(['get'], '/events/{type}', function ($type) {
     return view('community/eventsSection');
 })->where('type', 'sports|concerts|performances|courses')->name('events');
 
+Route::get('/events/event-', function () {
+    return view('community/event');
+});
+
