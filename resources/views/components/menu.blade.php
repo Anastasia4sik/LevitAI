@@ -1,6 +1,6 @@
 <aside class="menu">
   <div class="menu__main">
-    <img src="{{ asset('src/img/icons/sidemenu/menu.svg')}}" alt="Open Sidemenu" class="menu__main__btn">
+    <img src="{{ asset('/src/img/icons/sidemenu/menu.svg')}}" alt="Open Sidemenu" class="menu__main__btn">
 
     <img src="{{ asset('src/img/icons/sidemenu/logo-white.png')}}" alt="" class="menu__main__logo">
   </div>
@@ -215,4 +215,54 @@
 
     <img src="{{ asset('src/img/icons/sidemenu/logo.png')}}" alt="Logo" class="menu__container__logo">
   </div>
+
+  <script>
+    //menu dropdown
+        const menulist = document.querySelectorAll(".menu__container__list__item__select");
+
+        menulist.forEach((menuitem) => {
+            const menulistOption = menuitem.querySelector(".menu__container__list__item__select__options");
+
+            menuitem.addEventListener("click", function() {
+                if (menulistOption?.classList.contains("open")) {
+                    menulistOption.classList.remove("open");
+                } else {
+                    menulistOption.classList.add("open");
+                }
+            });
+        });
+
+    //menu visible
+    const menuOpenBtn = document.querySelector(".menu__main__btn");
+    const menuCloseBtn = document.querySelector(".menu__container__btn");
+    const menuContainer = document.querySelector(".menu__container");
+
+    menuOpenBtn.addEventListener("click", function() {
+        menuContainer.style.transform = "translateX(0)";
+    })
+
+    menuOpenBtn.addEventListener("mouseenter", function() {
+        menuOpenBtn.style.opacity = "0.6";
+
+        setTimeout(() => {
+            menuOpenBtn.style.opacity = "1";
+            menuOpenBtn.src = '/src/img/icons/sidemenu/menu-hover.svg';
+        }, 300);
+
+    })
+
+    menuOpenBtn.addEventListener("mouseleave", function() {
+        menuOpenBtn.style.opacity = "0.6";
+
+        setTimeout(() => {
+            menuOpenBtn.style.opacity = "1";
+            menuOpenBtn.src = '/src/img/icons/sidemenu/menu.svg';
+        }, 300);
+
+    })
+
+    menuCloseBtn.addEventListener("click", function() {
+        menuContainer.style.transform = "translateX(-100%)";
+    })
+  </script>
 </aside>
