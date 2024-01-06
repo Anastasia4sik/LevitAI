@@ -44,7 +44,7 @@
             </h3>
 
             <a
-                href="#"
+                href="/events/sports"
                 class="
                     complete__btn
                     d-flex
@@ -77,7 +77,7 @@
             </h3>
 
             <a
-                href="#"
+                href="/events/concerts"
                 class="
                     complete__btn
                     d-flex
@@ -110,7 +110,7 @@
             </h3>
 
             <a
-                href="#"
+                href="/events/performances"
                 class="
                     complete__btn
                     d-flex
@@ -143,7 +143,7 @@
             </h3>
 
             <a
-                href="#"
+                href="/events/courses"
                 class="
                     complete__btn
                     d-flex

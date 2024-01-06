@@ -4,11 +4,11 @@
     background-size: contain;
 
     &__blog {
-        padding: 0 52px 0 105px;
+        padding: 0 2vw 0 105px;
     }
 
     &__all {
-        padding: 0 52px 0 105px;
+        padding: 0 2vw 0 105px;
         margin-bottom: 279px;
 
         &__top {
@@ -52,7 +52,7 @@
 
                 display: grid;
 
-                gap: 52px;
+                gap: 2vw;
                 grid-template-columns: repeat(auto-fill, minmax(16vw, 1fr));
 
                 &__item {

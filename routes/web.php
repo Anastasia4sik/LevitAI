@@ -65,3 +65,12 @@ Route::get('/about-us', function () {
 Route::get('/events', function () {
     return view('community/eventsPage');
 });
+
+Route::match(['get'], '/events/{type}', function ($type) {
+    return view('community/eventsSection');
+})->where('type', 'sports|concerts|performances|courses')->name('events');
+
+Route::get('/events/event-', function () {
+    return view('community/event');
+});
+

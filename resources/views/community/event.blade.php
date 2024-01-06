@@ -1,35 +1,45 @@
 @php
-    $blogInfo = [
-        'item1' => [
-            'id' => 1,
-            'photo' => 'src/img/photo/choose-img.jpg',
-            'title' => 'Cryptocash Is A Clean & Modern Coin Service - Levitai',
-            'desc' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt labore dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-        ],
-        'item2' => [
-            'id' => 2,
-            'photo' => 'src/img/photo/slide2.jpg',
-            'title' => 'Cryptocash Is A Clean & Modern Coin Service - Levitai',
-            'desc' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt labore dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-        ],
-        'item3' => [
-            'id' => 3,
-            'photo' => 'src/img/photo/choose-img.jpg',
-            'title' => 'Cryptocash Is A Clean & Modern Coin Service - Levitai',
-            'desc' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt labore dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-        ],
-        'item4' => [
-            'id' => 4,
-            'photo' => 'src/img/photo/slide2.jpg',
-            'title' => 'Cryptocash Is A Clean & Modern Coin Service - Levitai',
-            'desc' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt labore dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-        ],
-        'item5' => [
-            'id' => 5,
-            'photo' => 'src/img/photo/choose-img.jpg',
-            'title' => 'Cryptocash Is A Clean & Modern Coin Service - Levitai',
-            'desc' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt labore dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-        ],
+    $event = [
+            'event1' => [
+                'id' => 1,
+                'photo' => 'src/img/photo/events/event1.png',
+                'title' => 'Lorem ipsum dolor sit amet',
+                'desc' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt labore dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+                'date' => '12 Dec 2023',
+                'time' => '12:46 pm',
+            ],
+            'event2' => [
+                'id' => 2,
+                'photo' => 'src/img/photo/events/event2.png',
+                'title' => 'Lorem ipsum dolor sit amet',
+                'desc' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt labore dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+                'date' => '12 Dec 2023',
+                'time' => '12:46 pm',
+            ],
+            'event3' => [
+                'id' => 3,
+                'photo' => 'src/img/photo/events/event3.png',
+                'title' => 'Lorem ipsum dolor sit amet',
+                'desc' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt labore dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+                'date' => '12 Dec 2023',
+                'time' => '12:46 pm',
+            ],
+            'event4' => [
+                'id' => 4,
+                'photo' => 'src/img/photo/events/event2.png',
+                'title' => 'Lorem ipsum dolor sit amet',
+                'desc' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt labore dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+                'date' => '12 Dec 2023',
+                'time' => '12:46 pm',
+            ],
+            'event5' => [
+                'id' => 5,
+                'photo' => 'src/img/photo/events/event1.png',
+                'title' => 'Lorem ipsum dolor sit amet',
+                'desc' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt labore dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+                'date' => '12 Dec 2023',
+                'time' => '12:46 pm',
+            ],
     ];
 
     $commentInfo = [
@@ -101,9 +111,7 @@
 @endphp
 
 <x-base>
-    <section
-        class="postPage"
-    >
+    <section class="event">
         <x-menu />
 
         <x-header />
@@ -126,18 +134,71 @@
                 Cryptocash Is A Clean & Modern Coin Service - Levitai
             </h2>
 
+            <div class="article__button disable d-flex flex-row align-items-center">
+                <a
+                    href="#"
+                    class="
+                        complete__btn
+                        d-flex
+                        flex-row
+                        align-items-center
+                        button
+                    "
+                    style="
+                        gap: 20px;
+                        font-size: 16px;
+                        width: 220px;
+                    "
+                >
+                    <img
+                        src="{{asset('src/img/icons/arrows/arrow-black.svg')}}"
+                        alt="Send"
+                        class="complete__btn__img"
+                        style="
+                            padding: 15px;
+                        "
+                    >
+
+                    Go to an event
+                </a>
+
+                <p class="article__button__text desc">
+                    Will be available from January this year
+                </p>
+            </div>
+
             <div class="article__info d-flex flex-row">
-                <p class="article__info__item title-little">
-                    Сategory: Bitcoin
-                </p>
+                <div class="d-flex flex-row article__info__row">
+                    <img src="{{ asset('src/img/icons/event/star.svg')}}" alt="Events">
 
-                <p class="article__info__item title-little">
-                    Autor: Levitai
-                </p>
+                    <p class="article__info__item title-little">
+                        Events: Virtual Sports
+                    </p>
+                </div>
 
-                <p class="article__info__item title-little">
-                    10.12.2023 17:36
-                </p>
+                <div class="d-flex flex-row article__info__row">
+                    <img src="{{ asset('src/img/icons/event/location.svg')}}" alt="Location">
+
+                    <p class="article__info__item title-little">
+                        Location: Lviv National Opera
+                    </p>
+                </div>
+
+                <div class="d-flex flex-row article__info__row">
+                    <img src="{{ asset('src/img/icons/event/calendar.svg')}}" alt="Date">
+
+                    <p class="article__info__item title-little">
+                        Date: 12 Dec 2023
+                    </p>
+                </div>
+
+                <div class="d-flex flex-row article__info__row">
+                    <img src="{{ asset('src/img/icons/event/time.svg')}}" alt="Time">
+
+                    <p class="article__info__item title-little">
+                        Time: 04:45pm
+                    </p>
+                </div>
             </div>
 
             <div class="article__content d-flex flex-row justify-content-between align-items-center">
@@ -181,10 +242,27 @@
             </p>
         </section>
 
-        <x-blog :blogInfo="$blogInfo" />
+        <x-blog :blogInfo="$event" />
 
         <x-comments :commentInfo="$commentInfo" />
 
         <x-footer />
     </section>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const btnBlock = document.querySelector('.article__button');
+            const btn = btnBlock.querySelector('.complete__btn');
+            const text = btnBlock.querySelector('.article__button__text');
+
+            if (!btnBlock.classList.contains('disable')) {
+                text.style.display = 'none';
+                btn.classList.remove('disable');
+            } else {
+                text.style.display = 'block';
+                btn.classList.add('disable');
+            }
+        });
+    </script>
+
 </x-base>
