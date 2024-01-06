@@ -195,39 +195,75 @@
                     Home \&#160;
                 </a>
 
-                <a href="/events" class="eventsSection__top__path__item postPaeventsSection__top__item--links title-little">
+                <a href="/events" class="eventsSection__top__path__item eventsSection__top__path__item--links title-little">
                     Blog \&#160;
                 </a>
 
                 <p class="eventsSection__top__path__item title-little">
-                    @php
-                        if (isset($events[$category])) {
-                            echo $events[$category]['name'];
-                        }
-                    @endphp
+                    @if(isset($events[$category]))
+                        {{$events[$category]['name']}}
+                    @endif
                 </p>
             </div>
 
             <h2 class="eventsSection__top__title title-main">
-                @php
-                    if (isset($events[$category])) {
-                        echo $events[$category]['name'];
-                    }
-                @endphp
+                @if(isset($events[$category]))
+                    {{$events[$category]['name']}}
+                @endif
             </h2>
 
             <p class="eventsSection__top__desc desc">
-                @php
-                    if (isset($events[$category])) {
-                        echo $events[$category]['desc'];
-                    }
-                @endphp
+                @if(isset($events[$category]))
+                        {{$events[$category]['desc']}}
+                @endif
             </p>
         </div>
 
         <div class="eventsSection__content d-flex flex-row">
-            @foreach($events[$category]['events'] ?? [] as $event)
+            @foreach($events[$category] ?? [] as $key => $event)
+                @if(is_array($event) && isset($event['id']))
+                    <div
+                        class="eventsSection__content__block"
 
+                    >
+                <img src="{{ asset('src/img/bc/event-reactangle.png')}}" alt="" class="eventsSection__content__block__bc" style="
+                background-image: url('{{ asset($event['photo'])}}')
+            ">
+                        <h2 class="eventsSection__content__block__title title-main">
+                            {{ $event['title'] }}
+                        </h2>
+
+                        <div class="eventsSection__content__block__bottom d-flex flex-column">
+                            <a
+                                href="
+                                    /events/{{ $category }}/event-{{-- $event['id'] --}}
+                                "
+                                class="
+                                    eventsSection__content__block__bottom__btn
+                                    d-flex
+                                    flex-row
+                                    align-items-center
+                                "
+                            >
+                                <img
+                                    src="{{asset('src/img/icons/arrows/arrow-black.svg')}}"
+                                    alt="go to"
+                                    class="eventsSection__content__block__bottom__btn__img"
+                                >
+
+                                View the event
+                            </a>
+
+                            <p class="eventsSection__content__block__bottom__info title-little">
+                                {{ $event['date'] }}
+                            </p>
+
+                            <p class="eventsSection__content__block__bottom__info title-little">
+                                {{ $event['time'] }}
+                            </p>
+                        </div>
+                    </div>
+                @endif
             @endforeach
         </div>
     </section>
