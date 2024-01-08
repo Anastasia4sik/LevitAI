@@ -21,56 +21,64 @@ Route::get('/', function () {
     return view('main');
 });
 
-Route::get('/documentation', function () {
-    return view('documentation/documentation');
-});
+//documentation
 
-Route::get('/roadmap', function () {
-    return view('documentation/roadmapPage');
-});
+    Route::get('/documentation', function () {
+        return view('components/documentation/documentation');
+    });
 
-Route::get('/terms-use', function () {
-    return view('documentation/terms');
-});
+    Route::get('/roadmap', function () {
+        return view('components/documentation/roadmapPage');
+    });
 
-Route::get('/privacy-policy', function () {
-    return view('documentation/privacy');
-});
+    Route::get('/terms-use', function () {
+        return view('components/documentation/terms');
+    });
 
+    Route::get('/privacy-policy', function () {
+        return view('components/documentation/privacy');
+    });
 
-Route::get('/contact-us', function () {
-    return view('community/contactPage');
-});
+//community
 
-Route::get('/faq', function () {
-    return view('community/faq');
-});
+    Route::get('/contact-us', function () {
+        return view('components/community/contactPage');
+    });
 
-Route::get('/blog', function () {
-    return view('community/blogPage');
-});
+    Route::get('/faq', function () {
+        return view('components/community/faq');
+    });
 
-Route::get('/blog/post-', function () {
-    return view('community/postPage');
-});
+    Route::get('/blog', function () {
+        return view('components/community/blogPage');
+    });
 
-Route::get('/team', function () {
-    return view('community/teamPage');
-});
+    Route::get('/blog/post-', function () {
+        return view('components/community/postPage');
+    });
 
-Route::get('/about-us', function () {
-    return view('community/aboutPage');
-});
+    Route::get('/team', function () {
+        return view('components/community/teamPage');
+    });
 
-Route::get('/events', function () {
-    return view('community/eventsPage');
-});
+    Route::get('/about-us', function () {
+        return view('components/community/aboutPage');
+    });
 
-Route::match(['get'], '/events/{type}', function ($type) {
-    return view('community/eventsSection');
-})->where('type', 'sports|concerts|performances|courses')->name('events');
+    Route::get('/events', function () {
+        return view('components/community/eventsPage');
+    });
 
-Route::get('/events/event-', function () {
-    return view('community/event');
-});
+    Route::match(['get'], '/events/{type}', function ($type) {
+        return view('components/community/eventsSection');
+    })->where('type', 'sports|concerts|performances|courses')->name('events');
+
+    Route::get('/events/event-', function () {
+        return view('components/community/event');
+    });
+
+//discover
+    Route::get('/our-vision', function () {
+        return view('components/discover/vision');
+    });
 

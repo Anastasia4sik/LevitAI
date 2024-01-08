@@ -100,11 +100,11 @@
             </div>
 
             <ul class="menu__container__list__item__select__options">
-              <li>
-                <a href="#">
-                    LevitAI
-                </a>
-              </li>
+                <li>
+                    <a href="/our-vision">
+                        Our Vision
+                    </a>
+                </li>
 
               <li>
                 <a href="#">

@@ -1,0 +1,55 @@
+.vision {
+    background-image: url('../../../../public/src/img/bc/bc-vision.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &__article {
+        padding: 77px 2vw 150px 105px;
+
+        &__undertitle {
+            margin-bottom: 5px;
+        }
+
+        &__title {
+            &--sec {
+                display: block;
+                margin-top: -10px;
+            }
+        }
+
+        &__top {
+            gap: 65px;
+
+            margin-top: -10px;
+            margin-bottom: 75px;
+
+            &__title {
+                margin-top: -5px;
+            }
+        }
+
+        &__content {
+            gap: 7.5vw;
+
+            &__img {
+                width: 34vw;
+            }
+
+            &__text {
+                p {
+                    opacity: 0.75;
+
+                    &:not(:last-of-type) {
+                        margin-bottom: 30px;
+                    }
+                }
+
+                &__title {
+                    margin-bottom: 15px;
+
+                    font-size: 24px;
+                }
+            }
+        }
+    }
+}

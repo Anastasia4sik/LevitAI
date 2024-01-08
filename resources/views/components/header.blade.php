@@ -78,9 +78,9 @@
 
       <ul class="header__dropdown__options">
         <li>
-          <a href="#">
-            LevitAI
-          </a>
+            <a href="/our-vision">
+                Our Vision
+            </a>
         </li>
 
         <li>
