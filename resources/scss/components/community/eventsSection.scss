@@ -1,5 +1,5 @@
 .eventsSection {
-    background-image: url('/src/img/bc/bc-eventSection.png');
+    background-image: url('../../../../public/src/img/bc/bc-eventSection.png');
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center top;
@@ -111,4 +111,10 @@
             }
         }
     }
+}
+
+.event {
+    background-image: url('../../../../public/src/img/bc/bc-event.png');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
