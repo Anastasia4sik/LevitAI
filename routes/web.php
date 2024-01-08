@@ -86,3 +86,7 @@ Route::get('/', function () {
         return view('components/discover/metaverse');
     });
 
+    Route::get('/partners', function () {
+        return view('components/discover/partners');
+    });
+

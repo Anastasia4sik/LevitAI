@@ -1,0 +1,36 @@
+.partners {
+    background-image: url('../../../../public/src/img/bc/bc-vision.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center top;
+
+    &__section {
+        padding: 77px 2vw 150px 105px;
+
+        &__title {
+            margin-bottom: 46px;
+
+            text-transform: uppercase;
+        }
+
+        &__table {
+            grid-template-columns: repeat(auto-fill, minmax(28vw, 1fr));
+            grid-gap: 51px;
+
+            &__block {
+                height: 444px;
+                background-color: #ffffff0d;
+
+                transition: all .3s ease-in-out;
+
+                &__img {
+                    max-width: 90%;
+                }
+
+                &:hover {
+                    background-color: #ffffff4d;
+                }
+            }
+        }
+    }
+}

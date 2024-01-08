@@ -90,9 +90,9 @@
         </li>
 
         <li>
-          <a href="#">
-            Your LevitAI World
-          </a>
+            <a href="/partners">
+                Partners
+            </a>
         </li>
 
         <li>

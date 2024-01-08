@@ -113,9 +113,9 @@
                 </li>
 
               <li>
-                <a href="#">
-                  The NFT Gallery
-                </a>
+                    <a href="/partners">
+                        Partners
+                    </a>
               </li>
 
               <li>
