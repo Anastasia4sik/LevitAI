@@ -1,4 +1,4 @@
-.vision {
+.discover {
     background-image: url('../../../../public/src/img/bc/bc-vision.png');
     background-repeat: no-repeat;
     background-size: cover;
@@ -8,6 +8,8 @@
 
         &__undertitle {
             margin-bottom: 5px;
+
+            text-transform: uppercase;
         }
 
         &__title {
@@ -29,14 +31,14 @@
         }
 
         &__content {
-            gap: 7.5vw;
+            gap: 7vw;
 
             &__img {
                 width: 34vw;
             }
 
             &__text {
-                p {
+                &__desc {
                     opacity: 0.75;
 
                     &:not(:last-of-type) {
@@ -52,4 +54,8 @@
             }
         }
     }
+}
+
+.metaverse__article__content {
+    margin-bottom: 30px;
 }

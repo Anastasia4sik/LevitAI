@@ -84,9 +84,9 @@
         </li>
 
         <li>
-          <a href="/documentation">
-            Documentation
-          </a>
+            <a href="/metaverse">
+                The Metaverse
+            </a>
         </li>
 
         <li>

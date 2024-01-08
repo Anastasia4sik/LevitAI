@@ -1,24 +1,24 @@
 <x-base>
-    <section class="vision">
+    <section class="discover">
         <x-menu />
 
         <x-header />
 
-        <section class="vision__article">
-                <p class="vision__article__undertitle title-little">
+        <section class="discover__article">
+                <p class="discover__article__undertitle title-little">
                     OUR VISION
                 </p>
 
-                <h2 class="vision__article__title title-main">
+                <h2 class="discover__article__title title-main">
                     Welcome to Levitai
                     <br>
-                    <span class="vision__article__title--sec">
+                    <span class="discover__article__title--sec">
                         Where your Imagination is
                     </span>
                 </h2>
 
-                <div class="vision__article__top d-flex flex-row align-items-center">
-                    <h2 class="vision__article__top__title title-main title-main--stroke lh-90">
+                <div class="discover__article__top d-flex flex-row align-items-center">
+                    <h2 class="discover__article__top__title title-main title-main--stroke lh-90">
                         the only imagination
                     </h2>
 
@@ -52,15 +52,15 @@
                 </div>
 
 
-            <div class="vision__article__content d-flex flex-row justify-content-between align-items-center">
+            <div class="discover__article__content d-flex flex-row justify-content-between align-items-center">
                 <img
                     src="{{ asset('src/img/photo/vision.jpg')}}"
                     alt="Our vision photo"
-                    class="vision__article__content__img"
+                    class="discover__article__content__img"
                 >
 
-                <div class="vision__article__content__text">
-                    <p class="vision__article__content__text__desc desc">
+                <div class="discover__article__content__text">
+                    <p class="discover__article__content__text__desc desc">
                         Our imagination is much larger than the world we live in. But the world we live in is limited. We are limited by laws, our human body, physics and time.
                         <br><br>
                         Victoria VR world with no limitations, where none of this applies, where you can be who you wish to be and make your dreams come true.
@@ -78,11 +78,11 @@
                         &ensp;&#x2022;    Enjoy every moment and keep coming back.
                     </p>
 
-                    <h3 class="vision__article__content__text__title title-little">
+                    <h3 class="discover__article__content__text__title title-little">
                         Virtual reality will soon replace television, cinema, business, communication, education, entertainment and even Internet search. Our vision for Victoria VR is to create a world where…
                     </h3>
 
-                    <p class="vision__article__content__text__desc desc">
+                    <p class="discover__article__content__text__desc desc">
                         &ensp;&#x2022;    You don’t have to travel back and forth for an hour every day to get to school or work.
                         <br>
                         &ensp;&#x2022;    You don’t have to fly across the continent for an in person meeting.

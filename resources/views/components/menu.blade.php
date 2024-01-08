@@ -106,11 +106,11 @@
                     </a>
                 </li>
 
-              <li>
-                <a href="#">
-                  What is LevitAI
-                </a>
-              </li>
+                <li>
+                    <a href="/metaverse">
+                        The Metaverse
+                    </a>
+                </li>
 
               <li>
                 <a href="#">
