@@ -98,3 +98,8 @@ Route::get('/', function () {
         return view('components/discover/economy');
     });
 
+//world
+    Route::get('/what-is-levitai-world', function () {
+        return view('components/world/what-is');
+    });
+

@@ -117,9 +117,9 @@
 
       <ul class="header__dropdown__options">
         <li>
-          <a href="#">
-            My Account
-          </a>
+            <a href="/what-is-levitai-world">
+                What is LevitAI World?
+            </a>
         </li>
 
         <li>

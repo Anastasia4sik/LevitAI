@@ -142,11 +142,11 @@
             </div>
 
             <ul class="menu__container__list__item__select__options">
-              <li>
-                <a href="#">
-                  Building the Future
-                </a>
-              </li>
+                <li>
+                    <a href="/what-is-levitai-world">
+                        What is LevitAI World?
+                    </a>
+                </li>
 
               <li>
                 <a href="#">
