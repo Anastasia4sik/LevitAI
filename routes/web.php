@@ -103,3 +103,6 @@ Route::get('/', function () {
         return view('components/world/what-is');
     });
 
+    Route::get('/levi-lands', function () {
+        return view('components/world/lands');
+    });

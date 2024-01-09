@@ -148,11 +148,11 @@
                     </a>
                 </li>
 
-              <li>
-                <a href="#">
-                  What is LevitAI
-                </a>
-              </li>
+                <li>
+                    <a href="/levi-lands">
+                        Levi Lands
+                    </a>
+                </li>
 
               <li>
                 <a href="#">

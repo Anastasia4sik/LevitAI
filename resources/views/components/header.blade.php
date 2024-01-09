@@ -123,9 +123,9 @@
         </li>
 
         <li>
-          <a href="#">
-            Discover
-          </a>
+            <a href="/levi-lands">
+                Levi Lands
+            </a>
         </li>
 
         <li>
