@@ -22,7 +22,6 @@ Route::get('/', function () {
 });
 
 //documentation
-
     Route::get('/documentation', function () {
         return view('components/documentation/documentation');
     });
@@ -40,7 +39,6 @@ Route::get('/', function () {
     });
 
 //community
-
     Route::get('/contact-us', function () {
         return view('components/community/contactPage');
     });
@@ -113,4 +111,8 @@ Route::get('/', function () {
 
     Route::get('/dao-economy', function () {
         return view('components/world/dao');
+    });
+
+    Route::get('/why-levitai', function () {
+        return view('components/world/why-levitai');
     });

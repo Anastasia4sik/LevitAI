@@ -165,6 +165,12 @@
                         DAO Economy
                     </a>
                 </li>
+
+                <li>
+                    <a href="/why-levitai">
+                        Why LevitAI?
+                    </a>
+                </li>
             </ul>
           </div>
         </li>

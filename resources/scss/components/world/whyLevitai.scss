@@ -1,0 +1,95 @@
+.whyLevitai {
+    background-image: url('../../../../public/src/img/bc/bc-why.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center top;
+
+    &__container {
+        padding: 0 2vw 150px 105px;
+
+        &__content {
+            margin-bottom: 100px;
+
+            &__title {
+                margin-bottom: 75px;
+            }
+
+            &__text {
+                margin-bottom: 60px;
+
+                gap: 4vw;
+
+                &__block {
+                    &__title {
+                        margin-bottom: 15px;
+
+                        width: 81%;
+
+                        font-size: 24px;
+                    }
+
+                    &__desc {
+                        opacity: 0.75;
+                    }
+                }
+            }
+
+            &__img {
+                width: 100%;
+            }
+        }
+
+        &__table {
+            &__title {
+                margin-bottom: 75px;
+            }
+
+            &__block {
+                &__head {
+                    margin-left: calc(20vw + 5px);
+                    margin-bottom: 5px;
+
+                    gap: 5px;
+                }
+
+                &__body {
+                    gap: 5px;
+
+                    &__row {
+                        gap: 5px;
+                    }
+                }
+
+                &__item {
+                    width: 6.8vw;
+                    min-height: 50px;
+
+                    background-color: #ffffff0d;
+                    border-radius: 5px;
+
+                    &--text {
+                        padding: 14px 0;
+                    }
+
+                    &--title {
+                        width: 20vw;
+                        padding: 14px 0 14px 40px;
+                    }
+
+                    &--img__block {
+                        background-color: #ffffff0d;
+                        border-radius: 5px;
+
+                        width: 6.8vw;
+                    }
+
+                    transition: all .3s ease-in-out;
+
+                    &:hover {
+                        background-color: #ffffff4e;
+                    }
+                }
+            }
+        }
+    }
+}
