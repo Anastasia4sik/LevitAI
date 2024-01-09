@@ -160,11 +160,11 @@
                     </a>
                 </li>
 
-              <li>
-                <a href="#">
-                  The Exchange Market
-                </a>
-              </li>
+                <li>
+                    <a href="/dao-economy">
+                        DAO Economy
+                    </a>
+                </li>
             </ul>
           </div>
         </li>

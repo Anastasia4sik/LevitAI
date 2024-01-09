@@ -135,9 +135,9 @@
         </li>
 
         <li>
-          <a href="#">
-            Community
-          </a>
+            <a href="/dao-economy">
+                DAO Economy
+            </a>
         </li>
       </ul>
     </div>

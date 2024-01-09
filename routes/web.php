@@ -110,3 +110,7 @@ Route::get('/', function () {
     Route::get('/building-the-future', function () {
         return view('components/world/future');
     });
+
+    Route::get('/dao-economy', function () {
+        return view('components/world/dao');
+    });
