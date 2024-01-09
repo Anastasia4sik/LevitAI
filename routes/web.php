@@ -106,3 +106,7 @@ Route::get('/', function () {
     Route::get('/levi-lands', function () {
         return view('components/world/lands');
     });
+
+    Route::get('/building-the-future', function () {
+        return view('components/world/future');
+    });

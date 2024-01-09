@@ -154,11 +154,11 @@
                     </a>
                 </li>
 
-              <li>
-                <a href="#">
-                  The NFT Gallery
-                </a>
-              </li>
+                <li>
+                    <a href="/building-the-future">
+                        Bulding the future together
+                    </a>
+                </li>
 
               <li>
                 <a href="#">

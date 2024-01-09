@@ -129,9 +129,9 @@
         </li>
 
         <li>
-          <a href="/documentation">
-            Documentation
-          </a>
+            <a href="/building-the-future">
+                Bulding the future together
+            </a>
         </li>
 
         <li>
