@@ -96,9 +96,15 @@
         </li>
 
         <li>
-          <a href="#">
-            Community
-          </a>
+            <a href="/integrations">
+                Partner Integrations
+            </a>
+        </li>
+
+        <li>
+            <a href="/economy">
+                Tokenomics and Economy
+            </a>
         </li>
       </ul>
     </div>

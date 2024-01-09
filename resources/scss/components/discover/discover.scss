@@ -1,5 +1,5 @@
 .discover {
-    background-image: url('../../../../public/src/img/bc/bc-vision.png');
+    background-image: url('/src/img/bc/bc-vision.png');
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -16,6 +16,11 @@
             &--sec {
                 display: block;
                 margin-top: -10px;
+            }
+
+            &.economy {
+                margin-top: -40px;
+                margin-bottom: 75px;
             }
         }
 
@@ -51,11 +56,94 @@
 
                     font-size: 24px;
                 }
+
+                &__table {
+                    gap: 125px;
+
+                    margin-bottom: 30px;
+                    margin-top: 15px;
+
+                    &__left,
+                    &__right {
+                        &__title {
+                            margin-bottom: 15px;
+
+                            font-size: 16px;
+                        }
+
+                        &__desc {
+                            opacity: 0.75;
+
+                            &:not(:last-of-type) {
+                                margin-bottom: 15px;
+                            }
+                        }
+                    }
+                }
             }
         }
     }
 }
 
 .metaverse__article__content {
+    &:not(:last-of-type) {
+        margin-bottom: 30px;
+    }
+}
+
+.integrations__article__content {
+    &:not(:last-of-type) {
+        margin-bottom: 75px;
+    }
+
+    &__video {
+        position: relative;
+
+        &__pause {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 35vw;
+            height: 100%;
+
+            z-index: 999;
+
+            &__text {
+                position: absolute;
+                top: 20px;
+                left: 25px;
+
+                gap: 5px;
+
+                background-color: rgba(0, 0, 0, 0.125);
+
+                p {
+                    text-transform: uppercase;
+                    font-size: 13px;
+
+                    width: max-content;
+                }
+            }
+
+            &__img {
+                position: absolute;
+                left: 45%;
+                top: 50%;
+
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.economy__article__content {
     margin-bottom: 30px;
+}
+
+video {
+    width: 35vw;
+
+    &::-webkit-media-controls {
+        opacity: 0;
+    }
 }

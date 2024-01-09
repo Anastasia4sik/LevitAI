@@ -90,3 +90,11 @@ Route::get('/', function () {
         return view('components/discover/partners');
     });
 
+    Route::get('/integrations', function () {
+        return view('components/discover/integrations');
+    });
+
+    Route::get('/economy', function () {
+        return view('components/discover/economy');
+    });
+
