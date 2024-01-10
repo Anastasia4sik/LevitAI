@@ -13,25 +13,65 @@
             'head10' => 'Lorem ipsum',
         ],
         'rows' => [
-            ['title' => 'Lorem ipsum dolor sit amet', 'content' => ['true', 'false', 'false', 'true', 'false', 'true', 'true', 'true', 'true', 'true']],
-            ['title' => 'Lorem ipsum dolor sit amet', 'content' => ['true', 'false', 'true', 'true', 'true', 'true', 'true', 'false', 'true', 'true']],
-            ['title' => 'Lorem ipsum', 'content' => ['true', 'true', 'false', 'true', 'false', 'true', 'true', 'false', 'true', 'false']],
-            ['title' => 'Lorem ipsum dolor sit amet dolor sit amet', 'content' => ['true', 'true', 'false', 'false', 'false', 'false', 'false', 'true', 'false', 'false']],
-            ['title' => 'Lorem ipsum dolor sit amet', 'content' => ['true', 'false', 'false', 'true', 'false', 'true', 'true', 'true', 'true', 'true']],
-            ['title' => 'Lorem ipsum dolor sit amet', 'content' => ['true', 'false', 'true', 'true', 'true', 'true', 'true', 'false', 'true', 'true']],
-            ['title' => 'Lorem ipsum', 'content' => ['true', 'true', 'false', 'true', 'false', 'true', 'true', 'false', 'true', 'false']],
-            ['title' => 'Lorem ipsum dolor sit amet dolor sit amet', 'content' => ['true', 'true', 'false', 'false', 'false', 'false', 'false', 'true', 'false', 'false']],
-            ['title' => 'Lorem ipsum dolor sit amet', 'content' => ['true', 'false', 'false', 'true', 'false', 'true', 'true', 'true', 'true', 'true']],
-            ['title' => 'Lorem ipsum dolor sit amet', 'content' => ['true', 'false', 'true', 'true', 'true', 'true', 'true', 'false', 'true', 'true']],
-            ['title' => 'Lorem ipsum', 'content' => ['true', 'true', 'false', 'true', 'false', 'true', 'true', 'false', 'true', 'false']],
-            ['title' => 'Lorem ipsum dolor sit amet dolor sit amet', 'content' => ['true', 'true', 'false', 'false', 'false', 'false', 'false', 'true', 'false', 'false']],
-            ['title' => 'Lorem ipsum dolor sit amet', 'content' => ['true', 'false', 'false', 'true', 'false', 'true', 'true', 'true', 'true', 'true']],
-            ['title' => 'Lorem ipsum dolor sit amet', 'content' => ['true', 'false', 'true', 'true', 'true', 'true', 'true', 'false', 'true', 'true']],
-            ['title' => 'Lorem ipsum', 'content' => ['true', 'true', 'false', 'true', 'false', 'true', 'true', 'false', 'true', 'false']],
-            ['title' => 'Lorem ipsum dolor sit amet dolor sit amet', 'content' => ['$2m', 'N/A', '$72,257,000,000', '$2,350,000,000', '$957,000,000', '$2,350,000,000', 'N/A', '$957,000,000', '$957,000,000', '$957,000,000']],
+            [
+                'title' => 'Lorem ipsum dolor sit amet',
+                'content' => ['true', 'false', 'false', 'true', 'false', 'true', 'true', 'true', 'true', 'true']
+            ],
+            [
+                'title' => 'Lorem ipsum dolor sit amet',
+                'content' => ['true', 'false', 'true', 'true', 'true', 'true', 'true', 'false', 'true', 'true']
+            ],
+            [
+                'title' => 'Lorem ipsum',
+                'content' => ['true', 'true', 'false', 'true', 'false', 'true', 'true', 'false', 'true', 'false']
+            ],
+            [
+                'title' => 'Lorem ipsum dolor sit amet dolor sit amet',
+                'content' => ['true', 'true', 'false', 'false', 'false', 'false', 'false', 'true', 'false', 'false']
+            ],
+            [
+                'title' => 'Lorem ipsum dolor sit amet',
+                'content' => ['true', 'false', 'false', 'true', 'false', 'true', 'true', 'true', 'true', 'true']
+            ],
+            [
+                'title' => 'Lorem ipsum dolor sit amet',
+                'content' => ['true', 'false', 'true', 'true', 'true', 'true', 'true', 'false', 'true', 'true']
+            ],
+            [
+                'title' => 'Lorem ipsum',
+                'content' => ['true', 'true', 'false', 'true', 'false', 'true', 'true', 'false', 'true', 'false']],
+            [
+                'title' => 'Lorem ipsum dolor sit amet dolor sit amet',
+                'content' => ['true', 'true', 'false', 'false', 'false', 'false', 'false', 'true', 'false', 'false']
+            ],
+            [   'title' => 'Lorem ipsum dolor sit amet',
+                'content' => ['true', 'false', 'false', 'true', 'false', 'true', 'true', 'true', 'true', 'true']
+            ],
+            [   'title' => 'Lorem ipsum dolor sit amet',
+                'content' => ['true', 'false', 'true', 'true', 'true', 'true', 'true', 'false', 'true', 'true']
+            ],
+            [   'title' => 'Lorem ipsum',
+                'content' => ['true', 'true', 'false', 'true', 'false', 'true', 'true', 'false', 'true', 'false']
+            ],
+            [   'title' => 'Lorem ipsum dolor sit amet dolor sit amet',
+                'content' => ['true', 'true', 'false', 'false', 'false', 'false', 'false', 'true', 'false', 'false']
+            ],
+            [   'title' => 'Lorem ipsum dolor sit amet',
+                'content' => ['true', 'false', 'false', 'true', 'false', 'true', 'true', 'true', 'true', 'true']
+            ],
+            [   'title' => 'Lorem ipsum dolor sit amet',
+                'content' => ['true', 'false', 'true', 'true', 'true', 'true', 'true', 'false', 'true', 'true']
+            ],
+            [   'title' => 'Lorem ipsum',
+                'content' => ['true', 'true', 'false', 'true', 'false', 'true', 'true', 'false', 'true', 'false']
+            ],
+            [   'title' => 'Lorem ipsum dolor sit amet dolor sit amet',
+                'content' => ['$2m', 'N/A', '$72,257,000,000', '$2,350,000,000', '$957,000,000', '$2,350,000,000', 'N/A', '$957,000,000', '$957,000,000', '$957,000,000']
+            ],
         ],
     ]
 @endphp
+
 <x-base>
     <section
         class="whyLevitai"
@@ -112,34 +152,55 @@
                 </h3>
 
                 <div class="whyLevitai__container__table__block d-flex flex-column">
-                    <div>
-                        <div class="whyLevitai__container__table__block__head d-flex flex-row">
-                            @foreach($table['header'] as $key => $head)
-                                <p class="whyLevitai__container__table__block__item whyLevitai__container__table__block__item--text desc text-center">
-                                    {{ $head }}
-                                </p>
-                            @endforeach
-                        </div>
+                    <div class="whyLevitai__container__table__block__head d-flex flex-row">
+                        @foreach($table['header'] as $key => $head)
+                            <p class="whyLevitai__container__table__block__head__item whyLevitai__container__table__block__body__row__item--text desc text-center">
+                                {{ $head }}
+                            </p>
+                        @endforeach
                     </div>
 
                     <div class="whyLevitai__container__table__block__body d-flex flex-column">
                         @foreach($table['rows'] as $row)
                             <div class="whyLevitai__container__table__block__body__row d-flex flex-row">
-                                <p class="whyLevitai__container__table__block__item desc whyLevitai__container__table__block__item--title">
+                                <p class="whyLevitai__container__table__block__body__row__item desc whyLevitai__container__table__block__body__row__item--title">
                                     {{ $row['title'] }}
                                 </p>
 
                                 @foreach($row['content'] as $content)
                                     @if ($content === 'true')
-                                        <div class="whyLevitai__container__table__block__item--img__block d-flex align-items-center justify-content-center">
+                                        <div
+                                            class="
+                                            whyLevitai__container__table__block__body__row__item
+                                                whyLevitai__container__table__block__body__row__item--img__block
+                                                d-flex
+                                                align-items-center
+                                                justify-content-center
+                                            "
+                                        >
                                             <img src="{{ asset('src/img/icons/check-table.svg')}}" alt="True" class="">
                                         </div>
                                     @elseif ($content === 'false')
-                                        <div class="whyLevitai__container__table__block__item--img__block d-flex align-items-center justify-content-center">
+                                        <div
+                                            class="
+                                            whyLevitai__container__table__block__body__row__item
+                                                whyLevitai__container__table__block__body__row__item--img__block
+                                                d-flex
+                                                align-items-center
+                                                justify-content-center
+                                            "
+                                        >
                                             <img src="{{ asset('src/img/icons/cross-table.svg')}}" alt="False" class="">
                                         </div>
                                     @else
-                                        <p class="whyLevitai__container__table__block__item desc whyLevitai__container__table__block__item--text text-center">
+                                        <p
+                                            class="
+                                                whyLevitai__container__table__block__body__row__item
+                                                desc
+                                                whyLevitai__container__table__block__body__row__item--text
+                                                text-center
+                                            "
+                                        >
                                             {{ $content }}
                                         </p>
                                     @endif

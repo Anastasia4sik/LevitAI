@@ -50,6 +50,21 @@
                     margin-bottom: 5px;
 
                     gap: 5px;
+
+                    & p:first-child {
+                        background-color: rgba(255, 255, 255, 0.15);
+                    }
+
+                    &__item {
+                        width: 6.8vw;
+                        min-height: 50px;
+
+                        background-color: #ffffff0d;
+                        border-radius: 5px;
+
+                        font-size: 0.83vw;
+                        line-height: 137.5%;
+                    }
                 }
 
                 &__body {
@@ -57,38 +72,88 @@
 
                     &__row {
                         gap: 5px;
+
+                        &:nth-child(1),
+                        &:nth-child(2) {
+                            & .whyLevitai__container__table__block__body__row__item:nth-child(2) {
+                                background-color: rgba(255, 255, 255, 0.15);
+                            }
+                        }
+
+                        &:nth-child(3),
+                        &:nth-child(4),
+                        &:nth-child(5),
+                        &:nth-child(6) {
+                            & .whyLevitai__container__table__block__body__row__item:nth-child(2) {
+                                background-color: rgba(255, 255, 255, 0.12);
+                            }
+                        }
+
+                        &:nth-child(7),
+                        &:nth-child(8) {
+                            & .whyLevitai__container__table__block__body__row__item:nth-child(2) {
+                                background-color: rgba(255, 255, 255, 0.10);
+                            }
+                        }
+
+                        &:nth-child(9),
+                        &:nth-child(10),
+                        &:nth-child(11) {
+                            & .whyLevitai__container__table__block__body__row__item:nth-child(2) {
+                                background-color: rgba(255, 255, 255, 0.07);
+                            }
+                        }
+
+                        &:nth-child(12),
+                        &:nth-child(13) {
+                            & .whyLevitai__container__table__block__body__row__item:nth-child(2) {
+                                background-color: rgba(255, 255, 255, 0.05);
+                            }
+                        }
+
+                        &:nth-child(14),
+                        &:nth-child(15),
+                        &:nth-child(16) {
+                            & .whyLevitai__container__table__block__body__row__item:nth-child(2) {
+                                background-color: rgba(255, 255, 255, 0.02);
+                            }
+                        }
+
+                        &:nth-child(16) {
+                            & .whyLevitai__container__table__block__body__row__item:nth-child(2) {
+                                color: #843CFB;
+                            }
+                        }
+
+                        &__item {
+                            width: 6.8vw;
+                            min-height: 50px;
+
+                            background-color: #ffffff0d;
+                            border-radius: 5px;
+
+                            font-size: 0.83vw;
+                            line-height: 137.5%;
+
+                            &--text {
+                                padding: 14px 0;
+                            }
+
+                            &--title {
+                                width: 20vw;
+                                padding: 14px 0 14px 40px;
+                            }
+
+                            &--img__block {
+                                background-color: #ffffff0d;
+                                border-radius: 5px;
+
+                                width: 6.8vw;
+                            }
+                        }
                     }
                 }
 
-                &__item {
-                    width: 6.8vw;
-                    min-height: 50px;
-
-                    background-color: #ffffff0d;
-                    border-radius: 5px;
-
-                    &--text {
-                        padding: 14px 0;
-                    }
-
-                    &--title {
-                        width: 20vw;
-                        padding: 14px 0 14px 40px;
-                    }
-
-                    &--img__block {
-                        background-color: #ffffff0d;
-                        border-radius: 5px;
-
-                        width: 6.8vw;
-                    }
-
-                    transition: all .3s ease-in-out;
-
-                    &:hover {
-                        background-color: #ffffff4e;
-                    }
-                }
             }
         }
     }
