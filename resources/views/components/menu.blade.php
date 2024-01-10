@@ -171,6 +171,12 @@
                         Why LevitAI?
                     </a>
                 </li>
+
+                <li>
+                    <a href="/exchange-market">
+                        Exchange Market
+                    </a>
+                </li>
             </ul>
           </div>
         </li>

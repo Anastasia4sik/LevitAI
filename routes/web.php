@@ -116,3 +116,7 @@ Route::get('/', function () {
     Route::get('/why-levitai', function () {
         return view('components/world/why-levitai');
     });
+
+    Route::get('/exchange-market', function () {
+        return view('components/world/exchange');
+    });
