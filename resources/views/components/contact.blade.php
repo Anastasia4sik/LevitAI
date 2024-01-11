@@ -1,14 +1,12 @@
 <section
     class="contact d-flex flex-column align-items-center"
-    @if(request()->is('team') || request()->is('about-us'))
-        style="
-            background-image: url('{{asset('src/img/bc/bc-teamPage-contact.png')}}');
-        "
-    @else
-        style="
-            background-image: url('{{asset('src/img/bc/bc-contact.png')}}');
-        "
-    @endif
+    style="
+        @if (request()->is('faq') || request()->is('events') )
+            background: none;
+        @else
+            background-image: url({{ asset('src/img/bc/bc-teamPage-contact.png') }});
+        @endif
+    "
 >
     <h2 class="contact__title title-main">
         Contact Us

@@ -355,9 +355,19 @@
 
     <x-rating />
 
-    <x-what--crypto :cryptoInfo="$cryptoInfo" />
+    <div
+        class=""
+        style="
+            background-image: url('{{ asset('src/img/bc/bc-complete.png')}}');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        "
+    >
+        <x-what--crypto :cryptoInfo="$cryptoInfo" />
 
-    <x-complete />
+        <x-complete />
+    </div>
 
     <x-choose />
 
@@ -371,9 +381,19 @@
 
     <x-roadmap />
 
-    <x-available />
+    <div
+        class=""
+        style="
+            background-image: url('{{ asset('src/img/bc/bc-available.png')}}');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        "
+    >
+        <x-available />
 
-    <x-team :teamInfo="$teamInfo" />
+        <x-team :teamInfo="$teamInfo" />
+    </div>
 
     <x-strategy :strategyInfo="$strategyInfo" />
 

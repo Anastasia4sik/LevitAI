@@ -1,10 +1,11 @@
 .top {
     background-image: url('../../../public/src/img/bc/bc.png');
     background-repeat: no-repeat;
-    background-position: top center;
-    background-size: contain;
+    background-position: center;
+    background-size: auto;
 
     padding-left: 105px;
+    padding-top: 38px;
 
     height: 140vh;
     width: 100vw;
@@ -28,7 +29,7 @@
         }
 
         &__text {
-            width: 43vw;
+            width: 36vw;
             margin-bottom: 40px;
 
             font-size: 14px;
@@ -36,14 +37,14 @@
         }
 
         &__btns {
-            gap: 32px;
+            gap: 35px;
 
             &__right {
                 line-height: 100%;
                 gap: 8px;
 
-                color: $white-darker;
-
+                color: $white-second;
+                opacity: 0.76;
 
                 position: relative;
                 z-index: 1;
@@ -57,6 +58,7 @@
 
                 &:hover {
                     color: $white;
+                    opacity: 1;
 
                     & img {
                         animation: Move 1s forwards;

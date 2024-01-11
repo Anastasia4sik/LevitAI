@@ -104,11 +104,11 @@
 @endphp
 
 <x-base>
+    <section class="aboutPage">
         <x-menu />
 
         <x-header />
 
-        <section class="aboutPage">
             <div class="aboutPage__top d-flex flex-column justify-content-center">
                 <h2 class="aboutPage__top__title title-main">
                     About

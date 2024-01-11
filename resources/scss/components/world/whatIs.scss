@@ -1,14 +1,22 @@
 .whatLevitai {
     background-image: url('../../../../public/src/img/bc/bc-whatIs.png');
     background-repeat: no-repeat;
-    background-size: 100vw;
-    background-position: 2vw top;
+    background-position: left top;
+    background-size: contain;
 
     &__container {
         padding: 77px 2vw 150px 105px;
 
         &__top {
-            height: 65vh;
+            margin-bottom: 100px;
+
+            &__title {
+                margin-bottom: 15px;
+            }
+
+            &__desc {
+                width: 33vw;
+            }
         }
 
         &__video {

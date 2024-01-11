@@ -5,51 +5,51 @@
         <x-header />
 
         <section class="discover__article">
-                <p class="discover__article__undertitle title-little">
-                    The metaverse
-                </p>
+            <p class="discover__article__undertitle title-little">
+                The metaverse
+            </p>
 
-                <h2 class="discover__article__title title-main">
-                    Immerse Yourself in The
-                    <br>
-                    <span class="discover__article__title--sec">
-                        World’s First Realistic
-                    </span>
+            <h2 class="discover__article__title title-main">
+                Immerse Yourself in The
+                <br>
+                <span class="discover__article__title--sec">
+                    World’s First Realistic
+                </span>
+            </h2>
+
+            <div class="discover__article__top d-flex flex-row align-items-center">
+                <h2 class="discover__article__top__title title-main title-main--stroke lh-90">
+                    Metaverse
                 </h2>
 
-                <div class="discover__article__top d-flex flex-row align-items-center">
-                    <h2 class="discover__article__top__title title-main title-main--stroke lh-90">
-                        Metaverse
-                    </h2>
-
-                    <a
-                        href="#"
-                        class="
-                            complete__btn
-                            d-flex
-                            flex-row
-                            align-items-center
-                            button
-                        "
+                <a
+                    href="#"
+                    class="
+                        complete__btn
+                        d-flex
+                        flex-row
+                        align-items-center
+                        button
+                    "
+                    style="
+                        gap: 21px;
+                        font-size: 16px;
+                        width: 188px;
+                        height: 54px;
+                    "
+                >
+                    <img
+                        src="{{asset('src/img/icons/arrows/arrow-black.svg')}}"
+                        alt="Send"
+                        class="complete__btn__img"
                         style="
-                            gap: 21px;
-                            font-size: 16px;
-                            width: 188px;
-                            height: 54px;
+                            padding: 15px;
                         "
                     >
-                        <img
-                            src="{{asset('src/img/icons/arrows/arrow-black.svg')}}"
-                            alt="Send"
-                            class="complete__btn__img"
-                            style="
-                                padding: 15px;
-                            "
-                        >
 
-                        VR staking
-                    </a>
-                </div>
+                    VR staking
+                </a>
+            </div>
 
 
             <div class="discover__article__content metaverse__article__content d-flex flex-row justify-content-between align-items-center">
@@ -90,31 +90,34 @@
                 </div>
             </div>
 
-            <h3 class="discover__article__content__text__title title-little">
-                Victoria VR is introducing a cutting-edge realistic reality which will attract a broad audience across diverse range of sectors including:
-            </h3>
+            <div class="metaverse__article__content">
+                <h3 class="discover__article__content__text__title title-little">
+                    Victoria VR is introducing a cutting-edge realistic reality which will attract a broad audience across diverse range of sectors including:
+                </h3>
 
-            <p class="discover__article__content__text__desc desc">
-                &ensp;&#x2022;    Realtors
-                <br>
-                &ensp;&#x2022;    Businesses
-                <br>
-                &ensp;&#x2022;    Concert Agencies
-                <br>
-                &ensp;&#x2022;    Event Organizers
-                <br>
-                &ensp;&#x2022;    Health Care Providers
-                <br>
-                &ensp;&#x2022;    Atrists
-                <br>
-                &ensp;&#x2022;    Coaches
-                <br>
-                &ensp;&#x2022;    Advertising and Promotion Agencies
-                <br>
-                &ensp;&#x2022;    Educators and Educational Institutions
-                <br>
-                &ensp;&#x2022;    All kinds of Industries
-            </p>
+                <p class="discover__article__content__text__desc desc">
+                    &ensp;&#x2022;    Realtors
+                    <br>
+                    &ensp;&#x2022;    Businesses
+                    <br>
+                    &ensp;&#x2022;    Concert Agencies
+                    <br>
+                    &ensp;&#x2022;    Event Organizers
+                    <br>
+                    &ensp;&#x2022;    Health Care Providers
+                    <br>
+                    &ensp;&#x2022;    Atrists
+                    <br>
+                    &ensp;&#x2022;    Coaches
+                    <br>
+                    &ensp;&#x2022;    Advertising and Promotion Agencies
+                    <br>
+                    &ensp;&#x2022;    Educators and Educational Institutions
+                    <br>
+                    &ensp;&#x2022;    All kinds of Industries
+                </p>
+            </div>
+
         </section>
 
         <x-footer />

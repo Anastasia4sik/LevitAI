@@ -45,27 +45,27 @@
 
       <ul class="header__dropdown__options">
         <li>
-          <a href="/roadmap">
-            Roadmap
-          </a>
+            <a href="/privacy-policy">
+                Privacy Policy
+            </a>
         </li>
 
         <li>
-          <a href="/terms-use">
-            Terms Of Use
-          </a>
+            <a href="/terms-use">
+                Terms Of Use
+            </a>
         </li>
 
         <li>
-          <a href="/privacy-policy">
-            Privacy Policy
-          </a>
+            <a href="/roadmap">
+                Roadmap
+            </a>
         </li>
 
         <li>
-          <a href="/documentation">
-            Your LevitAI World
-          </a>
+            <a href="/documentation">
+                White Paper
+            </a>
         </li>
       </ul>
     </div>
@@ -77,21 +77,9 @@
       </div>
 
       <ul class="header__dropdown__options">
-        <li>
-            <a href="/our-vision">
-                Our Vision
-            </a>
-        </li>
-
-        <li>
-            <a href="/metaverse">
-                The Metaverse
-            </a>
-        </li>
-
-        <li>
-            <a href="/partners">
-                Partners
+          <li>
+            <a href="/economy">
+                Tokenomics and Economy
             </a>
         </li>
 
@@ -102,8 +90,20 @@
         </li>
 
         <li>
-            <a href="/economy">
-                Tokenomics and Economy
+            <a href="/partners">
+                Partners
+            </a>
+        </li>
+
+        <li>
+            <a href="/metaverse">
+                The Metaverse
+            </a>
+        </li>
+
+        <li>
+            <a href="/our-vision">
+                Our Vision
             </a>
         </li>
       </ul>
@@ -118,7 +118,13 @@
       <ul class="header__dropdown__options">
         <li>
             <a href="/what-is-levitai-world">
-                What is LevitAI World?
+                What is LevitAI
+            </a>
+        </li>
+
+        <li>
+            <a href="/why-levitai">
+                Why LevitAI?
             </a>
         </li>
 
@@ -141,12 +147,6 @@
         </li>
 
         <li>
-            <a href="/why-levitai">
-                Why LevitAI?
-            </a>
-        </li>
-
-        <li>
             <a href="/exchange-market">
                 Exchange Market
             </a>
@@ -162,20 +162,8 @@
 
       <ul class="header__dropdown__options">
         <li>
-            <a href="/contact-us">
-                Contact Us
-            </a>
-        </li>
-
-        <li>
-            <a href="/faq">
-                FAQ
-            </a>
-        </li>
-
-        <li>
-            <a href="/blog">
-                Blog
+            <a href="/about-us">
+                About Us
             </a>
         </li>
 
@@ -186,8 +174,20 @@
         </li>
 
         <li>
-            <a href="/about-us">
-                About Us
+            <a href="/blog">
+                Blog
+            </a>
+        </li>
+
+        <li>
+            <a href="/faq">
+                FAQ
+            </a>
+        </li>
+
+        <li>
+            <a href="/contact-us">
+                Contact Us
             </a>
         </li>
 

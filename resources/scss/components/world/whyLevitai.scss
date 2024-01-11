@@ -5,10 +5,11 @@
     background-position: center top;
 
     &__container {
-        padding: 0 2vw 150px 105px;
+        padding: 0 2vw 150px 0;
 
         &__content {
             margin-bottom: 100px;
+            padding-left: 105px;
 
             &__title {
                 margin-bottom: 75px;
@@ -40,6 +41,7 @@
         }
 
         &__table {
+            padding-left: 105px;
             &__title {
                 margin-bottom: 75px;
             }
@@ -154,6 +156,13 @@
                     }
                 }
 
+            }
+        }
+
+        &__blog {
+            padding-left: 30px;
+            &__title {
+                margin-top: -38px;
             }
         }
     }

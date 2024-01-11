@@ -1,14 +1,14 @@
 .aboutPage {
+    background-image: url('../../../../public/src/img/bc/bc-aboutPage-top.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center top;
     &__top {
         padding-left: 105px;
         margin-bottom: 100px;
 
         height: 85vh;
 
-        background-image: url('../../../../public/src/img/bc/bc-aboutPage-top.png');
-        background-repeat: no-repeat;
-        background-size: 46vw ;
-        background-position: right bottom;
 
         &__bottom {
             gap: 35px;

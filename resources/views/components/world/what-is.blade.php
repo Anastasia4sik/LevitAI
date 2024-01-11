@@ -5,14 +5,18 @@
         <x-header />
 
         <section class="whatLevitai__container">
-            <div class="whatLevitai__container__top d-flex flex-column align-items-center ">
-                <h2 class="whatLevitai__container__title title-main">
-                    What is
-                </h2>
+            <div class="whatLevitai__container__top d-flex flex-row align-items-center justify-content-between">
+                <div class="whatLevitai__container__top__text d-flex flex-column">
+                    <h2 class="whatLevitai__container__top__title title-main">
+                        What is <span class="title-main title-main--stroke">LevitAI</span>
+                    </h2>
 
-                <h2 class="whatLevitai__container__title title-main title-main--stroke">
-                    LevitAI
-                </h2>
+                    <p class="whatLevitai__container__top__desc desc">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt labore dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt labore dolore magna aliqua.
+                    </p>
+                </div>
+
+                <img src="{{ asset('src/img/photo/whatIs.jpg')}}" alt="What is LevitAI?" class="whatLevitai__container__top__img">
             </div>
 
             <div class="whatLevitai__container__video d-flex flex-column align-items-center justify-content-center">

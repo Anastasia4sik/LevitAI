@@ -23,10 +23,10 @@
                     button
                 "
                 style="
-                    gap: 9px;
+                    gap: 18px;
                     font-size: 14px;
-                    width: inherit;
-                    padding-right: 24px;
+                    width: 217px;
+                    font-weight: 600;
                 "
             >
                 <img

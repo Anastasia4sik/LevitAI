@@ -81,7 +81,7 @@
         <x-header />
 
         <section class="whyLevitai__container">
-            <div class="whyLevitAI__container__blog topPage d-flex flex-column align-items-center justify-content-center">
+            <div class="whyLevitai__container__blog topPage d-flex flex-column align-items-center justify-content-center">
                 <div
                     class="
                         whyLevitai__blog__container
@@ -89,14 +89,19 @@
                         d-flex
                         flex-column
                         justify-content-center
-                        text-center
                     "
                 >
-                    <h2 class="topPage__top__title title-main">
-                        Why
-                    </h2>
+                    <div class="topPage__top__text d-flex flex-row align-items-center">
+                        <h2 class="topPage__top__text__title title-main">
+                            Why
+                        </h2>
 
-                    <h2 class="topPage__top__text__title title-main title-main--sdivoke">
+                        <p class="topPage__top__text__desc desc text-start">
+                            Lorem ipsum dolor sit amet, consetur adipiscing elit, sed do eiusmod ter incididnt labore  magna aliqua.
+                        </p>
+                    </div>
+
+                    <h2 class="topPage__top__title whyLevitai__container__blog__title title-main title-main--stroke">
                         LevitAI
                     </h2>
                 </div>

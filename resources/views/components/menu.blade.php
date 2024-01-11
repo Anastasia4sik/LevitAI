@@ -64,29 +64,29 @@
             </div>
 
             <ul class="menu__container__list__item__select__options">
-              <li>
-                <a href="/documentation">
-                  What is LevitAI
-                </a>
-              </li>
+                <li>
+                    <a href="/privacy-policy">
+                        Privacy Policy
+                    </a>
+                </li>
 
-              <li>
-                <a href="/roadmap">
-                  Roadmap
-                </a>
-              </li>
+                <li>
+                    <a href="/terms-use">
+                        Terms Of Use
+                    </a>
+                </li>
 
-              <li>
-                <a href="/terms-use">
-                  Terms Of Use
-                </a>
-              </li>
+                <li>
+                    <a href="/roadmap">
+                        Roadmap
+                    </a>
+                </li>
 
-              <li>
-                <a href="/privacy-policy">
-                  Privacy Policy
-                </a>
-              </li>
+                <li>
+                    <a href="/documentation">
+                        White Paper
+                    </a>
+                </li>
             </ul>
           </div>
         </li>
@@ -101,8 +101,20 @@
 
             <ul class="menu__container__list__item__select__options">
                 <li>
-                    <a href="/our-vision">
-                        Our Vision
+                    <a href="/economy">
+                        Tokenomics and Economy
+                    </a>
+                </li>
+
+                <li>
+                    <a href="/integrations">
+                        Partner Integrations
+                    </a>
+                </li>
+
+                <li>
+                    <a href="/partners">
+                        Partners
                     </a>
                 </li>
 
@@ -112,23 +124,11 @@
                     </a>
                 </li>
 
-              <li>
-                    <a href="/partners">
-                        Partners
+                <li>
+                    <a href="/our-vision">
+                        Our Vision
                     </a>
-              </li>
-
-              <li>
-                    <a href="/integrations">
-                        Partner Integrations
-                    </a>
-              </li>
-
-              <li>
-                    <a href="/economy">
-                        Tokenomics and Economy
-                    </a>
-              </li>
+                </li>
             </ul>
           </div>
         </li>
@@ -144,7 +144,13 @@
             <ul class="menu__container__list__item__select__options">
                 <li>
                     <a href="/what-is-levitai-world">
-                        What is LevitAI World?
+                        What is LevitAI
+                    </a>
+                </li>
+
+                <li>
+                    <a href="/why-levitai">
+                        Why LevitAI?
                     </a>
                 </li>
 
@@ -167,12 +173,6 @@
                 </li>
 
                 <li>
-                    <a href="/why-levitai">
-                        Why LevitAI?
-                    </a>
-                </li>
-
-                <li>
                     <a href="/exchange-market">
                         Exchange Market
                     </a>
@@ -191,20 +191,8 @@
 
             <ul class="menu__container__list__item__select__options">
                 <li>
-                    <a href="/contact-us">
-                        Contact Us
-                    </a>
-                </li>
-
-                <li>
-                    <a href="/faq">
-                        FAQ
-                    </a>
-                </li>
-
-                <li>
-                    <a href="/blog">
-                    Blog
+                    <a href="/about-us">
+                        About Us
                     </a>
                 </li>
 
@@ -215,8 +203,20 @@
                 </li>
 
                 <li>
-                    <a href="/about-us">
-                        About Us
+                    <a href="/blog">
+                        Blog
+                    </a>
+                </li>
+
+                <li>
+                    <a href="/faq">
+                        FAQ
+                    </a>
+                </li>
+
+                <li>
+                    <a href="/contact-us">
+                        Contact Us
                     </a>
                 </li>
 

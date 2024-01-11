@@ -1,29 +1,115 @@
 @if(request()->is('blog'))
-<section id="blog" class="blog" style="padding: 0 0 100px 105px">
+<section
+    id="blog"
+    class="blog"
+    style="padding: 0 0 100px 105px"
+>
+
   <div class="blog__top">
-    <div class="blog__top__first d-flex flex-row align-items-center">
+    <div
+        class="
+            blog__top__first
+            d-flex
+            flex-row
+            align-items-center
+        "
+    >
       <h2 class="blog__top__first__title title-main">
         Recent
       </h2>
 
-      <h2 class="blog__top__second__title title-main title-main--stroke">
+      <h2
+        class="
+            blog__top__second__title
+            title-main
+            title-main--stroke
+        "
+    >
         Posts
       </h2>
     </div>
-    @elseif(request()->is('events/event-*'))
-    <section id="blog" class="blog" style="padding: 0 0 100px 105px">
-      <div class="blog__top">
-        <div class="blog__top__first d-flex flex-row align-items-center">
-          <h2 class="blog__top__first__title title-main">
-            Recent
-          </h2>
 
-          <h2 class="blog__top__second__title title-main title-main--stroke">
-            Events
-          </h2>
+@elseif(request()->is('events/event-*') || request()->is('blog/post-*'))
+
+    <section
+        id="blog"
+        class="blog"
+        style="padding: 0 0 100px 105px"
+    >
+      <div
+        class="blog__top">
+        <div
+            class="
+                blog__top__first
+                d-flex
+                flex-row
+                align-items-center
+            "
+        >
+            <h2
+                class="
+                    blog__top__first__title
+                    title-main
+                "
+            >
+                Related
+            </h2>
+
+            <h2
+                class="
+                    blog__top__second__title
+                    title-main
+                    title-main--stroke
+                "
+            >
+                Events
+            </h2>
         </div>
-        @else
-        <section class="blog" style="padding: 176px 0 209px 105px; background-image: url('../../../public/src/img/bc/bc-blog.png');">
+
+@elseif(request()->is('events'))
+
+<section
+    id="blog"
+    class="blog"
+    style="padding: 0 0 100px 105px"
+>
+  <div
+    class="blog__top">
+    <div
+        class="
+            blog__top__first
+            d-flex
+            flex-row
+            align-items-center
+        "
+    >
+        <h2
+            class="
+                blog__top__first__title
+                title-main
+            "
+        >
+            Popular
+        </h2>
+
+        <h2
+            class="
+                blog__top__second__title
+                title-main
+                title-main--stroke
+            "
+        >
+            Events
+        </h2>
+    </div>
+@else
+        <section
+            class="blog"
+            style="
+                padding: 176px 0 209px 105px;
+                background-image: url('{{ asset('src/img/bc/bc-blog.png')}}');
+            "
+        >
           <div class="blog__top">
             <div class="blog__top__first d-flex flex-row align-items-center">
               <h2 class="blog__top__first__title title-main">
@@ -60,7 +146,7 @@
                 Go to all posts
               </a>
             </div>
-            @endif
+@endif
           </div>
 
           <div class="blog__swiper swiper-container">
