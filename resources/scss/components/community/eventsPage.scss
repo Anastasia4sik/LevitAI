@@ -1,5 +1,5 @@
 .eventsPage {
-    background-image: url('/src/img/bc/bc-events.png');
+    background-image: url('../../../../public/src/img/bc/bc-events.png');
     background-repeat: no-repeat;
     background-position: center top;
     background-size: cover;
@@ -9,7 +9,7 @@
         margin-bottom: 150px;
         margin-left: 105px;
 
-        background-image: url('/src/img/bc/bc-eventsPage-content.png');
+        background-image: url('../../../../public/src/img/bc/bc-eventsPage-content.png');
         background-repeat: no-repeat;
         background-position: center top;
         background-size: cover;
@@ -19,7 +19,7 @@
         &__block {
             padding: 187px 0 166px 94px;
 
-            background-image: url('/src/img/bc/bc-eventsPage-block.png');
+            background-image: url('../../../../public/src/img/bc/bc-eventsPage-block.png');
             background-repeat: no-repeat;
             background-position: left center;
             background-size: contain;

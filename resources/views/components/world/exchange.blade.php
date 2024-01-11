@@ -780,7 +780,7 @@
               </button>
             </div>
 
-            <div class="exchange__container__table disable">
+            <div class="exchange__container__table">
                 <div class="exchange__container__table__catalog d-grid">
                     @foreach($market as $key => $item)
                         <a href="/exchange-market/item-">
@@ -818,7 +818,7 @@
                     @endforeach
 
                     <div class="exchange__container__table__catalog__disable">
-                        <p class="exchange__container__table__catalog__disable__text desc  d-flex align-items-center justify-content-center">
+                        <p class="exchange__container__table__catalog__disable__text desc d-flex align-items-center justify-content-center">
                             This window will be available according to the roadmap in May 2024
                         </p>
                     </div>
@@ -896,13 +896,17 @@
             });
 
         //disable
-            const disableBlock = btnBlock.querySelector('.exchange__container__table__disable');
-            const mainBlock = btnBlock.querySelector('.exchange__container__table');
+            document.addEventListener('DOMContentLoaded', function() {
+                const mainBlock = document.querySelector('.exchange__container__table');
+                const disableBlock = mainBlock.querySelector('.exchange__container__table__catalog__disable');
 
-            if (!mainBlock.classList.contains('disable')) {
-                disableBlock.style.display = 'block';
-            } else {
-                disableBlock.style.display = 'none';
-            }
+                if (!mainBlock.classList.contains('disable')) {
+                    disableBlock.style.display = 'none';
+                    console.log('none');
+                } else {
+                    disableBlock.style.display = 'block';
+                    console.log('block');
+                }
+            });
     </script>
 </x-base>
