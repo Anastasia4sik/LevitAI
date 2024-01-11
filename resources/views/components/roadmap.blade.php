@@ -6,7 +6,7 @@
             padding: 0;
 
             background-image: url('{{asset('/src/img/bc/bc-roadmap-page.png')}}');
-            background-repeat: no-repeat;
+
             background-position: center;
             background-size: cover;
         "

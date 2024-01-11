@@ -20,7 +20,7 @@
         @if(request()->is('faq'))
             style="
                 background-image: url({{ asset('src/img/bc/bc-gna-faq.png')}});
-                background-repeat: no-repeat;
+
                 background-size: contain;
                 background-position: left bottom;
             "

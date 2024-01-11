@@ -345,9 +345,18 @@
 <x-base>
     <x-menu />
 
-    <x-header />
+    <section
+        style="
+            background-image: url('{{ asset('src/img/bc/bc.png')}}');
 
-    <x-top />
+            background-position: center;
+            background-size: auto;
+        "
+    >
+        <x-header />
+
+        <x-top />
+    </section>
 
     <x-about />
 
@@ -359,7 +368,7 @@
         class=""
         style="
             background-image: url('{{ asset('src/img/bc/bc-complete.png')}}');
-            background-repeat: no-repeat;
+
             background-position: center;
             background-size: cover;
         "
@@ -385,7 +394,7 @@
         class=""
         style="
             background-image: url('{{ asset('src/img/bc/bc-available.png')}}');
-            background-repeat: no-repeat;
+
             background-position: center;
             background-size: cover;
         "

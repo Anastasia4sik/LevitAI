@@ -105,7 +105,7 @@
         class="postPage"
         style="
             background-image: url('{{ asset('src/img/bc/bc-post.png')}}');
-            background-repeat: no-repeat;
+
             background-position: center top;
             background-size: contain;
         "
