@@ -207,15 +207,19 @@
                 grid-template-columns: repeat(4, 16vw);
                 grid-gap: 50px;
 
-                padding: 102px 0 150px 15vw;
+                padding: 102px 0 78px 15vw;
+
 
                 &__block {
-                    transition: all .3s ease-in-out;
+                    border-radius: 0 0 5px 5px;
                     position: relative;
+
+                    transition: all .5s ease-in-out;
+
+                    background-color: transparent;
 
                     &:hover {
                         background-color: #ffffff36;
-                        border-radius: 0 0 5px 5px;
                     }
 
                     &__hot {
@@ -289,4 +293,66 @@
             }
         }
     }
+}
+
+.pagination {
+    width: max-content;
+
+    padding-bottom: 150px;
+}
+
+.pagination ul{
+    width: 100%;
+    margin-left: 40vw;
+
+    display: flex;
+    flex-wrap: wrap;
+    padding: 8px;
+}
+
+.pagination ul li{
+    color: $white;
+    list-style: none;
+    text-align: center;
+
+    font-size: 14px;
+    font-weight: 400;
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+.pagination ul li.numb{
+    list-style: none;
+    height: 45px;
+    width: 45px;
+    margin: 0 3px;
+    line-height: 45px;
+    border-radius: 50%;
+}
+
+.pagination ul li.numb.first{
+    margin: 0px 3px 0 -5px;
+}
+
+.pagination ul li.numb.last{
+    margin: 0px -5px 0 3px;
+}
+
+.pagination ul li.dots{
+    font-size: 22px;
+    cursor: default;
+}
+
+.pagination ul li.btn{
+    padding: 0 20px;
+}
+
+.pagination li.active,
+.pagination ul li.numb:hover,
+.pagination ul li:first-child:hover,
+.pagination ul li:last-child:hover{
+    color: $white;
+    font-weight: 800;
+    font-size: 18px;
 }

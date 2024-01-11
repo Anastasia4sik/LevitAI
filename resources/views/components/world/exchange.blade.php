@@ -13,7 +13,7 @@
             'id' => 2,
             'nft' => 'src/img/photo/nft/nft2.jpg',
             'user' => 'src/img/photo/nft/user2.jpg',
-            'title' => 'Lorem ipsum',
+            'title' => 'Lorem ipsu',
             'desc' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
             'price' => 3500,
             'top' => true,
@@ -49,7 +49,7 @@
             'id' => 6,
             'nft' => 'src/img/photo/nft/nft2.jpg',
             'user' => 'src/img/photo/nft/user2.jpg',
-            'title' => 'Lorem ipsum',
+            'title' => 'Lorem ipm',
             'desc' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
             'price' => 3500,
             'top' => true,
@@ -101,6 +101,222 @@
         ],
         'post12' => [
             'id' => 12,
+            'nft' => 'src/img/photo/nft/nft4.jpg',
+            'user' => 'src/img/photo/nft/user2.jpg',
+            'title' => 'Lorem ipsum',
+            'desc' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+            'price' => 3500,
+            'top' => true,
+        ],
+        'post13' => [
+            'id' => 13,
+            'nft' => 'src/img/photo/nft/nft1.jpg',
+            'user' => 'src/img/photo/nft/user1.jpg',
+            'title' => 'Lorem ipsum',
+            'desc' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+            'price' => 3500,
+            'top' => true,
+        ],
+        'post14' => [
+            'id' => 14,
+            'nft' => 'src/img/photo/nft/nft2.jpg',
+            'user' => 'src/img/photo/nft/user2.jpg',
+            'title' => 'Lorem ipsum',
+            'desc' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+            'price' => 3500,
+            'top' => true,
+        ],
+        'post15' => [
+            'id' => 15,
+            'nft' => 'src/img/photo/nft/nft3.jpg',
+            'user' => 'src/img/photo/nft/user1.jpg',
+            'title' => 'Lorem ipsum',
+            'desc' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+            'price' => 3500,
+            'top' => true,
+        ],
+        'post16' => [
+            'id' => 16,
+            'nft' => 'src/img/photo/nft/nft4.jpg',
+            'user' => 'src/img/photo/nft/user2.jpg',
+            'title' => 'Lorem ipsum',
+            'desc' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+            'price' => 3500,
+            'top' => true,
+        ],
+        'post17' => [
+            'id' => 17,
+            'nft' => 'src/img/photo/nft/nft1.jpg',
+            'user' => 'src/img/photo/nft/user1.jpg',
+            'title' => 'Lorem ipsum',
+            'desc' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+            'price' => 3500,
+            'top' => true,
+        ],
+        'post18' => [
+            'id' => 18,
+            'nft' => 'src/img/photo/nft/nft2.jpg',
+            'user' => 'src/img/photo/nft/user2.jpg',
+            'title' => 'Lorem ipsum',
+            'desc' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+            'price' => 3500,
+            'top' => true,
+        ],
+        'post19' => [
+            'id' => 19,
+            'nft' => 'src/img/photo/nft/nft3.jpg',
+            'user' => 'src/img/photo/nft/user1.jpg',
+            'title' => 'Lorem ipsum',
+            'desc' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+            'price' => 3500,
+            'top' => true,
+        ],
+        'post20' => [
+            'id' => 20,
+            'nft' => 'src/img/photo/nft/nft4.jpg',
+            'user' => 'src/img/photo/nft/user2.jpg',
+            'title' => 'Lorem ipsum',
+            'desc' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+            'price' => 3500,
+            'top' => true,
+        ],
+        'post21' => [
+            'id' => 21,
+            'nft' => 'src/img/photo/nft/nft1.jpg',
+            'user' => 'src/img/photo/nft/user1.jpg',
+            'title' => 'Lorem ipsum',
+            'desc' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+            'price' => 3500,
+            'top' => true,
+        ],
+        'post22' => [
+            'id' => 22,
+            'nft' => 'src/img/photo/nft/nft2.jpg',
+            'user' => 'src/img/photo/nft/user2.jpg',
+            'title' => 'Lorem ipsum',
+            'desc' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+            'price' => 3500,
+            'top' => true,
+        ],
+        'post23' => [
+            'id' => 23,
+            'nft' => 'src/img/photo/nft/nft3.jpg',
+            'user' => 'src/img/photo/nft/user1.jpg',
+            'title' => 'Lorem ipsum',
+            'desc' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+            'price' => 3500,
+            'top' => true,
+        ],
+        'post24' => [
+            'id' => 24,
+            'nft' => 'src/img/photo/nft/nft4.jpg',
+            'user' => 'src/img/photo/nft/user2.jpg',
+            'title' => 'Lorem ipsum',
+            'desc' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+            'price' => 3500,
+            'top' => true,
+        ],
+        'post25' => [
+            'id' => 25,
+            'nft' => 'src/img/photo/nft/nft1.jpg',
+            'user' => 'src/img/photo/nft/user1.jpg',
+            'title' => 'Lorem ipsum',
+            'desc' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+            'price' => 3500,
+            'top' => true,
+        ],
+        'post26' => [
+            'id' => 26,
+            'nft' => 'src/img/photo/nft/nft2.jpg',
+            'user' => 'src/img/photo/nft/user2.jpg',
+            'title' => 'Lorem ipsum',
+            'desc' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+            'price' => 3500,
+            'top' => true,
+        ],
+        'post27' => [
+            'id' => 27,
+            'nft' => 'src/img/photo/nft/nft3.jpg',
+            'user' => 'src/img/photo/nft/user1.jpg',
+            'title' => 'Lorem ipsum',
+            'desc' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+            'price' => 3500,
+            'top' => true,
+        ],
+        'post28' => [
+            'id' => 28,
+            'nft' => 'src/img/photo/nft/nft4.jpg',
+            'user' => 'src/img/photo/nft/user2.jpg',
+            'title' => 'Lorem ipsum',
+            'desc' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+            'price' => 3500,
+            'top' => true,
+        ],
+        'post29' => [
+            'id' => 29,
+            'nft' => 'src/img/photo/nft/nft1.jpg',
+            'user' => 'src/img/photo/nft/user1.jpg',
+            'title' => 'Lorem ipsum',
+            'desc' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+            'price' => 3500,
+            'top' => true,
+        ],
+        'post30' => [
+            'id' => 30,
+            'nft' => 'src/img/photo/nft/nft2.jpg',
+            'user' => 'src/img/photo/nft/user2.jpg',
+            'title' => 'Lorem ipsum',
+            'desc' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+            'price' => 3500,
+            'top' => true,
+        ],
+        'post31' => [
+            'id' => 31,
+            'nft' => 'src/img/photo/nft/nft3.jpg',
+            'user' => 'src/img/photo/nft/user1.jpg',
+            'title' => 'Lorem ipsum',
+            'desc' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+            'price' => 3500,
+            'top' => true,
+        ],
+        'post32' => [
+            'id' => 32,
+            'nft' => 'src/img/photo/nft/nft4.jpg',
+            'user' => 'src/img/photo/nft/user2.jpg',
+            'title' => 'Lorem ipsum',
+            'desc' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+            'price' => 3500,
+            'top' => true,
+        ],
+        'post33' => [
+            'id' => 33,
+            'nft' => 'src/img/photo/nft/nft1.jpg',
+            'user' => 'src/img/photo/nft/user1.jpg',
+            'title' => 'Lorem ipsum',
+            'desc' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+            'price' => 3500,
+            'top' => true,
+        ],
+        'post34' => [
+            'id' => 34,
+            'nft' => 'src/img/photo/nft/nft2.jpg',
+            'user' => 'src/img/photo/nft/user2.jpg',
+            'title' => 'Lorem ipsum',
+            'desc' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+            'price' => 3500,
+            'top' => true,
+        ],
+        'post35' => [
+            'id' => 35,
+            'nft' => 'src/img/photo/nft/nft3.jpg',
+            'user' => 'src/img/photo/nft/user1.jpg',
+            'title' => 'Lorem ipsum',
+            'desc' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+            'price' => 3500,
+            'top' => true,
+        ],
+        'post36' => [
+            'id' => 36,
             'nft' => 'src/img/photo/nft/nft4.jpg',
             'user' => 'src/img/photo/nft/user2.jpg',
             'title' => 'Lorem ipsum',
@@ -780,11 +996,11 @@
               </button>
             </div>
 
-            <div class="exchange__container__table">
-                <div class="exchange__container__table__catalog d-grid">
+            <div class="exchange__container__table disable" id="data-container">
+                <div class="exchange__container__table__catalog d-grid card-container">
                     @foreach($market as $key => $item)
-                        <a href="/exchange-market/item-">
-                            <div class="exchange__container__table__catalog__block">
+                        <div class="exchange__container__table__catalog__block card">
+                            <a href="/exchange-market/item-">
                                 @if ($item['top'] === true)
                                     <p class="exchange__container__table__catalog__block__hot desc">
                                         hot
@@ -813,15 +1029,21 @@
                                 <p class="exchange__container__table__catalog__block__price desc">
                                     ${{ $item['price'] }}
                                 </p>
-                            </div>
-                        </a>
+                            </a>
+                        </div>
                     @endforeach
+                </div>
 
-                    <div class="exchange__container__table__catalog__disable">
-                        <p class="exchange__container__table__catalog__disable__text desc d-flex align-items-center justify-content-center">
-                            This window will be available according to the roadmap in May 2024
-                        </p>
-                    </div>
+                <div class="pagination">
+                    <ul id="pagination" class="pagination">
+                        <!--pages or li are comes from javascript -->
+                    </ul>
+                </div>
+
+                <div class="exchange__container__table__catalog__disable">
+                    <p class="exchange__container__table__catalog__disable__text desc d-flex align-items-center justify-content-center">
+                        This window will be available according to the roadmap in May 2024
+                    </p>
                 </div>
             </div>
         </section>
@@ -839,8 +1061,6 @@
                 const dropdownContentTop = dropdown.querySelector('.exchange__container__filter__dropdown__top');
 
                 dropdownTitle.addEventListener('click', () => {
-                    console.log('click');
-
                     if(dropdownContent.classList.contains('open')) {
                         dropdownContent.classList.remove('open');
 
@@ -865,7 +1085,7 @@
                     maxPrice = parseInt(priceInput[1].value);
 
                     if((maxPrice - minPrice >= priceGap) && maxPrice <= rangeInput[1].max){
-                        if(e.target.className === "input-min"){
+                        if(e.target.class === "input-min"){
                             rangeInput[0].value = minPrice;
                             range.style.left = ((minPrice / rangeInput[0].max) * 100) + "%";
                         } else {
@@ -881,7 +1101,7 @@
                     let minVal = parseInt(rangeInput[0].value),
                     maxVal = parseInt(rangeInput[1].value);
                     if ((maxVal - minVal) < priceGap) {
-                        if(e.target.className === "range-min"){
+                        if(e.target.class === "range-min"){
                             rangeInput[0].value = maxVal - priceGap
                         } else {
                             rangeInput[1].value = minVal + priceGap;
@@ -902,11 +1122,115 @@
 
                 if (!mainBlock.classList.contains('disable')) {
                     disableBlock.style.display = 'none';
-                    console.log('none');
                 } else {
                     disableBlock.style.display = 'block';
-                    console.log('block');
                 }
             });
+
+        //pagination
+        const cardsPerPage = 12;
+        const dataContainer = document.querySelector('.exchange__container__table__catalog');
+        const pagination = document.getElementById('pagination');
+        const pageNumbers = document.getElementById('page-numbers');
+
+        const cards = Array.from(dataContainer.getElementsByClassName('exchange__container__table__catalog__block'));
+
+        let totalPages = Math.ceil(cards.length / cardsPerPage);
+        let currentPage = 1;
+
+        function displayPage(page) {
+            const startIndex = (page - 1) * cardsPerPage;
+            const endIndex = startIndex + cardsPerPage;
+
+            cards.forEach((card, index) => {
+                if (index >= startIndex && index < endIndex) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+
+        function updatePagination() {
+            const pageNumbers = document.getElementById('pagination');
+            pageNumbers.innerHTML = createPagination(totalPages, currentPage);
+        }
+
+        pagination.addEventListener('click', (e) => {
+            if (e.target.classList.contains('numb')) {
+                const page = parseInt(e.target.textContent);
+                if (page !== currentPage) {
+                    currentPage = page;
+                    displayPage(currentPage);
+                    updatePagination();
+                }
+            }
+        });
+
+        displayPage(currentPage);
+        updatePagination();
+
+        const element = document.querySelector(".pagination ul");
+
+        function createPagination(totalPages, page) {
+            let liTag = '';
+            let active;
+            let beforePage = page - 1;
+            let afterPage = page + 1;
+
+            if (page > 1) {
+                liTag += `<li class="btn prev" onclick="createPagination(${totalPages}, ${page - 1})"><span><i class="fas fa-angle-left"></i> <</span></li>`;
+            }
+
+            if (page > 2) {
+                liTag += `<li class="first numb" onclick="createPagination(${totalPages}, 1)"><span>1</span></li>`;
+                if (page > 3) {
+                    liTag += `<li class="dots"><span>...</span></li>`;
+                }
+            }
+
+            if (page == totalPages) {
+                beforePage = beforePage - 2;
+            } else if (page == totalPages - 1) {
+                beforePage = beforePage - 1;
+            }
+
+            if (page == 1) {
+                afterPage = afterPage + 2;
+            } else if (page == 2) {
+                afterPage = afterPage + 1;
+            }
+
+            for (let plength = beforePage; plength <= afterPage; plength++) {
+                if (plength > totalPages) {
+                    continue;
+                }
+
+                if (plength == 0) {
+                    plength = plength + 1;
+                }
+                if (page == plength) {
+                    active = "active";
+                } else {
+                    active = "";
+                }
+
+                liTag += `<li class="numb ${active}" onclick="createPagination(${totalPages}, ${plength})"><span>${plength}</span></li>`;
+            }
+
+            if (page < totalPages - 1) {
+                if (page < totalPages - 2) {
+                    liTag += `<li class="dots"><span>...</span></li>`;
+                }
+
+                liTag += `<li class="last numb" onclick="createPagination(${totalPages}, ${totalPages})"><span>${totalPages}</span></li>`;
+            }
+
+            if (page < totalPages) {
+                liTag += `<li class="btn next" onclick="createPagination(${totalPages}, ${page + 1})"><span>> <i class="fas fa-angle-right"></i></span></li>`;
+            }
+
+            return liTag;
+        }
     </script>
 </x-base>

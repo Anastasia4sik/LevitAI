@@ -22,69 +22,45 @@
         <li class="menu__container__list__item">
           <div class="menu__container__list__item__select">
             <div class="menu__container__list__item__select__label">
-              My Account
-
-              <span class="arrow-down">&#9662;</span>
-            </div>
-
-            <ul class="menu__container__list__item__select__options">
-              <li>
-                <a href="#">
-                  Building the Future
-                </a>
-              </li>
-
-              <li>
-                <a href="#">
-                  What is LevitAI
-                </a>
-              </li>
-
-              <li>
-                <a href="#">
-                  The NFT Gallery
-                </a>
-              </li>
-
-              <li>
-                <a href="#">
-                  The Exchange Market
-                </a>
-              </li>
-            </ul>
-          </div>
-        </li>
-
-        <li class="menu__container__list__item">
-          <div class="menu__container__list__item__select">
-            <div class="menu__container__list__item__select__label">
-              Documentation
+              Community
 
               <span class="arrow-down">&#9662;</span>
             </div>
 
             <ul class="menu__container__list__item__select__options">
                 <li>
-                    <a href="/privacy-policy">
-                        Privacy Policy
+                    <a href="/about-us">
+                        About Us
                     </a>
                 </li>
 
                 <li>
-                    <a href="/terms-use">
-                        Terms Of Use
+                    <a href="/team">
+                        Our Team
                     </a>
                 </li>
 
                 <li>
-                    <a href="/roadmap">
-                        Roadmap
+                    <a href="/blog">
+                        Blog
                     </a>
                 </li>
 
                 <li>
-                    <a href="/documentation">
-                        White Paper
+                    <a href="/faq">
+                        FAQ
+                    </a>
+                </li>
+
+                <li>
+                    <a href="/contact-us">
+                        Contact Us
+                    </a>
+                </li>
+
+                <li>
+                    <a href="/events">
+                        The Events
                     </a>
                 </li>
             </ul>
@@ -127,6 +103,42 @@
                 <li>
                     <a href="/our-vision">
                         Our Vision
+                    </a>
+                </li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="menu__container__list__item">
+          <div class="menu__container__list__item__select">
+            <div class="menu__container__list__item__select__label">
+              Documentation
+
+              <span class="arrow-down">&#9662;</span>
+            </div>
+
+            <ul class="menu__container__list__item__select__options">
+                <li>
+                    <a href="/privacy-policy">
+                        Privacy Policy
+                    </a>
+                </li>
+
+                <li>
+                    <a href="/terms-use">
+                        Terms Of Use
+                    </a>
+                </li>
+
+                <li>
+                    <a href="/roadmap">
+                        Roadmap
+                    </a>
+                </li>
+
+                <li>
+                    <a href="/documentation">
+                        White Paper
                     </a>
                 </li>
             </ul>
@@ -184,47 +196,35 @@
         <li class="menu__container__list__item">
           <div class="menu__container__list__item__select">
             <div class="menu__container__list__item__select__label">
-              Community
+              My Account
 
               <span class="arrow-down">&#9662;</span>
             </div>
 
             <ul class="menu__container__list__item__select__options">
-                <li>
-                    <a href="/about-us">
-                        About Us
-                    </a>
-                </li>
+              <li>
+                <a href="#">
+                  Building the Future
+                </a>
+              </li>
 
-                <li>
-                    <a href="/team">
-                        Our Team
-                    </a>
-                </li>
+              <li>
+                <a href="#">
+                  What is LevitAI
+                </a>
+              </li>
 
-                <li>
-                    <a href="/blog">
-                        Blog
-                    </a>
-                </li>
+              <li>
+                <a href="#">
+                  The NFT Gallery
+                </a>
+              </li>
 
-                <li>
-                    <a href="/faq">
-                        FAQ
-                    </a>
-                </li>
-
-                <li>
-                    <a href="/contact-us">
-                        Contact Us
-                    </a>
-                </li>
-
-                <li>
-                    <a href="/events">
-                        The Events
-                    </a>
-                </li>
+              <li>
+                <a href="#">
+                  The Exchange Market
+                </a>
+              </li>
             </ul>
           </div>
         </li>
