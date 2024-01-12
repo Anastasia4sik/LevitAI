@@ -41,3 +41,15 @@ new Swiper('.teamPage__advisor__swiper', {
     speed: 1500,
     slidesPerView: 'auto',
 });
+
+new Swiper('.item__container__swiper', {
+    pagination: {
+        el: '.item__container__swiper__pagination',
+        clickable: true,
+    },
+
+    initialSlide: 0,
+    spaceBetween: 66,
+    speed: 1500,
+    slidesPerView: 'auto',
+});

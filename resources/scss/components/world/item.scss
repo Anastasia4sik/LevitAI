@@ -1,0 +1,127 @@
+.item {
+    &__container {
+        padding: 95px 2vw 150px 105px;
+
+        &__content {
+            margin-bottom: 100px;
+
+            &__text {
+                margin-right: 2vw;
+
+                &__title {
+                    margin-bottom: 15px;
+
+                    font-size: 5vw;
+                }
+
+                &__desc {
+                    width: 21vw;
+
+                    margin-bottom: 75px;
+                }
+
+                &__user {
+                    margin-bottom: 14px;
+                    gap: 15px;
+
+                    &__photo {
+                        height: 55px;
+                        width: 55px;
+
+                        border-radius: 50%;
+                    }
+
+                    &__info {
+                        &__title {
+                            margin-bottom: 1px;
+
+                            font-size: 24px;
+                        }
+
+                        &__undertitle {
+                            font-size: 14px;
+
+                            opacity: 0.75;
+                        }
+                    }
+
+                    &__desc {
+                        width: 31vw;
+
+                        opacity: 0.75;
+                    }
+                }
+            }
+
+            &__nft {
+                width: 31vw;
+
+                object-fit: cover;
+
+                margin-right: 4vw;
+            }
+
+            &__info {
+                &__list {
+                    &__item {
+                        &__img {
+                            width: 22vw;
+
+                            margin-bottom: 25px;
+                        }
+
+                        &__row {
+                            gap: 55px;
+
+                            margin-bottom: 35px;
+
+                            &__num {
+                                font-size: 24px;
+                            }
+
+                            &__desc {
+                                font-size: 14px;
+
+                                opacity: 0.75;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        &__swiper {
+            overflow: hidden;
+
+            position: relative;
+            &__wrapper {
+                margin-bottom: 55px;
+
+                width: 100vw;
+            }
+
+            &__slide.exchange__container__table__catalog__block {
+                width: 20vw;
+                height: 28vw;
+
+                & .exchange__container__table__catalog__block__nft {
+                    height: 71%;
+                }
+            }
+        }
+
+        &__slides {
+                margin-bottom: 55px;
+
+                &__row {
+                    gap: 50px;
+
+                    margin-top: -20px;
+                }
+
+                &__title {
+                    font-size: 5vw;
+                }
+        }
+    }
+ }

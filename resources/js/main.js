@@ -46,7 +46,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
             button.classList.add('active');
 
-
             listItems.forEach((item) => {
                 const categoryClass = 'qna__block__content__list--' + button.id.toLowerCase();
 

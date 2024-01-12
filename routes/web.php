@@ -120,3 +120,7 @@ Route::get('/', function () {
     Route::get('/exchange-market', function () {
         return view('components/world/exchange');
     });
+
+    Route::get('/exchange-market/item-', function () {
+        return view('components/world/exchange-item');
+    });
