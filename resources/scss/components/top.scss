@@ -67,21 +67,21 @@
 @keyframes Move {
     0% {
         transform: translateX(0);
-        content: url('../../../public/src/img/icons/arrows/arrow_right_short.svg');
+        content: url('/src/img/icons/arrows/arrow_right_short.svg');
     }
 
     33% {
         transform: translateX(8%);
-        content: url('../../../public/src/img/icons/arrows/arrow_right_short.svg');
+        content: url('/src/img/icons/arrows/arrow_right_short.svg');
     }
 
     66% {
         transform: translateX(5%);
-        content: url('../../../public/src/img/icons/arrows/arrow_right_long.svg');
+        content: url('/src/img/icons/arrows/arrow_right_long.svg');
     }
 
     100% {
         transform: translateX(0);
-        content: url('../../../public/src/img/icons/arrows/arrow_right_long.svg');
+        content: url('/src/img/icons/arrows/arrow_right_long.svg');
     }
 }
