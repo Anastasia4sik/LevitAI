@@ -996,7 +996,7 @@
               </button>
             </div>
 
-            <div class="exchange__container__table disable" id="data-container">
+            <div class="exchange__container__table" id="data-container">
                 <div class="exchange__container__table__catalog d-grid card-container">
                     @foreach($market as $key => $item)
                         <div class="exchange__container__table__catalog__block card">
@@ -1035,7 +1035,7 @@
                 </div>
 
                 <div class="pagination">
-                    <ul id="pagination" class="pagination">
+                    <ul id="pagination" class="pagination d-flex align-items-center">
                         <!--pages or li are comes from javascript -->
                     </ul>
                 </div>
@@ -1048,8 +1048,8 @@
             </div>
         </section>
 
-        <x-footer />
     </section>
+    <x-footer />
 
     <script>
         //dropdown
@@ -1159,8 +1159,21 @@
         pagination.addEventListener('click', (e) => {
             if (e.target.classList.contains('numb')) {
                 const page = parseInt(e.target.textContent);
+
                 if (page !== currentPage) {
                     currentPage = page;
+                    displayPage(currentPage);
+                    updatePagination();
+                }
+            } else if (e.target.classList.contains('prev')) {
+                if (currentPage > 1) {
+                    currentPage--;
+                    displayPage(currentPage);
+                    updatePagination();
+                }
+            } else if (e.target.classList.contains('next')) {
+                if (currentPage < totalPages) {
+                    currentPage++;
                     displayPage(currentPage);
                     updatePagination();
                 }
@@ -1179,14 +1192,15 @@
             let afterPage = page + 1;
 
             if (page > 1) {
-                liTag += `<li class="btn prev" onclick="createPagination(${totalPages}, ${page - 1})"><span><i class="fas fa-angle-left"></i> <</span></li>`;
+                liTag += `<li class="btn prev" onclick="createPagination(${totalPages}, ${page - 1})"><i class="fas fa-angle-left"></i> <</li>`;
             }
 
-            if (page > 2) {
-                liTag += `<li class="first numb" onclick="createPagination(${totalPages}, 1)"><span>1</span></li>`;
-                if (page > 3) {
-                    liTag += `<li class="dots"><span>...</span></li>`;
-                }
+            if (page > 2 && totalPages > 4) {
+                liTag += `<li class="first numb" onclick="createPagination(${totalPages}, 1)">1</li>`;
+            }
+
+            if (page > 3) {
+                liTag += `<li class="dots"><span>...</span></li>`;
             }
 
             if (page == totalPages) {
@@ -1215,19 +1229,19 @@
                     active = "";
                 }
 
-                liTag += `<li class="numb ${active}" onclick="createPagination(${totalPages}, ${plength})"><span>${plength}</span></li>`;
+                liTag += `<li class="numb ${active}" onclick="createPagination(${totalPages}, ${plength})">${plength}</li>`;
             }
 
-            if (page < totalPages - 1) {
+            if (page < totalPages - 1 && totalPages > 4) {
                 if (page < totalPages - 2) {
                     liTag += `<li class="dots"><span>...</span></li>`;
                 }
 
-                liTag += `<li class="last numb" onclick="createPagination(${totalPages}, ${totalPages})"><span>${totalPages}</span></li>`;
+                liTag += `<li class="last numb" onclick="createPagination(${totalPages}, ${totalPages})">${totalPages}</li>`;
             }
 
             if (page < totalPages) {
-                liTag += `<li class="btn next" onclick="createPagination(${totalPages}, ${page + 1})"><span>> <i class="fas fa-angle-right"></i></span></li>`;
+                liTag += `<li class="btn next" onclick="createPagination(${totalPages}, ${page + 1})">> <i class="fas fa-angle-right"></i></li>`;
             }
 
             return liTag;

@@ -1,6 +1,6 @@
 .exchange {
     position: relative;
-    background-image: url('/src/img/bc/bc-market.png');
+    background-image: url('../../../../public/src/img/bc/bc-market.png');
 
     background-position: right top;
     background-size: 79vw;
@@ -96,7 +96,7 @@
                                     cursor: pointer;
 
                                     &:checked {
-                                      background-image: url('/src/img/icons/check.svg');
+                                      background-image: url('../../../../public/src/img/icons/check.svg');
 
                                       background-position: center;
 
@@ -168,10 +168,6 @@
 
                                 gap: 8px;
 
-                                &__span {
-                                    color: $grey;
-                                }
-
                                 &__field{
                                     display: flex;
                                     height: 45px;
@@ -183,7 +179,7 @@
                                         width: 70px;
 
                                         color: $grey;
-                                        border: 1.5px solid $grey;
+                                        border: 1.5px solid $white;
                                         border-radius: 10px;
                                         background-color: transparent;
 
@@ -269,7 +265,7 @@
                     right: 0;
 
                     width: 79vw;
-                    height: 69%;
+                    height: 100%;
 
                     background: rgba(12, 0, 46, 0.80);
 
@@ -304,10 +300,6 @@
 .pagination ul{
     width: 100%;
     margin-left: 40vw;
-
-    display: flex;
-    flex-wrap: wrap;
-    padding: 8px;
 }
 
 .pagination ul li{
@@ -315,7 +307,7 @@
     list-style: none;
     text-align: center;
 
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 400;
     cursor: pointer;
 
@@ -323,29 +315,12 @@
 }
 
 .pagination ul li.numb{
-    list-style: none;
-    height: 45px;
     width: 45px;
-    margin: 0 3px;
-    line-height: 45px;
-    border-radius: 50%;
-}
-
-.pagination ul li.numb.first{
-    margin: 0px 3px 0 -5px;
-}
-
-.pagination ul li.numb.last{
-    margin: 0px -5px 0 3px;
 }
 
 .pagination ul li.dots{
-    font-size: 22px;
+    font-size: 14px;
     cursor: default;
-}
-
-.pagination ul li.btn{
-    padding: 0 20px;
 }
 
 .pagination li.active,
