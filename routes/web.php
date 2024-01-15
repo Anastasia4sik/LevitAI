@@ -124,3 +124,12 @@ Route::get('/', function () {
     Route::get('/exchange-market/item-', function () {
         return view('components/world/exchange-item');
     });
+
+//account
+    Route::get('/register', function () {
+        return view('components/account/register');
+    });
+
+    Route::get('/sign-in', function () {
+        return view('components/account/sign-in');
+    });

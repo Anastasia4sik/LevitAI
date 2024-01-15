@@ -174,15 +174,15 @@
 
       <ul class="header__dropdown__options">
         <li>
-          <a href="/documentation">
-            Documentation
-          </a>
+            <a href="/register">
+                Register an account
+            </a>
         </li>
 
         <li>
-          <a href="#">
-            Discover
-          </a>
+            <a href="/sign-in">
+                Sign in
+            </a>
         </li>
 
         <li>

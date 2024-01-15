@@ -202,17 +202,17 @@
             </div>
 
             <ul class="menu__container__list__item__select__options">
-              <li>
-                <a href="#">
-                  Building the Future
-                </a>
-              </li>
+                <li>
+                    <a href="/register">
+                        Register an account
+                    </a>
+                </li>
 
-              <li>
-                <a href="#">
-                  What is LevitAI
-                </a>
-              </li>
+                <li>
+                    <a href="/sign-in">
+                        Sign in
+                    </a>
+                </li>
 
               <li>
                 <a href="#">
