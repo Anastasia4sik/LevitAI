@@ -18,7 +18,11 @@
         left: 17vw;
         top: 12vh;
 
-        padding: 6vh 0;
+        padding: 4vh 0;
+
+        &--signin {
+            left: 20vw;
+        }
 
         &__text {
             padding: 3.7vh 2vw 4.6vh;

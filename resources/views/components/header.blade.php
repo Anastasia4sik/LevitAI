@@ -1,4 +1,55 @@
-<header id="head" class="header d-flex flex-row justify-content-end">
+<header id="head" class="header d-flex flex-row justify-content-between">
+    <div class="header__dropdown">
+        <div class="header__dropdown__label align-items-center">
+            <img class="header__dropdown__label__img align-items-center" src="{{ asset('src/img/photo/avatar-small.png')}}" alt="My avatar">
+            My Account
+            <span class="arrow-down">&#9662;</span>
+        </div>
+
+        <ul class="header__dropdown__options">
+            <li>
+                <a href="/avatar">
+                    My Avatar
+                </a>
+            </li>
+
+            <li>
+                <a href="/account">
+                    My Account
+                </a>
+            </li>
+
+            <li>
+                <a href="/referral">
+                    My Referral System
+                </a>
+            </li>
+
+            <li>
+                <a href="/my-events">
+                    My Events
+                </a>
+            </li>
+
+            <li>
+                <a href="/messages">
+                    My Messages
+                </a>
+            </li>
+
+            <li>
+                <a href="/friends">
+                    My Friends
+                </a>
+            </li>
+
+            <li>
+                <a href="/wallet">
+                    My Wallet
+                </a>
+            </li>
+        </ul>
+      </div>
   <ul class="header__list d-flex flex-row align-items-center">
     <a href="/" class="header__list__item">
       Home
@@ -183,18 +234,6 @@
             <a href="/sign-in">
                 Sign in
             </a>
-        </li>
-
-        <li>
-          <a href="#">
-            Your LevitAI World
-          </a>
-        </li>
-
-        <li>
-          <a href="#">
-            Community
-          </a>
         </li>
       </ul>
     </div>

@@ -4,7 +4,7 @@
 
         <x-header />
 
-        <div class="register__container d-flex flex-row align-items-center">
+        <div class="register__container register__container--signin d-flex flex-row align-items-center">
             <div class="register__container__text">
                 <h1 class="register__container__text__title title-little">
                     Sign in to the <br> Account

@@ -1,5 +1,5 @@
 .header {
-    padding: 26px 60px 0 0;
+    padding: 26px 60px 0 105px;
 
     &__list {
         gap: 25px;
@@ -21,6 +21,13 @@
             cursor: pointer;
             display: flex;
             justify-content: space-between;
+
+            &__img {
+                margin-right: 15px;
+
+                border: 2px solid $white;
+                border-radius: 50%;
+            }
         }
 
         &__options {
