@@ -13,7 +13,10 @@
                         </h2>
 
                         <p class="avatar__section__content__top__first__desc desc">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt labore dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt labore dolore magna aliqua.
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                            labore dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit, sed do eiusmod tempor incididunt labore dolore magna aliqua.
                         </p>
                     </div>
 
@@ -22,84 +25,59 @@
                             Avatar
                         </h2>
 
-                        <a
-                            href="/avatar/add"
-                            class="
+                        <a href="/avatar/add" class="
                                 complete__btn
                                 flex-row
                                 align-items-center
                                 button
                                 avatar__section__content__top__sec__button
-                            "
-                            style="
+                            " style="
                                 gap: 15px;
                                 font-size: 16px;
                                 width: 178px;
-                            "
-                        >
-                            <img
-                                src="{{asset('src/img/icons/plus.svg')}}"
-                                alt="Add"
-                                class="complete__btn__img"
-                                style="
+                            ">
+                            <img src="{{asset('src/img/icons/plus.svg')}}" alt="Add" class="complete__btn__img" style="
                                     padding: 15px;
-                                "
-                            >
+                                ">
 
                             Add Avatar
                         </a>
 
                         <div class="avatar__section__content__top__sec__btns flex-row align-items-center">
-                            <a
-                                href="/avatar/edit"
-                                class="
+                            <a href="/avatar/edit" class="
                                     complete__btn
                                     d-flex
                                     flex-row
                                     align-items-center
                                     button
-                                "
-                                style="
+                                " style="
                                     gap: 17px;
                                     font-size: 16px;
                                     width: 177px;
-                                "
-                            >
-                                <img
-                                    src="{{asset('src/img/icons/edit.svg')}}"
-                                    alt="Add"
-                                    class="complete__btn__img"
+                                ">
+                                <img src="{{asset('src/img/icons/edit.svg')}}" alt="Add" class="complete__btn__img"
                                     style="
                                         padding: 15px;
-                                    "
-                                >
+                                    ">
 
                                 Edit Avatar
                             </a>
 
-                            <a
-                                href="#"
-                                class="
+                            <a href="#" class="
                                     complete__btn
                                     d-flex
                                     flex-row
                                     align-items-center
                                     button
-                                "
-                                style="
+                                " style="
                                     gap: 14px;
                                     font-size: 16px;
                                     width: 177px;
-                                "
-                            >
-                                <img
-                                    src="{{asset('src/img/icons/play.svg')}}"
-                                    alt="Add"
-                                    class="complete__btn__img"
+                                ">
+                                <img src="{{asset('src/img/icons/play.svg')}}" alt="Add" class="complete__btn__img"
                                     style="
                                         padding: 5px;
-                                    "
-                                >
+                                    ">
 
                                 Play meta
                             </a>
@@ -114,7 +92,8 @@
                         </h3>
 
                         <p class="avatar__section__content__table__item__desc desc">
-                            Competently formula accurate value vertical outsourcing.Competently formula accurate value vertical outsourcing.
+                            Competently formula accurate value vertical outsourcing.Competently formula accurate value
+                            vertical outsourcing.
                         </p>
                     </div>
 
@@ -124,7 +103,8 @@
                         </h3>
 
                         <p class="avatar__section__content__table__item__desc desc">
-                            Competently formula accurate value vertical outsourcing.Competently formula accurate value vertical outsourcing.
+                            Competently formula accurate value vertical outsourcing.Competently formula accurate value
+                            vertical outsourcing.
                         </p>
                     </div>
 
@@ -134,7 +114,8 @@
                         </h3>
 
                         <p class="avatar__section__content__table__item__desc desc">
-                            Competently formula accurate value vertical outsourcing.Competently formula accurate value vertical outsourcing.
+                            Competently formula accurate value vertical outsourcing.Competently formula accurate value
+                            vertical outsourcing.
                         </p>
                     </div>
 
@@ -144,7 +125,8 @@
                         </h3>
 
                         <p class="avatar__section__content__table__item__desc desc">
-                            Competently formula accurate value vertical outsourcing.Competently formula accurate value vertical outsourcing.
+                            Competently formula accurate value vertical outsourcing.Competently formula accurate value
+                            vertical outsourcing.
                         </p>
                     </div>
                 </div>
@@ -155,7 +137,7 @@
                     You have not created your avatar yet
                 </p>
 
-                <img src="{{ asset('src/img/photo/avatar.jpg')}}" alt="" class="avatar__section__img">
+                <img src="{{ asset('src/img/photo/account/avatar.jpg')}}" alt="" class="avatar__section__img">
             </div>
         </div>
 

@@ -141,3 +141,7 @@ Route::get('/', function () {
     Route::get('/avatar/edit', function () {
         return view('components/account/avatar-edit');
     });
+
+    Route::get('/account', function () {
+        return view('components/account/account');
+    });

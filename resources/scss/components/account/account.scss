@@ -1,0 +1,128 @@
+.account {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center top;
+
+    &__section {
+        padding: 6.4vh 2vw 13.8vh 105px;
+
+        &__top {
+            margin-bottom: 11.8vh;
+
+            &__first {
+                gap: 1.8vw;
+
+                &__desc {
+                    width: 33.8vw;
+                }
+            }
+
+            &__sec {
+                gap: 2.6vw;
+                margin-top: -25px;
+            }
+        }
+
+        &__table {
+            margin-bottom: 9.2vh;
+
+            &__title {
+                font-size: 5vw;
+
+                margin-bottom: 55px;
+            }
+
+            &__blocks {
+                gap: 1.5vw;
+                &__item {
+                    padding: 30px 1.5vw 35px;
+
+                    border-radius: 5px;
+                    background-color: #180D38;
+
+                    &--1 {
+                        width: 16.7vw;
+                    }
+
+                    &--2 {
+                        width: 20.1vw;
+                    }
+
+                    &--3 {
+                        width: 24.7vw;
+                    }
+
+                    &--4 {
+                        width: 25.4vw;
+                    }
+
+                    &__title {
+                        color:  #bbb;
+                        margin-bottom: 5px;
+                    }
+
+                    &__info {
+                        &:not(:last-of-type) {
+                            margin-bottom: 20px;
+                        }
+                    }
+                }
+            }
+        }
+
+        &__roadmap {
+            &__top {
+                margin-bottom: 5vh;
+
+                &__first {
+                    gap: 1.8vw;
+                }
+
+                &__desc {
+                    width: 20.5vw;
+                }
+
+                &__title {
+                    margin-top: -25px;
+                    margin-left: 24.5vw;
+                }
+            }
+
+            &__content {
+                &__img {
+                    width: 30vw;
+                }
+
+                &__info {
+                    width: 54.7vw;
+
+                    &__title {
+                        margin-bottom: 15px;
+
+                        font-size: 1.25vw;
+                    }
+
+                    &__block {
+                        gap: 10px;
+
+                        &:not(:last-of-type) {
+                            margin-bottom: 10px;
+                        }
+
+                        &:last-of-type {
+                            margin-bottom: 30px;
+                        }
+                    }
+
+                    &__desc {
+                        opacity: 0.75;
+
+                        &--mb {
+                            margin-bottom: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
