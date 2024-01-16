@@ -133,3 +133,7 @@ Route::get('/', function () {
     Route::get('/sign-in', function () {
         return view('components/account/sign-in');
     });
+
+    Route::get('/avatar', function () {
+        return view('components/account/avatar');
+    });

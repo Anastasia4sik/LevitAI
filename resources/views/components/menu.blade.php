@@ -204,7 +204,7 @@
             <ul class="menu__container__list__item__select__options">
                 <li>
                     <a href="/register">
-                        Register an account
+                        Register
                     </a>
                 </li>
 

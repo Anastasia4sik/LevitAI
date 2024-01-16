@@ -1,0 +1,76 @@
+.avatar {
+    background-image: url('../../../../public/src/img/bc/bc-avatar.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    &__section {
+        padding: 8.7vh 2vw 13.8vh 105px;
+
+        &__photo {
+            position: relative;
+
+            &__text {
+                position: absolute;
+                text-align: center;
+
+                left: 26%;
+                top: 39%;
+
+                width: 47%;
+                height: fit-content;
+
+                font-size: 1.8vw;
+
+                z-index: -1;
+            }
+        }
+
+        &__img {
+            width: 32vw;
+
+            border-radius: 5px;
+            background-color: #241942;
+            border: none;
+
+            object-fit: fill;
+        }
+
+        &__content {
+            &__top {
+                margin-bottom: 5.5vh;
+
+                &__first {
+                    &__desc {
+                        width: 33vw;
+
+                        margin-left: 35px;
+                    }
+                }
+
+                &__sec {
+                    margin-top: -30px;
+
+                    &__btns {
+                        gap: 2vw;
+                    }
+
+                    &__title {
+                        margin-right: 2.6vw;
+                    }
+                }
+            }
+
+            &__table {
+                grid-template-columns: repeat(2, 366px);
+                grid-gap: 75px;
+
+                &__item {
+                    &__title {
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
