@@ -1,8 +1,15 @@
 .avatar {
-    background-image: url('../../../../public/src/img/bc/bc-avatar.png');
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    background-size: contain;
+    background-position: center top;
+
+    &--1 {
+        background-image: url('../../../../public/src/img/bc/bc-avatar.png');
+    }
+
+    &--2 {
+        background-image: url('../../../../public/src/img/bc/bc-avatar2.png');
+    }
 
     &__section {
         padding: 8.7vh 2vw 13.8vh 105px;

@@ -137,3 +137,7 @@ Route::get('/', function () {
     Route::get('/avatar', function () {
         return view('components/account/avatar');
     });
+
+    Route::get('/avatar/edit', function () {
+        return view('components/account/avatar-edit');
+    });

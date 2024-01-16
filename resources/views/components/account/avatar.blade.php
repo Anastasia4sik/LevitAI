@@ -163,16 +163,23 @@
     </section>
 
     <script>
-        const photo = document.querySelector('.avatar__section__img');
-        const oneBtn = document.querySelector('.avatar__section__content__top__sec__button');
-        const btnBlock = document.querySelector('.avatar__section__content__top__sec__btns');
+        document.addEventListener("DOMContentLoaded", function() {
+            const photo = document.querySelector('.avatar__section__img');
+            const page = document.querySelector('.avatar');
+            const oneBtn = document.querySelector('.avatar__section__content__top__sec__button');
+            const btnBlock = document.querySelector('.avatar__section__content__top__sec__btns');
 
-        if (!photo.complete || photo.naturalWidth === 0) {
-            oneBtn.style.display = 'flex';
-            btnBlock.style.display = 'none';
-        } else {
-            oneBtn.style.display = 'none';
-            btnBlock.style.display = 'flex';
-        }
+            if (!photo.complete || photo.naturalWidth === 0) {
+                oneBtn.style.display = 'flex';
+                btnBlock.style.display = 'none';
+                page.classList.add('avatar--1');
+                page.classList.remove('avatar--2');
+            } else {
+                oneBtn.style.display = 'none';
+                btnBlock.style.display = 'flex';
+                page.classList.add('avatar--2');
+                page.classList.remove('avatar--1');
+            }
+        })
     </script>
 </x-base>
