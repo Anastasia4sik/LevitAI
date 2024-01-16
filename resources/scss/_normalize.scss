@@ -1,6 +1,6 @@
 @font-face {
 	font-family: 'Fixel';
-	src: url('/src/fonts/FixelAll/FixelText-SemiBold.woff2') format('woff2');
+	src: url('/src/fonts/FixelAll/FixelText/FixelText-Bold.woff2') format('woff2');
 	font-weight: 700;
 	font-style: normal;
 }
@@ -51,12 +51,12 @@ h1, h2, h3, p {
 }
 
 .title-little {
-    font-size: 20px;
+    font-size: 1.04vw;
     line-height: 140%;
 }
 
 .desc {
-    font-size: 16px;
+    font-size: 0.83vw;
     line-height: 137.5%;
 }
 

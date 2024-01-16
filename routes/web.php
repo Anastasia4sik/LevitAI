@@ -124,3 +124,28 @@ Route::get('/', function () {
     Route::get('/exchange-market/item-', function () {
         return view('components/world/exchange-item');
     });
+
+//account
+    Route::get('/register', function () {
+        return view('components/account/register');
+    });
+
+    Route::get('/sign-in', function () {
+        return view('components/account/sign-in');
+    });
+
+    Route::get('/avatar', function () {
+        return view('components/account/avatar');
+    });
+
+    Route::get('/avatar/edit', function () {
+        return view('components/account/avatar-edit');
+    });
+
+    Route::get('/account', function () {
+        return view('components/account/account');
+    });
+
+    Route::get('/account/edit', function () {
+        return view('components/account/account-edit');
+    });

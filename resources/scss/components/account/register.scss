@@ -1,0 +1,117 @@
+.register {
+    background-image: url('/src/img/bc/bc-signIn.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    height: 100vh;
+
+    position: relative;
+
+    &__container {
+        background-image: url('/src/img/photo/signIn.png');
+        background-repeat: no-repeat;
+        background-size: 43% 100%;
+        background-position: left center;
+        position: absolute;
+
+        left: 17vw;
+        top: 12vh;
+
+        padding: 4vh 0;
+
+        &--signin {
+            left: 20vw;
+        }
+
+        &__text {
+            padding: 3.7vh 2vw 4.6vh;
+            margin-right: 66px;
+
+            border-radius: 5px;
+            background-color: #0c002e33;
+            backdrop-filter: blur(10px);
+
+            width: 33%;
+
+            &__title {
+                margin-bottom: 15px;
+
+                font-size: 2.5vw;
+                line-height: 114%;
+            }
+
+            &__desc {
+                font-size: 0.72vw;
+            }
+        }
+
+
+        &__form {
+            border-radius: 5px;
+            background: $main-bc;
+
+            padding: 5vh 3vw 6vh;
+
+            &__inputs {
+                gap: 24px;
+            }
+
+            &__input {
+                margin-bottom: 2.5vh;
+
+                border-radius: 5px;
+                background-color: #180D38;
+
+                padding: 1.851vh 1.041vw;
+
+                font-size: 0.83vw;
+                font-weight: 700;
+
+                color: $white;
+
+                width: 19vw;
+
+                &::placeholder {
+                    opacity: 0.25;
+                }
+            }
+
+            &__label {
+                margin-bottom: 13px;
+
+                font-size: 1vw;
+
+            }
+
+            &__agree {
+                margin-bottom: 2.5vh;
+
+                font-size: 0.72vw;
+                opacity: 0.75;
+
+                span {
+                    text-decoration: underline;
+                }
+            }
+
+            &__btns {
+                gap: 10px;
+
+                margin-bottom: 35px;
+            }
+
+            &__question {
+                margin-bottom: 5px;
+            }
+
+            &__link.desc {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+.signIn__container__form {
+    padding: 11vh 3vw;
+}
