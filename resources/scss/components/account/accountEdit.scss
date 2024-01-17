@@ -6,5 +6,151 @@
 
     &__section {
         padding: 6.4vh 2vw 13.8vh 105px;
+
+        &__form {
+            width: 44vw;
+            margin-left: 25.6vw;
+
+            &__title {
+                margin-bottom: 6.9vh;
+            }
+
+            &__inputs {
+                width: 100%;
+            }
+
+            &__left,
+            &__right {
+                width: 50%;
+
+                input {
+                    width: 100%;
+                }
+            }
+
+            &__first,
+            &__sec,
+            &__third {
+                width: 33%;
+            }
+
+            &__input {
+                width: 100%;
+
+                &--last {
+                    margin-bottom: 4vh;
+                }
+            }
+
+            &__select {
+                position: relative;
+
+                width: 100%;
+
+                &__option {
+                    overflow: hidden;
+
+                    margin-bottom: 2.5vh;
+
+                    &__input {
+                        margin-bottom: 0;
+
+                        width: 77%;
+                    }
+
+                    div {
+                        gap: 15px;
+                        position: relative;
+                        margin-right: 10px;
+
+                        width: 21%;
+                        padding: 1.8vh 1vw;
+                        text-align: center;
+                        cursor: pointer;
+
+                        font-size: 0.83vw;
+                        font-weight: 700;
+
+                        border-radius: 5px;
+                        background-color: #180D38;
+
+                        // &::after {
+                        //     position: absolute;
+                        //     content: "";
+                        //     right: .8rem;
+                        //     top: 50%;
+                        //     transform: translateY(-50%) rotate(45deg);
+
+                        //     width: .8rem;
+                        //     height: .8rem;
+                        // }
+
+                        &.active::after {
+                            transform: translateY(-50%) rotate(225deg);
+                        }
+
+                        & img {
+                            height: 2vh;
+                        }
+                    }
+                }
+
+                & .options {
+                    position: absolute;
+
+                    width: 9vw;
+                    padding: 0 .8vw;
+                    background-color: #180D38;
+                    border-radius: 5px;
+
+                    display: none;
+                    z-index: 999;
+
+                    &.active {
+                        display: block;
+                    }
+                }
+
+                & ol {
+                    list-style: none;
+                    max-height: 50vh;
+                    overflow: overlay;
+                    padding: 0;
+
+                    &::-webkit-scrollbar-thumb {
+                        width: 0.4rem;
+                        height: 3rem;
+                        background-color: $main-bc;
+                    }
+
+                    & option {
+                        background-color: #180D38;
+                    }
+
+                    & li {
+                        padding: 1.8vh 1vw;
+
+                        cursor: pointer;
+
+                        &.hide {
+                            display: none;
+                        }
+
+                        div {
+                            & img {
+                                height: 2vh;
+                            }
+                        }
+                    }
+                }
+            }
+
+            &__selectGroup {
+
+                & option {
+                    padding: 1.8vh 1vw;
+                }
+            }
+        }
     }
 }
