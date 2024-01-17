@@ -1,3 +1,202 @@
+@php
+    $nationalityList = [
+        'afghan',
+        'albanian',
+        'algerian',
+        'american',
+        'andorran',
+        'angolan',
+        'antiguans',
+        'argentinean',
+        'armenian',
+        'australian',
+        'austrian',
+        'azerbaijani',
+        'bahamian',
+        'bahraini',
+        'bangladeshi',
+        'barbadian',
+        'barbudans',
+        'batswana',
+        'belarusian',
+        'belgian',
+        'belizean',
+        'beninese',
+        'bhutanese',
+        'bolivian',
+        'bosnian',
+        'brazilian',
+        'british',
+        'bruneian',
+        'bulgarian',
+        'burkinabe',
+        'burmese',
+        'burundian',
+        'cambodian',
+        'cameroonian',
+        'canadian',
+        'cape verdean',
+        'central african',
+        'chadian',
+        'chilean',
+        'chinese',
+        'colombian',
+        'comoran',
+        'congolese',
+        'costa rican',
+        'croatian',
+        'cuban',
+        'cypriot',
+        'czech',
+        'danish',
+        'djibouti',
+        'dominican',
+        'dutch',
+        'east timorese',
+        'ecuadorean',
+        'egyptian',
+        'emirian',
+        'equatorial guinean',
+        'eritrean',
+        'estonian',
+        'ethiopian',
+        'fijian',
+        'filipino',
+        'finnish',
+        'french',
+        'gabonese',
+        'gambian',
+        'georgian',
+        'german',
+        'ghanaian',
+        'greek',
+        'grenadian',
+        'guatemalan',
+        'guinea-bissauan',
+        'guinean',
+        'guyanese',
+        'haitian',
+        'herzegovinian',
+        'honduran',
+        'hungarian',
+        'icelander',
+        'indian',
+        'indonesian',
+        'iranian',
+        'iraqi',
+        'irish',
+        'israeli',
+        'italian',
+        'ivorian',
+        'jamaican',
+        'japanese',
+        'jordanian',
+        'kazakhstani',
+        'kenyan',
+        'kittian and nevisian',
+        'kuwaiti',
+        'kyrgyz',
+        'laotian',
+        'latvian',
+        'lebanese',
+        'liberian',
+        'libyan',
+        'liechtensteiner',
+        'lithuanian',
+        'luxembourger',
+        'macedonian',
+        'malagasy',
+        'malawian',
+        'malaysian',
+        'maldivan',
+        'malian',
+        'maltese',
+        'marshallese',
+        'mauritanian',
+        'mauritian',
+        'mexican',
+        'micronesian',
+        'moldovan',
+        'monacan',
+        'mongolian',
+        'moroccan',
+        'mosotho',
+        'motswana',
+        'mozambican',
+        'namibian',
+        'nauruan',
+        'nepalese',
+        'new zealander',
+        'ni-vanuatu',
+        'nicaraguan',
+        'nigerien',
+        'north korean',
+        'northern irish',
+        'norwegian',
+        'omani',
+        'pakistani',
+        'palauan',
+        'panamanian',
+        'papua new guinean',
+        'paraguayan',
+        'peruvian',
+        'polish',
+        'portuguese',
+        'qatari',
+        'romanian',
+        'russian',
+        'rwandan',
+        'saint lucian',
+        'salvadoran',
+        'samoan',
+        'san marinese',
+        'sao tomean',
+        'saudi',
+        'scottish',
+        'senegalese',
+        'serbian',
+        'seychellois',
+        'sierra leonean',
+        'singaporean',
+        'slovakian',
+        'slovenian',
+        'solomon islander',
+        'somali',
+        'south african',
+        'south korean',
+        'spanish',
+        'sri lankan',
+        'sudanese',
+        'surinamer',
+        'swazi',
+        'swedish',
+        'swiss',
+        'syrian',
+        'taiwanese',
+        'tajik',
+        'tanzanian',
+        'thai',
+        'togolese',
+        'tongan',
+        'trinidadian or tobagonian',
+        'tunisian',
+        'turkish',
+        'tuvaluan',
+        'ugandan',
+        'ukrainian',
+        'uruguayan',
+        'uzbekistani',
+        'venezuelan',
+        'vietnamese',
+        'welsh',
+        'yemenite',
+        'zambian',
+        'zimbabwean',
+    ];
+
+    $nums = [18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99]
+@endphp
+
 <x-base>
     <section
         class="accountEdit"
@@ -119,7 +318,6 @@
                             type="tel"
                             id="registerPhone"
                             name="registerPhone"
-                            placeholder="Phone Number"
                             value="+380"
                             class="
                                 register__container__form__input
@@ -164,333 +362,11 @@
                                 Choose your age
                             </option>
 
-                            <option value="18" >
-                                18
-                            </option>
-
-                            <option value="19" >
-                                19
-                            </option>
-
-                            <option value="20" >
-                                20
-                            </option>
-
-                            <option value="21" >
-                                21
-                            </option>
-
-                            <option value="22" >
-                                22
-                            </option>
-
-                            <option value="23" >
-                                23
-                            </option>
-
-                            <option value="24" >
-                                24
-                            </option>
-
-                            <option value="25" >
-                                25
-                            </option>
-
-                            <option value="26" >
-                                26
-                            </option>
-
-                            <option value="27" >
-                                27
-                            </option>
-
-                            <option value="28" >
-                                28
-                            </option>
-
-                            <option value="29" >
-                                29
-                            </option>
-
-                            <option value="30" >
-                                30
-                            </option>
-
-                            <option value="31" >
-                                31
-                            </option>
-
-                            <option value="32" >
-                                32
-                            </option>
-
-                            <option value="33" >
-                                33
-                            </option>
-
-                            <option value="34" >
-                                34
-                            </option>
-
-                            <option value="35" >
-                                35
-                            </option>
-
-                            <option value="36" >
-                                36
-                            </option>
-
-                            <option value="37" >
-                                37
-                            </option>
-
-                            <option value="38" >
-                                38
-                            </option>
-
-                            <option value="39" >
-                                39
-                            </option>
-
-                            <option value="40" >
-                                40
-                            </option>
-
-                            <option value="41" >
-                                41
-                            </option>
-
-                            <option value="42" >
-                                42
-                            </option>
-
-                            <option value="43" >
-                                43
-                            </option>
-
-                            <option value="44" >
-                                44
-                            </option>
-
-                            <option value="45" >
-                                45
-                            </option>
-
-                            <option value="46" >
-                                46
-                            </option>
-
-                            <option value="47" >
-                                47
-                            </option>
-
-                            <option value="48" >
-                                48
-                            </option>
-
-                            <option value="49" >
-                                49
-                            </option>
-
-                            <option value="50" >
-                                50
-                            </option>
-
-                            <option value="51" >
-                                51
-                            </option>
-
-                            <option value="52" >
-                                52
-                            </option>
-
-                            <option value="53" >
-                                53
-                            </option>
-
-                            <option value="54" >
-                                54
-                            </option>
-
-                            <option value="55" >
-                                55
-                            </option>
-
-                            <option value="56" >
-                                56
-                            </option>
-
-                            <option value="57" >
-                                57
-                            </option>
-
-                            <option value="58" >
-                                58
-                            </option>
-
-                            <option value="59" >
-                                59
-                            </option>
-
-                            <option value="60" >
-                                60
-                            </option>
-
-                            <option value="61" >
-                                61
-                            </option>
-
-                            <option value="62" >
-                                62
-                            </option>
-
-                            <option value="63" >
-                                63
-                            </option>
-
-                            <option value="64" >
-                                64
-                            </option>
-
-                            <option value="65" >
-                                65
-                            </option>
-
-                            <option value="66" >
-                                66
-                            </option>
-
-                            <option value="67" >
-                                67
-                            </option>
-
-                            <option value="68" >
-                                68
-                            </option>
-
-                            <option value="69" >
-                                69
-                            </option>
-
-                            <option value="70" >
-                                70
-                            </option>
-
-                            <option value="71" >
-                                71
-                            </option>
-
-                            <option value="72" >
-                                72
-                            </option>
-
-                            <option value="73" >
-                                73
-                            </option>
-
-                            <option value="74" >
-                                74
-                            </option>
-
-                            <option value="75" >
-                                75
-                            </option>
-
-                            <option value="76" >
-                                76
-                            </option>
-
-                            <option value="77" >
-                                77
-                            </option>
-
-                            <option value="78" >
-                                78
-                            </option>
-
-                            <option value="79" >
-                                79
-                            </option>
-
-                            <option value="80" >
-                                80
-                            </option>
-
-                            <option value="81" >
-                                81
-                            </option>
-
-                            <option value="82" >
-                                82
-                            </option>
-
-                            <option value="83" >
-                                83
-                            </option>
-
-                            <option value="84" >
-                                84
-                            </option>
-
-                            <option value="85" >
-                                85
-                            </option>
-
-                            <option value="86" >
-                                86
-                            </option>
-
-                            <option value="87" >
-                                87
-                            </option>
-
-                            <option value="88" >
-                                88
-                            </option>
-
-                            <option value="89" >
-                                89
-                            </option>
-
-                            <option value="90" >
-                                90
-                            </option>
-
-                            <option value="91" >
-                                91
-                            </option>
-
-                            <option value="92" >
-                                92
-                            </option>
-
-                            <option value="93" >
-                                93
-                            </option>
-
-                            <option value="94" >
-                                94
-                            </option>
-
-                            <option value="95" >
-                                95
-                            </option>
-
-                            <option value="96" >
-                                96
-                            </option>
-
-                            <option value="97" >
-                                97
-                            </option>
-
-                            <option value="98" >
-                                98
-                            </option>
-
-                            <option value="99" >
-                                99
-                            </option>
+                            @foreach ($nums as $item)
+                                <option value="{{ $item }}" >
+                                    {{$item}}
+                                </option>
+                            @endforeach
                         </select>
                     </div>
 
@@ -503,13 +379,15 @@
                         </label>
 
                         <select class="register__container__form__input accountEdit__section__form__selectGroup accountEdit__section__form__input" name="registerNation" id="registerNation" defValue="def">
-                            <option value="def" hidden selected>
+                            <option value="def" disabled selected>
                                 Choose your nationality
                             </option>
 
-                            <option value="ukrainian" >
-                                Ukrainian
-                            </option>
+                            @foreach ($nationalityList as $item)
+                                <option value="{{$item}}" >
+                                    {{$item}}
+                                </option>
+                            @endforeach
                         </select>
                     </div>
 
@@ -522,7 +400,7 @@
                         </label>
 
                         <select class="register__container__form__input accountEdit__section__form__selectGroup accountEdit__section__form__input" name="registerSex" id="registerSex" defValue="def">
-                            <option value="def" hidden selected>
+                            <option value="def" disabled selected>
                                 Choose your sex
                             </option>
 
