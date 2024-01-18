@@ -1,0 +1,209 @@
+.referral {
+    background-image: url('../../../../public/src/img/bc/bc-referral.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    &__top {
+        margin-top: 15vh;
+
+        &__title {
+            margin-bottom: 2vh;
+        }
+
+        &__desc {
+            margin-bottom: 5vh;
+
+            width: 33.8vw;
+        }
+
+        &__copy {
+            position: relative;
+
+            margin-bottom: 3vh;
+
+            &__input {
+                border-radius: 40px;
+                padding: 18px 9vw 17px 20px;
+
+                background: var(--2, linear-gradient(89deg, #8538FF 1.67%, #C203FF 98.33%));
+
+                color: $white;
+                font-size: 14px;
+
+                width: 36vw;
+            }
+
+            &__btn {
+                position: absolute;
+                right: 0;
+
+                background-color: $main-bc;
+            }
+        }
+
+        &__line {
+            gap: 0.5vw;
+
+            margin-bottom: 3.9vh;
+
+            hr {
+                height: 1px;
+                width: 8.8vw;
+
+                opacity: 0.75;
+                color: $white;
+            }
+
+            &__text {
+                opacity: 0.75;
+            }
+        }
+
+        &__media {
+            gap: 0.7vw;
+            margin-bottom: 5vh;
+
+            &__img {
+                width: 30px;
+            }
+        }
+
+        &__button {
+            margin-bottom: 16vh;
+        }
+    }
+
+    &__blocks {
+        padding: 0 2vw 0 105px;
+    }
+
+    &__referrals {
+        margin-bottom: 10vh;
+
+        &__top {
+            margin-bottom: 6.9vh;
+
+            &__text {
+                gap: 1.8vw;
+
+                &__desc {
+                    width: 20vw;
+                }
+            }
+
+            &__title {
+                margin-top: -25px;
+            }
+        }
+
+        &__table {
+            width: 35vw;
+
+            &__item {
+                display: flex;
+
+                margin-bottom: 10px;
+                padding: 8px 30px 8px 10px;
+
+                background-color: #180D38;
+
+                &--hide {
+                    display: none;
+                }
+
+                &__left {
+                    gap: 10px;
+                }
+
+                &__main {
+                    &__name {
+                        margin-bottom: 3px;
+                        font-size: 16px;
+                    }
+
+                    &__date {
+                        color: #7E7E7E;
+                        font-size: 14px;
+                    }
+                }
+
+                &__info {
+                    font-size: 16px;
+                }
+            }
+
+            &__btn {
+                gap: 15px;
+            }
+        }
+
+        &__img {
+            width: 38vw;
+            height: fit-content;
+        }
+    }
+
+    &__statistic {
+        margin-bottom: 9vh;
+
+        &__img {
+            width: 35vw;
+            height: fit-content;
+        }
+
+        &__top {
+            margin-bottom: 6.9vh;
+
+            &__text {
+                gap: 1.8vw;
+
+                &__desc {
+                    width: 21vw;
+                }
+            }
+
+            &__title {
+                margin-top: -25px;
+            }
+        }
+
+        &__info {
+            gap: 2.6vw;
+
+            &__item {
+                &__top {
+                    margin-bottom: 20px;
+                }
+
+                &__block {
+                    width: 10vw;
+                    height: 18vh;
+
+                    padding: 2.7vh 0;
+
+                    background-color: #40219B;
+                    border-radius: 5px;
+
+                    &__img {
+                        margin-bottom: 1.3vh;
+                        width: 2.8vw;
+
+                        &--funds {
+                            margin-bottom: 2.9vh;
+                            width: 2.8vw;
+                        }
+                    }
+
+                    &__text {
+                        font-size: 2em;
+
+                        &--funds {
+                            font-size: 1.5em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
