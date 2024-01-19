@@ -3,7 +3,7 @@
         'item1' => [
             'id' => 1,
             'nickname' => 'TrinitySap',
-            'img' => 'src/img/icons/transactions/icon1.svg',
+            'img' => 'src/img/icons/transactions/bitcoin.svg',
             'time' => '16:46',
             'date' => '12 Dec 2023',
             'amount' => '2.454665',
@@ -15,7 +15,7 @@
         'item2' => [
             'id' => 2,
             'nickname' => 'TrinitySap',
-            'img' => 'src/img/icons/transactions/icon1.svg',
+            'img' => 'src/img/icons/transactions/ethereum.svg',
             'time' => '16:46',
             'date' => '12 Dec 2023',
             'amount' => '2.454665',
@@ -27,19 +27,19 @@
         'item3' => [
             'id' => 3,
             'nickname' => 'TrinitySap',
-            'img' => 'src/img/icons/transactions/icon1.svg',
+            'img' => 'src/img/icons/transactions/L.svg',
             'time' => '16:46',
             'date' => '12 Dec 2023',
             'amount' => '2.454665',
             'vat' => '0.0435',
             'profit' => '0.236564',
             'link' => '#',
-            'status' => 'completed',
+            'status' => 'pending',
         ],
         'item4' => [
             'id' => 4,
             'nickname' => 'TrinitySap',
-            'img' => 'src/img/icons/transactions/icon1.svg',
+            'img' => 'src/img/icons/transactions/bitcoin.svg',
             'time' => '16:46',
             'date' => '12 Dec 2023',
             'amount' => '2.454665',
@@ -51,7 +51,7 @@
         'item5' => [
             'id' => 5,
             'nickname' => 'TrinitySap',
-            'img' => 'src/img/icons/transactions/icon1.svg',
+            'img' => 'src/img/icons/transactions/ethereum.svg',
             'time' => '16:46',
             'date' => '12 Dec 2023',
             'amount' => '2.454665',
@@ -63,19 +63,19 @@
         'item6' => [
             'id' => 6,
             'nickname' => 'TrinitySap',
-            'img' => 'src/img/icons/transactions/icon1.svg',
+            'img' => 'src/img/icons/transactions/L.svg',
             'time' => '16:46',
             'date' => '12 Dec 2023',
             'amount' => '2.454665',
             'vat' => '0.0435',
             'profit' => '0.236564',
             'link' => '#',
-            'status' => 'completed',
+            'status' => 'pending',
         ],
         'item7' => [
             'id' => 7,
             'nickname' => 'TrinitySap',
-            'img' => 'src/img/icons/transactions/icon1.svg',
+            'img' => 'src/img/icons/transactions/bitcoin.svg',
             'time' => '16:46',
             'date' => '12 Dec 2023',
             'amount' => '2.454665',
@@ -87,7 +87,7 @@
         'item8' => [
             'id' => 8,
             'nickname' => 'TrinitySap',
-            'img' => 'src/img/icons/transactions/icon1.svg',
+            'img' => 'src/img/icons/transactions/ethereum.svg',
             'time' => '16:46',
             'date' => '12 Dec 2023',
             'amount' => '2.454665',
@@ -99,19 +99,19 @@
         'item9' => [
             'id' => 9,
             'nickname' => 'TrinitySap',
-            'img' => 'src/img/icons/transactions/icon1.svg',
+            'img' => 'src/img/icons/transactions/L.svg',
             'time' => '16:46',
             'date' => '12 Dec 2023',
             'amount' => '2.454665',
             'vat' => '0.0435',
             'profit' => '0.236564',
             'link' => '#',
-            'status' => 'completed',
+            'status' => 'pending',
         ],
         'item10' => [
             'id' => 10,
             'nickname' => 'TrinitySap',
-            'img' => 'src/img/icons/transactions/icon1.svg',
+            'img' => 'src/img/icons/transactions/bitcoin.svg',
             'time' => '16:46',
             'date' => '12 Dec 2023',
             'amount' => '2.454665',
@@ -123,7 +123,7 @@
         'item11' => [
             'id' => 11,
             'nickname' => 'TrinitySap',
-            'img' => 'src/img/icons/transactions/icon1.svg',
+            'img' => 'src/img/icons/transactions/ethereum.svg',
             'time' => '16:46',
             'date' => '12 Dec 2023',
             'amount' => '2.454665',
@@ -135,19 +135,19 @@
         'item12' => [
             'id' => 12,
             'nickname' => 'TrinitySap',
-            'img' => 'src/img/icons/transactions/icon1.svg',
+            'img' => 'src/img/icons/transactions/L.svg',
             'time' => '16:46',
             'date' => '12 Dec 2023',
             'amount' => '2.454665',
             'vat' => '0.0435',
             'profit' => '0.236564',
             'link' => '#',
-            'status' => 'completed',
+            'status' => 'pending',
         ],
         'item13' => [
             'id' => 13,
             'nickname' => 'TrinitySap',
-            'img' => 'src/img/icons/transactions/icon1.svg',
+            'img' => 'src/img/icons/transactions/bitcoin.svg',
             'time' => '16:46',
             'date' => '12 Dec 2023',
             'amount' => '2.454665',
@@ -159,7 +159,7 @@
         'item14' => [
             'id' => 14,
             'nickname' => 'TrinitySap',
-            'img' => 'src/img/icons/transactions/icon1.svg',
+            'img' => 'src/img/icons/transactions/ethereum.svg',
             'time' => '16:46',
             'date' => '12 Dec 2023',
             'amount' => '2.454665',
@@ -171,95 +171,145 @@
         'item15' => [
             'id' => 15,
             'nickname' => 'TrinitySap',
-            'img' => 'src/img/icons/transactions/icon1.svg',
+            'img' => 'src/img/icons/transactions/L.svg',
             'time' => '16:46',
             'date' => '12 Dec 2023',
             'amount' => '2.454665',
             'vat' => '0.0435',
             'profit' => '0.236564',
             'link' => '#',
-            'status' => 'completed',
+            'status' => 'pending',
         ],
     ];
 @endphp
 
-<div class="transactions d-flex flex-column">
-    @foreach ($transactions as $item)
-        <div
+<div class="transactions">
+    <table>
+        <thead
             class="
-                transactions__item
-                d-flex
-                flex-row
-                justify-content-between
-                align-items-center
-                {{ $loop->index > 4 ? 'transactions__item--hide' : '' }}
+                transactions__head
             "
         >
-            <p class="transactions__item__date desc">
-                {{ $item['time']}}, {{ $item['date']}}
-            </p>
+            <tr>
+                <th class="transactions__head__date transactions__head__item title-little">
+                    Date
+                </th>
 
-            <img src="{{ asset($item['img'])}}" alt="Item icon" class="transactions__item__img">
+                <th class="transactions__head__name transactions__head__item title-little">
+                    Nickname
+                </th>
 
-            <p class="transactions__item__name desc">
-                {{ $item['nickname']}}
-            </p>
+                <th class="transactions__head__amount transactions__head__item title-little">
+                    Amount
+                </th>
 
-            <p class="transactions__item__amount desc">
-                {{ $item['amount']}}
-            </p>
+                <th class="transactions__head__vat transactions__head__item title-little">
+                    VAT
+                </th>
 
-            <p class="transactions__item__vat desc">
-                {{ $item['vat']}}
-            </p>
+                <th class="transactions__head__profit transactions__head__item title-little">
+                    Profit
+                </th>
 
-            <p class="transactions__item__profit desc">
-                {{ $item['profit']}}
-            </p>
-
-            <a
-                href='{{ $item['link'] }}'
-                class="transactions__item__profit desc
+                <th
+                    class="
+                        transactions__head__link transactions__head__item title-little
                         @if (request()->is('transactions'))
                             d-block
                         @else
                             d-none
-                        @endif"
+                        @endif
+                    "
                 >
-                    Download
-                </a>
+                    Link
+                </th>
 
 
-            <p class="transactions__item__status desc">
-                {{ $item['status']}}
-            </p>
-        </div>
-    @endforeach
+                <th class="transactions__head__status transactions__head__item title-little">
+                    Status
+                </th>
+            </tr>
+        </thead>
 
-    <button class="transactions__btn desc d-flex flex-row align-items-center justify-content-end">
-        Show all referrals <img src="{{asset('src/img/icons/arrows/arrow-down.svg')}}" alt="Show more">
-    </button>
+        <tbody>
+            @foreach ($transactions as $item)
+                <tr
+                    class="
+                        transactions__item
+                        @if (request()->is('referral'))
+                            {{ $loop->index > 4 ? 'd-none' : '' }}
+                        @endif
+                    "
+                >
+                    <td class="transactions__item__text">
+                        <div class="d-flex flex-row align-items-center">
+                            <p class="transactions__item__date title-little">
+                                {{ $item['time']}}, {{ $item['date']}}
 
-    <script>
-        //showMore
-        document.addEventListener('DOMContentLoaded', function() {
-            const blocks = document.querySelectorAll('.transactions__item--hide');
+                            </p>
 
-            blocks.forEach((block) => {
-                const button = document.querySelector('.transactions__btn');
+                            <img src="{{ asset($item['img'])}}" alt="Item icon" class="transactions__item__img">
+                        </div>
+                    </td>
 
-                button.addEventListener('click', function() {
-                    if (block.style.display != 'flex') {
-                        block.style.display = 'flex';
+                    <td class="transactions__item__name transactions__item__text title-little">
+                        {{ $item['nickname']}}
+                    </td>
 
-                        button.innerHTML = 'Hide <img src="src/img/icons/arrows/arrow-up.svg" alt="Show less">';
-                    } else {
-                        block.style.display = 'none';
+                    <td class="transactions__item__amount transactions__item__text title-little">
+                        {{ $item['amount']}}
+                    </td>
 
-                        button.innerHTML = 'Show all referrals <img src="src/img/icons/arrows/arrow-down.svg" alt="Show more">';
-                    }
-                });
-            });
-        });
-    </script>
+                    <td class="transactions__item__vat transactions__item__text title-little">
+                        {{ $item['vat']}}
+                    </td>
+
+                    <td
+                        class="transactions__item__profit transactions__item__text title-little"
+                        style = "
+                            @if (request()->is('transactions'))
+                                margin-right: 4.5vw;
+                            @else
+                                margin-right: 8.1vw;
+                            @endif
+                        "
+                    >
+                        {{ $item['profit']}}
+                    </td>
+
+                    <td
+                        href='{{ $item['link'] }}'
+                        class="transactions__item__link transactions__item__text title-little
+                            @if (request()->is('transactions'))
+                                d-block
+                            @else
+                                d-none
+                            @endif
+                        "
+                    >
+                        Download
+                    </td>
+
+
+                    @if ($item['status'] == 'completed')
+                        <td
+                            class="transactions__item__status--completed transactions__item__text title-little"
+                        >
+                            Completed <img src="{{asset('src/img/icons/transactions/check.svg')}}" alt="">
+                        </td>
+                    @else
+                        <td
+                            class="transactions__item__status--pending transactions__item__text title-little"
+                        >
+                            Pending <img src="{{asset('src/img/icons/transactions/pending.svg')}}" alt="">
+                        </td>
+                    @endif
+                </tr>
+            @endforeach
+        </tbody>
+    </table>
+
+    <a href="#" class="transactions__btn complete__btn">
+        Show more
+    </a>
 </div>
