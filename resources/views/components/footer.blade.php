@@ -22,10 +22,18 @@
         All rights Reserved
     </p>
 
-    <div class="footer__bottom">
-        <h1 class="footer__bottom__title">
-            Levitai project company
-        </h1>
+    <div class="scroll-parent d-flex flex-row">
+        <div class="footer__bottom primary">
+            <h1 class="footer__bottom__title">
+                Levitai project company
+            </h1>
+        </div>
+
+        <div class="footer__bottom secondary">
+            <h1 class="footer__bottom__title">
+                Levitai project company
+            </h1>
+        </div>
     </div>
 
 </footer>
