@@ -28,7 +28,10 @@
             border-bottom: 10px solid $main-bc;
 
             height: 8.5vh;
-            width: fit-content;
+
+            &:first-of-type {
+                padding-left: 1.3vw;
+            }
         }
 
         &__img {
