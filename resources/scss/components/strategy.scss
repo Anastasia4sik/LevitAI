@@ -21,9 +21,6 @@
     }
 
     &__content {
-        &__img {
-            width: 30.2vw;
-        }
         &__list {
             &__item {
                 &:not(:last-of-type) {
@@ -93,5 +90,44 @@
                 }
             }
         }
+    }
+
+    &__anim {
+        width: 30.2vw;
+
+        position: relative;
+
+        &__logo {
+            width: 31%;
+        }
+
+        &__round {
+            position: absolute;
+
+            width: 100%;
+
+            animation-name: rotate;
+            animation-iteration-count: infinite;
+            animation-duration: 5s;
+            animation-timing-function: linear;
+        }
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(90deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    75%{
+        transform: rotate(270deg);
+    }
+    100%{
+        transform: rotate(360deg);
     }
 }

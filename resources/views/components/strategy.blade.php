@@ -22,7 +22,11 @@
   </div>
 
   <div class="strategy__content d-flex flex-row align-items-center justify-content-between">
-    <img src="{{ asset('src/img/photo/strategy.png')}}" alt="Our Strategy & Roadmap" class="strategy__content__img">
+    <div class="strategy__anim d-flex align-items-center justify-content-center">
+        <img src="{{ asset('src/img/photo/strategy/round.png')}}" alt="Our Strategy & Roadmap" class="strategy__anim__round">
+
+        <img src="{{ asset('src/img/photo/strategy/logo.png')}}" alt="Our Strategy & Roadmap" class="strategy__anim__logo">
+    </div>
 
     <div class="strategy__content__list">
       @foreach($strategyInfo as $key => $item)
