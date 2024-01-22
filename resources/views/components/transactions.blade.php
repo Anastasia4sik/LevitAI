@@ -241,7 +241,7 @@
                         @endif
                     "
                 >
-                    <td class="transactions__item__text">
+                    <td class="transactions__item__text transactions__item__text--first">
                         <div class="d-flex flex-row align-items-center">
                             <p class="transactions__item__date title-little">
                                 {{ $item['time']}}, {{ $item['date']}}
@@ -252,20 +252,26 @@
                         </div>
                     </td>
 
-                    <td class="transactions__item__name transactions__item__text title-little">
-                        {{ $item['nickname']}}
+                    <td class="transactions__item__name transactions__item__text">
+                        <p class="title-little">
+                            {{ $item['nickname']}}
+                        </p>
                     </td>
 
-                    <td class="transactions__item__amount transactions__item__text title-little">
-                        {{ $item['amount']}}
+                    <td class="transactions__item__amount transactions__item__text">
+                        <p class="title-little">
+                            {{ $item['amount']}}
+                        </p>
                     </td>
 
-                    <td class="transactions__item__vat transactions__item__text title-little">
-                        {{ $item['vat']}}
+                    <td class="transactions__item__vat transactions__item__text">
+                        <p class="title-little">
+                            {{ $item['vat']}}
+                        </p>
                     </td>
 
                     <td
-                        class="transactions__item__profit transactions__item__text title-little"
+                        class="transactions__item__profit transactions__item__text"
                         style = "
                             @if (request()->is('transactions'))
                                 margin-right: 4.5vw;
@@ -274,12 +280,14 @@
                             @endif
                         "
                     >
-                        {{ $item['profit']}}
+                        <p class="title-little">
+                            {{ $item['profit']}}
+                        </p>
                     </td>
 
                     <td
                         href='{{ $item['link'] }}'
-                        class="transactions__item__link transactions__item__text title-little
+                        class="transactions__item__link transactions__item__text
                             @if (request()->is('transactions'))
                                 d-block
                             @else
@@ -287,29 +295,39 @@
                             @endif
                         "
                     >
-                        Download
+                        <p class="title-little">
+                            Download
+                        </p>
                     </td>
 
 
                     @if ($item['status'] == 'completed')
                         <td
-                            class="transactions__item__status--completed transactions__item__text title-little"
+                            class="transactions__item__status--completed transactions__item__text"
                         >
-                            Completed <img src="{{asset('src/img/icons/transactions/check.svg')}}" alt="">
+                            <div class="d-flex flex-row align-items-center justify-content-end transactions__item__status">
+                                <p class="title-little">
+                                    Completed
+                                </p>
+
+                                <img src="{{asset('src/img/icons/transactions/check.svg')}}" alt="">
+                            </div>
                         </td>
                     @else
                         <td
-                            class="transactions__item__status--pending transactions__item__text title-little"
+                            class="transactions__item__status--pending transactions__item__text"
                         >
-                            Pending <img src="{{asset('src/img/icons/transactions/pending.svg')}}" alt="">
+                            <div class="d-flex flex-row align-items-center justify-content-end transactions__item__status">
+                                <p class="title-little">
+                                    Pending
+                                </p>
+
+                                <img src="{{asset('src/img/icons/transactions/pending.svg')}}" alt="">
+                            </div>
                         </td>
                     @endif
                 </tr>
             @endforeach
         </tbody>
     </table>
-
-    <a href="#" class="transactions__btn complete__btn">
-        Show more
-    </a>
 </div>

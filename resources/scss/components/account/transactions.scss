@@ -19,6 +19,7 @@
             padding-left: 1.3vw;
         }
     }
+
     &__item {
         background-color: #180d38;
 
@@ -32,23 +33,49 @@
             &:first-of-type {
                 padding-left: 1.3vw;
             }
+
+            &--first {
+                width: 24vw;
+            }
         }
 
         &__img {
             width: 2.5vw;
             height: 2.5vw;
+
+            margin-right: 5vw;
+        }
+
+        &__amount,
+        &__vat {
+            padding-right: 2vw;
         }
 
         &__date {
             margin-right: 1.8vw;
+
+            width: max-content;
         }
 
         &__status {
+            gap: 10px;
+            width: max-content;
+
             &--completed {
+                width: 7vw;
+                padding-right: 3.6vw;
+                text-align: right;
+                text-align: -moz-right;
+
                 color: #3EAF6B;
             }
 
             &--pending {
+                width: 7vw;
+                padding-right: 3.6vw;
+                text-align: right;
+                text-align: -moz-right;
+
                 color: #FFD600;
             }
         }

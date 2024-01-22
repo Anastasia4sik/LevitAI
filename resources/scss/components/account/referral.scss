@@ -206,4 +206,29 @@
             }
         }
     }
+
+    &__transactions {
+        margin-bottom: 100px;
+
+        &__title {
+            margin-bottom: 75px;
+        }
+
+        &__btn {
+            align-self: center;
+
+            height: 54px;
+            width: 153px;
+        }
+    }
+
+    &__invite {
+        margin-bottom: 92px;
+
+        &__title {
+            margin-bottom: 5vh;
+
+            font-size: 2.5vw;
+        }
+    }
 }

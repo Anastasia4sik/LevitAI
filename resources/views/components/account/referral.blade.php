@@ -182,7 +182,7 @@
 
             <a href="#referrals" class="referral__top__button">
                 <img src="{{ asset('src/img/icons/arrows/arrow-down-circle.png')}}" alt="To ">
-              </a>
+            </a>
         </div>
     </section>
 
@@ -323,7 +323,93 @@
             </div>
         </div>
 
-        <x-transactions />
+        <div class="referral__transactions d-flex flex-column">
+            <h2 class="referral__transactions__title title-main">
+                Transactions
+            </h2>
+
+            <x-transactions />
+
+            <a href="#" class="referral__transactions__btn complete__btn d-flex justify-content-center align-items-center">
+                Show more
+            </a>
+        </div>
+
+        <div class="referral__invite d-flex flex-column align-items-center justify-content-center">
+            <h3 class="referral__invite__title title-main">
+                Invite friends right now!
+            </h3>
+
+            <div class="referral__top__copy d-flex flex-row align-items-center">
+                <input
+                    type="text"
+                    disabled
+                    value="{{ $copyLink }}"
+                    class="referral__top__copy__input"
+                >
+
+                <button
+                    type="submit"
+                    class="
+                        complete__btn
+                        d-flex
+                        flex-row
+                        align-items-center
+                        button
+                        referral__top__copy__btn
+                    "
+                    style="
+                        gap: 0.4vw;
+                        font-size: 0.8vw;
+                        width: 9vw;
+                    "
+                    id="copy"
+                >
+                    <img
+                        src="{{asset('src/img/icons/copy.svg')}}"
+                        alt="Send"
+                        class="complete__btn__img"
+                        style="
+                            padding: 15px;
+                        "
+                    >
+
+                    Copy Link
+                </button>
+            </div>
+
+            <div class="referral__top__line d-flex flex-row align-items-center">
+                <hr>
+
+                <p class="referral__top__line__text desc">
+                    Or share on social networks
+                </p>
+
+                <hr>
+            </div>
+
+            <div class="referral__top__media d-flex flex-row align-items-center">
+                <a href="https://t.me/snoopwest" target="_blank" class="referral__top__media__link">
+                    <img src="{{ asset('src/img/icons/contact/telegram.svg')}}" alt="Telegram" class="referral__top__media__img">
+                </a>
+
+                <a href="https://twitter.com/?lang=uk" target="_blank" class="referral__top__media__link">
+                    <img src="{{ asset('src/img/icons/contact/twitter.svg')}}" alt="Twitter" class="referral__top__media__img">
+                </a>
+
+                <a href="https://www.whatsapp.com/?lang=uk_UA" target="_blank" class="referral__top__media__link">
+                    <img src="{{ asset('src/img/icons/contact/whatsapp.svg')}}" alt="What's app?" class="referral__top__media__img">
+                </a>
+
+                <a href="https://www.facebook.com/?locale=uk_UA" target="_blank" class="referral__top__media__link">
+                    <img src="{{ asset('src/img/icons/contact/facebook.svg')}}" alt="Facebook" class="referral__top__media__img">
+                </a>
+
+                <a href="tel:+13058995577" target="_blank" class="referral__top__media__link">
+                    <img src="{{ asset('src/img/icons/contact/phone.svg')}}" alt="phone" class="referral__top__media__img">
+                </a>
+            </div>
+        </div>
 
     </section>
 
