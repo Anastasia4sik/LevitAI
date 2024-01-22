@@ -81,3 +81,19 @@
         }
     }
 }
+
+.transactionsBig {
+    padding: 6.5vh 2vw 8vh 105px;
+
+    &__top {
+        width: 100%;
+
+        margin-bottom: 6.9vh;
+
+        &__btns {
+            gap: 15px;
+
+            height: min-content;
+        }
+    }
+}

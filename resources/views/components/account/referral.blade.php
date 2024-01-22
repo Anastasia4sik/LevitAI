@@ -330,7 +330,7 @@
 
             <x-transactions />
 
-            <a href="#" class="referral__transactions__btn complete__btn d-flex justify-content-center align-items-center">
+            <a href="/referral/transactions" class="referral__transactions__btn complete__btn d-flex justify-content-center align-items-center">
                 Show more
             </a>
         </div>

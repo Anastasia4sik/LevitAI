@@ -214,7 +214,7 @@
                 <th
                     class="
                         transactions__head__link transactions__head__item title-little
-                        @if (request()->is('transactions'))
+                        @if (request()->is('referral/transactions'))
                             d-block
                         @else
                             d-none
@@ -231,11 +231,20 @@
             </tr>
         </thead>
 
-        <tbody>
+        <tbody
+            class="
+                @if (request()->is('referral/transactions'))
+                    catalog
+                @endif
+            "
+        >
             @foreach ($transactions as $item)
                 <tr
                     class="
                         transactions__item
+                        @if (request()->is('referral/transactions'))
+                            catalog__block
+                        @endif
                         @if (request()->is('referral'))
                             {{ $loop->index > 4 ? 'd-none' : '' }}
                         @endif
@@ -273,7 +282,7 @@
                     <td
                         class="transactions__item__profit transactions__item__text"
                         style = "
-                            @if (request()->is('transactions'))
+                            @if (request()->is('referral/transactions'))
                                 margin-right: 4.5vw;
                             @else
                                 margin-right: 8.1vw;
@@ -285,20 +294,17 @@
                         </p>
                     </td>
 
-                    <td
-                        href='{{ $item['link'] }}'
-                        class="transactions__item__link transactions__item__text
-                            @if (request()->is('transactions'))
-                                d-block
-                            @else
-                                d-none
-                            @endif
-                        "
-                    >
-                        <p class="title-little">
-                            Download
-                        </p>
-                    </td>
+                    @if (request()->is('referral/transactions'))
+                        <td href='{{ $item['link'] }}' class="transactions__item__link transactions__item__text">
+                            <div class="d-flex flex-row align-items-center transactions__item__status">
+                                <img src="{{ asset('src/img/icons/download.svg')}}" alt="">
+
+                                <p class="title-little">
+                                    Download
+                                </p>
+                            </div>
+                        </td>
+                    @endif
 
 
                     @if ($item['status'] == 'completed')
@@ -330,4 +336,12 @@
             @endforeach
         </tbody>
     </table>
+
+    @if (request()->is('referral/transactions'))
+        <div class="pagination">
+            <ul id="paginationT" class="pagination d-flex align-items-center">
+                <!--pages or li are comes from javascript -->
+            </ul>
+        </div>
+    @endif
 </div>
