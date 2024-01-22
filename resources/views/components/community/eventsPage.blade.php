@@ -1,51 +1,51 @@
 @php
-$event = [
-'event1' => [
-'id' => 1,
-'photo' => 'src/img/photo/events/event1.png',
-'title' => 'Lorem ipsum dolor sit amet',
-'desc' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt labore dolore magna
-aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-'date' => '12 Dec 2023',
-'time' => '12:46 pm',
-],
-'event2' => [
-'id' => 2,
-'photo' => 'src/img/photo/events/event2.png',
-'title' => 'Lorem ipsum dolor sit amet',
-'desc' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt labore dolore magna
-aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-'date' => '12 Dec 2023',
-'time' => '12:46 pm',
-],
-'event3' => [
-'id' => 3,
-'photo' => 'src/img/photo/events/event3.png',
-'title' => 'Lorem ipsum dolor sit amet',
-'desc' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt labore dolore magna
-aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-'date' => '12 Dec 2023',
-'time' => '12:46 pm',
-],
-'event4' => [
-'id' => 4,
-'photo' => 'src/img/photo/events/event2.png',
-'title' => 'Lorem ipsum dolor sit amet',
-'desc' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt labore dolore magna
-aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-'date' => '12 Dec 2023',
-'time' => '12:46 pm',
-],
-'event5' => [
-'id' => 5,
-'photo' => 'src/img/photo/events/event1.png',
-'title' => 'Lorem ipsum dolor sit amet',
-'desc' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt labore dolore magna
-aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-'date' => '12 Dec 2023',
-'time' => '12:46 pm',
-],
-];
+    $event = [
+        'event1' => [
+        'id' => 1,
+        'photo' => 'src/img/photo/events/event1.png',
+        'title' => 'Lorem ipsum dolor sit amet',
+        'desc' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt labore dolore magna
+        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+        'date' => '12 Dec 2023',
+        'time' => '12:46 pm',
+        ],
+        'event2' => [
+        'id' => 2,
+        'photo' => 'src/img/photo/events/event2.png',
+        'title' => 'Lorem ipsum dolor sit amet',
+        'desc' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt labore dolore magna
+        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+        'date' => '12 Dec 2023',
+        'time' => '12:46 pm',
+        ],
+        'event3' => [
+        'id' => 3,
+        'photo' => 'src/img/photo/events/event3.png',
+        'title' => 'Lorem ipsum dolor sit amet',
+        'desc' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt labore dolore magna
+        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+        'date' => '12 Dec 2023',
+        'time' => '12:46 pm',
+        ],
+        'event4' => [
+        'id' => 4,
+        'photo' => 'src/img/photo/events/event2.png',
+        'title' => 'Lorem ipsum dolor sit amet',
+        'desc' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt labore dolore magna
+        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+        'date' => '12 Dec 2023',
+        'time' => '12:46 pm',
+        ],
+        'event5' => [
+        'id' => 5,
+        'photo' => 'src/img/photo/events/event1.png',
+        'title' => 'Lorem ipsum dolor sit amet',
+        'desc' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt labore dolore magna
+        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+        'date' => '12 Dec 2023',
+        'time' => '12:46 pm',
+        ],
+    ];
 @endphp
 
 <x-base>
@@ -184,8 +184,6 @@ aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi 
 
     <x-blog :blogInfo="$event" />
   </section>
-
-
 
   <x-contact />
 

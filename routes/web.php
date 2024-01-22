@@ -157,3 +157,8 @@ Route::get('/', function () {
     Route::get('/referral/transactions', function () {
         return view('components/account/transactions-big');
     });
+
+    Route::get('/my-events', function () {
+        return view('components/account/events');
+    });
+
