@@ -29,7 +29,7 @@
         </h2>
 
         <a
-            href="#"
+            href="https://t.me/snoopwest"
             class="
                 complete__btn
                 d-flex
@@ -37,6 +37,7 @@
                 align-items-center
                 button
             "
+            target="_blank"
             style="
                 gap: 21px;
                 font-size: 16px;

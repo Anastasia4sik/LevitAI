@@ -149,3 +149,16 @@ Route::get('/', function () {
     Route::get('/account/edit', function () {
         return view('components/account/account-edit');
     });
+
+    Route::get('/referral', function () {
+        return view('components/account/referral');
+    });
+
+    Route::get('/referral/transactions', function () {
+        return view('components/account/transactions-big');
+    });
+
+    Route::get('/my-events', function () {
+        return view('components/account/events');
+    });
+

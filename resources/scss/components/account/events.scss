@@ -1,0 +1,52 @@
+.myEvents {
+    &__top {
+        padding: 15px 2vw 9vh 105px;
+
+        &__text {
+            &__content {
+                gap: 35px;
+            }
+        }
+
+        &__desc {
+            width: 33vw;
+        }
+
+        &__title {
+            &--sec {
+                margin-top: -25px;
+            }
+        }
+    }
+
+    &__content {
+        position: relative;
+    }
+
+    &__disable {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+
+        background: rgba(12, 0, 46, 0.80);
+
+        backdrop-filter: blur(7.5px);
+
+        &__text {
+            transform: translate(33vw, 50%);
+            padding: 0 9%;
+
+            width: 41vw;
+            height: 508px;
+
+            background-color: #241943;
+            border: 1px solid $white;
+            border-radius: 5px;
+
+            font-size: 2vw;
+            text-align: center;
+        }
+    }
+}

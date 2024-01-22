@@ -1,0 +1,99 @@
+.transactions {
+    gap: 10px;
+
+    table {
+        width: 100%;
+        margin-bottom: 35px;
+    }
+
+    &__head {
+        &__item {
+            padding-bottom: 2.3vh;
+
+            &:last-of-type {
+                padding-right: 3.4vw;
+            }
+        }
+
+        &__date {
+            padding-left: 1.3vw;
+        }
+    }
+
+    &__item {
+        background-color: #180d38;
+
+        padding: 2.9vh 3vw 2.9vh 1.4vw;
+
+        &__text {
+            border-bottom: 10px solid $main-bc;
+
+            height: 8.5vh;
+
+            &:first-of-type {
+                padding-left: 1.3vw;
+            }
+
+            &--first {
+                width: 24vw;
+            }
+        }
+
+        &__img {
+            width: 2.5vw;
+            height: 2.5vw;
+
+            margin-right: 5vw;
+        }
+
+        &__amount,
+        &__vat {
+            padding-right: 2vw;
+        }
+
+        &__date {
+            margin-right: 1.8vw;
+
+            width: max-content;
+        }
+
+        &__status {
+            gap: 10px;
+            width: max-content;
+
+            &--completed {
+                width: 7vw;
+                padding-right: 3.6vw;
+                text-align: right;
+                text-align: -moz-right;
+
+                color: #3EAF6B;
+            }
+
+            &--pending {
+                width: 7vw;
+                padding-right: 3.6vw;
+                text-align: right;
+                text-align: -moz-right;
+
+                color: #FFD600;
+            }
+        }
+    }
+}
+
+.transactionsBig {
+    padding: 6.5vh 2vw 8vh 105px;
+
+    &__top {
+        width: 100%;
+
+        margin-bottom: 6.9vh;
+
+        &__btns {
+            gap: 15px;
+
+            height: min-content;
+        }
+    }
+}

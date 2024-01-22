@@ -17,7 +17,7 @@
             <img src="{{ asset('src/img/icons/contact/mail.svg')}}" alt="Email" class="contact__media__img">
         </a>
 
-        <a href="tel:0500000000" target="_blank" class="contact__media__link">
+        <a href="tel:+13058995577" target="_blank" class="contact__media__link">
             <img src="{{ asset('src/img/icons/contact/phone.svg')}}" alt="Phone" class="contact__media__img">
         </a>
 
