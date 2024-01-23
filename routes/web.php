@@ -162,3 +162,15 @@ Route::get('/', function () {
         return view('components/account/events');
     });
 
+    Route::get('/messages', function () {
+        return view('components/account/messages');
+    });
+
+    Route::get('/wallet', function () {
+        return view('components/account/wallet');
+    });
+
+    Route::get('/friends', function () {
+        return view('components/account/friends');
+    });
+
