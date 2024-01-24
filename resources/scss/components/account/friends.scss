@@ -1,0 +1,148 @@
+.friends {
+    background-image: url('../../../../public/src/img/bc/bc-friends.png');
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: contain;
+
+    padding: 8.7vh 2vw 9vh 105px;
+
+    &__top {
+        &__title {
+            margin-bottom: 11.6vh;
+        }
+
+        &__btns {
+            gap: 35px;
+
+            margin-bottom: 4.1vh;
+
+
+            &__wrap {
+                &__search {
+                    width: 100%;
+                    position: relative;
+                    display: flex;
+
+                    &__input {
+                        width: 100%;
+                        padding: 20px 25px;
+
+                        border-radius: 5px;
+                        outline: none;
+
+                        background-color: #211447;
+
+                        font-size: 0.8vw;
+                        color: $white;
+
+                        &::placeholder {
+                            opacity: .25;
+
+                            color: $white;
+                        }
+                    }
+
+                    &__btn {
+                        cursor: pointer;
+
+                        position: absolute;
+                        top: 20px;
+                        right: 25px;
+                    }
+                }
+            }
+        }
+    }
+
+    &__content {
+        grid-template-columns: repeat(auto-fill, minmax(16vw, 1fr));
+        grid-gap: 34px;
+
+        position: relative;
+
+        &__block {
+            border-radius: 5px;
+
+            background-color: #180D38;
+
+            &__info {
+                padding: 30px;
+            }
+
+            &__top {
+                background-repeat: no-repeat;
+                background-size: cover;
+
+                border-radius: 10px 10px 0 0;
+
+                height: 21%;
+                width: 100%;
+
+                &__title {
+                    padding: 4.6vh 4vw 4.6vh 7.8vw;
+                }
+            }
+
+            &__desc {
+                margin-bottom: 5px;
+
+                color: #bbb;
+            }
+
+            &__text {
+                margin-bottom: 20px;
+            }
+
+            &__bottom {
+                padding-top: 20px;
+
+                border-top: 2px solid $main-bc;
+
+                gap: 10px;
+
+                &__link {
+                    &__img {
+                        filter: contrast(70%);
+
+                        transition: all .3s ease-in-out;
+                    }
+
+                    &:hover {
+                        & .friends__content__block__bottom__link__img {
+                            filter: contrast(100%);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &__disable {
+        position: absolute;
+        top: -21vh;
+        bottom: 0;
+        right: 0;
+        left: 0;
+
+        background: rgba(12, 0, 46, 0.80);
+
+        backdrop-filter: blur(7.5px);
+
+        z-index: 999;
+
+        &__text {
+            transform: translate(27vw, 50%);
+            padding: 0 9%;
+
+            width: 41vw;
+            height: 508px;
+
+            background-color: #241943;
+            border: 1px solid $white;
+            border-radius: 5px;
+
+            font-size: 2vw;
+            text-align: center;
+        }
+    }
+}
