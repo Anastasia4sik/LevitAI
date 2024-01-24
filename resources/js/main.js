@@ -66,141 +66,141 @@ document.addEventListener('DOMContentLoaded', function() {
     })
 });
 
-//pagination
-    let cardsPerPage;
-    const dataContainer = document.querySelector('.catalog');
+// //pagination
+//     let cardsPerPage;
+//     const dataContainer = document.querySelector('.catalog');
 
-    if (dataContainer.classList.contains('exchange__container__table__catalog')) {
-        cardsPerPage = 12;
-    } else {
-        cardsPerPage = 10;
-    }
+//     if (dataContainer.classList.contains('exchange__container__table__catalog')) {
+//         cardsPerPage = 12;
+//     } else {
+//         cardsPerPage = 10;
+//     }
 
-    const pagination = document.getElementById('pagination') || document.getElementById('paginationT');
-    const pageNumbers = document.getElementById('page-numbers');
+//     const pagination = document.getElementById('pagination') || document.getElementById('paginationT');
+//     const pageNumbers = document.getElementById('page-numbers');
 
-    const cards = Array.from(dataContainer.getElementsByClassName('catalog__block'));
+//     const cards = Array.from(dataContainer.getElementsByClassName('catalog__block'));
 
-    let totalPages = Math.ceil(cards.length / cardsPerPage);
-    let currentPage = 1;
+//     let totalPages = Math.ceil(cards.length / cardsPerPage);
+//     let currentPage = 1;
 
-    function displayPage(page) {
-        const startIndex = (page - 1) * cardsPerPage;
-        const endIndex = startIndex + cardsPerPage;
+//     function displayPage(page) {
+//         const startIndex = (page - 1) * cardsPerPage;
+//         const endIndex = startIndex + cardsPerPage;
 
-        cards.forEach((card, index) => {
-            if (index >= startIndex && index < endIndex) {
-                if (dataContainer.style.display === 'block') {
-                    card.style.display = 'block';
-                } else {
-                    card.style.display = 'table-row';
-                }
-            } else {
-                card.style.display = 'none';
-            }
-        });
-    }
+//         cards.forEach((card, index) => {
+//             if (index >= startIndex && index < endIndex) {
+//                 if (dataContainer.style.display === 'block') {
+//                     card.style.display = 'block';
+//                 } else {
+//                     card.style.display = 'table-row';
+//                 }
+//             } else {
+//                 card.style.display = 'none';
+//             }
+//         });
+//     }
 
-    function updatePagination() {
-        const pageNumbers = document.getElementById('pagination') || document.getElementById('paginationT');
-        pageNumbers.innerHTML = createPagination(totalPages, currentPage);
-    }
+//     function updatePagination() {
+//         const pageNumbers = document.getElementById('pagination') || document.getElementById('paginationT');
+//         pageNumbers.innerHTML = createPagination(totalPages, currentPage);
+//     }
 
-    pagination.addEventListener('click', (e) => {
-        if (e.target.classList.contains('numb')) {
-            const page = parseInt(e.target.textContent);
+//     pagination.addEventListener('click', (e) => {
+//         if (e.target.classList.contains('numb')) {
+//             const page = parseInt(e.target.textContent);
 
-            if (page !== currentPage) {
-                currentPage = page;
-                displayPage(currentPage);
-                updatePagination();
-            }
-        } else if (e.target.classList.contains('prev')) {
-            if (currentPage > 1) {
-                currentPage--;
-                displayPage(currentPage);
-                updatePagination();
-            }
-        } else if (e.target.classList.contains('next')) {
-            if (currentPage < totalPages) {
-                currentPage++;
-                displayPage(currentPage);
-                updatePagination();
-            }
-        }
-    });
+//             if (page !== currentPage) {
+//                 currentPage = page;
+//                 displayPage(currentPage);
+//                 updatePagination();
+//             }
+//         } else if (e.target.classList.contains('prev')) {
+//             if (currentPage > 1) {
+//                 currentPage--;
+//                 displayPage(currentPage);
+//                 updatePagination();
+//             }
+//         } else if (e.target.classList.contains('next')) {
+//             if (currentPage < totalPages) {
+//                 currentPage++;
+//                 displayPage(currentPage);
+//                 updatePagination();
+//             }
+//         }
+//     });
 
-    displayPage(currentPage);
-    updatePagination();
+//     displayPage(currentPage);
+//     updatePagination();
 
-    const element = document.querySelector(".pagination ul");
+//     const element = document.querySelector(".pagination ul");
 
-    function createPagination(totalPages, page) {
-        let liTag = '';
-        let active;
-        let beforePage = page - 1;
-        let afterPage = page + 1;
+//     function createPagination(totalPages, page) {
+//         let liTag = '';
+//         let active;
+//         let beforePage = page - 1;
+//         let afterPage = page + 1;
 
-        if (beforePage < 1) {
-            beforePage = 1;
-        }
+//         if (beforePage < 1) {
+//             beforePage = 1;
+//         }
 
-        if (page > 1) {
-            liTag += `<li class="btn prev" onclick="createPagination(${totalPages}, ${page - 1})"><i class="fas fa-angle-left"></i> <</li>`;
-        }
+//         if (page > 1) {
+//             liTag += `<li class="btn prev" onclick="createPagination(${totalPages}, ${page - 1})"><i class="fas fa-angle-left"></i> <</li>`;
+//         }
 
-        if (page > 2 && totalPages > 4) {
-            liTag += `<li class="first numb" onclick="createPagination(${totalPages}, 1)">1</li>`;
-        }
+//         if (page > 2 && totalPages > 4) {
+//             liTag += `<li class="first numb" onclick="createPagination(${totalPages}, 1)">1</li>`;
+//         }
 
-        if (page > 3) {
-            liTag += `<li class="dots"><span>...</span></li>`;
-        }
+//         if (page > 3) {
+//             liTag += `<li class="dots"><span>...</span></li>`;
+//         }
 
-        if (page == totalPages) {
-            beforePage = beforePage - 2;
-        } else if (page == totalPages - 1) {
-            beforePage = beforePage - 1;
-        }
+//         if (page == totalPages) {
+//             beforePage = beforePage - 2;
+//         } else if (page == totalPages - 1) {
+//             beforePage = beforePage - 1;
+//         }
 
-        if (page == 1) {
-            afterPage = afterPage + 2;
-        } else if (page == 2) {
-            afterPage = afterPage + 1;
-        }
+//         if (page == 1) {
+//             afterPage = afterPage + 2;
+//         } else if (page == 2) {
+//             afterPage = afterPage + 1;
+//         }
 
-        for (let plength = beforePage; plength <= afterPage; plength++) {
-            if (plength > totalPages) {
-                continue;
-            }
+//         for (let plength = beforePage; plength <= afterPage; plength++) {
+//             if (plength > totalPages) {
+//                 continue;
+//             }
 
-            if (plength < 1) {
-                plength = 1;
-            }
+//             if (plength < 1) {
+//                 plength = 1;
+//             }
 
-            if (plength == 0) {
-                plength = plength + 1;
-            }
-            if (page == plength) {
-                active = "active";
-            } else {
-                active = "";
-            }
+//             if (plength == 0) {
+//                 plength = plength + 1;
+//             }
+//             if (page == plength) {
+//                 active = "active";
+//             } else {
+//                 active = "";
+//             }
 
-            liTag += `<li class="numb ${active}" onclick="createPagination(${totalPages}, ${plength})">${plength}</li>`;
-        }
+//             liTag += `<li class="numb ${active}" onclick="createPagination(${totalPages}, ${plength})">${plength}</li>`;
+//         }
 
-        if (page < totalPages - 1 && totalPages > 4) {
-            if (page < totalPages - 2) {
-                liTag += `<li class="dots"><span>...</span></li>`;
-            }
+//         if (page < totalPages - 1 && totalPages > 4) {
+//             if (page < totalPages - 2) {
+//                 liTag += `<li class="dots"><span>...</span></li>`;
+//             }
 
-            liTag += `<li class="last numb" onclick="createPagination(${totalPages}, ${totalPages})">${totalPages}</li>`;
-        }
+//             liTag += `<li class="last numb" onclick="createPagination(${totalPages}, ${totalPages})">${totalPages}</li>`;
+//         }
 
-        if (page < totalPages) {
-            liTag += `<li class="btn next" onclick="createPagination(${totalPages}, ${page + 1})">> <i class="fas fa-angle-right"></i></li>`;
-        }
+//         if (page < totalPages) {
+//             liTag += `<li class="btn next" onclick="createPagination(${totalPages}, ${page + 1})">> <i class="fas fa-angle-right"></i></li>`;
+//         }
 
-        return liTag;
-    }
+//         return liTag;
+//     }
