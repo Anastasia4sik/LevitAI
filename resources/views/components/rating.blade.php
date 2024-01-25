@@ -1,5 +1,39 @@
 <section class="rating d-flex flex-row justify-content-between align-items-center">
-    <img src="{{ asset('src/img/photo/rating-cards.png')}}" alt="ICO Watchlist" class="rating__img">
+  <div class="rating__anim">
+    <div class="rating__block d-flex flex-row">
+        <div class="rating__block__row rating__block__row--1 d-flex flex-column">
+            <img src="{{ asset('src/img/photo/rating-card.png')}}" alt="ICO Watchlist" class="rating__block__row__img">
+            <img src="{{ asset('src/img/photo/rating-card.png')}}" alt="ICO Watchlist" class="rating__block__row__img">
+            <img src="{{ asset('src/img/photo/rating-card.png')}}" alt="ICO Watchlist" class="rating__block__row__img">
+            <img src="{{ asset('src/img/photo/rating-card.png')}}" alt="ICO Watchlist" class="rating__block__row__img">
+            <img src="{{ asset('src/img/photo/rating-card.png')}}" alt="ICO Watchlist" class="rating__block__row__img">
+        </div>
+
+        <div class="rating__block__row rating__block__row--2 d-flex flex-column">
+            <img src="{{ asset('src/img/photo/rating-card.png')}}" alt="ICO Watchlist" class="rating__block__row__img">
+            <img src="{{ asset('src/img/photo/rating-card.png')}}" alt="ICO Watchlist" class="rating__block__row__img">
+            <img src="{{ asset('src/img/photo/rating-card.png')}}" alt="ICO Watchlist" class="rating__block__row__img">
+            <img src="{{ asset('src/img/photo/rating-card.png')}}" alt="ICO Watchlist" class="rating__block__row__img">
+            <img src="{{ asset('src/img/photo/rating-card.png')}}" alt="ICO Watchlist" class="rating__block__row__img">
+        </div>
+
+        <div class="rating__block__row rating__block__row--1 d-flex flex-column">
+            <img src="{{ asset('src/img/photo/rating-card.png')}}" alt="ICO Watchlist" class="rating__block__row__img">
+            <img src="{{ asset('src/img/photo/rating-card.png')}}" alt="ICO Watchlist" class="rating__block__row__img">
+            <img src="{{ asset('src/img/photo/rating-card.png')}}" alt="ICO Watchlist" class="rating__block__row__img">
+            <img src="{{ asset('src/img/photo/rating-card.png')}}" alt="ICO Watchlist" class="rating__block__row__img">
+            <img src="{{ asset('src/img/photo/rating-card.png')}}" alt="ICO Watchlist" class="rating__block__row__img">
+        </div>
+
+        <div class="rating__block__row rating__block__row--2 d-flex flex-column">
+            <img src="{{ asset('src/img/photo/rating-card.png')}}" alt="ICO Watchlist" class="rating__block__row__img">
+            <img src="{{ asset('src/img/photo/rating-card.png')}}" alt="ICO Watchlist" class="rating__block__row__img">
+            <img src="{{ asset('src/img/photo/rating-card.png')}}" alt="ICO Watchlist" class="rating__block__row__img">
+            <img src="{{ asset('src/img/photo/rating-card.png')}}" alt="ICO Watchlist" class="rating__block__row__img">
+            <img src="{{ asset('src/img/photo/rating-card.png')}}" alt="ICO Watchlist" class="rating__block__row__img">
+        </div>
+    </div>
+  </div>
 
     <div class="rating__text text-end">
         <h2 class="rating__text__title title-main">
