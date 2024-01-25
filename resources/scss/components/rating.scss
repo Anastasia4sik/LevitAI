@@ -1,17 +1,14 @@
 .rating {
-    padding: 255px 2vw 254px 105px;
-    margin-bottom: 50px;
+    padding: 23vh 2vw 23vh 105px;
+    margin-bottom: 4.6vh;
 
     background-image: url('../../../public/src/img/bc/bc-rating.png');
 
     background-position: center;
-    background-size: auto;
-
-    gap: 11vw;
+    background-size: contain;
 
     &__anim {
         height: 39vh;
-        width: 38vw;
 
         overflow: hidden;
     }
@@ -36,7 +33,7 @@
             }
 
             &__img {
-                height: 18.7vh;
+                height: 21vh;
             }
         }
     }
