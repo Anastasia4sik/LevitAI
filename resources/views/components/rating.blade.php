@@ -1,4 +1,4 @@
-<section class="rating d-flex flex-row justify-content-between align-items-center">
+<section class="rating d-flex flex-row align-items-center">
   <div class="rating__anim">
     <div class="rating__block d-flex flex-row">
         <div class="rating__block__row rating__block__row--1 d-flex flex-column">
