@@ -56,8 +56,15 @@ h1, h2, h3, p {
 }
 
 .desc {
-    font-size: 0.83vw;
     line-height: 137.5%;
+
+    @include onDesktop {
+        font-size: 0.83vw;
+    }
+
+    @include onMobile {
+        font-size: 4.2vw;
+    }
 }
 
 .topPage {

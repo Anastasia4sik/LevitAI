@@ -7,13 +7,22 @@
     &__main {
         position: absolute;
 
-        width: 60px;
         height: 100%;
-
-        padding: 25px 18px 0;
 
         border-right: 1px solid #ffffff;
         background-color: $main-bc;
+
+        @include onDesktop {
+            width: 60px;
+
+            padding: 25px 18px 0;
+        }
+
+        @include onMobile {
+            width: 35px;
+
+            padding: 25px 5px 0;
+        }
 
         &__btn {
             width: 24px;
@@ -26,7 +35,16 @@
         &__logo {
             position: absolute;
             bottom: 42px;
-            left: 13px;
+
+            width: 28px;
+
+            @include onDesktop {
+                left: 13px;
+            }
+
+            @include onMobile {
+                left: 3px;
+            }
         }
     }
 

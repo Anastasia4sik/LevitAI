@@ -1,6 +1,14 @@
 .header {
     padding: 26px 60px 0 105px;
 
+    @include onMobile {
+        display: none;
+    }
+
+    @include onDesktop {
+        display: flex;
+    }
+
     &__list {
         gap: 25px;
         margin-bottom: 0;

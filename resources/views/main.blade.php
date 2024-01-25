@@ -350,7 +350,7 @@
             background-image: url('{{ asset('src/img/bc/bc.png')}}');
 
             background-position: center;
-            background-size: auto;
+            background-size: cover;
         "
     >
         <x-header />
