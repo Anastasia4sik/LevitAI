@@ -3,7 +3,7 @@
         We Complete
     </h2>
 
-    <h2 class="complete__title title-main d-flex justify-content-center">
+    <h2 class="complete__title title-main">
         Every Project Extra <br>Care As Customer
     </h2>
 

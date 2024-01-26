@@ -126,3 +126,12 @@
         }
     }
 }
+
+.what-complete-block {
+    @include onDesktop {
+        background-image: url('../../../public/src/img/bc/bc-complete.png');
+
+        background-position: center;
+        background-size: cover;
+    }
+}

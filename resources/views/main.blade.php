@@ -366,13 +366,7 @@
     <x-rating />
 
     <div
-        class=""
-        style="
-            background-image: url('{{ asset('src/img/bc/bc-complete.png')}}');
-
-            background-position: center;
-            background-size: cover;
-        "
+        class="what-complete-block"
     >
         <x-what--crypto :cryptoInfo="$cryptoInfo" />
 
