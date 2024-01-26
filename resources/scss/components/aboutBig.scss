@@ -1,34 +1,65 @@
 .aboutBig {
-    margin-bottom: 11.8vh;
+    margin-bottom: 11vh;
     padding-left: 60px;
+    padding-top: 24vh;
 
     position: relative;
 
-    &:before {
-        content: url('../../../public/src/img/bc/bc-hand.png');
+    @include onMobile {
+        padding-left: 3.2vw;
+        padding-top: 11vh;
+    }
 
-        position: absolute;
-        bottom: 109px;
-        right: 0;
+    background-image: url('../../../public/src/img/bc/bc-hand.png');
+    background-repeat: no-repeat;
+
+    @include onDesktop {
+        background-size: contain;
+        background-position: right -8vh;
+    }
+
+    @include onMobile {
+        background-size: 50vw;
+        background-position: right top;
+
     }
 
     &__top {
-        gap: 36px;
         padding-left: 45px;
+
+        @include onDesktop {
+            margin-bottom: 50px;
+
+            flex-direction: row;
+            position: relative;
+        }
+
+        @include onMobile {
+            flex-direction: column;
+
+            margin-bottom: 25px;
+        }
     }
 
     &__title {
+        line-height: 100%;
         &--crypto {
-            padding-left: 45px;
+            line-height: 100%;
+        }
 
-            display: inline-block;
-            position: relative;
-            top: -2vw;
+        @include onMobile {
+            margin-bottom: 15px;
         }
     }
 
     &__desc {
-        width: 555px;
+        @include onDesktop {
+            width: 28.9vw;
+
+            position: absolute;
+            left: 22vw;
+            top: 1vh;
+        }
     }
 
     &__cards {
@@ -39,11 +70,18 @@
         transition: all .5s ease-in-out;
 
         &__item {
-            width: 316px;
             padding: 20px 26px 25px 24px;
 
             border: 1.5px solid $blue;
             border-radius: 5px;
+
+            @include onDesktop {
+                width: 16vw;
+            }
+
+            @include onMobile {
+                width: 84vw;
+            }
 
             &__top {
                 margin-bottom: 15px;

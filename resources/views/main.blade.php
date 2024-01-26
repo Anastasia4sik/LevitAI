@@ -356,9 +356,10 @@
         <x-header />
 
         <x-top />
+
+        <x-about />
     </section>
 
-    <x-about />
 
     <x-about--big :array="$array"/>
 

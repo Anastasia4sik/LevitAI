@@ -1,19 +1,18 @@
 .top {
-    margin-bottom: 11vh;
-
     @include onDesktop {
         padding-left: 105px;
         padding-top: 38px;
 
-        height: 140vh;
+        margin-bottom: 43vh;
+
         width: 100vw;
     }
 
     @include onMobile {
         padding-left: 48px;
         padding-top: 15px;
+        margin-bottom: 11vh;
 
-        height: 80vh;
         width: 100vw;
     }
 

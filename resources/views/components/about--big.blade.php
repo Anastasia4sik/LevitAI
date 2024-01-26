@@ -1,18 +1,14 @@
 
 <section class="aboutBig">
-    <div class="aboutBig__top d-flex flex-row align-items-center">
+    <div class="aboutBig__top d-flex">
         <h2 class="aboutBig__title title-main">
-            About
+            About <br> <span class="aboutBig__title--srypto title-main title-main--stroke">Crypto ICO</span>
         </h2>
 
         <p class="aboutBig__desc desc">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
         </p>
     </div>
-
-    <h2 class="aboutBig__title aboutBig__title--crypto title-main title-main--stroke">
-        Crypto ICO
-    </h2>
 
     <div class="aboutBig__cards d-flex flex-row">
         @foreach($array as $key => $number)
