@@ -1,4 +1,4 @@
-<section class="rating d-flex flex-row align-items-center">
+<section class="rating d-flex">
   <div class="rating__anim">
     <div class="rating__block d-flex flex-row">
         <div class="rating__block__row rating__block__row--1 d-flex flex-column">
@@ -25,7 +25,7 @@
             <img src="{{ asset('src/img/photo/rating-card.png')}}" alt="ICO Watchlist" class="rating__block__row__img">
         </div>
 
-        <div class="rating__block__row rating__block__row--2 d-flex flex-column">
+        <div class="rating__block__row rating__block__row--2 rating__block__row--last d-flex flex-column">
             <img src="{{ asset('src/img/photo/rating-card.png')}}" alt="ICO Watchlist" class="rating__block__row__img">
             <img src="{{ asset('src/img/photo/rating-card.png')}}" alt="ICO Watchlist" class="rating__block__row__img">
             <img src="{{ asset('src/img/photo/rating-card.png')}}" alt="ICO Watchlist" class="rating__block__row__img">
@@ -35,7 +35,7 @@
     </div>
   </div>
 
-    <div class="rating__text text-end">
+    <div class="rating__text">
         <h2 class="rating__text__title title-main">
             Rating
         </h2>
