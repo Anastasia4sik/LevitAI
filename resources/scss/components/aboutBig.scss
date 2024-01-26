@@ -5,11 +5,6 @@
 
     position: relative;
 
-    @include onMobile {
-        padding-left: 3.2vw;
-        padding-top: 11vh;
-    }
-
     background-image: url('../../../public/src/img/bc/bc-hand.png');
     background-repeat: no-repeat;
 
@@ -19,9 +14,11 @@
     }
 
     @include onMobile {
+        padding-left: 3.2vw;
+        padding-top: 11vh;
+
         background-size: 50vw;
         background-position: right top;
-
     }
 
     &__top {

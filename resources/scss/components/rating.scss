@@ -1,8 +1,7 @@
 .rating {
-    margin-bottom: 4.6vh;
-
     @include onDesktop {
         padding: 23vh 2vw 23vh 105px;
+        margin-bottom: 4.6vh;
 
         background-image: url('../../../public/src/img/bc/bc-rating.png');
 
@@ -10,12 +9,13 @@
         background-size: contain;
 
         flex-direction: row;
-        align-items: center;
         gap: 11.6vw;
     }
 
     @include onMobile {
         padding: 0 3.2vw 0 48px;
+        margin-bottom: 11vh;
+
         flex-direction: column-reverse;
     }
 
@@ -28,7 +28,7 @@
         }
 
         @include onMobile {
-            width: 100%;
+            width: fit-content;
             height: 267px;
         }
     }
@@ -60,6 +60,10 @@
             }
 
             &--last {
+                @include onDesktop {
+                    display: flex;
+                }
+
                 @include onMobile {
                     display: none;
                 }
