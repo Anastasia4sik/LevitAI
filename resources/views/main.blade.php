@@ -385,19 +385,13 @@
     <x-roadmap />
 
     <div
-        class=""
-        style="
-            background-image: url('{{ asset('src/img/bc/bc-available.png')}}');
-
-            background-position: center;
-            background-size: cover;
-        "
+        class="available-team"
     >
         <x-available />
 
         <x-team :teamInfo="$teamInfo" />
     </div>
-{{-- 
+{{--
     <x-strategy :strategyInfo="$strategyInfo" />
 
     <x-blog :blogInfo="$blogInfo" />
