@@ -1,11 +1,18 @@
 .header {
     padding: 26px 60px 0 105px;
 
+    @include onMobile {
+        display: none;
+    }
+
+    @include onDesktop {
+        display: flex;
+    }
+
     &__list {
         gap: 25px;
         margin-bottom: 0;
         padding-left: 0;
-        z-index: 999;
     }
 
     &__dropdown {
@@ -34,7 +41,7 @@
             display: none;
             position: absolute;
 
-
+            z-index: 999;
             padding: 25px 0;
             width: max-content;
 

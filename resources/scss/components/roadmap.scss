@@ -1,11 +1,71 @@
 .roadmap {
+    &--page {
+        padding: 0;
+
+        background-image: url('/src/img/bc/bc-roadmap-page.png');
+
+        background-position: center;
+        background-size: cover;
+    }
+
+    @include onDesktop {
+        padding: 100px 0 100px 0;
+    }
+
+    @include onMobile {
+        padding: 50px 3.2vw 0 48px;
+
+        background-image: url('/src/img/bc/bc-roadmap-mobile.png');
+
+        background-position: 70vw top;
+        background-size: auto;
+    }
+
     &__top {
-        padding-left: 105px;
+        @include onDesktop {
+            padding-left: 105px;
+
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        @include onMobile {
+            flex-direction: column;
+        }
 
         &__text {
+            &__title {
+                @include onMobile {
+                    font-size: 40px;
+                }
+
+                &--bottom {
+                    @include onMobile {
+                        margin-bottom: 15px;
+                        margin-top: -10px;
+                    }
+                }
+            }
+
             &__bottom {
+                @include onDesktop {
+                    flex-direction: row;
+                }
+
+                @include onMobile {
+                    flex-direction: column-reverse;
+                }
+
                 &__desc {
-                    width: 452px;
+                    @include onDesktop {
+                        width: 452px;
+                    }
+
+                    @include onMobile {
+                        width: 100%;
+
+                        margin-bottom: 25px;
+                    }
                 }
             }
         }
@@ -13,6 +73,9 @@
         &__img {
             width: 365px;
 
+            @include onMobile {
+                display: none;
+            }
         }
 
         &__arrowDown {
@@ -20,16 +83,21 @@
         }
     }
 
+    &__image {
+        overflow-x: scroll;
+        overflow: -ms-scrollbars-none;
+        scrollbar-width: none;
+        -webkit-overflow-scrolling: touch;
+    }
+
     &__img {
-        width: 100vw;
 
-
-        &--map {
-            transition: opacity 1.5s ease-in-out;
+        @include onDesktop {
+            width: 100vw;
         }
 
-        &--line {
-            transition: opacity 2s ease-in-out;
+        @include onMobile {
+            width: 1837px;
         }
     }
 }

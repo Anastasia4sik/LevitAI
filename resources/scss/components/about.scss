@@ -1,20 +1,31 @@
 .about {
-    position: absolute;
-    top: 110vh;
-    left: 27vw;
+    @include onDesktop {
+    }
+
+    @include onMobile {
+
+        padding: 0 3.2vw 0 48px;
+        margin-bottom: 11px;
+    }
 
     &__small {
         margin-bottom: 15px;
 
-        font-size: 20px;
-        line-height: 140%;
+        font-size: 30px;
     }
 
     &__title {
-        margin-bottom: 30px;
+        @include onDesktop {
+            margin-bottom: 30px;
 
-        font-size: 48px;
-        line-height: 137%;
+            font-size: 48px;
+        }
+
+        @include onMobile {
+            margin-bottom: 20px;
+
+            font-size: 30px;
+        }
     }
 
     &__desc {
@@ -22,5 +33,11 @@
 
         font-size: 14px;
         line-height: 112%;
+
+        @include onMobile {
+            width: 100%;
+
+            line-height: 135%;
+        }
     }
 }

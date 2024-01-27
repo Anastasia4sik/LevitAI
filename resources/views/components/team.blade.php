@@ -31,24 +31,15 @@
 @endphp
 
 <section
-    class="team"
-    @if(request()->is('about-us'))
-        style="
-            padding: 100px 2vw 0 105px;
-
-            background-image: url('{{asset('src/img/bc/bc-team-aboutPage.png')}}');
-        "
-    @else
-        style="
-            padding: 54px 2vw 0 105px;
-
-            background-image: url('{{asset('src/img/bc/bc-team.png')}}');
-            background-position: center -280px;
-        "
-    @endif
+    class="
+        team
+        @if(request()->is('about-us'))
+            team-about-us
+        @endif
+    "
 >
     <h2 class="team__title title-main">
-        Met Our <span class=" title-main--stroke">LevitAI</span> <br>
+        Met Our <span class=" title-main--stroke">LevitAI</span>
         <span class=" title-main--stroke">Team</span> Players
     </h2>
 
@@ -56,13 +47,19 @@
         @foreach($teamInfo as $key => $item)
             <div class="team__list__item d-flex flex-row justify-content-between align-items-center">
                 <div class="team__list__item__text">
-                    <h2 class="team__list__item__title title-main">
-                        {{ $item['name'] }}
-                    </h2>
+                    <div class="team__list__item__top">
+                        <div class="">
+                            <h2 class="team__list__item__title title-main">
+                                {{ $item['name'] }}
+                            </h2>
 
-                    <h3 class="team__list__item__small title-little">
-                        {{ $item['position'] }}
-                    </h3>
+                            <h3 class="team__list__item__small title-little">
+                                {{ $item['position'] }}
+                            </h3>
+                        </div>
+
+                        <img src="{{ asset($item['photo'])}}" alt="Team member" class="team__list__item__img__mob">
+                    </div>
 
                     <p class="team__list__item__desc desc">
                         {{ $item['desc'] }}

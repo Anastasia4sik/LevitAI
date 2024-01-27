@@ -1,4 +1,4 @@
-<section class="whatCrypto d-flex flex-row justify-content-between align-items-center">
+<section class="whatCrypto d-flex">
     <div class="whatCrypto__text">
         <h2 class="whatCrypto__text__title title-main">
             What Is
@@ -26,7 +26,7 @@
                         : 'whatCrypto__list__item__imgs__line--up';
                 @endphp
 
-                <div class="whatCrypto__list__item d-flex flex-row align-items-center">
+                <div class="whatCrypto__list__item d-flex flex-row">
                     <div class="whatCrypto__list__item__imgs d-flex flex-row align-items-center position-relative">
                         <img
                             src="{{ asset($item['img'])}}"

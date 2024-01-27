@@ -1,32 +1,83 @@
 .face {
-    padding: 208px 4vw 165px 105px;
+    @include onDesktop {
+        padding: 19vh 4vw 15vh 105px;
+
+        flex-direction: row;
+    }
+
+    @include onMobile {
+        padding: 0 3.2vw 0 48px;
+        margin-bottom: 130px;
+
+        flex-direction: column;
+        gap: 25px;
+    }
 
     &__text {
         &__top {
-            gap: 34px;
+            @include onDesktop {
+                position: relative;
+                margin-bottom: 6vh;
+            }
+
+            @include onMobile {
+                margin-bottom: 25px;
+            }
 
             &__desc {
-                width: 555px;
+                @include onDesktop {
+                    width: 28.9vw;
+
+                    position: absolute;
+                    left: 22vw;
+                    top: 2vh;
+                }
+
+                @include onMobile {
+                    width: 100%;
+                }
+            }
+
+            &__title {
+                @include onDesktop {
+                    line-height: 100%;
+                }
+
+                @include onMobile {
+                    margin-bottom: 15px;
+
+                    font-size: 40px;
+
+                    &--crypto {
+                        font-size: 40px;
+                    }
+                }
             }
         }
 
-        &__title {
-            &--crypto {
-                display: inline-block;
-                position: relative;
-                top: -1.2vw;
-
-                margin-bottom: 65px;
-            }
-        }
 
         &__table {
-            grid-template-columns: repeat(2, 366px);
-            grid-gap: 75px;
+            @include onDesktop {
+                display: grid;
+                grid-template-columns: repeat(2, 366px);
+                grid-gap: 75px;
+            }
+
+            @include onMobile {
+                display: flex;
+                flex-direction: column;
+                gap: 25px;
+            }
 
             &__item {
                 &__title {
-                    margin-bottom: 10px;
+                    @include onDesktop {
+                        margin-bottom: 10px;
+                    }
+
+                    @include onMobile {
+                        margin-bottom: 5px;
+                    }
                 }
             }
         }
@@ -35,9 +86,16 @@
     &__img {
         top: 0;
         left: 0;
-        height: 100%;
 
         transition: opacity 1s ease-in-out;
+
+        @include onDesktop {
+            height: 100%;
+        }
+
+        @include onMobile {
+            width: 313px;
+        }
     }
 }
 

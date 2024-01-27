@@ -350,28 +350,22 @@
             background-image: url('{{ asset('src/img/bc/bc.png')}}');
 
             background-position: center;
-            background-size: auto;
+            background-size: cover;
         "
     >
         <x-header />
 
         <x-top />
-    </section>
 
-    <x-about />
+        <x-about />
+    </section>
 
     <x-about--big :array="$array"/>
 
     <x-rating />
 
     <div
-        class=""
-        style="
-            background-image: url('{{ asset('src/img/bc/bc-complete.png')}}');
-
-            background-position: center;
-            background-size: cover;
-        "
+        class="what-complete-block"
     >
         <x-what--crypto :cryptoInfo="$cryptoInfo" />
 
@@ -391,13 +385,7 @@
     <x-roadmap />
 
     <div
-        class=""
-        style="
-            background-image: url('{{ asset('src/img/bc/bc-available.png')}}');
-
-            background-position: center;
-            background-size: cover;
-        "
+        class="available-team"
     >
         <x-available />
 
@@ -446,24 +434,5 @@
                 });
             });
         })
-
-        //sales
-        const cardsContainer = document.querySelector('.sales__block__cards');
-        const leftButton = document.querySelector('.sales__block__btns__img--left');
-        const rightButton = document.querySelector('.sales__block__btns__img--right');
-
-        function updateButtonPadding() {
-            const canScrollLeft = cardsContainer.scrollLeft > 0;
-            const canScrollRight = cardsContainer.scrollLeft < (cardsContainer.scrollWidth - cardsContainer.clientWidth);
-
-            leftButton.style.padding = canScrollLeft ? '25px 27px' : '18px 20px';
-            rightButton.style.padding = canScrollRight ? '25px 27px' : '18px 20px';
-        }
-
-        function scrollCards(scrollAmount) {
-            cardsContainer.scrollLeft += scrollAmount;
-        }
-
-        cardsContainer.addEventListener('scroll', updateButtonPadding);
     </script>
 </x-base>

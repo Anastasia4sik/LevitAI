@@ -28,7 +28,9 @@
     </head>
 
     <body>
-        {{ $slot }}
+        <div class="body">
+            {{ $slot }}
+        </div>
 
         <!-- Meta Pixel Code -->
         <script>

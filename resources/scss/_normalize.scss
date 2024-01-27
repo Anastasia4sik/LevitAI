@@ -16,7 +16,9 @@
 body {
     background-color: $main-bc;
     color: $white;
+}
 
+.body {
     overflow-x: hidden;
 }
 
@@ -37,8 +39,15 @@ h1, h2, h3, p {
 }
 
 .title-main {
-    font-size: 6vw;
     line-height: 137.5%;
+
+    @include onDesktop {
+        font-size: 6vw;
+    }
+
+    @include onMobile {
+        font-size: 50px;
+    }
 
     &--stroke {
         color: transparent;
@@ -51,13 +60,27 @@ h1, h2, h3, p {
 }
 
 .title-little {
-    font-size: 1.04vw;
     line-height: 140%;
+
+    @include onDesktop {
+        font-size: 1.04vw;
+    }
+
+    @include onMobile {
+        font-size: 18px;
+    }
 }
 
 .desc {
-    font-size: 0.83vw;
     line-height: 137.5%;
+
+    @include onDesktop {
+        font-size: 0.83vw;
+    }
+
+    @include onMobile {
+        font-size: 14px;
+    }
 }
 
 .topPage {

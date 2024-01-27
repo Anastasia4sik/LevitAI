@@ -1,20 +1,39 @@
 .top {
-    padding-left: 105px;
-    padding-top: 38px;
+    @include onDesktop {
+        padding-left: 105px;
+        padding-top: 38px;
 
-    height: 140vh;
-    width: 100vw;
+        margin-bottom: 43vh;
 
-    margin-bottom: 120px;
+        width: 100vw;
+    }
+
+    @include onMobile {
+        padding-left: 48px;
+        padding-top: 15px;
+        margin-bottom: 11vh;
+
+        width: 100vw;
+    }
 
     &__title {
-        font-size: 120px;
-        line-height: 175%;
-        margin-bottom: 0;
+        @include onDesktop {
+            font-size: 120px;
+            line-height: 175%;
+            margin-bottom: 0;
+        }
+
+        @include onMobile {
+            font-size: 50px;
+            line-height: 138%;
+            margin-bottom: 15px;
+        }
     }
 
     &__desc {
-        margin-bottom: 360px;
+        @include onDesktop {
+            margin-bottom: 360px;
+        }
 
         &__title {
             margin-bottom: 15px;
@@ -29,10 +48,27 @@
 
             font-size: 14px;
             line-height: 112%;
+
+            @include onMobile {
+                width: 84vw;
+                margin-bottom: 25px;
+
+                line-height: 135%;
+            }
         }
 
         &__btns {
-            gap: 35px;
+            @include onDesktop {
+                flex-direction: row;
+                align-items: center;
+                gap: 35px;
+            }
+
+            @include onMobile {
+                flex-direction: column;
+
+                gap: 15px;
+            }
 
             &__right {
                 line-height: 100%;

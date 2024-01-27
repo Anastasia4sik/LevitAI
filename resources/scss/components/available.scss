@@ -1,20 +1,79 @@
 .available {
-    padding: 325px 6.3vw 200px 9.5vw;
+    @include onDesktop {
+        padding: 30vh 6.3vw 18.5vh 9.5vw;
+    }
+
+    @include onMobile {
+        padding: 78px 0 90px 0;
+    }
+
+    &-team {
+        background-size: cover;
+        background-position: center;
+
+        @include onDesktop {
+            background-image: url('/src/img/bc/bc-available.png');
+        }
+
+        @include onMobile {
+            background-image: url('/src/img/bc/bc-available-mobile.png');
+        }
+    }
 
     &__title {
-        padding: 75px 7vw 75px 8vw;
-        margin-bottom: 40px;
-
         background-color: #0a0126;
+
+        @include onDesktop {
+            padding: 75px 7vw 75px 8vw;
+            margin-bottom: 3.7vh;
+        }
+
+        @include onMobile {
+            padding: 26px 9vw 26px 65px;
+            margin-bottom: 25px;
+
+            font-size: 40px;
+        }
+    }
+
+    &__container {
+        @include onMobile {
+            padding: 0 3.2vw 0 48px;
+        }
     }
 
     &__desk {
-        margin-bottom: 25px;
-
         text-transform: uppercase;
+
+        @include onDesktop {
+            margin-bottom: 2.3vh;
+        }
+
+        @include onMobile {
+            margin-bottom: 15px;
+        }
     }
 
     &__links {
-        gap: 25px;
+        @include onDesktop {
+            gap: 25px;
+            justify-content: center;
+        }
+
+        @include onMobile {
+            gap: 15px;
+            align-items: center;
+            justify-content: center;
+        }
+
+        &__item {
+            @include onMobile {
+                width: 140px;
+
+                img {
+                    width: 100%;
+                }
+            }
+        }
     }
 }

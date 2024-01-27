@@ -1,0 +1,96 @@
+.messages{
+    height: 100vh;
+
+    background-image: url('/src/img/bc/bc-messages.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    &__content {
+        padding: 6.4vh 2vw 8.5vh 105px;
+
+        gap: 15px;
+
+        height: 92vh;
+    }
+
+    &__filter,
+    &__dialogs,
+    &__chat {
+        border-radius: 10px;
+
+        height: 100%;
+    }
+
+    &__filter {
+        background-color: #180D38;
+
+        &__item {
+            padding: 20px 12px;
+            width: 100%;
+
+            transition: all .3s ease-in-out;
+            cursor: pointer;
+
+            &:first-of-type {
+                border-radius: 10px 10px 0 0;
+            }
+
+            &.active {
+                background-color: #341D79;
+            }
+
+            &:hover {
+                background-color: rgba(64, 36, 147, 0.347);
+            }
+
+            &__top {
+                position: relative;
+
+                margin-bottom: 5px;
+
+                &__num {
+                    position: absolute;
+
+                    right: 5px;
+                    top: -10px;
+
+                    width: 25px;
+                    height: 25px;
+
+                    background-color: #582FD0;
+                    border-radius: 50%;
+
+                    &__text {
+                        font-size: 14px;
+                        line-height: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+    &__dialogs {
+        padding: 25px 30px 30px 15px;
+
+        background-color: #261656;
+
+        &__top {
+            gap: 9.4vw;
+
+            padding: 0 0 15px 5px;
+            margin-bottom: 25px;
+
+            border-bottom: 1px solid #ffffff0d;
+
+            &__btns {
+                gap: 10px;
+            }
+        }
+    }
+
+    &__chat {
+        width: 63vw;
+        background-color: #180D38;
+
+    }
+}

@@ -1,6 +1,18 @@
 .coin {
-    padding: 0 2vw 0 105px;
-    margin-bottom: 50px;
+    @include onDesktop {
+        padding: 0 2vw 0 105px;
+        margin-bottom: 4.6vh;
+
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    @include onMobile {
+        padding: 0 3.2vw 0 48px;
+        margin-bottom: 90px;
+
+        flex-direction: column-reverse;
+    }
 
     &__images {
         &__top {
@@ -9,50 +21,146 @@
 
         &__img {
             &--1 {
-                width: 260px;
-                height: 241px;
+                width: 13vw;
+                height: 13vw;
 
                 margin-right: 97px;
+
+                @include onMobile {
+                    min-width: 317px;
+                    min-height: 291px;
+
+                    max-width: 100%;
+                    max-height: 100%;
+
+                    margin: 0;
+                }
             }
 
             &--2 {
                 margin-top: 43px;
+
+                width: 7.7vw;
+                height: 22vh;
+
+                @include onMobile {
+                    display: none;
+                }
             }
 
             &--3 {
                 width: 35vw;
+
+                @include onMobile {
+                    display: none;
+                }
             }
         }
     }
 
     &__text {
         &__white {
+            @include onDesktop {
+                position: relative;
+
+                flex-direction: row;
+                align-items: center;
+            }
+
+            @include onMobile {
+                flex-direction: column;
+            }
+
+            &__title {
+                line-height: 100%;
+
+                @include onMobile {
+                    margin-bottom: 15px;
+                }
+            }
+
             &__desc {
-                margin-left: 34px;
-                width: 23.5vw;
+                @include onDesktop {
+                    position: absolute;
+
+                    width: 23.5vw;
+                    top: 3vh;
+                    left: 22vw;
+                }
+
+                @include onMobile {
+                    width: 100%;
+                    margin-bottom: 25px;
+                }
+            }
+        }
+
+        &__title {
+            @include onMobile {
+                margin-bottom: 5px;
             }
         }
 
         &__btn {
-            margin-bottom: 25px;
+            @include onDesktop {
+                margin: 0 0 25px auto;
+            }
+
+            @include onMobile {
+                margin-bottom: 25px;
+            }
         }
 
         &__blocks {
-            gap: 62px;
+            @include onDesktop {
+                gap: 62px;
+                flex-direction: row;
+            }
+
+            @include onMobile {
+                gap: 25px;
+                flex-direction: column;
+
+                margin-bottom: 25px;
+            }
 
             &__item {
-                width: 22vw;
+                @include onDesktop {
+                    width: 22vw;
+                }
+
+                @include onMobile {
+                    width: 100%;
+                }
 
                 &__img {
-                    padding: 12px;
                     margin-bottom: 10px;
 
                     background: $violet;
                     border-radius: 100px;
+
+                    @include onDesktop {
+                        padding: 12px;
+                        width: 50px;
+                        height: 50px;
+                    }
+
+                    @include onMobile {
+                        padding: 8.4px;
+
+                        width: 35px;
+                        height: 35px;
+                    }
                 }
 
                 &__title {
-                    margin-bottom: 10px;
+                    @include onDesktop {
+                        margin-bottom: 10px;
+                    }
+
+                    @include onMobile {
+                        margin-bottom: 5px;
+                    }
                 }
             }
         }

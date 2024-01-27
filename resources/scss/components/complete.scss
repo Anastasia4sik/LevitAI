@@ -1,29 +1,64 @@
 .complete {
-    padding: 220px 2vw 220px 102px;
-    // background: transparent;
+    @include onDesktop {
+        padding: 20vh 2vw 20vh 102px;
+    }
+
+    @include onMobile {
+        padding: 90px 3.2vw 90px 48px;
+
+        background-image: url('/src/img/bc/bc-complete-mobile.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
 
     &__title {
-        margin-bottom: 25px;
+        @include onDesktop {
+            margin-top: -18px;
+            margin-bottom: 25px;
 
-        font-size: 4vw;
-        line-height: 100%;
+            font-size: 4vw;
+            line-height: 100%;
 
-        margin-top: -18px;
+            display: flex;
+            justify-content: center;
+        }
+
+        @include onMobile {
+            font-size: 35px;
+            margin-bottom: 15px;
+        }
+
+        &--complete {
+            @include onMobile {
+                font-size: 40px;
+            }
+        }
     }
 
     &__desc {
-        width: 36vw;
-
         &:not(:last-of-type) {
             margin-bottom: 10px;
         }
 
-        &:last-of-type {
-            margin-bottom: 35px;
+        @include onDesktop {
+            width: 36vw;
+
+            &:last-of-type {
+                margin-bottom: 35px;
+            }
+        }
+
+        @include onMobile {
+            &:last-of-type {
+                margin-bottom: 25px;
+            }
         }
     }
 
     &__text {
-        margin-left: 57vw;
+        @include onDesktop {
+            margin-left: 57vw;
+        }
     }
 }

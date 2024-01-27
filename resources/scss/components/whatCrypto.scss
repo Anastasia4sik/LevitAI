@@ -1,28 +1,69 @@
 .whatCrypto {
-    margin-bottom: 50px;
-    padding: 0 2vw 0 102px;
+    @include onDesktop {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
 
-    gap: 94px;
+        margin-bottom: 4.6vh;
+        padding: 0 2vw 0 102px;
+
+        gap: 4.8vw;
+    }
+
+    @include onMobile {
+        flex-direction: column;
+
+        margin-bottom: 0;
+        padding: 0 3.2vw 0 48px;
+
+        background-image: url('/src/img/bc/bc-whatCrypto-mobile.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        gap: 25px;
+    }
 
     &__text {
-        width: 38vw;
+        @include onDesktop {
+            width: 38vw;
+        }
+
+        @include onMobile {
+            width: 100%;
+        }
 
         &__title {
             &--crypto {
-                display: inline-block;
-                position: relative;
-                top: -24px;
+                @include onDesktop {
+                    margin-top: -10px;
 
-                margin-bottom: 25px;
+                    margin-bottom: 25px;
+                }
+
+                @include onMobile {
+                    margin-top: 0;
+                    margin-bottom: 15px;
+                }
             }
         }
     }
 
     &__list {
         &__item {
-            margin-bottom: 37px;
 
-            gap: 1vw;
+            @include onDesktop {
+                margin-bottom: 37px;
+
+                gap: 1vw;
+                align-items: center;
+            }
+
+            @include onMobile {
+                margin-bottom: 25px;
+
+                gap: 4vw;
+                align-items: start;
+            }
 
             &__imgs {
                 &__line {
@@ -37,15 +78,27 @@
                     &--up,
                     &--down {
                         right: 100%;
+
+                        width: 11.3vw;
+
+                        @include onMobile {
+                            display: none;
+                        }
                     }
                 }
             }
 
             &__img {
-                padding: 0.6vw;
-
                 background: $violet;
                 border-radius: 3px;
+
+                @include onDesktop {
+                    padding: 0.6vw;
+                }
+
+                @include onMobile {
+                    padding: 8.4px;
+                }
             }
 
             &__text {
@@ -57,9 +110,24 @@
                     font-size: 14px;
                     line-height: 135%;
 
-                    width: 34vw;
+                    @include onDesktop {
+                        width: 34vw;
+                    }
+
+                    @include onMobile {
+                        width: 100%;
+                    }
                 }
             }
         }
+    }
+}
+
+.what-complete-block {
+    @include onDesktop {
+        background-image: url('/src/img/bc/bc-complete.png');
+
+        background-position: center;
+        background-size: cover;
     }
 }
