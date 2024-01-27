@@ -2,7 +2,7 @@
     @include onDesktop {
         padding: 54px 2vw 0 105px;
 
-        background-image: url('../../../public/src/img/bc/bc-team.png');
+        background-image: url('/src/img/bc/bc-team.png');
         background-position: center -280px;
     }
 
@@ -15,7 +15,7 @@
 
         @include onMobile {
             margin-bottom: 15px;
-            
+
             font-size: 40px;
         }
 
@@ -175,6 +175,6 @@
     &-about-us {
         padding: 100px 2vw 0 105px;
 
-        background-image: url('../../../public/src/img/bc/bc-team-aboutPage.png');
+        background-image: url('/src/img/bc/bc-team-aboutPage.png');
     }
 }
