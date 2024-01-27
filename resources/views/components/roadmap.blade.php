@@ -1,23 +1,14 @@
 <section
     id="roadmap"
-    class="roadmap"
-    @if(request()->is('roadmap'))
-        style="
-            padding: 0;
-
-            background-image: url('{{asset('/src/img/bc/bc-roadmap-page.png')}}');
-
-            background-position: center;
-            background-size: cover;
-        "
-    @else
-        style="
-            padding: 100px 0 100px 0;
-        "
-    @endif
+    class="
+        roadmap
+        @if(request()->is('roadmap'))
+            roadmap--page
+        @endif
+    "
 >
     @if(request()->is('roadmap'))
-    <x-header />
+        <x-header />
 
         <div
             class="roadmap__top topPage d-flex flex-column justify-content-center align-items-center"
@@ -47,14 +38,14 @@
 
         <img id="map" src="{{ asset('src/img/photo/roadmap/roadmap.png')}}" alt="" class="roadmap__img roadmap__img--map">
     @else
-        <div class="roadmap__top d-flex flex-row justify-content-between">
+        <div class="roadmap__top d-flex">
             <div class="roadmap__top__text">
-                <h2 class="title-main">
+                <h2 class="roadmap__top__text__title title-main">
                     Our <span class="title-main--stroke">Strategy</span>
                 </h2>
 
                 <div
-                    class="roadmap__top__text__bottom d-flex flex-row"
+                    class="roadmap__top__text__bottom d-flex"
                     style="
                         gap: 0;
                     "
@@ -63,7 +54,7 @@
                         Monotonectally productivate virtual benefits vis-a-vis clicks-and-mortar lead ship. Seamlessly generate user friendly opportunitie after principle-centered e-markets. Proactively visualize functional
                     </p>
 
-                    <h2 class="title-main">
+                    <h2 class="roadmap__top__text__title roadmap__top__text__title--bottom title-main">
                         & Roadmap
                     </h2>
                 </div>
@@ -72,42 +63,8 @@
             <img src="{{ asset('src/img/photo/choose-img.jpg')}}" alt="Our Strategy & Roadmap" class="roadmap__top__img">
         </div>
 
-        <img id="map" src="{{ asset('src/img//photo/roadmap/roadmap.png')}}" alt="" class="roadmap__img roadmap__img--map">
-
-        <img id="line" src="{{ asset('src/img//photo/roadmap/line.png')}}" alt="" class="roadmap__img roadmap__img--line">
+        <div class="roadmap__image">
+            <img id="line" src="{{ asset('src/img//photo/roadmap/line.png')}}" alt="" class="roadmap__img roadmap__img--line">
+        </div>
     @endif
-
-    <script>
-        //roadmap
-        window.addEventListener('scroll', function() {
-            const line = document.getElementById('line');
-            const map = document.getElementById('map');
-            const scrollPosition = window.scrollY;
-
-            const triggerDiv = document.getElementById('roadmap');
-            const triggerDivPosition = triggerDiv.offsetTop;
-
-            const opacity = 0.79 - (scrollPosition - triggerDivPosition) / triggerDiv.clientHeight;
-
-            const limitedOpacity = Math.min(1, Math.max(0, opacity));
-
-            if (limitedOpacity > 0.85 || limitedOpacity <= 0.001) {
-                line.style.opacity = 1;
-                map.style.opacity = 0;
-
-                setTimeout(() => {
-                    map.style.display = 'none';
-                    line.style.display = 'block';
-                }, 1800);
-            }else {
-                line.style.opacity = 0;
-                map.style.opacity = 1;
-
-                setTimeout(() => {
-                    line.style.display = 'none';
-                    map.style.display = 'block';
-                }, 1800);
-            }
-        });
-    </script>
 </section>

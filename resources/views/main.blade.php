@@ -397,7 +397,7 @@
 
         <x-team :teamInfo="$teamInfo" />
     </div>
-
+{{-- 
     <x-strategy :strategyInfo="$strategyInfo" />
 
     <x-blog :blogInfo="$blogInfo" />
@@ -408,7 +408,7 @@
 
     <x-contact />
 
-    <x-footer />
+    <x-footer /> --}}
 
     <script>
         // download file
