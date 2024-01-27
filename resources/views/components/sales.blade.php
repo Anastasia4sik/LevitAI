@@ -1,5 +1,5 @@
 <section class="sales d-flex flex-row align-items-center">
-    <div class="">
+    <div class="sales__top">
         <h2 class="sales__header--token title-main title-main--stroke">
             ICO Token
         </h2>
@@ -52,4 +52,25 @@
             @endforeach
         </div>
     </div>
+
+    <script>
+        //sales
+            const cardsContainer = document.querySelector('.sales__block__cards');
+            const leftButton = document.querySelector('.sales__block__btns__img--left');
+            const rightButton = document.querySelector('.sales__block__btns__img--right');
+
+            function updateButtonPadding() {
+                const canScrollLeft = cardsContainer.scrollLeft > 0;
+                const canScrollRight = cardsContainer.scrollLeft < (cardsContainer.scrollWidth - cardsContainer.clientWidth);
+
+                leftButton.style.padding = canScrollLeft ? '25px 27px' : '18px 20px';
+                rightButton.style.padding = canScrollRight ? '25px 27px' : '18px 20px';
+            }
+
+            function scrollCards(scrollAmount) {
+                cardsContainer.scrollLeft += scrollAmount;
+            }
+
+            cardsContainer.addEventListener('scroll', updateButtonPadding);
+    </script>
 </section>

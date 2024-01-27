@@ -1,22 +1,51 @@
 .sales {
-    padding: 17vh 0 22vh 105px;
     position: relative;
 
     background-image: url('../../../public/src/img/bc/bc-sales.png');
 
-    background-position: center bottom;
     background-size: cover;
 
-    &__header {
-        margin-bottom: 12px;
+    @include onDesktop {
+        padding: 17vh 0 22vh 105px;
 
+        background-position: center bottom;
+    }
+
+    @include onMobile {
+        padding-right: 3.2vw;
+
+        background-position: center top;
+    }
+
+    &__top {
+        @include onMobile {
+            padding-left: 48px;
+        }
+    }
+
+    &__header {
         line-height: 0.8;
+
+        @include onDesktop {
+            margin-bottom: 12px;
+        }
+
+        @include onMobile {
+            margin-bottom: 5px;
+        }
     }
 
     &__block {
         position: absolute;
         right: 0;
-        top: 38%;
+
+        @include onDesktop {
+            top: 38%;
+        }
+
+        @include onMobile {
+            top: 83px;
+        }
 
         &__btns {
             margin-bottom: 25px;
@@ -44,7 +73,6 @@
 
         &__cards {
             padding: 66px 0;
-            width: 72vw;
 
             overflow-x: scroll;
             scroll-behavior: smooth;
@@ -60,6 +88,15 @@
             scrollbar-width: none;
             -webkit-overflow-scrolling: touch;
 
+            @include onDesktop {
+                width: 72vw;
+            }
+
+            @include onMobile {
+                padding-left: 48px;
+                width: 100vw;
+            }
+
             &::before {
                 content: "";
                 position: absolute;
@@ -74,15 +111,29 @@
 
             &__item {
                 flex: 0 0 auto;
-                width: 230px;
+
+                @include onDesktop {
+                    width: 230px;
+                }
+
+                @include onMobile {
+                    width: 180px;
+                }
 
                 &__top {
-                    padding: 14px 0;
                     margin-bottom: 15px;
 
                     border: 1.5px solid #5F18F1;
                     border-radius: 6px;
                     background-color: rgba(12, 0, 46, 1);
+
+                    @include onDesktop {
+                        padding: 14px 0;
+                    }
+
+                    @include onMobile {
+                        padding: 8px 0;
+                    }
                 }
             }
         }
