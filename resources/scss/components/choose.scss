@@ -1,16 +1,44 @@
 .choose {
-    padding: 0 2vw 0 105px;
 
-    gap: 5vw;
+    @include onDesktop {
+        flex-direction: row;
+        align-items: center;
+        gap: 5vw;
+
+        padding: 0 2vw 0 105px;
+    }
+
+    @include onMobile {
+        flex-direction: column-reverse;
+
+        padding: 0 3.2vw 0 48px;
+        margin-bottom: 48px;
+    }
 
     &__list {
-        gap: 37px;
+        @include onDesktop {
+            gap: 37px;
+        }
+
+        @include onMobile {
+            gap: 25px;
+        }
 
         &__item {
-            width: 40vw;
             display: flex;
             flex-direction: row;
-            align-items: center;
+
+            @include onDesktop {
+                width: 40vw;
+
+                align-items: center;
+            }
+
+            @include onMobile {
+                width: 100%;
+
+                align-items: start;
+            }
 
             &__reason {
                 letter-spacing: 2px;
@@ -19,23 +47,41 @@
                 -webkit-text-fill-color: transparent;
 
                 writing-mode: vertical-rl;
-                transform: rotate(180deg)
+                transform: rotate(180deg);
+
+                @include onMobile {
+                    display: none;
+                }
             }
 
             &__num {
-                padding: 23px 12px;
-                margin-right: 25px;
-
-                font-size: 3.3vw;
-
                 background: $violet;
 
                 border-radius: 3px;
+
+                @include onDesktop {
+                    padding: 23px 12px;
+                    margin-right: 25px;
+
+                    font-size: 3.3vw;
+                }
+
+                @include onMobile {
+                    padding: 8px 11px;
+                    font-size: 30px;
+                    line-height: 136.6%;
+
+                    margin-right: 15px;
+                }
             }
 
             &__text {
                 &__title {
                     margin-bottom: 5px;
+
+                    @include onMobile {
+                        font-size: 18px;
+                    }
                 }
             }
         }
@@ -44,16 +90,27 @@
     &__right {
         width: 100%;
 
+        @include onMobile {
+            margin-bottom: 25px;
+        }
+
         &__title {
             &--token {
-                text-align: end;
                 line-height: 100%;
+
+                @include onDesktop {
+                    text-align: end;
+                }
             }
         }
 
         &__img {
             margin: 50px 20% 0;
-            width: 580px;
+            width: 30vw;
+
+            @include onMobile {
+                display: none;
+            }
         }
     }
 }

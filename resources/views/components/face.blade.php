@@ -1,20 +1,18 @@
-<section id="face" class="face d-flex flex-row align-items-center justify-content-between">
+<section id="face" class="face d-flex align-items-center justify-content-between">
     <div class="face__text">
-        <div class="face__text__top d-flex flex-row align-items-center">
+        <div class="face__text__top">
             <h2 class="face__text__top__title title-main">
-                Rating
+                Rating <br> <span class="face__text__top__title--crypto title-main title-main--stroke">Crypto Token</span>
             </h2>
 
             <p class="face__text__top__desc desc">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
             </p>
+
         </div>
 
-        <h2 class="face__text__title face__text__title--crypto title-main title-main--stroke">
-            Crypto Token
-        </h2>
 
-        <div class="face__text__table d-grid">
+        <div class="face__text__table">
             <div class="face__text__table__item">
                 <h3 class="face__text__table__item__title title-little">
                     Secure Payment
@@ -89,12 +87,13 @@
             const scrollPosition = window.scrollY;
 
             const triggerDiv = document.getElementById('face');
-            const triggerDivPosition = triggerDiv.offsetTop;
+            const triggerDivPosition = triggerDiv.offsetTop + window.innerHeight * 0.5;
 
             const opacity = 0.79 - (scrollPosition - triggerDivPosition) / triggerDiv.clientHeight;
 
             const limitedOpacity = Math.min(1, Math.max(0, opacity));
 
+            console.log(triggerDivPosition);
             if (limitedOpacity === 1 || limitedOpacity <= 0.2) {
                 faceWhite.style.opacity = 0;
                 faceMain.style.opacity = 0;

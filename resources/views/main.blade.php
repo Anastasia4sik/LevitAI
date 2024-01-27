@@ -360,7 +360,6 @@
         <x-about />
     </section>
 
-
     <x-about--big :array="$array"/>
 
     <x-rating />

@@ -14,25 +14,6 @@
     });
 
 document.addEventListener('DOMContentLoaded', function() {
-    // ShowMore/ShowLess
-    const blocks = document.querySelectorAll('.market__table__body__row--hide');
-
-    blocks.forEach((block) => {
-        const button = document.querySelector('.market__btn');
-
-        button.addEventListener('click', function() {
-            if (block.style.display != 'table-row') {
-                block.style.display = 'table-row';
-
-                button.innerHTML = 'Show less <img src="src/img/icons/arrows/arrow-up.svg" alt="Show less">';
-            } else {
-                block.style.display = 'none';
-
-                button.innerHTML = 'Show more <img src="src/img/icons/arrows/arrow-down.svg" alt="Show more">';
-            }
-        });
-    });
-
     //qna
     const qnaBtns = document.querySelectorAll('.qna__block__content__btns__item');
 

@@ -1,4 +1,4 @@
-<section class="choose d-flex flex-row align-items-center">
+<section class="choose d-flex">
     <div class="choose__list d-flex flex-column">
         <div class="choose__list__item">
             <h3 class="choose__list__item__reason title-little">
