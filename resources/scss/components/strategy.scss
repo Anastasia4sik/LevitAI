@@ -1,15 +1,36 @@
 .strategy {
-    padding: 13.8vh 0 0 105px;
-    margin-bottom: 56px;
-
-    background-image: url('../../../public/src/img/bc/bc-strategy.png');
-
-    background-position: left top;
     background-size: auto;
+
+    position: relative;
+
+    @include onDesktop {
+        padding: 13.8vh 0 0 105px;
+        margin-bottom: 56px;
+
+        background-image: url('../../../public/src/img/bc/bc-strategy.png');
+
+        background-position: left top;
+    }
+
+    @include onMobile {
+        padding: 90px 3.2vw 0 48px;
+
+        background-image: url('../../../public/src/img/bc/bc-strategy-mobile.png');
+
+        background-position: right -45px;
+    }
 
     &__top {
         padding-right: 2vw;
         margin-bottom: 56px;
+
+        @include onDesktop {
+            display: flex;
+        }
+
+        @include onMobile {
+            display: none;
+        }
 
         &__big {
             gap: 22px;
@@ -18,13 +39,48 @@
                 width: 395px;
             }
         }
+
+        &__mob {
+            @include onDesktop {
+                display: none;
+            }
+
+            @include onMobile {
+                display: block;
+            }
+
+            &__title {
+                margin-bottom: 15px;
+
+                font-size: 40px;
+            }
+
+            &__desc {
+                margin-bottom: 15px;
+            }
+        }
     }
 
     &__content {
+        @include onDesktop {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        @include onMobile {
+            flex-direction: column;
+        }
+
         &__list {
             &__item {
                 &:not(:last-of-type) {
-                    margin-bottom: 30px;
+                    @include onDesktop {
+                        margin-bottom: 30px;
+                    }
+
+                    @include onMobile {
+                        margin-bottom: 15px;
+                    }
                 }
 
                 &:nth-child(1) .strategy__content__list__item__line__color {
@@ -52,14 +108,27 @@
                 }
 
                 &__text {
-                    margin-bottom: 10px;
+                    @include onDesktop {
+                        margin-bottom: 10px;
+                    }
+
+                    @include onMobile {
+                        margin-bottom: 5px;
+                    }
                 }
 
                 &__line {
                     height: 40px;
-                    width: 49.5vw;
 
                     background-color: rgba(255, 255, 255, 0.05);
+
+                    @include onDesktop {
+                        width: 49.5vw;
+                    }
+
+                    @include onMobile {
+                        width: 84vw;
+                    }
 
                     &__color {
                         height: 100%;
@@ -93,7 +162,19 @@
     }
 
     &__anim {
-        width: 30.2vw;
+        @include onDesktop {
+            width: 30.2vw;
+        }
+
+        @include onMobile {
+            width: 84vw;
+            height: 84vw;
+
+            max-width: 530px;
+            max-height: 530px;
+
+            margin-bottom: 25px;
+        }
 
         position: relative;
 
@@ -106,10 +187,7 @@
 
             width: 100%;
 
-            animation-name: rotate;
-            animation-iteration-count: infinite;
-            animation-duration: 5s;
-            animation-timing-function: linear;
+            animation: rotate 5s infinite linear;
         }
     }
 }
