@@ -40,10 +40,6 @@
 
             font-size: 20px;
             line-height: 140%;
-
-            @include onMobile {
-                font-size: 18px;
-            }
         }
 
         &__text {

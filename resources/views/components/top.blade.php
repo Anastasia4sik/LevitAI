@@ -4,7 +4,7 @@
     </h1>
 
     <div class="top__desc d-flex flex-column">
-        <h3 class="top__desc__title">
+        <h3 class="top__desc__title title-little">
             NFT Metaverse for Coin
         </h3>
 

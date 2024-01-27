@@ -10,11 +10,11 @@
     </div>
 
     <div class="market__last d-flex flex-row align-items-center">
-        <p class="market__last__num desc">
+        <p class="market__last__num title-little">
             +0.36%
         </p>
 
-        <p class="market__last__text desc">
+        <p class="market__last__text title-little">
             Market up in the last 24 hours
         </p>
     </div>
@@ -113,7 +113,7 @@
 
                 <div class="market__mob__info flex-column">
                     <div class="market__mob__info__row d-flex flex-row align-items-center">
-                        <h5 class="market__mob__info__row__title">
+                        <h5 class="market__mob__info__row__title title-little">
                             Available:
                         </h5>
 
@@ -123,7 +123,7 @@
                     </div>
 
                     <div class="market__mob__info__row d-flex flex-row align-items-center">
-                        <h5 class="market__mob__info__row__title">
+                        <h5 class="market__mob__info__row__title title-little">
                             Gainers:
                         </h5>
 
@@ -139,7 +139,7 @@
                     </div>
 
                     <div class="market__mob__info__row d-flex flex-row align-items-center">
-                        <h5 class="market__mob__info__row__title">
+                        <h5 class="market__mob__info__row__title title-little">
                             Losers:
                         </h5>
 
@@ -149,7 +149,7 @@
                     </div>
 
                     <div class="market__mob__info__row d-flex flex-row align-items-center">
-                        <h5 class="market__mob__info__row__title">
+                        <h5 class="market__mob__info__row__title title-little">
                             T.Supply:
                         </h5>
 
@@ -159,7 +159,7 @@
                     </div>
 
                     <div class="market__mob__info__row d-flex flex-row align-items-center">
-                        <h5 class="market__mob__info__row__title">
+                        <h5 class="market__mob__info__row__title title-little">
                             24h Volume:
                         </h5>
 
@@ -172,7 +172,7 @@
         @endforeach
     </div>
 
-    <button class="market__btn desc d-flex flex-row align-items-center">
+    <button class="market__btn d-flex flex-row align-items-center title-little">
         Show more <img src="{{asset('src/img/icons/arrows/arrow-down.svg')}}" alt="Show more">
     </button>
 
