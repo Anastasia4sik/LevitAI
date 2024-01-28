@@ -1,6 +1,6 @@
 .teamPage {
     @include onDesktop {
-        background-image: url('../../../../public/src/img/bc/bc-teamPage.png');
+        background-image: url('/src/img/bc/bc-teamPage.png');
 
         background-position: top;
         background-size: contain;
@@ -15,7 +15,7 @@
         @include onMobile {
             padding: 0 3.2vw 180px 48px;
 
-            background-image: url('../../../../public/src/img/bc/bc-teamPage-mobile.png');
+            background-image: url('/src/img/bc/bc-teamPage-mobile.png');
 
             background-position: top;
             background-size: cover;
@@ -23,7 +23,7 @@
     }
 
     &__block {
-        background-image: url('../../../../public/src/img/bc/bc-teamPage-swipermobile.png');
+        background-image: url('/src/img/bc/bc-teamPage-swipermobile.png');
 
         background-position: center;
         background-size: cover;

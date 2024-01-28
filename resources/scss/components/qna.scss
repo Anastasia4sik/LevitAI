@@ -1,7 +1,7 @@
 .qna {
     padding: 104px 0 200px 105px;
 
-    background-image: url('../../../public/src/img/bc/bc-qna.png');
+    background-image: url('/src/img/bc/bc-qna.png');
 
     background-position: right top;
     background-size: auto;
@@ -9,7 +9,7 @@
     @include onMobile {
         padding: 23px 3.2vw 10px 48px;
 
-        background-image: url('../../../public/src/img/bc/bc-qna-mobile.png');
+        background-image: url('/src/img/bc/bc-qna-mobile.png');
     }
 
     &__top {
