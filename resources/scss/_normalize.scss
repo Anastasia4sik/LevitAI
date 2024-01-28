@@ -91,26 +91,54 @@ h1, h2, h3, p {
 }
 
 .topPage {
-    height: 100vh;
-    width: 100vw;
-
     margin: 0 auto;
 
-
     background-size: cover;
+
+    @include onDesktop {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    @include onMobile {
+        width: 100%;
+        text-align: center;
+    }
 
     &__top {
         height: max-content;
         width: max-content;
         margin-bottom: 84px;
 
+        @include onMobile {
+            margin-top: 170px;
+            margin-bottom: 85px;
+
+            width: 100%;
+            flex-direction: column;
+        }
+
         &__text {
+            flex-direction: row;
+
+            @include onMobile {
+                flex-direction: column;
+            }
             &__title {
                 margin-right: 35px;
+
+                @include onMobile {
+                    margin-bottom: 5px;
+                    margin-right: 0;
+                }
             }
 
             &__desc {
                 width: 15vw;
+
+                @include onMobile {
+                    width: 100%;
+                }
             }
         }
     }
