@@ -4,16 +4,58 @@
     background-image: url('../../../public/src/img/bc/bc-qna.png');
 
     background-position: right top;
-    background-size: initial;
+    background-size: auto;
+
+    @include onMobile {
+        padding: 23px 3.2vw 10px 48px;
+
+        background-image: url('../../../public/src/img/bc/bc-qna-mobile.png');
+    }
 
     &__top {
         margin-bottom: 75px;
 
+        @include onDesktop {
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        @include onMobile {
+            flex-direction: column;
+
+            margin-bottom: 25px;
+        }
+
         &__first {
-            gap: 36px;
+            position: relative;
+
+            @include onDesktop {
+                flex-direction: row;
+                align-items: center;
+            }
+
+            @include onMobile {
+                flex-direction: column;
+            }
 
             &__desc {
-                width: 395px;
+                @include onDesktop {
+                    position: absolute;
+
+                    width: 395px;
+                    top: 4vh;
+                    left: 32vw;
+                }
+            }
+
+            &__title {
+                @include onMobile {
+                    margin-bottom: 15px;
+
+                    font-size: 40px;
+                    line-height: 100%;
+                }
             }
         }
     }
@@ -24,17 +66,32 @@
         &__content {
             width: 67vw;
 
+            @include onMobile {
+              width: 100%;
+            }
+
             &__btns {
                 margin-bottom: 50px;
-                gap: 11px;
+                gap: 10px;
+
+                @include onMobile {
+                  flex-wrap: wrap;
+
+                  margin-bottom: 15px;
+                }
 
                 &__item {
                     border-radius: 100px;
                     padding: 14px 27px;
                     transition: all 0.8s ease-in-out;
 
+                    @include onMobile {
+                      padding: 14px 25px;
+                    }
+
                     &:hover {
                         cursor: pointer;
+
                         color: $main-bc;
                         background-color: #ffffff79;
                     }
@@ -42,13 +99,11 @@
                     &.active {
                         color: $main-bc;
                         background-color: $white;
-
                     }
                 }
             }
 
             &__list {
-
                 &__group {
                     transition: transform 1.5s cubic-bezier(.2,-0.39,.11,1.54), opacity 0.3s ease-in-out;
                 }
@@ -69,6 +124,14 @@
 
                     &:not(:last-of-type) {
                         margin-bottom: 40px;
+
+                        @include onMobile {
+                          margin-bottom: 25px;
+                        }
+                    }
+
+                    @include onMobile {
+                      padding-bottom: 25px;
                     }
 
                     &__title {
@@ -76,6 +139,12 @@
 
                         font-size: 24px;
                         line-height: 137.5%;
+
+                        @include onMobile {
+                          margin-bottom: 5px;
+
+                          font-size: 18px;
+                        }
                     }
 
                     &__desc {
@@ -86,5 +155,10 @@
             }
         }
 
+        &__img {
+            @include onMobile {
+                display: none;
+            }
+        }
     }
 }

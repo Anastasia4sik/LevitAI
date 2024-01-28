@@ -1,22 +1,18 @@
 <section class="qna">
     <div class="qna__top">
-        <div class="qna__top__first d-flex flex-row align-items-center">
-            <h2 class="qna__top__first__title title-main title-main--stroke">
-                Frequently
+        <div class="qna__top__first d-flex">
+            <h2 class="qna__top__first__title title-main">
+                <span class="title-main--stroke title-main">Frequently</span><br>Asked Question
             </h2>
 
             <p class="qna__top__first__desc desc">
                 Monotonectally productivate virtual benefits vis-a-vis clicks-and-mortar lead ship. Seamlessly generate user friendly opportunitie after principle-centered e-markets. Proactively visualize functional
             </p>
         </div>
-
-        <h2 class="qna__top__title title-main">
-            Asked Question
-        </h2>
     </div>
 
     <div
-        class="qna__block d-flex flex-row align-items-center justify-content-between"
+        class="qna__block d-flex"
         @if(request()->is('faq'))
             style="
                 background-image: url({{ asset('src/img/bc/bc-gna-faq.png')}});
