@@ -4,10 +4,6 @@
         style="
             background-image: none;
         "
-    @else
-        style="
-            background-image: url('{{ asset('/src/img/bc/bc-docs.png') }}');
-        "
     @endif
 >
     <div
@@ -15,10 +11,6 @@
         @if(request()->is('documentation'))
             style="
                 margin-bottom: 0;
-            "
-        @else
-            style="
-                margin-bottom: 25px;
             "
         @endif
     >
@@ -32,8 +24,6 @@
 
         <div class="
             docs__top__block
-            flex-row
-            align-items-center
             @if(request()->is('documentation'))
                 d-none
             @else
@@ -56,11 +46,13 @@
         <div class="docs__content__list">
             @foreach($docsInfo as $key => $doc)
                 <div class="docs__content__list__item d-flex flex-row align-items-center">
-                    <img src="{{ asset('src/img/icons/docs-icon.png')}}" alt="First Doc" class="docs__content__list__item__img">
+                    <div class="docs__content__list__item__start d-flex flex-row align-items-center">
+                        <img src="{{ asset('src/img/icons/docs-icon.png')}}" alt="First Doc" class="docs__content__list__item__img">
 
-                    <p class="docs__content__list__item__title desc">
-                        {{ $doc['name'] }}
-                    </p>
+                        <p class="docs__content__list__item__title desc">
+                            {{ $doc['name'] }}
+                        </p>
+                    </div>
 
                     <p class="docs__content__list__item__date desc">
                         {{ $doc['year'] }}
@@ -72,10 +64,10 @@
 
                     <div class="docs__content__list__item__line"></div>
 
-                    <button class="docs__content__list__item__btn downloadDoc d-flex flex-row align-items-center" data-name="{{ $doc['name']}}">
+                    <button class="docs__content__list__item__btn downloadDoc flex-row align-items-center" data-name="{{ $doc['name']}}">
                         <img src="{{ asset('src/img/icons/arrows/arrow-download.svg')}}" alt="Download file" class="docs__content__list__item__btn__img">
 
-                        Document
+                        <p class="docs__content__list__item__btn__text desc">Document</p>
                     </button>
                 </div>
             @endforeach

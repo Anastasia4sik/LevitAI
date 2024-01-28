@@ -1,27 +1,88 @@
 .docs {
     padding-left: 105px;
 
-
+    background-image: url('../../../public/src/img/bc/bc-docs.png');
     background-position: center top;
     background-size: contain;
 
+    @include onMobile {
+        padding: 0 3.2vw 0 48px;
+
+        background: none;
+    }
+
     &__top {
+        @include onMobile {
+            padding-top: 90px;
+            padding-bottom: 25px;
+
+            background-image: url('../../../public/src/img/bc/bc-docs-mobileDots.png');
+            background-position: center top;
+            background-size: cover;
+        }
+
+        &__title {
+            @include onMobile {
+                font-size: 40px;
+                line-height: 100%;
+            }
+        }
+
         &__block {
-            gap: 40px;
+            @include onDesktop {
+                margin-bottom: 25px;
+
+                gap: 40px;
+                flex-direction: row;
+                align-items: center;
+            }
+
+            @include onMobile {
+                flex-direction: column-reverse;
+            }
+
+            &__title {
+                @include onMobile {
+                    margin-bottom: 15px;
+
+                    font-size: 40px;
+                    line-height: 100%;
+                }
+            }
 
             &__desc {
                 width: 388px;
+
+                @include onMobile {
+                    width: 100%;
+                }
             }
         }
     }
 
     &__content {
+        @include onMobile {
+            padding-bottom: 70px;
+
+            background-image: url('../../../public/src/img/bc/bc-docs-mobile.png');
+            background-position: center top;
+            background-size: cover;
+        }
+
         &__img {
             width: 39vw;
+
+            @include onMobile {
+                display: none;
+            }
         }
 
         &__list {
             width: 49.4vw;
+
+            @include onMobile {
+                width: 100%;
+            }
 
             &__item {
                 height: 59px;
@@ -32,27 +93,50 @@
                 border-radius: 5px 0px 0px 5px;
                 background: rgba(255, 255, 255, 0.05);
 
+                @include onMobile {
+                    padding: 15px 10px;
+
+                    justify-content: space-between;
+                }
+
                 &:not(:last-of-type) {
                     margin-bottom: 15px;
                 }
 
                 &__img {
                     margin-right: 10px;
+
+                    @include onMobile {
+                        margin-right: 5px;
+                    }
                 }
 
                 &__title {
-                    display: flex;
-
                     margin-right: 40px;
                     width: 30%;
+                    display: block ruby;
+
+                    @include onMobile {
+                        width: 81px;
+
+                        margin-right: 0;
+                    }
                 }
 
                 &__date {
                     margin-right: 15px;
+
+                    @include onMobile {
+                        margin-right: 0;
+                    }
                 }
 
                 &__lang {
                     margin-right: 72px;
+
+                    @include onMobile {
+                        margin-right: 0;
+                    }
                 }
 
                 &__line {
@@ -61,6 +145,12 @@
 
                     border-bottom: 1.5px dashed $white;
                     opacity: .15;
+
+                    display: flex;
+
+                    @include onMobile {
+                        display: none;
+                    }
                 }
 
                 &__btn {
@@ -69,6 +159,17 @@
                     gap: 7px;
                     background-color: transparent;
                     border: none;
+                    display: flex;
+
+                    @include onMobile {
+                        margin-right: 0;
+                    }
+
+                    &__text {
+                        @include onMobile {
+                            display: none;
+                        }
+                    }
                 }
             }
         }
