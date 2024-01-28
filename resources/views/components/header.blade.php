@@ -1,4 +1,4 @@
-<header id="head" class="header flex-row justify-content-between">
+<header class="header flex-row justify-content-between">
   <div class="header__dropdown">
     <div class="header__dropdown__label align-items-center">
       <img class="header__dropdown__label__img align-items-center"

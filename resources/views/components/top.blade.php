@@ -1,4 +1,4 @@
-<section class="top">
+<section id="head" class="top">
     <h1 class="top__title">
         WelCome to ICO LEVITAI
     </h1>

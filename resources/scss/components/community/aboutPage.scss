@@ -3,18 +3,92 @@
 
     background-size: contain;
     background-position: center top;
-    &__top {
-        padding-left: 105px;
-        margin-bottom: 100px;
 
-        height: 85vh;
+    &__first {
+        @include onDesktop {
+            gap: 50px;
+
+            flex-direction: row;
+        }
+
+        @include onMobile {
+            padding-top: 15px;
+            margin-bottom: 79px;
+
+            flex-direction: column;
+        }
+    }
+
+    &__first,
+    &__content {
+        @include onMobile {
+            padding-right: 3.2vw;
+            padding-left: 48px;
+        }
+    }
+
+    &__top {
+        @include onDesktop {
+            padding-left: 105px;
+            margin-bottom: 100px;
+
+            height: 85vh;
+        }
+
+        &__mob {
+            &__title,
+            &__desc {
+                @include onDesktop {
+                    display: none;
+                }
+            }
+
+            @include onMobile {
+                &__title {
+                    margin-bottom: 5px;
+                }
+
+                &__desc {
+                    margin-bottom: 25px;
+                }
+            }
+
+            &__img {
+                @include onDesktop {
+                    display: none;
+                }
+
+                @include onMobile {
+                    width: 100%;
+                    max-width: 340px;
+
+                }
+            }
+        }
+
+        &__title {
+            @include onMobile {
+                display: none;
+            }
+        }
 
 
         &__bottom {
             gap: 35px;
+            display: flex;
+
+            @include onMobile {
+                display: none;
+            }
 
             &__desc {
                 width: 33vw;
+            }
+        }
+
+        &__img {
+            @include onMobile {
+                display: none;
             }
         }
     }
@@ -22,21 +96,43 @@
     &__content {
         padding: 0 2vw 0 105px;
 
-
         background-image: url('/src/img/bc/bc-logo-aboutPage.png');
 
         background-size: auto ;
         background-position: center;
 
+        @include onMobile {
+            padding: 11px 3.2vw 0 48px;
+            background-size: 26vw;
+            background-position: right -11px;
+        }
+
         &__block {
             gap: 3.5vw;
+            flex-direction: row;
 
             &:first-of-type {
                 margin-bottom: 100px;
+
+                @include onMobile {
+                    flex-direction: column-reverse;
+                    margin-bottom: 25px;
+                }
+            }
+
+            &:not(:first-of-type) {
+                @include onMobile {
+                    flex-direction: column;
+                }
             }
 
             &__img {
                 width: 35.5vw;
+
+                @include onMobile {
+                    width: 100%;
+                    max-width: 687px;
+                }
             }
 
             &__text {
@@ -45,6 +141,11 @@
 
                     font-size: 5vw;
                     text-transform: uppercase;
+
+                    @include onMobile {
+                        font-size: 37px;
+                        margin-bottom: 15px;
+                    }
                 }
 
                 &__undertitle {
@@ -52,12 +153,20 @@
 
                     font-size: 24px;
                     text-transform: uppercase;
+
+                    @include onMobile {
+                        margin-bottom: 5px;
+                        font-size: 18px;
+                    }
                 }
 
                 &__desc {
                     line-height: 155%;
-                }
 
+                    @include onMobile {
+                        margin-bottom: 25px;
+                    }
+                }
             }
         }
     }

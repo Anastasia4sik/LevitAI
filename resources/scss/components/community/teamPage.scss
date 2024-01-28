@@ -1,25 +1,73 @@
 .teamPage {
-    background-image: url('/src/img/bc/bc-teamPage.png');
+    @include onDesktop {
+        background-image: url('/src/img/bc/bc-teamPage.png');
 
-    background-position: top top;
-    background-size: contain;
+        background-position: top;
+        background-size: contain;
+    }
+
+    @include onMobile {
+        background-position: center;
+        background-size: cover;
+    }
+
+    &__top {
+        @include onMobile {
+            padding: 0 3.2vw 180px 48px;
+
+            background-image: url('/src/img/bc/bc-teamPage-mobile.png');
+
+            background-position: top;
+            background-size: cover;
+        }
+    }
+
+    &__block {
+        background-image: url('/src/img/bc/bc-teamPage-swipermobile.png');
+
+        background-position: center;
+        background-size: cover;
+    }
 
     &__experts {
         padding: 0 2vw 0 105px;
         margin-bottom: 75px;
+
+        @include onMobile {
+            padding: 0 3.2vw 0 48px;
+            margin-bottom: 90px;
+        }
+
+        &__undertitle {
+            @include onMobile {
+                margin-bottom: 5px;
+            }
+        }
 
         &__title {
             display: block;
 
             width: 48vw;
             margin-bottom: 75px;
+
+            @include onMobile {
+                width: 100%;
+                margin-bottom: 15px;
+            }
         }
 
         &__swiper {
             position: relative;
 
+            &__card.swiper-slide {
+                width: 382px;
+
+                @include onMobile {
+                    width: 229px;
+                }
+            }
+
             &__card {
-                width: 382px !important;
                 padding-bottom: 75px;
 
                 &__img {
@@ -27,14 +75,34 @@
                     height: 534px;
 
                     margin-bottom: 20px;
+
+                    @include onMobile {
+                        height: 100%;
+                        height: 267px;
+                        max-width: fit-content;
+
+                        margin: 0 auto 25px;
+
+                        object-fit: cover;
+                    }
                 }
 
                 &__name {
                     margin-bottom: 15px;
+
+                    @include onMobile {
+                        font-size: 30px;
+                    }
                 }
 
                 &__position {
                     margin-bottom: 10px;
+
+                    text-transform: uppercase;
+
+                    @include onMobile {
+                        margin-bottom: 5px;
+                    }
                 }
 
                 &__desc {
@@ -48,10 +116,31 @@
                     text-overflow: ellipsis;
                     -webkit-line-clamp: 3;
                     white-space: normal;
+
+                    @include onMobile {
+                        margin-bottom: 15px;
+                    }
                 }
 
                 &__btns {
                     gap: 15px;
+
+                    &__btn {
+                        gap: 20px;
+
+                        @include onMobile {
+                            gap: 10px;
+                        }
+                    }
+
+                    &__item {
+                        img {
+                            @include onMobile {
+                                width: 44px;
+                                height: 44px;
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -61,52 +150,25 @@
         padding: 0 2vw 0 105px;
         margin-bottom: 100px;
 
+        @include onMobile {
+            padding: 0 3.2vw 0 48px;
+            margin-bottom: 90px;
+        }
+
         &__title {
             display: block;
 
             width: 48vw;
             margin-bottom: 75px;
+
+            @include onMobile {
+                width: 100%;
+                margin-bottom: 15px;
+            }
         }
 
         &__swiper {
             position: relative;
-
-            &__card {
-                width: 382px !important;
-                padding-bottom: 75px;
-
-                &__img {
-                    width: 100%;
-                    height: 534px;
-
-                    margin-bottom: 20px;
-                }
-
-                &__name {
-                    margin-bottom: 15px;
-                }
-
-                &__position {
-                    margin-bottom: 10px;
-                }
-
-                &__desc {
-                    width: 100%;
-
-                    margin-bottom: 30px;
-
-                    display: -webkit-box;
-                    -webkit-box-orient: vertical;
-                    overflow: hidden;
-                    text-overflow: ellipsis;
-                    -webkit-line-clamp: 3;
-                    white-space: normal;
-                }
-
-                &__btns {
-                    gap: 15px;
-                }
-            }
         }
     }
 }
@@ -116,6 +178,8 @@ div.teamPage__experts__swiper__pagination.swiper-pagination,
 div.teamPage__advisor__swiper__pagination.swiper-pagination {
     & .swiper-pagination-bullet {
         opacity: 1;
+        width: 15px;
+        height: 15px;
 
         &-active {
             background-color: white;

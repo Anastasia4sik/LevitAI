@@ -109,12 +109,13 @@
 
         <x-header />
 
+        <div class="aboutPage__first d-flex align-items-center justify-content-between">
             <div class="aboutPage__top d-flex flex-column justify-content-center">
                 <h2 class="aboutPage__top__title title-main">
                     About
                 </h2>
 
-                <div class="aboutPage__top__bottom d-flex flex-row align-items-center">
+                <div class="aboutPage__top__bottom flex-row align-items-center">
                     <h2 class="aboutPage__top__bottom__title title-main title-main--stroke">
                         Us
                     </h2>
@@ -123,10 +124,22 @@
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt labore dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt labore dolore magna aliqua.
                     </p>
                 </div>
+
+                <h2 class="aboutPage__top__mob__title title-main">
+                    About <span class="title-main title-main--stroke">Us</span>
+                </h2>
+
+                <p class="aboutPage__top__mob__desc desc">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt labore dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt labore dolore magna aliqua.
+                </p>
             </div>
 
+            <img src="{{ asset('src/img/photo/aboutPage.png')}}" alt="Image" class="aboutPage__top__img">
+            <img src="{{ asset('src/img/photo/aboutPage-mobile.png')}}" alt="Image" class="aboutPage__top__mob__img">
+        </div>
+
             <div class="aboutPage__content">
-                <div class="aboutPage__content__block d-flex flex-row align-items-center justify-content-between">
+                <div class="aboutPage__content__block d-flex align-items-center justify-content-between">
                     <img src="{{ asset('src/img/photo/about/photo1.jpg')}}" alt="" class="aboutPage__content__block__img">
 
                     <div class="aboutPage__content__block__text">
@@ -144,7 +157,7 @@
                     </div>
                 </div>
 
-                <div class="aboutPage__content__block d-flex flex-row align-items-center justify-content-between">
+                <div class="aboutPage__content__block d-flex align-items-center justify-content-between">
                     <div class="aboutPage__content__block__text">
                         <h3 class="aboutPage__content__block__text__title title-main">
                             ICO LevitAI
@@ -162,13 +175,13 @@
                     <img src="{{ asset('src/img/photo/about/photo2.jpg')}}" alt="" class="aboutPage__content__block__img">
                 </div>
             </div>
-        </section>
+    </section>
 
-        <x-team />
+    <x-team />
 
-        <x-qna :qnaInfo="$qnaInfo" />
+    <x-qna :qnaInfo="$qnaInfo" />
 
-        <x-contact />
+    <x-contact />
 
-        <x-footer />
+    <x-footer />
 </x-base>

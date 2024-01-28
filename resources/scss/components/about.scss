@@ -1,9 +1,6 @@
 .about {
-    @include onDesktop {
-    }
 
     @include onMobile {
-
         padding: 0 3.2vw 0 48px;
         margin-bottom: 11px;
     }

@@ -28,12 +28,6 @@
             font-size: 35px;
             margin-bottom: 15px;
         }
-
-        &--complete {
-            @include onMobile {
-                font-size: 40px;
-            }
-        }
     }
 
     &__desc {

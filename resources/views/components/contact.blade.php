@@ -27,13 +27,13 @@
     </div>
 
     <form action="#" class="contact__form d-flex flex-column align-items-center">
-        <div class="contact__form__group d-flex flex-row align-items-row">
+        <div class="contact__form__group d-flex align-items-center">
             <input type="text" placeholder="Name" name="Name" class="contact__form__input contact__form__group__input">
 
             <input type="email" placeholder="Email" name="Email" class="contact__form__input contact__form__group__input">
         </div>
 
-        <div class="contact__form__group d-flex flex-row align-items-row">
+        <div class="contact__form__group d-flex align-items-center">
             <input type="phone" placeholder="Number" name="Number" class="contact__form__input contact__form__group__input">
 
             <input type="url" placeholder="Website" name="Website" class="contact__form__input contact__form__group__input">
@@ -45,6 +45,7 @@
             type="submit"
             class="
                 complete__btn
+                contact__form__btn
                 d-flex
                 flex-row
                 align-items-center
@@ -53,7 +54,6 @@
             style="
                 gap: 101px;
                 font-size: 20px;
-                width: 360px;
             "
         >
             <img

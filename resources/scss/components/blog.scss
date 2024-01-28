@@ -1,10 +1,20 @@
 .blog {
-    padding: 176px 0 209px 105px;
+    @include onDesktop {
+        padding: 176px 0 209px 105px;
 
+        background-image: url('/src/img/bc/bc-blog.png');
+        background-position: center top;
+        background-size: cover;
+    }
 
+    @include onMobile {
+        padding: 90px 3.2vw 0 48px;
+        margin-bottom: 67px;
 
-    background-position: center top;
-    background-size: cover;
+        background-image: url('/src/img/bc/bc-blog-mobile.png');
+        background-position: right top;
+        background-size: auto;
+    }
 
     &__top {
         margin-bottom: 75px;
@@ -20,39 +30,109 @@
         &__second {
             gap: 37px;
         }
+
+        &__first,
+        &__second {
+            @include onDesktop {
+                display: flex;
+            }
+
+            @include onMobile {
+                display: none;
+            }
+        }
+
+        &__mobile {
+            @include onDesktop {
+                display: none;
+            }
+
+            @include onMobile {
+                display: block;
+            }
+
+            margin-bottom: 25px;
+
+            &__title {
+                margin-bottom: 15px;
+            }
+
+            &__desc {
+                margin-bottom: 25px;
+            }
+        }
     }
 
     &__swiper {
         position: relative;
 
-        &__slide {
+        &__slide.swiper-slide {
             padding-bottom: 75px;
-            width: 733px !important;
+            width: 733px;
 
+            @include onMobile {
+                width: 82.9vw;
+                padding-bottom: 40px;
+            }
+        }
+
+        &__slide {
             img {
                 margin-bottom: 35px;
                 width: 100%;
                 height: 412px;
 
                 object-fit: cover;
+
+                @include onMobile {
+                    margin-bottom: 15px;
+                    height: 100%;
+                }
             }
 
             &__title {
                 margin-bottom: 15px;
 
                 font-size: 24px;
+
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                -webkit-line-clamp: 1;
+                white-space: normal;
+
+                @include onMobile {
+                    margin-bottom: 10px;
+                    font-size: 18px;
+                }
             }
 
             &__desc {
                 opacity: 0.75;
+
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                -webkit-line-clamp: 3;
+                white-space: normal;
+
+                @include onMobile {
+                    -webkit-line-clamp: 2;
+                }
             }
         }
     }
 }
 
 div.blog__swiper__pagination.swiper-pagination {
+    max-width: 100%;
+
     & .swiper-pagination-bullet {
         opacity: 1;
+        width: 15px;
+        height: 15px;
 
         &-active {
             background-color: white;

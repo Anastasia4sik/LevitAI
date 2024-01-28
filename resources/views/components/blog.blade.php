@@ -106,12 +106,11 @@
         <section
             class="blog"
             style="
-                padding: 176px 0 209px 105px;
-                background-image: url('{{ asset('src/img/bc/bc-blog.png')}}');
+                
             "
         >
           <div class="blog__top">
-            <div class="blog__top__first d-flex flex-row align-items-center">
+            <div class="blog__top__first flex-row align-items-center">
               <h2 class="blog__top__first__title title-main">
                 Recent
               </h2>
@@ -122,7 +121,7 @@
               </p>
             </div>
 
-            <div class="blog__top__second d-flex flex-row align-items-center">
+            <div class="blog__top__second flex-row align-items-center">
               <h2 class="blog__top__second__title title-main title-main--stroke">
                 Blog Post
               </h2>
@@ -145,6 +144,44 @@
 
                 Go to all posts
               </a>
+            </div>
+
+            <div class="blog__top__mobile">
+                <h2 class="blog__top__mobile__title title-main">
+                    Recent <br><span class="title-main title-main--stroke">Blog Post</span>
+                </h2>
+
+                <p class="blog__top__mobile__desc desc">
+                    Monotonectally productivate virtual benefits vis-a-vis clicks-and-mortar lead ship. Seamlessly generate
+                    user friendly opportunitie after principle-centered e-markets. Proactively visualize functional
+                </p>
+
+                <a
+                    href="/blog"
+                    class="
+                        complete__btn
+                        d-flex
+                        flex-row
+                        align-items-center
+                        button
+                    "
+                    style="
+                        gap: 20px;
+                        font-size: 16px;
+                        width: 209px;
+                    "
+                >
+                    <img
+                        src="{{asset('src/img/icons/arrows/arrow-black.svg')}}"
+                        alt="Read More"
+                        class="complete__btn__img"
+                        style="
+                            padding: 16px;
+                        "
+                    >
+
+                    Go to all posts
+                </a>
             </div>
 @endif
           </div>
