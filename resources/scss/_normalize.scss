@@ -5,6 +5,13 @@
 	font-style: normal;
 }
 
+@font-face {
+	font-family: 'Fixel';
+	src: url('../../../public/src/fonts/FixelAll/FixelText/FixelText-SemiBold.woff2') format('woff2');
+	font-weight: 600;
+	font-style: normal;
+}
+
 * {
     font-family: 'Fixel', sans-serif;
     font-weight: 700;
