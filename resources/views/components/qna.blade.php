@@ -1,4 +1,11 @@
-<section class="qna">
+<section
+    class="
+        qna
+        @if(request()->is('about-us'))
+        qna-about
+        @endif
+    "
+>
     <div class="qna__top">
         <div class="qna__top__first d-flex">
             <h2 class="qna__top__first__title title-main">

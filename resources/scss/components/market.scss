@@ -15,12 +15,6 @@
 
             margin-bottom: 15px;
         }
-
-        &__title {
-            @include onMobile {
-                font-size: 40px;
-            }
-        }
     }
 
     &__last {

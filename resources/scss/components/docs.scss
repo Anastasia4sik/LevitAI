@@ -23,7 +23,6 @@
 
         &__title {
             @include onMobile {
-                font-size: 40px;
                 line-height: 100%;
             }
         }
@@ -45,7 +44,6 @@
                 @include onMobile {
                     margin-bottom: 15px;
 
-                    font-size: 40px;
                     line-height: 100%;
                 }
             }

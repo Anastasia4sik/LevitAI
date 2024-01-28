@@ -15,8 +15,6 @@
 
         @include onMobile {
             margin-bottom: 15px;
-            
-            font-size: 40px;
         }
 
         @include onDesktop {
@@ -175,6 +173,17 @@
     &-about-us {
         padding: 100px 2vw 0 105px;
 
-        background-image: url('../../../public/src/img/bc/bc-team-aboutPage.png');
+        @include onDesktop {
+            background-image: url('../../../public/src/img/bc/bc-team-aboutPage.png');
+        }
+
+        @include onMobile {
+            padding: 90px 3.2vw 0 48px;
+            background-image: url('../../../public/src/img/bc/bc-team-aboutPage-mobile.png');
+            background-position: center -30px;
+            background-size: cover;
+
+            margin-bottom: 90px;
+        }
     }
 }

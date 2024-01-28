@@ -53,7 +53,7 @@ h1, h2, h3, p {
     }
 
     @include onMobile {
-        font-size: 50px;
+        font-size: 40px;
     }
 
     &--stroke {
