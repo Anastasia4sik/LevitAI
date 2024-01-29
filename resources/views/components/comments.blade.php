@@ -4,7 +4,7 @@
     </h2>
 
     <form action="#" class="comments__form d-flex flex-column">
-        <div class="comments__form__group d-flex flex-row align-items-row">
+        <div class="comments__form__group d-flex">
             <input type="text" placeholder="Name" name="Name" class="comments__form__input contact__form__group__input" required>
 
             <input type="email" placeholder="Email" name="Email" class="comments__form__input contact__form__group__input" required>
@@ -16,15 +16,15 @@
             type="submit"
             class="
                 complete__btn
+                comments__form__btn
                 d-flex
                 flex-row
                 align-items-center
                 button
             "
             style="
-                gap: 18px;
+
                 font-size: 16px;
-                width: 176px;
             "
         >
             <img
@@ -71,9 +71,15 @@
                         </h3>
                     </div>
 
-                    <p class="comments__content__item__desc desc">
-                        {{ $item['desc']}}
-                    </p>
+                    <div class="comments__content__item__block">
+                        <p class="comments__content__item__desc desc close">
+                            {{ $item['desc']}}
+                        </p>
+
+                        <div class="comments__content__item__block__open">
+                            <img src="{{ asset('src/img/icons/arrows/comment-open.svg')}}" alt="Open full comment" class="comments__content__item__block__open__img">
+                        </div>
+                    </div>
 
                     <div class="comments__content__item__bottom d-flex flex-row align-items-center">
                         <p class="comments__content__item__bottom__info">
@@ -102,16 +108,34 @@
 
     <script>
         document.addEventListener("DOMContentLoaded", function() {
-            const moreBtn = document.querySelector('.comments__content__btn');
-            const hiddenItems = document.querySelectorAll('.comments__content__item:nth-child(n+5)');
+            //more comments
+                const moreBtn = document.querySelector('.comments__content__btn');
+                const hiddenItems = document.querySelectorAll('.comments__content__item:nth-child(n+5)');
 
-            moreBtn.addEventListener('click', function() {
-                hiddenItems.forEach(item => {
-                    item.style.display = 'flex';
+                moreBtn.addEventListener('click', function() {
+                    hiddenItems.forEach(item => {
+                        item.style.display = 'flex';
+                    });
+
+                    moreBtn.style.display = 'none';
                 });
 
-                moreBtn.style.display = 'none';
-            });
+            //open comment
+                const blocks = document.querySelectorAll('.comments__content__item__block');
+
+                blocks.forEach((block) => {
+                    const arrowOpen = block.querySelector('.comments__content__item__block__open');
+                    const comment = block.querySelector('.comments__content__item__desc');
+
+                    arrowOpen.addEventListener('click', function() {
+                        if (comment.classList.contains('close')) {
+                            comment.classList.add('open');
+                            comment.classList.remove('close');
+                        }
+
+                        arrowOpen.style.display = 'none';
+                    });
+                })
         });
     </script>
 </section>

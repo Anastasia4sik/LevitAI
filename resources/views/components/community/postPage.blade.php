@@ -115,24 +115,17 @@
         <x-header />
 
         <section class="article">
-            <div class="article__path d-flex flex-row ">
-                <a href="/" class="article__path__item article__path__item--links title-little">
-                    Home \&#160;
-                </a>
-                <a href="/blog" class="article__path__item article__path__item--links title-little">
-                    Blog \&#160;
-                </a>
-                <p class="article__path__item title-little">
-
+            <p class="article__path title-little">
+                <span><a href="/" class="article__path article__path--links title-little"> Home \&#160; </a></span>
+                <span> <a href="/blog" class="article__path article__path--links title-little"> Blog \&#160; </a></span>
                     Cryptocash Is A Clean & Modern Coin Service - Levitai
-                </p>
-            </div>
+            </p>
 
             <h2 class="article__title title-main">
                 Cryptocash Is A Clean & Modern Coin Service - Levitai
             </h2>
 
-            <div class="article__info d-flex flex-row">
+            <div class="article__info d-flex">
                 <p class="article__info__item title-little">
                     Сategory: Bitcoin
                 </p>
@@ -146,7 +139,7 @@
                 </p>
             </div>
 
-            <div class="article__content d-flex flex-row justify-content-between align-items-center">
+            <div class="article__content d-flex align-items-center">
                 <img
                     src="{{ asset('src/img/photo/blog.jpg')}}"
                     alt="Cryptocash Is A Clean & Modern Coin Service - Levitai"

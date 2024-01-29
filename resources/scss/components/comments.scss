@@ -3,14 +3,33 @@
     padding-right: 2vw;
     margin-bottom: 239px;
 
+    @include onMobile {
+        padding: 0 3.2vw 0 48px;
+
+        margin-bottom: 110px;
+    }
+
     &__title {
         margin-bottom: 75px;
+
+        @include onMobile {
+            margin-bottom: 50px;
+
+            font-size: 37px;
+        }
     }
 
     &__form {
         margin-bottom: 75px;
 
         width: 43.75vw;
+
+        @include onMobile {
+            margin-bottom: 90px;
+            width: 100%;
+
+            align-items: center;
+        }
 
         &__input {
             padding-bottom: 15px;
@@ -35,8 +54,19 @@
         }
 
         &__group {
-            gap: 50px;
             margin-bottom: 73px;
+
+            flex-direction: row;
+            align-items: center;
+            gap: 50px;
+
+            @include onMobile {
+                margin-bottom: 75px;
+                width: 100%;
+
+                flex-direction: column;
+                align-items: start;
+            }
         }
 
         textarea {
@@ -46,17 +76,43 @@
             height: 43px;
 
             resize: vertical;
+
+            @include onMobile {
+                margin-bottom: 50px;
+                height: 38px;
+            }
+        }
+
+        &__btn {
+            width: 176px;
+            gap: 18px;
+
+            @include onMobile {
+                width: 100%;
+                gap: 25%;
+                max-width: 360px;
+            }
         }
     }
 
     &__content {
         position: relative;
+
         &__item {
             margin-bottom: 35px;
+
+            @include onMobile {
+                margin-bottom: 25px;
+            }
 
             &__top {
                 margin-bottom: 15px;
                 gap: 15px;
+
+                @include onMobile {
+                    margin-bottom: 5px;
+                    gap: 10px;
+                }
 
                 &__img {
                     border-radius: 50%;
@@ -67,21 +123,68 @@
                 &__name {
                     font-size: 24px;
                     font-weight: 700;
+
+                    @include onMobile {
+                        font-size: 18px;
+                    }
+                }
+            }
+
+            &__block {
+                &__open {
+                    @include onDesktop {
+                        display: none;
+                    }
+                }
+
+                @include onMobile {
+                    position: relative;
+
+                    &__open {
+                        display: block;
+                        position: absolute;
+                        bottom: 0;
+                        right: 0;
+
+                        padding-left: 9px;
+                        background-color: $main-bc;
+
+                        cursor: pointer;
+                    }
                 }
             }
 
             &__desc {
                 margin-bottom: 15px;
+
+                @include onMobile {
+                    width: 100%;
+                    margin-bottom: 18px;
+
+                    display: -webkit-box;
+                    -webkit-box-orient: vertical;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    -webkit-line-clamp: 3;
+                    white-space: normal;
+
+                    &.open {
+                        -webkit-line-clamp: unset;
+                    }
+                }
             }
 
             &__bottom {
                 gap: 25px;
 
-
                 &__info,
                 &__btn {
                     font-size: 14px;
                     opacity: 0.75;
+
+                    @include onMobile {
+                        font-size: 12px;
+                    }
                 }
             }
         }
@@ -91,15 +194,22 @@
 
             width: 149px;
 
-            position: absolute;
-            left: 45%;
-
             font-size: 16px;
 
             border: 1.5px solid $white;
             border-radius: 50px;
 
             transition: all .3s ease-in-out;
+
+            @include onDesktop {
+                position: absolute;
+                left: 45%;
+            }
+
+            @include onMobile {
+                width: 100%;
+                max-width: 360px;
+            }
 
             &:hover {
                 background-color: white;
