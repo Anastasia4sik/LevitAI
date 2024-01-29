@@ -5,7 +5,7 @@
     background-position: center top;
 
     @include onMobile {
-        background-image: url('../../../../public/src/img/bc/bc-teamPage-mobile.png');
+        background-image: url('/src/img/bc/bc-teamPage-mobile.png');
     }
 
     &__container {
