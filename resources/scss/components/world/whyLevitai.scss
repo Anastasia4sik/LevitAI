@@ -4,21 +4,44 @@
     background-size: contain;
     background-position: center top;
 
+    @include onMobile {
+        background-image: url('../../../../public/src/img/bc/bc-teamPage-mobile.png');
+    }
+
     &__container {
         padding: 0 2vw 13.8vh 0;
+
+        @include onMobile {
+            padding: 0 3.2vw 110px 48px;
+        }
 
         &__content {
             margin-bottom: 100px;
             padding-left: 105px;
 
+            @include onMobile {
+                margin-bottom: 90px;
+                padding-left: 0;
+            }
+
             &__title {
                 margin-bottom: 75px;
+
+                @include onMobile {
+                    margin-bottom: 15px;
+                }
             }
 
             &__text {
                 margin-bottom: 60px;
 
                 gap: 4vw;
+                flex-direction: row;
+
+                @include onMobile {
+                    gap: 25px;
+                    flex-direction: column;
+                }
 
                 &__block {
                     &__title {
@@ -27,6 +50,11 @@
                         width: 81%;
 
                         font-size: 24px;
+
+                        @include onMobile {
+                            width: 100%;
+                            font-size: 18px;
+                        }
                     }
 
                     &__desc {
@@ -42,16 +70,36 @@
 
         &__table {
             padding-left: 105px;
+
+            @include onMobile {
+                padding-left: 0;
+                overflow-x: scroll;
+            }
+
             &__title {
                 margin-bottom: 75px;
+                padding-left: 105px;
+
+                @include onMobile {
+                    padding-left: 0;
+                    margin-bottom: 15px;
+                }
             }
 
             &__block {
+                @include onMobile {
+                    width: max-content;
+                }
+
                 &__head {
                     margin-left: calc(20vw + 5px);
                     margin-bottom: 5px;
 
                     gap: 5px;
+
+                    @include onMobile {
+                        margin-left: 210px;
+                    }
 
                     & p:first-child {
                         background-color: rgba(255, 255, 255, 0.15);
@@ -66,6 +114,12 @@
 
                         font-size: 0.83vw;
                         line-height: 137.5%;
+
+                        @include onMobile {
+                            width: 90px;
+
+                            font-size: 14px;
+                        }
                     }
                 }
 
@@ -137,13 +191,31 @@
                             font-size: 0.83vw;
                             line-height: 137.5%;
 
+                            @include onMobile {
+                                width: 90px;
+                                height: 40px;
+                            }
+
                             &--text {
                                 padding: 14px 0;
+
+                                @include onMobile {
+                                    padding: 10px 22px;
+
+                                    font-size: 14px;
+                                }
                             }
 
                             &--title {
                                 width: 20vw;
                                 padding: 14px 0 14px 40px;
+
+                                @include onMobile {
+                                    width: 205px;
+                                    padding: 10px 12px;
+
+                                    font-size: 14px;
+                                }
                             }
 
                             &--img__block {
@@ -151,6 +223,11 @@
                                 border-radius: 5px;
 
                                 width: 6.8vw;
+
+                                @include onMobile {
+                                    width: 90px;
+                                    height: 40px;
+                                }
                             }
                         }
                     }
@@ -160,9 +237,26 @@
         }
 
         &__blog {
-            padding-left: 30px;
+            @include onDesktop {
+                padding-left: 30px;
+            }
+
+            @include onMobile {
+                margin-bottom: 180px;
+            }
+
             &__title {
                 margin-top: -38px;
+
+                @include onMobile {
+                    display: none;
+                }
+
+                &__mob {
+                    @include onDesktop {
+                        display: none;
+                    }
+                }
             }
         }
     }

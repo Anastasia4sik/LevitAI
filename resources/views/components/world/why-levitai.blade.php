@@ -91,12 +91,12 @@
                         justify-content-center
                     "
                 >
-                    <div class="topPage__top__text d-flex flex-row align-items-center">
+                    <div class="topPage__top__text d-flex align-items-center">
                         <h2 class="topPage__top__text__title title-main">
-                            Why
+                            Why <span class="whyLevitai__container__blog__title__mob title-main title-main--stroke"><br> LevitAI</span>
                         </h2>
 
-                        <p class="topPage__top__text__desc desc text-start">
+                        <p class="topPage__top__text__desc desc">
                             Lorem ipsum dolor sit amet, consetur adipiscing elit, sed do eiusmod ter incididnt labore  magna aliqua.
                         </p>
                     </div>
@@ -116,7 +116,7 @@
                     Lorem <span class="title-main title-main--stroke"> ipsum</span>
                 </h3>
 
-                <div class="whyLevitai__container__content__text d-flex flex-row">
+                <div class="whyLevitai__container__content__text d-flex">
                     <div class="whyLevitai__container__content__text__block">
                         <h4 class="whyLevitai__container__content__text__block__title title-little">
                             Cryptocash Is A Clean & Modern Coin Service - Levitai
@@ -151,10 +151,10 @@
                 <img src="{{ asset('src/img/photo/whyLevitai.jpg')}}" alt="Why LevitAI?" class="whyLevitai__container__content__img">
             </div>
 
+            <h3 class="whyLevitai__container__table__title title-main">
+                Lorem <span class="title-main title-main--stroke"> ipsum</span>
+            </h3>
             <div class="whyLevitai__container__table">
-                <h3 class="whyLevitai__container__table__title title-main">
-                    Lorem <span class="title-main title-main--stroke"> ipsum</span>
-                </h3>
 
                 <div class="whyLevitai__container__table__block d-flex flex-column">
                     <div class="whyLevitai__container__table__block__head d-flex flex-row">
