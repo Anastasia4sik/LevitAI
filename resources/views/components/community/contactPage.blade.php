@@ -12,11 +12,11 @@
                         justify-content-center
                     ">
         <h2 class="topPage__top__title title-main">
-          Contact
+          Contact <span class="contactPage__container__title__mob title-main title-main--stroke">us</span>
         </h2>
 
-        <div class="topPage__top__text d-flex flex-row align-items-center">
-          <h2 class="topPage__top__text__title title-main title-main--stroke">
+        <div class="topPage__top__text d-flex align-items-center">
+          <h2 class="topPage__top__text__title contactPage__container__title__main title-main title-main--stroke">
             us
           </h2>
 
@@ -34,19 +34,19 @@
       </a>
     </div>
 
-    <div id="contact-form" class="contactPage__bottom d-flex flex-row align-items-end justify-content-between">
+    <div id="contact-form" class="contactPage__bottom d-flex">
       <div class="contactPage__bottom__left d-flex flex-column">
         <h2 class="contactPage__bottom__left__title title-main">
           Feedback
         </h2>
 
-        <div class="contactPage__bottom__left__text d-flex flex-row align-items-center">
+        <div class="contactPage__bottom__left__text d-flex ">
           <h2 class="contactPage__bottom__left__text__title title-main title-main--stroke">
             form
           </h2>
 
           <div
-            class="contactPage__bottom__left__text__media d-flex flex-row align-items-center justify-content-between">
+            class="contactPage__bottom__left__text__media d-flex">
             <div class="contactPage__bottom__left__text__media__column d-flex flex-column">
               <a href="https://maps.app.goo.gl/Jm7MvvY67aTJmciKA"
                 class="contactPage__bottom__left__text__media__column__desc d-flex flex-row align-items-center"
@@ -111,7 +111,7 @@
         </div>
 
         <form action="#" class="contactPage__form d-flex flex-column">
-          <div class="contactPage__form__group d-flex flex-row align-items-row">
+          <div class="contactPage__form__group d-flex align-items-row">
             <input type="text" placeholder="Name" name="Name"
               class="contactPage__form__input contact__form__group__input">
 
@@ -119,7 +119,7 @@
               class="contactPage__form__input contact__form__group__input">
           </div>
 
-          <div class="contactPage__form__group d-flex flex-row align-items-row">
+          <div class="contactPage__form__group d-flex align-items-row">
             <input type="phone" placeholder="Number" name="Number"
               class="contactPage__form__input contact__form__group__input">
 
@@ -131,14 +131,14 @@
 
           <button type="submit" class="
                                 complete__btn
+                                contact__form__btn
+                                contactPage__form__btn
                                 d-flex
                                 flex-row
                                 align-items-center
                                 button
                             " style="
-                                gap: 55px;
                                 font-size: 16px;
-                                width: 229px;
                             ">
             <img src="{{asset('src/img/icons/arrows/arrow-black.svg')}}" alt="Send" class="complete__btn__img" style="
                                     padding: 15px;

@@ -1,27 +1,102 @@
 .contactPage {
     margin-bottom: 13.8vh;
 
+    @include onMobile {
+        margin-bottom: 0;
+    }
+
     &__container {
         background-image: url('../../../../public/src/img/bc/bc-contactPage-top.png');
 
+        @include onMobile {
+            height: 100vh;
+            padding: 0 3.2vw 0 48px;
+
+            background-image: url('../../../../public/src/img/bc/bc-contactPage-top-mobile.png');
+            background-size: cover;
+            background-position: center bottom;
+        }
+
+        &__title {
+            &__mob {
+                @include onDesktop {
+                    display: none;
+                }
+            }
+
+            &__main {
+                @include onMobile {
+                    display: none;
+                }
+            }
+        }
     }
 
     &__bottom {
         padding: 0 58px 0 105px;
 
+        flex-direction: row;
+        align-items: end;
+        justify-content: space-between;
+
+        @include onMobile {
+            padding: 0 3.2vw 0 48px;
+            margin-bottom: 110px;
+
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 50px;
+        }
+
         &__left {
+            @include onMobile {
+                width: 100%;
+            }
+
             &__text {
                 margin-bottom: 56px;
 
+                flex-direction: row;
+                align-items: center;
+
+                @include onMobile {
+                    margin-bottom: 50px;
+
+                    flex-direction: column;
+                    align-items: start;
+                }
+
                 &__title {
                     margin-right: 35px;
+
+                    @include onMobile {
+                        margin-bottom: 15px;
+                        margin-right: 0;
+                    }
                 }
 
                 &__media {
                     width: 360px;
 
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    @include onMobile {
+                        width: 100%;
+
+                        flex-direction: column;
+                        align-items: start;
+                        gap: 17px;
+                    }
+
                     &__column {
                         gap: 15px;
+
+                        @include onMobile {
+                            gap: 18px;
+                        }
 
                         &__desc {
                             gap: 10px;
@@ -33,11 +108,20 @@
 
         &__img {
             width: 46.5vw;
+
+            @include onMobile {
+                width: 100%;
+            }
         }
     }
 
     &__form {
         width: 36.6vw;
+
+        @include onMobile {
+            width: 100%;
+            align-items: center;
+        }
 
         &__input {
             padding-bottom: 15px;
@@ -52,20 +136,44 @@
 
             overflow-y: hidden;
 
+            @include onMobile {
+                padding-bottom: 10px;
+
+                font-size: 18px;
+                font-weight: 700;
+            }
+
             &::placeholder {
                 color: $white;
                 opacity: 0.25;
                 font-size: 20px;
                 font-weight: 500;
                 line-height: 140%;
+
+                @include onMobile {
+                    font-size: 18px;
+                    font-weight: 700;
+                }
             }
         }
 
         &__group {
             width: 100%;
+            margin-bottom: 75px;
+
+            flex-direction: row;
             gap: 25px;
 
-            margin-bottom: 75px;
+            @include onMobile {
+                flex-direction: column;
+                gap: 50px;
+
+                margin-bottom: 50px;
+
+                &:last-of-type {
+                    margin-bottom: 75px;
+                }
+            }
         }
 
         textarea {
@@ -76,6 +184,19 @@
             width: 100%;
 
             resize: vertical;
+
+            @include onMobile {
+                margin-bottom: 50px;
+                padding-bottom: 10px;
+            }
+        }
+
+        &__btn {
+            gap: 55px;
+
+            @include onMobile {
+                gap: 25%;
+            }
         }
     }
 }

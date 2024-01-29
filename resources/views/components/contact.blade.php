@@ -52,7 +52,6 @@
                 button
             "
             style="
-                gap: 101px;
                 font-size: 20px;
             "
         >

@@ -111,11 +111,13 @@
 
         &__btn {
             width: 360px;
+            gap: 101px;
 
             @include onMobile {
                 width: 100%;
 
                 max-width: 360px;
+                gap: 25%;
             }
         }
     }
