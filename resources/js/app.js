@@ -27,6 +27,15 @@ new Swiper('.teamPage__experts__swiper', {
     spaceBetween: 125,
     speed: 1500,
     slidesPerView: 'auto',
+
+    breakpoints: {
+        320: {
+            spaceBetween: 45
+        },
+        1301: {
+            spaceBetween: 125
+        }
+    }
 });
 
 
@@ -40,6 +49,15 @@ new Swiper('.teamPage__advisor__swiper', {
     spaceBetween: 125,
     speed: 1500,
     slidesPerView: 'auto',
+
+    breakpoints: {
+        320: {
+            spaceBetween: 45
+        },
+        1301: {
+            spaceBetween: 125
+        }
+    }
 });
 
 new Swiper('.item__container__swiper', {
