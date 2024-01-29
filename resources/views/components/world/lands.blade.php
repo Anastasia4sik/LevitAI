@@ -14,13 +14,13 @@
       </h2>
 
       <div class="discover__article__top d-flex flex-row align-items-center">
-        <h2 class="discover__article__top__title title-main title-main--stroke lh-90">
+        <h2 class="discover__article__top__title title-main title-main--stroke">
           digital real estate
         </h2>
       </div>
 
       <div
-        class="discover__article__content lands__article__content d-flex flex-row justify-content-between align-items-center">
+        class="discover__article__content lands__article__content d-flex justify-content-between align-items-center">
         <img src="{{ asset('src/img/photo/lands/lands1.jpg')}}" alt="Our vision photo"
           class="discover__article__content__img lands__article__img lands__article__img--first">
 
@@ -56,7 +56,7 @@
       </div>
 
       <div
-        class="discover__article__content lands__article__content d-flex flex-row justify-content-between align-items-center">
+        class="discover__article__content lands__article__content--2 d-flex justify-content-between align-items-center">
         <div class="discover__article__content__text">
           <h3 class="discover__article__content__text__title title-little">
             VR Lands can be used:
@@ -103,12 +103,10 @@
       </div>
 
       <h3 class="discover__article__content__text__title title-little">
-        VR Lands can be used:
+        By purchasing VR Land you also receive the following bonuses:
       </h3>
 
       <p class="discover__article__content__text__desc desc">
-        By purchasing VR Land you also receive the following bonuses:
-        <br><br>
         &ensp;&#x2022; Building
         <br>
         &ensp;&#x2022; Mining Bonuses

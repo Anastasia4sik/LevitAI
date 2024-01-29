@@ -3,13 +3,32 @@
         &__img {
             &--sec {
                 width: 54vw;
+
+                @include onMobile {
+                    width: 100%;
+                }
             }
         }
         &__content {
             margin-bottom: 75px;
 
+            @include onMobile {
+                margin-bottom: 25px;
+            }
+
+            &--2 {
+                @include onMobile {
+                    flex-direction: column-reverse;
+                    margin-bottom: 25px;
+                }
+            }
+
             &__btn {
                 margin-top: 30px;
+
+                @include onMobile {
+                    margin-top: 25px;
+                }
             }
         }
      }

@@ -1,11 +1,15 @@
 .discover {
-    background-image: url('/src/img/bc/bc-vision.png');
+    background-image: url('../../../../public/src/img/bc/bc-vision.png');
 
     background-position: center top;
     background-size: contain;
 
     &__article {
         padding: 77px 2vw 13.8vh 105px;
+
+        @include onMobile {
+            padding: 25px 3.2vw 110px 48px;
+        }
 
         &__undertitle {
             margin-bottom: 5px;
@@ -15,8 +19,10 @@
 
         &__title {
             &--sec {
-                display: block;
-                margin-top: -10px;
+                @include onDesktop {
+                    display: block;
+                    margin-top: -10px;
+                }
             }
 
             &.economy {
@@ -31,6 +37,11 @@
             margin-top: -10px;
             margin-bottom: 75px;
 
+            @include onMobile {
+                margin-top: 0;
+                margin-bottom: 15px;
+            }
+
             &__title {
                 margin-top: -5px;
             }
@@ -38,12 +49,26 @@
 
         &__content {
             gap: 7vw;
+            flex-direction: row;
+
+            @include onMobile {
+                flex-direction: column;
+                gap: 15px;
+            }
 
             &__img {
                 width: 34vw;
+
+                @include onMobile {
+                    width: 100%;
+                }
             }
 
             &__text {
+                @include onMobile {
+                    width: 100%;
+                }
+
                 &__desc {
                     opacity: 0.75;
 
