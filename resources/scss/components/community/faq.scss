@@ -3,4 +3,30 @@
 
     background-size: contain;
     background-position: center top;
+
+    @include onMobile {
+        background-image: url('../../../../public/src/img/bc/bc-faq-mobile.png');
+
+        background-size: contain;
+        background-position: center top;
+    }
+
+    @media ((min-width: 844px) and (max-width: 1300px)) {
+        background-size: cover;
+        background-position: center 25%;
+
+    }
+
+    &-qna {
+        @include onDesktop {
+            background-image: url('../../../../public/src/img/bc/bc-gna-faq.png');
+
+            background-size: contain;
+            background-position: left bottom;
+        }
+
+        @include onMobile {
+            margin-bottom: 80px;
+        }
+    }
 }

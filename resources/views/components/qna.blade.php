@@ -1,8 +1,11 @@
 <section
     class="
         qna
+        @if(!request()->is('faq'))
+            qna-main
+        @endif
         @if(request()->is('about-us'))
-        qna-about
+            qna-about
         @endif
     "
 >
@@ -19,15 +22,13 @@
     </div>
 
     <div
-        class="qna__block d-flex"
-        @if(request()->is('faq'))
-            style="
-                background-image: url({{ asset('src/img/bc/bc-gna-faq.png')}});
-
-                background-size: contain;
-                background-position: left bottom;
-            "
-        @endif
+        class="
+            qna__block
+            d-flex
+            @if(request()->is('faq'))
+                faq-qna
+            @endif
+        "
     >
         <img src="{{ asset('src/img/photo/qna.png')}}" alt="Photos for QnA block" class="qna__block__img">
 
