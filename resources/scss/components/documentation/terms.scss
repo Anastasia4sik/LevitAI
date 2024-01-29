@@ -5,15 +5,31 @@
 
     &__text {
         margin: 77px 2vw 13.8vh 105px;
+
+        @include onMobile {
+            padding-top: 25px;
+            margin: 0 3.2vw 110px 48px;
+        }
     }
+
     &__title {
         margin-bottom: 75px;
         font-size: 128px;
+
+        @include onMobile {
+            margin-bottom: 15px;
+            font-size: 40px;
+        }
 
         &-sec {
             margin-bottom: 15px;
 
             font-size: 24px;
+
+            @include onMobile {
+                margin-bottom: 15px;
+                font-size: 18px;
+            }
         }
     }
 
@@ -21,6 +37,10 @@
         opacity: 0.75;
         &:not(:last-of-type) {
             margin-bottom: 30px;
+
+            @include onMobile {
+                margin-bottom: 25px;
+            }
         }
 
         a {

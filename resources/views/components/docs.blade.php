@@ -1,18 +1,18 @@
 <section
-    class="docs"
-    @if(request()->is('documentation'))
-        style="
-            background-image: none;
-        "
-    @endif
+    class="
+        docs
+        @if(request()->is('documentation'))
+            dosc-documentation
+        @endif
+    "
 >
     <div
-        class="docs__top"
-        @if(request()->is('documentation'))
-            style="
-                margin-bottom: 0;
-            "
-        @endif
+        class="
+            docs__top
+            @if(request()->is('documentation'))
+                docs-documentation
+            @endif
+        "
     >
         <h2 class="docs__top__title title-main">
             @if(request()->is('documentation'))

@@ -1,7 +1,7 @@
 .docs {
     padding-left: 105px;
 
-    background-image: url('/src/img/bc/bc-docs.png');
+    background-image: url('../../../public/src/img/bc/bc-docs.png');
     background-position: center top;
     background-size: contain;
 
@@ -9,6 +9,14 @@
         padding: 0 3.2vw 0 48px;
 
         background: none;
+    }
+
+    &-documentation {
+        margin-bottom: 0;
+
+        @include onDesktop {
+            background: none;
+        }
     }
 
     &__top {
@@ -62,7 +70,7 @@
         @include onMobile {
             padding-bottom: 70px;
 
-            background-image: url('/src/img/bc/bc-docs-mobile.png');
+            background-image: url('../../../public/src/img/bc/bc-docs-mobile.png');
             background-position: center top;
             background-size: cover;
         }

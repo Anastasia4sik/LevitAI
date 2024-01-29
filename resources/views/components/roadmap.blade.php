@@ -19,7 +19,7 @@
                 </h2>
 
                 <div
-                    class="roadmap__top__text__bottom  d-flex flex-row align-items-center"
+                    class="roadmap__top__text__bottom roadmap__top__text__bottom--page d-flex align-items-center"
                 >
                     <h2 class="title-main title-main--stroke topPage__top__text__title">
                         Roadmap
@@ -36,7 +36,9 @@
             </a>
         </div>
 
-        <img id="map" src="{{ asset('src/img/photo/roadmap/roadmap.png')}}" alt="" class="roadmap__img roadmap__img--map">
+        <div class="roadmap__img--roadBlock">
+            <img id="map" src="{{ asset('src/img/photo/roadmap/line.png')}}" alt="" class="roadmap__img roadmap__img--map">
+        </div>
     @else
         <div class="roadmap__top d-flex">
             <div class="roadmap__top__text">

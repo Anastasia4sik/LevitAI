@@ -2,6 +2,10 @@
     padding-left: 105px;
     padding-top: 77px;
 
+    @include onMobile {
+        padding: 25px 3.2vw 0 48px;
+    }
+
     &__main {
         background-image: url('/src/img/bc/bc-docs-doc.png');
 
@@ -14,9 +18,23 @@
     }
 
     &__title {
+        &__mob {
+            @include onDesktop {
+                display: none;
+            }
+        }
+
+        @include onMobile {
+            margin-bottom: 25px;
+        }
+
         &--sec {
             margin-top: -15px;
             margin-bottom: 75px;
+
+            @include onMobile {
+                display: none;
+            }
         }
     }
 
@@ -25,21 +43,70 @@
 
         gap: 75px;
 
+        @include onMobile {
+            gap: 25px;
+            margin-bottom: 0;
+        }
+
         &__item {
             gap: 25px;
+            flex-direction: row;
+            align-items: center;
+
+            @include onMobile {
+                flex-direction: column;
+                align-items: start;
+                gap: 5px;
+            }
+
+            &__top {
+                @include onMobile {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    gap: 15px;
+                }
+            }
 
             &__img {
                 width: 97.2px;
                 height: 115px;
+
+                @include onMobile {
+                    width: 56px;
+                    height: 80px;
+                }
             }
 
             &__content {
+                @include onMobile {
+                    width: 100%;
+                }
+
                 &__title {
-                    margin-bottom: 15px;
+                    @include onDesktop {
+                        margin-bottom: 15px;
+                    }
+
+                    @include onMobile {
+                        display: none;
+                    }
+
+                    &__mob {
+                        @include onDesktop {
+                            display: none;
+                        }
+                    }
                 }
 
                 &__desc {
                     margin-bottom: 30px;
+
+                    @include onMobile {
+                        margin-bottom: 15px;
+
+                        opacity: 0.75;
+                    }
                 }
 
                 &__btns {

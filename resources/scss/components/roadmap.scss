@@ -50,6 +50,10 @@
 
                 @include onMobile {
                     flex-direction: column-reverse;
+
+                    &--page {
+                        flex-direction: column;
+                    }
                 }
 
                 &__desc {
@@ -87,13 +91,18 @@
     }
 
     &__img {
-
         @include onDesktop {
             width: 100vw;
         }
 
         @include onMobile {
+            overflow-x: scroll;
             width: 1837px;
+
+            &--roadBlock {
+                margin-top: 180px;
+                overflow-x: scroll;
+            }
         }
     }
 }
