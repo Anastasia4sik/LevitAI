@@ -183,7 +183,7 @@
                     The Blog
                 </h2>
 
-                <div class="topPage__top__text d-flex flex-row align-items-center">
+                <div class="topPage__top__text d-flex align-items-center">
                     <h2 class="topPage__top__text__title title-main title-main--stroke">
                         LevitAI
                     </h2>
@@ -203,7 +203,7 @@
         <x-blog :blogInfo="$blogInfo" />
 
         <section class="blogPage__all">
-                <div class="blogPage__all__top d-flex flex-row align-items-center">
+                <div class="blogPage__all__top d-flex">
                     <h2 class="blogPage__all__top__title title-main">
                         All <span class="title-main title-main--stroke">Posts</span>
                     </h2>
@@ -231,60 +231,66 @@
                     </div>
                 </div>
 
-                <div class="blogPage__all__content d-flex flex-row align-items-center">
-                    <div class="blogPage__all__content__block" id="blogItemsContainer">
-                        @php $count = 0; @endphp
+                <div class="blogPage__all__container">
+                    <div class="blogPage__all__content d-flex align-items-center">
+                        <div class="blogPage__all__content__block" id="blogItemsContainer">
+                            @php $count = 0; @endphp
 
-                        @foreach ($blogInfo as $key => $item)
-                            @if ($item['id'] !== 1)
-                                @php $count++; @endphp
-                                <div data-theme="{{ $item['theme']}}" class="blogPage__all__content__block__item" style="{{ $count > 6 ? 'display: none;' : '' }}">
-                                    <a href="/blog/post-">
-                                        <img src="{{ asset($item['photo']) }}" alt="slide">
+                            @foreach ($blogInfo as $key => $item)
+                                @if ($item['id'] !== 1)
+                                    @php $count++; @endphp
+                                    <div data-theme="{{ $item['theme']}}" class="blogPage__all__content__block__item" style="{{ $count > 6 ? 'display: none;' : '' }}">
+                                        <a href="/blog/post-">
+                                            <img src="{{ asset($item['photo']) }}" alt="slide">
 
-                                        <h3 class="blogPage__all__content__block__item__title title-little">
-                                            {{ $item['title'] }}
-                                        </h3>
+                                            <div class="">
+                                                <h3 class="blogPage__all__content__block__item__title title-little">
+                                                    {{ $item['title'] }}
+                                                </h3>
 
-                                        <p class="blogPage__all__content__block__item__desc desc">
-                                            {{ $item['desc'] }}
-                                        </p>
-                                    </a>
+                                                <p class="blogPage__all__content__block__item__desc desc">
+                                                    {{ $item['desc'] }}
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                @endif
+                            @endforeach
+                        </div>
+
+                        <div class="blogPage__all__content__main">
+                            @php
+                                $mainPost = $blogInfo['item1']; // Post with ID 1
+                            @endphp
+
+                            <a href="/blog/post-">
+                                <img src="{{ asset($item['photo'])}}" alt="slide">
+
+                                <div class="">
+                                    <h3 class="blogPage__all__content__main__title title-little">
+                                        {{ $mainPost['title']}}
+                                    </h3>
+
+                                    <p class="blogPage__all__content__main__desc desc">
+                                        {{ $mainPost['desc']}}
+                                    </p>
                                 </div>
-                            @endif
-                        @endforeach
+                            </a>
+                        </div>
                     </div>
 
-                    <div class="blogPage__all__content__main">
-                        @php
-                            $mainPost = $blogInfo['item1']; // Post with ID 1
-                        @endphp
-
-                        <a href="/blog/post-">
-                            <img src="{{ asset($item['photo'])}}" alt="slide">
-
-                            <h3 class="blogPage__all__content__main__title title-little">
-                                {{ $mainPost['title']}}
-                            </h3>
-
-                            <p class="blogPage__all__content__main__desc desc">
-                                {{ $mainPost['desc']}}
-                            </p>
-                        </a>
-                    </div>
+                    <button
+                        type="submit"
+                        class="
+                            blogPage__all__btn
+                            button
+                        "
+                        onclick="loadMorePosts()"
+                        id="loadMoreButton"
+                    >
+                        Load More
+                    </button>
                 </div>
-
-                <button
-                    type="submit"
-                    class="
-                        blogPage__all__btn
-                        button
-                    "
-                    onclick="loadMorePosts()"
-                    id="loadMoreButton"
-                >
-                    Load More
-                </button>
         </section>
 
         <x-footer />
@@ -296,7 +302,7 @@
             const items = itemsContainer.querySelectorAll(".blogPage__all__content__block__item");
 
             for (let i = 6; i < items.length; i++) {
-                items[i].style.display = "block";
+                items[i].style.display = "flex";
             }
 
             document.getElementById("loadMoreButton").style.display = "none";

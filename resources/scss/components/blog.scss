@@ -16,11 +16,33 @@
         background-size: auto;
     }
 
+    &-page {
+        padding: 0 0 100px 105px;
+
+        @include onMobile {
+            padding: 130px 3.2vw 0 48px;
+
+            margin-bottom: 90px;
+        }
+    }
+
     &__top {
         margin-bottom: 75px;
 
+        @include onMobile {
+            margin-bottom: 15px;
+        }
+
         &__first {
             gap: 35px;
+            flex-direction: row;
+            align-items: center;
+
+            @include onMobile {
+                flex-direction: column;
+                align-items: start;
+                gap: 0;
+            }
 
             &__desc {
                 width: 395px;
@@ -131,8 +153,6 @@ div.blog__swiper__pagination.swiper-pagination {
 
     & .swiper-pagination-bullet {
         opacity: 1;
-        width: 15px;
-        height: 15px;
 
         &-active {
             background-color: white;

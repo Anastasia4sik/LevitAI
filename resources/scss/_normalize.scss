@@ -124,6 +124,7 @@ h1, h2, h3, p {
             @include onMobile {
                 flex-direction: column;
             }
+
             &__title {
                 margin-right: 35px;
 
@@ -137,7 +138,9 @@ h1, h2, h3, p {
                 width: 15vw;
 
                 @include onMobile {
-                    width: 100%;
+                    width: 84vw;
+
+                    max-width: 650px;
                 }
             }
         }

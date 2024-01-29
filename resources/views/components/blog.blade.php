@@ -1,8 +1,7 @@
 @if(request()->is('blog'))
 <section
     id="blog"
-    class="blog"
-    style="padding: 0 0 100px 105px"
+    class="blog blog-page"
 >
 
   <div class="blog__top">
@@ -10,8 +9,6 @@
         class="
             blog__top__first
             d-flex
-            flex-row
-            align-items-center
         "
     >
       <h2 class="blog__top__first__title title-main">
@@ -25,7 +22,7 @@
             title-main--stroke
         "
     >
-        Posts
+        Blog Posts
       </h2>
     </div>
 
@@ -33,8 +30,7 @@
 
     <section
         id="blog"
-        class="blog"
-        style="padding: 0 0 100px 105px"
+        class="blog blog-page"
     >
       <div
         class="blog__top">
@@ -106,7 +102,7 @@
         <section
             class="blog"
             style="
-                
+
             "
         >
           <div class="blog__top">
