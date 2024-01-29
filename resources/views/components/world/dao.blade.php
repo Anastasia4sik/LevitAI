@@ -13,7 +13,7 @@
         A world truly governed
       </h2>
 
-      <div class="discover__article__top d-flex flex-row align-items-center">
+      <div class="discover__article__top d-flex">
         <h2 class="discover__article__top__title title-main title-main--stroke lh-90">
           by its community
         </h2>
@@ -38,7 +38,7 @@
         </a>
       </div>
 
-      <div class="discover__article__content future__article__content d-flex flex-row align-items-center">
+      <div class="discover__article__content future__article__content d-flex align-items-center">
         <img src="{{ asset('src/img/photo/dao.jpg')}}" alt="DAO economy" class="discover__article__content__img">
 
         <div class="discover__article__content__text">
