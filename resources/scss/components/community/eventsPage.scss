@@ -1,5 +1,5 @@
 .eventsPage {
-    background-image: url('../../../../public/src/img/bc/bc-events.png');
+    background-image: url('/src/img/bc/bc-events.png');
 
     background-position: center top;
     background-size: cover;
@@ -10,7 +10,7 @@
 
     &__top {
         @include onMobile {
-            background-image: url('../../../../public/src/img/bc/bc-events-mobile.png');
+            background-image: url('/src/img/bc/bc-events-mobile.png');
             background-position: center top;
             background-size: cover;
 
@@ -24,7 +24,7 @@
         margin-bottom: 13.8vh;
         margin-left: 105px;
 
-        background-image: url('../../../../public/src/img/bc/bc-eventsPage-content.png');
+        background-image: url('/src/img/bc/bc-eventsPage-content.png');
 
         background-position: center top;
         background-size: cover;
@@ -38,13 +38,13 @@
 
             gap: 27px;
 
-            background-image: url('../../../../public/src/img/bc/bc-eventsPage-content-mobile.png');
+            background-image: url('/src/img/bc/bc-eventsPage-content-mobile.png');
         }
 
         &__block {
             padding: 187px 0 166px 94px;
 
-            background-image: url('../../../../public/src/img/bc/bc-eventsPage-block.png');
+            background-image: url('/src/img/bc/bc-eventsPage-block.png');
 
             background-position: left center;
             background-size: contain;
