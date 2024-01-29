@@ -17,7 +17,7 @@
         </span>
       </h2>
 
-      <div class="discover__article__top d-flex flex-row align-items-center">
+      <div class="discover__article__top discover__article__top--future d-flex">
         <h2 class="discover__article__top__title title-main title-main--stroke lh-90">
           want to live in
         </h2>
@@ -42,7 +42,7 @@
         </a>
       </div>
 
-      <div class="discover__article__content future__article__content d-flex flex-row align-items-center">
+      <div class="discover__article__content future__article__content d-flex align-items-center">
         <x-video width="35vw" />
 
         <div class="discover__article__content__text">

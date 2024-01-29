@@ -34,12 +34,28 @@
         &__top {
             gap: 65px;
 
-            margin-top: -10px;
             margin-bottom: 75px;
+
+            @include onDesktop {
+                margin-top: -10px;
+            }
 
             @include onMobile {
                 margin-top: 0;
                 margin-bottom: 15px;
+                gap: 15px;
+            }
+
+            &--future {
+                flex-direction: row;
+                align-items: center;
+
+                @include onMobile {
+                    flex-direction: column;
+                    align-items: start;
+
+                    margin-bottom: 25px;
+                }
             }
 
             &__title {

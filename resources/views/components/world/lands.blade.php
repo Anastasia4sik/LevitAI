@@ -98,8 +98,14 @@
           </a>
         </div>
 
-        <img src="{{ asset('src/img/photo/lands/lands2.jpg')}}" alt="Our vision photo"
-          class="discover__article__content__img lands__article__img lands__article__img--sec">
+        <img
+            src="{{ asset('src/img/photo/lands/lands2.jpg')}}"
+            alt="Our vision photo"
+            class="
+                discover__article__content__img
+                lands__article__img lands__article__img--sec
+            "
+        >
       </div>
 
       <h3 class="discover__article__content__text__title title-little">
