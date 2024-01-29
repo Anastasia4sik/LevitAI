@@ -17,7 +17,7 @@
         </span>
       </h2>
 
-      <div class="discover__article__top d-flex flex-row align-items-center">
+      <div class="discover__article__top d-flex">
         <h2 class="discover__article__top__title title-main title-main--stroke lh-90">
           Metaverse
         </h2>
@@ -44,7 +44,7 @@
 
 
       <div
-        class="discover__article__content metaverse__article__content d-flex flex-row justify-content-between align-items-center">
+        class="discover__article__content metaverse__article__content d-flex justify-content-between align-items-center">
         <img src="{{ asset('src/img/photo/metaverse.jpg')}}" alt="Our vision photo"
           class="discover__article__content__img">
 
