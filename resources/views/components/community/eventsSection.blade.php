@@ -191,15 +191,9 @@
 
         <div class="eventsSection__top">
             <div class="eventsSection__top__path d-flex flex-row">
-                <a href="/" class="eventsSection__top__path__item eventsSection__top__path__item--links title-little">
-                    Home \&#160;
-                </a>
-
-                <a href="/events" class="eventsSection__top__path__item eventsSection__top__path__item--links title-little">
-                    Blog \&#160;
-                </a>
-
-                <p class="eventsSection__top__path__item title-little">
+                <p class="article__path eventsSection__top__path__item title-little">
+                    <span><a href="/" class="article__path article__path--links title-little"> Home \&#160; </a></span>
+                    <span> <a href="/events" class="article__path article__path--links title-little"> Blog \&#160; </a></span>
                     @if(isset($events[$category]))
                         {{$events[$category]['name']}}
                     @endif
@@ -219,7 +213,7 @@
             </p>
         </div>
 
-        <div class="eventsSection__content d-flex flex-row">
+        <div class="eventsSection__content d-flex">
             @foreach($events[$category] ?? [] as $key => $event)
                 @if(is_array($event) && isset($event['id']))
                     <div

@@ -7,15 +7,28 @@
     &__top,
     &__content {
         padding: 0 2vw 0 105px;
+
+        @include onMobile {
+            padding: 25px 3.2vw 0 48px;
+        }
     }
 
     &__top {
-        margin-top: 77px;
+        @include onDesktop {
+            margin-top: 77px;
+        }
+
         &__path {
             &__item {
                 margin-bottom: 15px;
 
                 font-size: 18px;
+
+                @include onMobile {
+                    margin-bottom: 5px;
+
+                    font-size: 14px;
+                }
 
                 &--links {
                     color: #C2BFCB;
@@ -32,12 +45,21 @@
             margin-bottom: 15px;
 
             font-size: 5vw;
+
+            @include onMobile {
+                font-size: 37px;
+            }
         }
 
         &__desc{
             margin-bottom: 69px;
 
             width: 27vw;
+
+            @include onMobile {
+                margin-bottom: 16px;
+                width: 100%;
+            }
         }
     }
 
@@ -46,9 +68,25 @@
         margin-bottom: 12vh;
 
         flex-wrap: wrap;
+        flex-direction: row;
+
+        @include onMobile {
+            margin-bottom: 110px;
+
+            flex-direction: column;
+            gap: 0;
+        }
+
         &__block {
             width: 26vw;
             height: 635px;
+
+            @include onMobile {
+                margin-top: -40px;
+
+                width: 100%;
+                height: 346px;
+            }
 
             &:not(:nth-last-of-type(1)),
             &:not(:nth-last-of-type(2)),
@@ -57,7 +95,6 @@
             }
 
             position: relative;
-
 
             &__bc {
                 opacity: 0.6;
@@ -70,11 +107,14 @@
 
                 z-index: -1;
 
-
                 background-size: cover;
                 background-position: center;
 
                 clip-path: polygon(3% 177px, 97% 0, 97% 73.39%, 3% 100%);
+
+                @include onMobile {
+                    clip-path: polygon(0% 73px, 100% 0, 100% 73.39%, 0% 100%);
+                }
             }
 
             &__title {
@@ -84,10 +124,23 @@
 
                 font-size: 3vw;
                 line-height: 100%;
+
+                @include onMobile {
+                    margin-bottom: 77px;
+                    margin-top: 50px;
+
+                    font-size: 35px;
+                    line-height: 137%;
+                }
             }
 
             &__bottom {
                 margin-left: 53%;
+
+                @include onMobile {
+                    margin-left: 33%;
+                }
+
                 &__btn {
                     width: 229px;
                     gap: 18px;
@@ -100,6 +153,13 @@
                     color: $main-bc;
                     font-size: 16px;
 
+                    @include onMobile {
+                        width: 207px;
+                        gap: 15px;
+
+                        margin-bottom: 10px;
+                    }
+
                     &__img {
                         padding: 14px;
                     }
@@ -107,6 +167,10 @@
 
                 &__info {
                     font-size: 24px;
+
+                    @include onMobile {
+                        font-size: 18px;
+                    }
                 }
             }
         }
