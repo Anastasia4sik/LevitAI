@@ -66,8 +66,7 @@
 
 <section
     id="blog"
-    class="blog"
-    style="padding: 0 0 100px 105px"
+    class="blog blog-events"
 >
   <div
     class="blog__top">

@@ -62,7 +62,7 @@
                     flex-column
                     justify-content-center
                 ">
-        <div class="topPage__top__text d-flex flex-row align-items-center">
+        <div class="topPage__top__text d-flex align-items-center">
           <h2 class="topPage__top__text__title title-main">
             The
           </h2>
@@ -92,14 +92,13 @@
 
         <a href="/events/sports" class="
                         complete__btn
+                        eventsPage__content__block__btn
                         d-flex
                         flex-row
                         align-items-center
                         button
                     " style="
-                        gap: 23px;
                         font-size: 16px;
-                        width: 229px;
                     ">
           <img src="{{asset('src/img/icons/arrows/arrow-black.svg')}}" alt="go to" class="complete__btn__img" style="
                             padding: 15px;
@@ -116,14 +115,13 @@
 
         <a href="/events/concerts" class="
                         complete__btn
+                        eventsPage__content__block__btn
                         d-flex
                         flex-row
                         align-items-center
                         button
                     " style="
-                        gap: 23px;
                         font-size: 16px;
-                        width: 229px;
                     ">
           <img src="{{asset('src/img/icons/arrows/arrow-black.svg')}}" alt="go to" class="complete__btn__img" style="
                             padding: 15px;
@@ -140,14 +138,13 @@
 
         <a href="/events/performances" class="
                         complete__btn
+                        eventsPage__content__block__btn
                         d-flex
                         flex-row
                         align-items-center
                         button
                     " style="
-                        gap: 23px;
                         font-size: 16px;
-                        width: 229px;
                     ">
           <img src="{{asset('src/img/icons/arrows/arrow-black.svg')}}" alt="go to" class="complete__btn__img" style="
                             padding: 15px;
@@ -164,14 +161,13 @@
 
         <a href="/events/courses" class="
                         complete__btn
+                        eventsPage__content__block__btn
                         d-flex
                         flex-row
                         align-items-center
                         button
                     " style="
-                        gap: 23px;
                         font-size: 16px;
-                        width: 229px;
                     ">
           <img src="{{asset('src/img/icons/arrows/arrow-black.svg')}}" alt="go to" class="complete__btn__img" style="
                             padding: 15px;
