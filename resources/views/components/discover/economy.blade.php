@@ -9,9 +9,9 @@
         TOKENOMICS AND ECONOMY
       </p>
 
-      <div class="discover__article__top mt-0 mb-0 d-flex flex-row align-items-center">
+      <div class="discover__article__top discover__article__top--economy d-flex">
         <h2 class="discover__article__top__title title-main lh-90">
-          The VR Token is the
+          The VR Token is the <span class="discover__article__top--economy title-main title-main--stroke">currency of Victoria VR</span>
         </h2>
 
         <a href="#" class="
@@ -34,11 +34,11 @@
         </a>
       </div>
 
-      <h2 class=" economy discover__article__title title-main title-main--stroke">
+      <h2 class=" economy discover__article__title discover__article__title--economy title-main title-main--stroke">
         currency of Victoria VR
       </h2>
 
-      <div class="discover__article__content economy__article__content d-flex flex-row align-items-center">
+      <div class="discover__article__content economy__article__content d-flex align-items-center">
         <img src="{{ asset('src/img/photo/economy.jpg')}}" alt="Our vision photo"
           class="discover__article__content__img">
 

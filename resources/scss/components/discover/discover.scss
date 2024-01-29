@@ -28,6 +28,10 @@
             &.economy {
                 margin-top: -40px;
                 margin-bottom: 75px;
+
+                @include onMobile {
+                    display: none;
+                }
             }
         }
 
@@ -57,6 +61,13 @@
                 }
             }
 
+            &--economy {
+                @include onDesktop {
+                    margin-top: 0;
+                    margin-bottom: 0;
+                }
+            }
+
             &__title {
                 margin-top: -5px;
             }
@@ -76,12 +87,19 @@
 
                 @include onMobile {
                     width: 100%;
+                    margin-bottom: 25px;
                 }
             }
 
             &__text {
                 @include onMobile {
                     width: 100%;
+                }
+
+                &--integrations {
+                    @include onMobile {
+                        margin-bottom: 25px;
+                    }
                 }
 
                 &__desc {
@@ -134,7 +152,13 @@
 
 .integrations__article__content {
     &:not(:last-of-type) {
-        margin-bottom: 75px;
+        @include onDesktop {
+            margin-bottom: 75px;
+        }
+
+        @include onMobile {
+            margin-bottom: 25px;
+        }
     }
 
     &__video {

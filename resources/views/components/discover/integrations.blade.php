@@ -13,7 +13,7 @@
         Future-Proofing Through
       </h2>
 
-      <div class="discover__article__top d-flex flex-row align-items-center">
+      <div class="discover__article__top d-flex">
         <h2 class="discover__article__top__title title-main title-main--stroke lh-90">
           Innovation
         </h2>
@@ -40,7 +40,7 @@
 
 
       <div
-        class="discover__article__content integrations__article__content d-flex flex-row justify-content-between align-items-center">
+        class="discover__article__content integrations__article__content d-flex justify-content-between align-items-center">
         <img src="{{ asset('src/img/photo/integrations.jpg')}}" alt="Our vision photo"
           class="discover__article__content__img">
 
@@ -71,8 +71,8 @@
       </div>
 
       <div
-        class="discover__article__content integrations__article__content d-flex flex-row justify-content-between align-items-center">
-        <div class="discover__article__content__text">
+        class="discover__article__content integrations__article__content d-flex justify-content-between align-items-center">
+        <div class="discover__article__content__text discover__article__content__text--integrations">
           <h3 class="discover__article__content__text__title title-little">
             Welcome to MetaHumans
           </h3>

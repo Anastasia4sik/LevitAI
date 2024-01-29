@@ -7,21 +7,39 @@
     &__section {
         padding: 77px 2vw 13.8vh 105px;
 
+        @include onMobile {
+            padding: 25px 3.2vw 110px 48px;
+        }
+
         &__title {
             margin-bottom: 46px;
 
             text-transform: uppercase;
+
+            @include onMobile {
+                margin-bottom: 50px;
+            }
         }
 
         &__table {
             grid-template-columns: repeat(auto-fill, minmax(28vw, 1fr));
             grid-gap: 51px;
 
+            @include onMobile {
+                grid-template-columns: repeat(auto-fill, minmax(40vw, 1fr));
+                grid-gap: 15px;
+            }
+
             &__block {
                 height: 444px;
                 background-color: #ffffff0d;
 
                 transition: all .3s ease-in-out;
+
+                @include onMobile {
+                    height: auto;
+                    padding: 20px 12px;
+                }
 
                 &__img {
                     max-width: 90%;
