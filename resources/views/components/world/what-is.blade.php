@@ -5,7 +5,7 @@
         <x-header />
 
         <section class="whatLevitai__container">
-            <div class="whatLevitai__container__top d-flex flex-row align-items-center justify-content-between">
+            <div class="whatLevitai__container__top d-flex align-items-center">
                 <div class="whatLevitai__container__top__text d-flex flex-column">
                     <h2 class="whatLevitai__container__top__title title-main">
                         What is <span class="title-main title-main--stroke">LevitAI</span>
@@ -32,10 +32,10 @@
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
                 </p>
 
-                <x-video width="46vw"/>
+                <x-video />
             </div>
 
-            <div class="whatLevitai__container__nums d-flex flex-row align-items-center justify-content-center">
+            <div class="whatLevitai__container__nums d-flex align-items-center">
                 <div class="whatLevitai__container__nums__block d-flex flex-column">
                     <div class="whatLevitai__container__nums__block__content d-flex flex-row">
                         <img
@@ -56,7 +56,7 @@
                     >
                 </div>
 
-                <div class="whatLevitai__container__nums__block d-flex flex-column-reverse">
+                <div class="whatLevitai__container__nums__block d-flex">
                     <div class="whatLevitai__container__nums__block__content d-flex flex-row">
                         <img
                             src="{{ asset('src/img/photo/whatIs/nums/two.png')}}"
@@ -96,7 +96,7 @@
                     >
                 </div>
 
-                <div class="whatLevitai__container__nums__block d-flex flex-column-reverse">
+                <div class="whatLevitai__container__nums__block d-flex">
                     <div class="whatLevitai__container__nums__block__content d-flex flex-row">
                         <img
                             src="{{ asset('src/img/photo/whatIs/nums/four.png')}}"

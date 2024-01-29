@@ -1,5 +1,5 @@
 <div class="integrations__article__content__video d-flex align-items-center justify-content-center">
-    <div class="integrations__article__content__video__pause" style="width: {{$width}}">
+    <div class="integrations__article__content__video__pause" >
         <div class="integrations__article__content__video__pause__text d-flex flex-row align-items-center">
             <img src="{{ asset('src/img/icons/logo.svg')}}" alt="Logo">
 
@@ -12,7 +12,7 @@
     </div>
 
 
-    <video style="width: {{$width}}" controls class="integrations__article__content__video__content">
+    <video style="" controls class="integrations__article__content__video__content">
         <source src="{{ asset('src/video/video.mp4')}}" type="video/mp4">
         Your browser does not support the video tag.
     </video>

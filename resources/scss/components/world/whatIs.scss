@@ -4,11 +4,27 @@
     background-position: left top;
     background-size: contain;
 
+    @include onMobile {
+        background: none;
+    }
+
     &__container {
         padding: 77px 2vw 13.8vh 105px;
 
+        @include onMobile {
+            padding: 15px 3.2vw 110px 48px;
+        }
+
         &__top {
             margin-bottom: 100px;
+
+            flex-direction: row;
+
+            @include onMobile {
+                margin-bottom: 90px;
+
+                flex-direction: column;
+            }
 
             &__title {
                 margin-bottom: 15px;
@@ -16,14 +32,33 @@
 
             &__desc {
                 width: 33vw;
+
+                @include onMobile {
+                    width: 100%;
+
+                    margin-bottom: 25px;
+                }
+            }
+
+            &__img {
+                width: 100%;
+                max-width: 360px;
             }
         }
 
         &__video {
             margin-bottom: 152px;
 
+            @include onMobile {
+                margin-bottom: 90px;
+            }
+
             &__undertitle {
                 margin-bottom: 15px;
+
+                @include onMobile {
+                    margin-bottom: 5px;
+                }
             }
 
             &__title {
@@ -31,6 +66,12 @@
 
                 font-size: 48px;
                 line-height: 137.5%;
+
+                @include onMobile {
+                    margin-bottom: 15px;
+
+                    font-size: 30px;
+                }
             }
 
             &__desc {
@@ -39,6 +80,12 @@
                 font-size: 14px;
 
                 width: 44vw;
+
+                @include onMobile {
+                    margin-bottom: 25px;
+
+                    width: 100%;
+                }
             }
         }
 
@@ -46,11 +93,36 @@
             margin-bottom: 100px;
 
             gap: 6vw;
+            flex-direction: row;
+            justify-content: center;
+
+            @include onMobile {
+                margin-bottom: 90px;
+
+                gap: 25px;
+                flex-direction: column;
+            }
 
             &__block {
                 gap: 40px;
 
                 width: 16vw;
+
+                @include onMobile {
+                    width: 100%;
+
+                    gap: 25px;
+                    align-items: center;
+                }
+
+                &:nth-child(2),
+                &:nth-child(4) {
+                    flex-direction: column-reverse;
+
+                    @include onMobile {
+                        flex-direction: column;
+                    }
+                }
 
                 &__content {
                     gap: 10px;
@@ -67,6 +139,10 @@
 
                 &__img {
                     width: 100%;
+
+                    @include onMobile {
+                        max-width: 560px;
+                    }
                 }
             }
         }
@@ -76,6 +152,12 @@
                 margin-bottom: 25px;
 
                 font-size: 5vw;
+
+                @include onMobile {
+                    margin-bottom: 15px;
+
+                    font-size: 37px;
+                }
             }
 
             &__desc {
@@ -83,8 +165,16 @@
 
                 font-weight: 500;
 
+                @include onMobile {
+                    font-weight: 700;
+                }
+
                 &:not(:last-of-type) {
                     margin-bottom: 25px;
+
+                    @include onMobile {
+                        margin-bottom: 15px;
+                    }
                 }
             }
 
@@ -92,6 +182,10 @@
                 width: 100%;
 
                 margin-bottom: 25px;
+
+                @include onMobile {
+                    margin-bottom: 15px;
+                }
             }
         }
     }

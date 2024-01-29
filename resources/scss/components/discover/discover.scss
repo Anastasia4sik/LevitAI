@@ -100,6 +100,15 @@
     &__video {
         position: relative;
 
+        &__content {
+            width: 46vw;
+
+            @include onMobile {
+                width: 100%;
+                max-width: 866px;
+            }
+        }
+
         &__pause {
             position: absolute;
             top: 0;
@@ -108,10 +117,17 @@
 
             z-index: 999;
 
+            width: 46vw;
+
+            @include onMobile {
+                width: 90%;
+                max-width: 866px;
+            }
+
             &__text {
                 position: absolute;
-                top: 20px;
-                left: 25px;
+                top: 10px;
+                left: 15px;
 
                 gap: 5px;
 
