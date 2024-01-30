@@ -1,5 +1,5 @@
 .register {
-    background-image: url('../../../public/src/img/bc/bc-signIn.png');
+    background-image: url('/src/img/bc/bc-signIn.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -9,7 +9,7 @@
     position: relative;
 
     &__container {
-        background-image: url('../../../public/src/img/photo/signIn.png');
+        background-image: url('/src/img/photo/signIn.png');
         background-repeat: no-repeat;
         background-size: 43% 100%;
         background-position: left center;
