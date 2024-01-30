@@ -8,23 +8,24 @@
       <div class="avatarEdit__section__content">
 
         <div class="article__path d-flex flex-row ">
-          <a href="/" class="article__path__item article__path__item--links title-little">
-            Home \&#160;
-          </a>
-
-          <a href="/avatar" class="article__path__item article__path__item--links title-little">
-            My Avatar \&#160;
-          </a>
-
-          <p class="article__path__item title-little">
+          <p class="article__path title-little">
+            <span>
+                <a href="/" class="article__path article__path--links title-little">
+                    Home \&#160; </a>
+                </span>
+            <span>
+                <a href="/avatar" class="article__path article__path--links title-little">
+                    My Avatar \&#160;
+                </a>
+            </span>
             Edit Avatar
-          </p>
+        </p>
         </div>
 
         <div class="avatarEdit__section__content__top">
-          <div class="avatarEdit__section__content__top__first d-flex flex-row align-items-center">
+          <div class="avatarEdit__section__content__top__first d-flex">
             <h2 class="avatarEdit__section__content__top__first__title title-main">
-              My
+              My <span class="avatarEdit__section__content__top__first__title--mob title-main title-main--stroke">Avatar Edit</span>
             </h2>
 
             <p class="avatarEdit__section__content__top__first__desc desc">
@@ -35,14 +36,15 @@
             </p>
           </div>
 
-          <h2 class="avatarEdit__section__content__top__title title-main title-main--stroke">
+          <h2 class="avatarEdit__section__content__top__title avatarEdit__section__content__top__title--big title-main title-main--stroke">
             Avatar Edit
           </h2>
         </div>
       </div>
 
 
-      <img src="{{ asset('src/img/photo/account/avatar-edit.jpg')}}" alt="" class="avatarEdit__section__img">
+      <img src="{{ asset('src/img/photo/account/avatar-edit.jpg')}}" alt="" class="avatarEdit__section__img avatarEdit__section__img--big">
+      <img src="{{ asset('src/img/photo/account/avatar-edit-mob.jpg')}}" alt="" class="avatarEdit__section__img avatarEdit__section__img--mob">
     </div>
 
     <x-footer />

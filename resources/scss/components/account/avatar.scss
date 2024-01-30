@@ -14,22 +14,66 @@
     &__section {
         padding: 8.7vh 2vw 13.8vh 105px;
 
+        flex-direction: row;
+
+        @include onMobile {
+            padding: 15px 3.2vw 110px 48px;
+
+            flex-direction: column;
+        }
+
         &__photo {
             position: relative;
 
+            @include onMobile {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+            }
+
             &__text {
                 position: absolute;
-                text-align: center;
 
                 left: 26%;
                 top: 39%;
+                text-align: center;
 
                 width: 47%;
                 height: fit-content;
+                border-radius: 5px;
+                background: #241942;
 
                 font-size: 1.8vw;
 
                 z-index: -1;
+
+                @include onMobile {
+                    width: 100%;
+                    max-width: 360px;
+
+                    position: static;
+                    padding: 177px 29px;
+
+                    font-size: 25px;
+                }
+            }
+
+            &--mob {
+                @include onDesktop {
+                    display: none;
+                }
+
+                margin-bottom: 25px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            &--big {
+                @include onMobile {
+                    display: none;
+                }
             }
         }
 
@@ -41,40 +85,109 @@
             border: none;
 
             object-fit: fill;
+
+            @include onMobile {
+                width: 100%;
+                max-width: 360px;
+            }
         }
 
         &__content {
             &__top {
                 margin-bottom: 5.5vh;
 
+                @include onMobile {
+                    margin-bottom: 50px;
+                }
+
                 &__first {
+                    flex-direction: row;
+                    align-items: center;
+
+                    @include onMobile {
+                        flex-direction: column;
+                        align-items: start;
+                    }
+
                     &__desc {
                         width: 33vw;
 
                         margin-left: 35px;
+
+                        @include onMobile {
+                            width: 100%;
+                            margin-left: 0;
+                            margin-bottom: 25px;
+                        }
+                    }
+
+                    &__title {
+                        @include onMobile {
+                            margin-bottom: 5px;
+                        }
+
+                        &-mob {
+                            @include onDesktop {
+                                display: none;
+                            }
+                        }
                     }
                 }
 
                 &__sec {
                     margin-top: -25px;
 
+                    flex-direction: row;
+                    align-items: center;
+
+                    @include onMobile {
+                        margin-top: 0;
+
+                        flex-direction: column;
+                        align-items: start;
+                    }
+
                     &__btns {
                         gap: 2vw;
+
+                        flex-direction: row;
+
+                        @include onMobile {
+                            flex-direction: column;
+                            gap: 15px;
+                        }
                     }
 
                     &__title {
                         margin-right: 2.6vw;
+
+                        @include onMobile {
+                            display: none;
+                        }
                     }
                 }
             }
 
             &__table {
-                grid-template-columns: repeat(2, 366px);
-                grid-gap: 75px;
+                @include onDesktop {
+                    display: grid;
+                    grid-template-columns: repeat(2, 366px);
+                    grid-gap: 75px;
+                }
+
+                @include onMobile {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 25px;
+                }
 
                 &__item {
                     &__title {
                         margin-bottom: 10px;
+
+                        @include onMobile {
+                            margin-bottom: 5px;
+                        }
                     }
                 }
             }

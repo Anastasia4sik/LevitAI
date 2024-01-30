@@ -214,17 +214,47 @@
                     </a>
                 </li>
 
-              <li>
-                <a href="#">
-                  The NFT Gallery
-                </a>
-              </li>
+                <li>
+                    <a href="/avatar">
+                    My Avatar
+                    </a>
+                </li>
 
-              <li>
-                <a href="#">
-                  The Exchange Market
-                </a>
-              </li>
+                <li>
+                    <a href="/account">
+                    My Account
+                    </a>
+                </li>
+
+                <li>
+                    <a href="/referral">
+                    My Referral System
+                    </a>
+                </li>
+
+                <li>
+                    <a href="/my-events">
+                    My Events
+                    </a>
+                </li>
+
+                <li>
+                    <a href="/messages">
+                    My Messages
+                    </a>
+                </li>
+
+                <li>
+                    <a href="/friends">
+                    My Friends
+                    </a>
+                </li>
+
+                <li>
+                    <a href="/wallet">
+                    My Wallet
+                    </a>
+                </li>
             </ul>
           </div>
         </li>

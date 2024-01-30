@@ -4,12 +4,12 @@
 
         <x-header />
 
-        <div class="avatar__section d-flex flex-row justify-content-between">
+        <div class="avatar__section d-flex justify-content-between">
             <div class="avatar__section__content">
                 <div class="avatar__section__content__top">
-                    <div class="avatar__section__content__top__first d-flex flex-row align-items-center">
+                    <div class="avatar__section__content__top__first d-flex">
                         <h2 class="avatar__section__content__top__first__title title-main">
-                            My
+                            My <span class="avatar__section__content__top__first__title-mob title-main title-main--stroke">Avatar</span>
                         </h2>
 
                         <p class="avatar__section__content__top__first__desc desc">
@@ -20,7 +20,7 @@
                         </p>
                     </div>
 
-                    <div class="avatar__section__content__top__sec d-flex flex-row align-items-center">
+                    <div class="avatar__section__content__top__sec d-flex">
                         <h2 class="avatar__section__content__top__sec__title title-main title-main--stroke">
                             Avatar
                         </h2>
@@ -43,7 +43,7 @@
                             Add Avatar
                         </a>
 
-                        <div class="avatar__section__content__top__sec__btns flex-row align-items-center">
+                        <div class="avatar__section__content__top__sec__btns align-items-center">
                             <a href="/avatar/edit" class="
                                     complete__btn
                                     d-flex
@@ -85,7 +85,15 @@
                     </div>
                 </div>
 
-                <div class="avatar__section__content__table d-grid">
+                <div class="avatar__section__photo avatar__section__photo--mob">
+                    <p class="avatar__section__photo__text title-little">
+                        You have not created your avatar yet
+                    </p>
+
+                    <img src="{{ asset('src/img/photo/account/avatar.jpg')}}" alt="" class="avatar__section__img">
+                </div>
+
+                <div class="avatar__section__content__table">
                     <div class="avatar__section__content__table__item">
                         <h3 class="avatar__section__content__table__item__title title-little">
                             Secure Payment
@@ -132,7 +140,7 @@
                 </div>
             </div>
 
-            <div class="avatar__section__photo">
+            <div class="avatar__section__photo avatar__section__photo--big">
                 <p class="avatar__section__photo__text title-little">
                     You have not created your avatar yet
                 </p>
@@ -150,17 +158,24 @@
             const page = document.querySelector('.avatar');
             const oneBtn = document.querySelector('.avatar__section__content__top__sec__button');
             const btnBlock = document.querySelector('.avatar__section__content__top__sec__btns');
+            const text = document.querySelector('.avatar__section__photo__text');
+
 
             if (!photo.complete || photo.naturalWidth === 0) {
                 oneBtn.style.display = 'flex';
                 btnBlock.style.display = 'none';
                 page.classList.add('avatar--1');
                 page.classList.remove('avatar--2');
+
+                text.style.display = 'flex';
+                photo.style.display = 'none';
             } else {
                 oneBtn.style.display = 'none';
                 btnBlock.style.display = 'flex';
                 page.classList.add('avatar--2');
                 page.classList.remove('avatar--1');
+                text.style.display = 'none';
+                photo.style.display = 'block';
             }
         })
     </script>
