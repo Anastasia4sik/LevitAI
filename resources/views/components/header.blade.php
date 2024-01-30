@@ -1,4 +1,13 @@
-<header class="header flex-row justify-content-between">
+<header
+    class="
+        header
+        flex-row
+        justify-content-between
+        @if (request() -> is('exchange-market'))
+            header-filter
+        @endif
+    "
+>
   <div class="header__dropdown">
     <div class="header__dropdown__label align-items-center">
       <img class="header__dropdown__label__img align-items-center"

@@ -70,4 +70,31 @@ new Swiper('.item__container__swiper', {
     spaceBetween: 66,
     speed: 1500,
     slidesPerView: 'auto',
+
+    breakpoints: {
+        320: {
+            spaceBetween: 5,
+            slidesPerView: 1,
+        },
+        425: {
+            spaceBetween: 10,
+            slidesPerView: 2,
+        },
+        801: {
+            spaceBetween: 15,
+            slidesPerView: 3,
+        },
+        1010: {
+            spaceBetween: 25,
+            slidesPerView: 4,
+        },
+        1230: {
+            spaceBetween: 40,
+            slidesPerView: 5,
+        },
+        1301: {
+            spaceBetween: 66,
+            slidesPerView: 'auto',
+        }
+    }
 });

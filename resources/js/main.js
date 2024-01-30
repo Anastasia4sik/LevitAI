@@ -50,12 +50,12 @@ document.addEventListener('DOMContentLoaded', function() {
 const currentURL = window.location.href;
 
 //pagination
-    if (currentURL.includes('/referral/transactions') || currentURL.includes('/friends') || currentURL.includes('/exchange-market')) {
+    if (currentURL.includes('/referral/transactions') || currentURL.includes('/friends') || currentURL.includes('/exchange-market*')) {
         let cardsPerPage;
         const dataContainer = document.querySelector('.catalog');
 
-        if (dataContainer.classList.contains('exchange__container__table__catalog')) {
-            cardsPerPage = 12;
+        if (dataContainer && dataContainer.classList.contains('exchange__container__table__catalog')) {
+            cardsPerPage = (window.innerWidth <= 1300) ? 8 : 12;
         } else {
             cardsPerPage = 10;
         }
