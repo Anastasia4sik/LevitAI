@@ -115,7 +115,7 @@
           You will be able to get VR tokens by:
         </p>
 
-        <div class="discover__article__content__text__table d-flex flex-row">
+        <div class="discover__article__content__text__table d-flex">
           <div class="discover__article__content__text__table__left">
             <h4 class="discover__article__content__text__table__left__title title-little">
               Buying

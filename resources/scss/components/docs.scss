@@ -1,7 +1,7 @@
 .docs {
     padding-left: 105px;
 
-    background-image: url('/src/img/bc/bc-docs.png');
+    background-image: url('../../../public/src/img/bc/bc-docs.png');
     background-position: center top;
     background-size: contain;
 
@@ -17,6 +17,12 @@
         @include onDesktop {
             background: none;
         }
+
+        // @include onMobile {
+        //     background-image: url('../../../public/src/img/bc/bc-docs-mobileDots.png');
+        //     background-position: center;
+        //     background-size: cover;
+        // }
     }
 
     &__top {
@@ -24,7 +30,7 @@
             padding-top: 90px;
             padding-bottom: 25px;
 
-            background-image: url('/src/img/bc/bc-docs-mobileDots.png');
+            background-image: url('../../../public/src/img/bc/bc-docs-mobileDots.png');
             background-position: center top;
             background-size: cover;
         }
@@ -70,7 +76,7 @@
         @include onMobile {
             padding-bottom: 70px;
 
-            background-image: url('/src/img/bc/bc-docs-mobile.png');
+            background-image: url('../../../public/src/img/bc/bc-docs-mobile.png');
             background-position: center top;
             background-size: cover;
         }

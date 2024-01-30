@@ -2,23 +2,20 @@
     class="
         docs
         @if(request()->is('documentation'))
-            dosc-documentation
+            docs-documentation
         @endif
     "
 >
     <div
         class="
             docs__top
-            @if(request()->is('documentation'))
-                docs-documentation
-            @endif
         "
     >
         <h2 class="docs__top__title title-main">
             @if(request()->is('documentation'))
-                LevitAI <span class="title-main--stroke">Permit</span>
+                Read <span class="title-main--stroke">LevitAI</span> Documents
             @else
-                Read <span class="title-main--stroke">LevitAI</span>
+                LevitAI <span class="title-main--stroke">Permit</span>
             @endif
         </h2>
 

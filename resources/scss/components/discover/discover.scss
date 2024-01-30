@@ -1,5 +1,5 @@
 .discover {
-    background-image: url('/src/img/bc/bc-vision.png');
+    background-image: url('../../../public/src/img/bc/bc-vision.png');
 
     background-position: center top;
     background-size: contain;
@@ -121,6 +121,14 @@
 
                     margin-bottom: 30px;
                     margin-top: 15px;
+                    flex-direction: row;
+
+                    @include onMobile {
+                        flex-direction: column;
+                        gap: 10px;
+                        margin-top: 10px;
+                        margin-bottom: 25px;
+                    }
 
                     &__left,
                     &__right {
@@ -128,6 +136,11 @@
                             margin-bottom: 15px;
 
                             font-size: 16px;
+
+                            @include onMobile {
+                                margin-bottom: 5px;
+                                font-size: 14px;
+                            }
                         }
 
                         &__desc {
@@ -135,6 +148,10 @@
 
                             &:not(:last-of-type) {
                                 margin-bottom: 15px;
+
+                                @include onMobile {
+                                    margin-bottom: 10px;
+                                }
                             }
                         }
                     }

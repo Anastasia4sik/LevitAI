@@ -1,5 +1,5 @@
 .partners {
-    background-image: url('/src/img/bc/bc-vision.png');
+    background-image: url('../../../public/src/img/bc/bc-vision.png');
 
     background-size: contain;
     background-position: center top;
@@ -26,7 +26,7 @@
             grid-gap: 51px;
 
             @include onMobile {
-                grid-template-columns: repeat(auto-fill, minmax(40vw, 1fr));
+                grid-template-columns: repeat(auto-fill, minmax(auto, 1fr));
                 grid-gap: 15px;
             }
 

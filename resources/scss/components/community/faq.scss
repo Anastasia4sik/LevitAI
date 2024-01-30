@@ -1,11 +1,11 @@
 .faq {
-    background-image: url('/src/img/bc/bc-faqPage.png');
+    background-image: url('../../../public/src/img/bc/bc-faqPage.png');
 
     background-size: contain;
     background-position: center top;
 
     @include onMobile {
-        background-image: url('/src/img/bc/bc-faq-mobile.png');
+        background-image: url('../../../public/src/img/bc/bc-faq-mobile.png');
 
         background-size: contain;
         background-position: center top;
@@ -19,7 +19,7 @@
 
     &-qna {
         @include onDesktop {
-            background-image: url('/src/img/bc/bc-gna-faq.png');
+            background-image: url('../../../public/src/img/bc/bc-gna-faq.png');
 
             background-size: contain;
             background-position: left bottom;
