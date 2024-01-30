@@ -1,27 +1,51 @@
 .register {
-    background-image: url('/src/img/bc/bc-signIn.png');
+    background-image: url('../../../../public/src/img/bc/bc-signIn.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-
-    height: 100vh;
-
     position: relative;
 
-    &__container {
-        background-image: url('/src/img/photo/signIn.png');
+    @include onDesktop {
+        height: 100vh;
+    }
+
+    @include onMobile {
+        margin-bottom: 120px;
+
+        background-image: url('../../../../public/src/img/bc/bc-register.png');
         background-repeat: no-repeat;
-        background-size: 43% 100%;
-        background-position: left center;
-        position: absolute;
+        background-size: cover;
+    }
 
-        left: 17vw;
-        top: 12vh;
-
+    &__container {
         padding: 4vh 0;
+
+        flex-direction: row;
+        align-items: center;
+
+        @include onDesktop {
+            position: absolute;
+            left: 17vw;
+            top: 12vh;
+
+            background-image: url('../../../../public/src/img/photo/signIn.png');
+            background-repeat: no-repeat;
+            background-size: 43% 100%;
+            background-position: left center;
+        }
+
+        @include onMobile {
+            flex-direction: column;
+
+            padding: 0;
+        }
 
         &--signin {
             left: 20vw;
+
+            @include onMobile {
+                left: 0;
+            }
         }
 
         &__text {
@@ -34,15 +58,50 @@
 
             width: 33%;
 
+            @include onMobile {
+                width: 328px;
+                padding: 130px 0 90px 15px;
+                margin-bottom: 56px;
+
+                margin-right: 0;
+
+                background-image: url('../../../../public/src/img/photo/signIn.png');
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+            }
+
+            &--mob {
+                @include onMobile {
+                    border-radius: 5px;
+                    background-color: #0c002e33;
+                    backdrop-filter: blur(10px);
+
+                    padding: 21px 3.2vw 21px 11px;
+                    width: 328px;
+                }
+            }
+
             &__title {
                 margin-bottom: 15px;
 
                 font-size: 2.5vw;
                 line-height: 114%;
+
+                @include onMobile {
+                    margin-bottom: 0;
+
+                    font-size: 30px;
+                    line-height: 183%;
+                }
             }
 
             &__desc {
                 font-size: 0.72vw;
+
+                @include onMobile {
+                    font-size: 14px;
+                }
             }
         }
 
@@ -53,8 +112,21 @@
 
             padding: 5vh 3vw 6vh;
 
+            @include onMobile {
+                padding: 0 3.2vw 0 48px;
+            }
+
             &__inputs {
                 gap: 24px;
+
+                flex-direction: row;
+
+                @include onMobile {
+                    flex-direction: column;
+                    gap: 0;
+
+                    width: 100%;
+                }
             }
 
             &__input {
@@ -72,8 +144,21 @@
 
                 width: 19vw;
 
+                @include onMobile {
+                    width: 100%;
+                    padding: 20px;
+
+                    font-size: 14px;
+
+                    margin-bottom: 25px;
+                }
+
                 &::placeholder {
                     opacity: 0.25;
+
+                    @include onMobile {
+                        font-size: 14px;
+                    }
                 }
             }
 
@@ -82,6 +167,11 @@
 
                 font-size: 1vw;
 
+                @include onMobile {
+                    margin-bottom: 10px;
+
+                    font-size: 18px;
+                }
             }
 
             &__agree {
@@ -93,16 +183,41 @@
                 span {
                     text-decoration: underline;
                 }
+
+                @include onMobile {
+                    margin-bottom: 25px;
+
+                    font-size: 14px;
+                }
             }
 
             &__btns {
                 gap: 10px;
 
                 margin-bottom: 35px;
+                flex-direction: row;
+
+                @include onMobile {
+                    flex-direction: column;
+                }
+
+                &__btn {
+                    gap: 9px;
+                    @include onMobile {
+                        width: 100%;
+                        max-width: 360px;
+
+                        gap: 20%;
+                    }
+                }
             }
 
             &__question {
                 margin-bottom: 5px;
+
+                @include onMobile {
+                    margin-bottom: 10px;
+                }
             }
 
             &__link.desc {
@@ -114,4 +229,8 @@
 
 .signIn__container__form {
     padding: 11vh 3vw;
+
+    @include onMobile {
+        padding: 0 3.2vw 0 48px;
+    }
 }

@@ -4,7 +4,7 @@
 
     <x-header />
 
-    <div class="register__container register__container--signin d-flex flex-row align-items-center">
+    <div class="register__container register__container--signin d-flex">
       <div class="register__container__text">
         <h1 class="register__container__text__title title-little">
           Sign in to the <br> Account
@@ -22,14 +22,14 @@
             Login
           </label>
 
-          <input id="signinLogin" type="text" class="register__container__form__input w-100" placeholder="None"
+          <input id="signinLogin" type="text" class="register__container__form__input" placeholder="None"
             required>
 
           <label for="signinPassword" class="register__container__form__label title-little">
             Password
           </label>
 
-          <input id="signinPassword" type="password" class="register__container__form__input w-100" placeholder="None"
+          <input id="signinPassword" type="password" class="register__container__form__input" placeholder="None"
             required>
         </div>
 
@@ -38,17 +38,16 @@
               href="/privacy-policy" target="_blank">Privacy Policy</a></span>
         </p>
 
-        <div class="register__container__form__btns d-flex flex-row align-items-center">
+        <div class="register__container__form__btns d-flex align-items-center">
           <button type="submit" class="
                             complete__btn
+                            register__container__form__btns__btn
                             d-flex
                             flex-row
                             align-items-center
                             button
                         " style="
-                            gap: 22px;
                             font-size: 16px;
-                            width: 170px;
                         ">
             <img src="{{asset('src/img/icons/arrows/arrow-black.svg')}}" alt="Send" class="complete__btn__img" style="
                                 padding: 15px;
@@ -61,14 +60,13 @@
 
           <button type="button" class="
                             complete__btn
+                            register__container__form__btns__btn
                             d-flex
                             flex-row
                             align-items-center
                             button
                         " style="
-                            gap: 22px;
                             font-size: 16px;
-                            width: 170px;
                         ">
             <img src="{{asset('src/img/icons/google.png')}}" alt="Send" class="complete__btn__img" style="
                                 padding: 0;

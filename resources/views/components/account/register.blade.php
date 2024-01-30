@@ -4,20 +4,22 @@
 
     <x-header />
 
-    <div class="register__container d-flex flex-row align-items-center">
+    <div class="register__container d-flex">
       <div class="register__container__text">
-        <h1 class="register__container__text__title title-little">
-          Register an <br> account
-        </h1>
+        <div class="register__container__text--mob">
+            <h1 class="register__container__text__title title-little">
+              Register an account
+            </h1>
 
-        <p class="register__container__text__desc desc">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt labore dolore magna
-          aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-        </p>
+            <p class="register__container__text__desc desc">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt labore dolore magna
+              aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+            </p>
+        </div>
       </div>
 
       <form action="#" class="register__container__form">
-        <div class="register__container__form__inputs d-flex flex-row">
+        <div class="register__container__form__inputs d-flex">
           <div class="register__container__form__inputs__left d-flex flex-column">
             <label for="registerName" class="register__container__form__label title-little">
               Name:
@@ -67,17 +69,17 @@
               href="/privacy-policy" target="_blank">Privacy Policy</a></span>
         </p>
 
-        <div class="register__container__form__btns d-flex flex-row align-items-center">
+        <div class="register__container__form__btns d-flex align-items-center">
           <button type="submit" class="
                             complete__btn
+                            register__container__form__btns__btn
                             d-flex
                             flex-row
                             align-items-center
                             button
                         " style="
-                            gap: 9px;
+
                             font-size: 16px;
-                            width: 203px;
                         ">
             <img src="{{asset('src/img/icons/arrows/arrow-black.svg')}}" alt="Send" class="complete__btn__img" style="
                                 padding: 15px;
@@ -90,14 +92,13 @@
 
           <button type="button" class="
                             complete__btn
+                            register__container__form__btns__btn
                             d-flex
                             flex-row
                             align-items-center
                             button
                         " style="
-                            gap: 10px;
                             font-size: 16px;
-                            width: 239px;
                         ">
             <img src="{{asset('src/img/icons/google.png')}}" alt="Send" class="complete__btn__img" style="
                                 padding: 0;

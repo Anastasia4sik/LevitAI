@@ -2,7 +2,7 @@
     @include onDesktop {
         padding: 54px 2vw 0 105px;
 
-        background-image: url('/src/img/bc/bc-team.png');
+        background-image: url('../../../../public/src/img/bc/bc-team.png');
         background-position: center -280px;
     }
 
@@ -174,12 +174,12 @@
         padding: 100px 2vw 0 105px;
 
         @include onDesktop {
-            background-image: url('/src/img/bc/bc-team-aboutPage.png');
+            background-image: url('../../../../public/src/img/bc/bc-team-aboutPage.png');
         }
 
         @include onMobile {
             padding: 90px 3.2vw 0 48px;
-            background-image: url('/src/img/bc/bc-team-aboutPage-mobile.png');
+            background-image: url('../../../../public/src/img/bc/bc-team-aboutPage-mobile.png');
             background-position: center -30px;
             background-size: cover;
 
