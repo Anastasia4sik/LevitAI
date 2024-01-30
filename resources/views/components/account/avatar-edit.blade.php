@@ -8,18 +8,18 @@
       <div class="avatarEdit__section__content">
 
         <div class="article__path d-flex flex-row ">
-          <p class="article__path title-little">
-            <span>
-                <a href="/" class="article__path article__path--links title-little">
-                    Home \&#160; </a>
+            <p class="article__path title-little">
+                <span>
+                    <a href="/" class="article__path article__path--links title-little">
+                        Home \&#160; </a>
+                    </span>
+                <span>
+                    <a href="/avatar" class="article__path article__path--links title-little">
+                        My Avatar \&#160;
+                    </a>
                 </span>
-            <span>
-                <a href="/avatar" class="article__path article__path--links title-little">
-                    My Avatar \&#160;
-                </a>
-            </span>
-            Edit Avatar
-        </p>
+                Edit Avatar
+            </p>
         </div>
 
         <div class="avatarEdit__section__content__top">

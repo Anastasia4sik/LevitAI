@@ -38,9 +38,9 @@
             class="account__section"
         >
             <div class="account__section__top">
-                <div class="account__section__top__first d-flex flex-row align-items-center">
+                <div class="account__section__top__first d-flex">
                     <h2 class="account__section__top__first__title title-main">
-                        My
+                        My <span class="account__section__top__first__title--mob title-main title-main--stroke">Account</span>
                     </h2>
 
                     <p class="account__section__top__first__desc desc">
@@ -48,8 +48,8 @@
                     </p>
                 </div>
 
-                <div class="account__section__top__sec d-flex flex-row align-items-center">
-                    <h2 class="account__section__top__sec__title title-main title-main--stroke">
+                <div class="account__section__top__sec d-flex">
+                    <h2 class="account__section__top__sec__title account__section__top__sec__title--big title-main title-main--stroke">
                         Account
                     </h2>
 
@@ -87,7 +87,7 @@
                     TrinitySap
                 </h3>
 
-                <div class="account__section__table__blocks d-flex flex-row align-items-center justify-content-between">
+                <div class="account__section__table__blocks d-flex">
                     <div class="account__section__table__blocks__item account__section__table__blocks__item--1">
                         <p class="account__section__table__blocks__item__title desc">
                             Name:
@@ -202,9 +202,11 @@
 
             <div class="account__section__roadmap">
                 <div class="account__section__roadmap__top">
-                    <div class="account__section__roadmap__top__first d-flex flex-row align-items-center">
+                    <div class="account__section__roadmap__top__first d-flex">
                         <h2 class="account__section__roadmap__top__first__title title-main">
-                            Our <span class="title-main title-main--stroke">Strategy</span>
+                            Our
+                            <span class="title-main title-main--stroke">Strategy</span>
+                            <span class="account__section__roadmap__top__title--mob title-main title-main--stroke">& Roadmap</span>
                         </h2>
 
                         <p class="account__section__roadmap__top__desc desc">
@@ -212,12 +214,12 @@
                         </p>
                     </div>
 
-                    <h2 class="account__section__roadmap__top__title title-main">
+                    <h2 class="account__section__roadmap__top__title account__section__roadmap__top__title--big title-main">
                         & Roadmap
                     </h2>
                 </div>
 
-                <div class="account__section__roadmap__content d-flex flex-row align-items-center justify-content-between">
+                <div class="account__section__roadmap__content d-flex">
                     <img src="{{ asset('src/img/photo/account/account-roadmap.png')}}" alt="Roadmap" class="account__section__roadmap__content__img">
 
                     <div class="account__section__roadmap__content__info">
@@ -281,7 +283,7 @@
                             </svg>
 
                             <p class="account__section__roadmap__content__info__desc desc">
-                                No one can dictate the opening hours of your business, where no one can shut your business, where no one can take it away from you, where there is no lockdown.
+                                No one can dictate the opening hours of your, where no one can shut your business, where no one can take it away from you, where there is no lockdown.
                             </p>
                         </div>
 

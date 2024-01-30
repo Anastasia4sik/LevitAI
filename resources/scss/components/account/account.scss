@@ -3,57 +3,141 @@
     background-size: contain;
     background-position: center top;
 
+    @include onMobile {
+        background-size: auto;
+        background-position: 72% 7%;
+    }
+
     &__section {
         padding: 6.4vh 2vw 13.8vh 105px;
+
+        @include onMobile {
+            padding: 0 0 110px 0;
+        }
 
         &__top {
             margin-bottom: 11.8vh;
 
+            @include onMobile {
+                margin-bottom: 120px;
+                padding-bottom: 290px;
+            }
+
             &__first {
                 gap: 1.8vw;
+                flex-direction: row;
+                align-items: center;
+
+                @include onMobile {
+                    flex-direction: column;
+                    align-items: start;
+
+                    padding: 25px 3.2vw 50px 48px;
+
+                    background-color: #2f004f;
+                }
+
+                &__title {
+                    &--mob {
+                        @include onDesktop {
+                            display: none;
+                        }
+                    }
+                }
 
                 &__desc {
                     width: 33.8vw;
+
+                    @include onMobile {
+                        width: 100%;
+                    }
                 }
             }
 
             &__sec {
                 gap: 2.6vw;
                 margin-top: -25px;
+
+                flex-direction: row;
+                align-items: center;
+
+                @include onMobile {
+                    flex-direction: column;
+                    align-items: start;
+                    margin-top: 0;
+
+                    padding: 0 3.2vw 0 48px;
+
+                }
+
+                &__title {
+                    &--big {
+                        @include onMobile {
+                            display: none;
+                        }
+                    }
+                }
             }
         }
 
         &__table {
             margin-bottom: 9.2vh;
 
+            @include onMobile {
+                margin-bottom: 25px;
+                padding: 0 3.2vw 0 48px;
+            }
+
             &__title {
                 font-size: 5vw;
 
                 margin-bottom: 55px;
+
+                @include onMobile {
+                    margin-bottom: 25px;
+
+                    font-size: 37px;
+                }
             }
 
             &__blocks {
                 gap: 1.5vw;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+
+                @include onMobile {
+                    flex-direction: column;
+                    gap: 25px;
+                }
+
                 &__item {
                     padding: 30px 1.5vw 35px;
+
+                    @include onMobile {
+                        padding: 20px 15px;
+                        width: 100%;
+                    }
 
                     border-radius: 5px;
                     background-color: #180D38;
 
-                    &--1 {
-                        width: 16.7vw;
-                    }
+                    @include onDesktop {
+                        &--1 {
+                            width: 16.7vw;
+                        }
 
-                    &--2 {
-                        width: 20.1vw;
-                    }
+                        &--2 {
+                            width: 20.1vw;
+                        }
 
-                    &--3 {
-                        width: 24.7vw;
-                    }
+                        &--3 {
+                            width: 24.7vw;
+                        }
 
-                    &--4 {
-                        width: 25.4vw;
+                        &--4 {
+                            width: 25.4vw;
+                        }
                     }
 
                     &__title {
@@ -64,6 +148,10 @@
                     &__info {
                         &:not(:last-of-type) {
                             margin-bottom: 20px;
+
+                            @include onMobile {
+                                margin-bottom: 15px;
+                            }
                         }
                     }
                 }
@@ -71,35 +159,97 @@
         }
 
         &__roadmap {
+            @include onMobile {
+                padding: 0 3.2vw 0 48px;
+            }
+
             &__top {
                 margin-bottom: 5vh;
 
+                @include onMobile {
+                    margin-bottom: 25px;
+                }
+
                 &__first {
                     gap: 1.8vw;
+
+                    flex-direction: row;
+                    align-items: center;
+
+                    @include onMobile {
+                        flex-direction: column;
+                        align-items: start;
+
+                        gap: 15px;
+                    }
                 }
 
                 &__desc {
                     width: 20.5vw;
+
+                    @include onMobile {
+                        width: 100%;
+                    }
                 }
 
                 &__title {
                     margin-top: -25px;
                     margin-left: 24.5vw;
+
+                    @include onMobile {
+                        margin-top: 0;
+                        margin-left: 0;
+                    }
+
+                    @include onDesktop {
+                        &--mob {
+                            display: none;
+                        }
+                    }
+
+                    &--big {
+                        @include onMobile {
+                            display: none;
+                        }
+                    }
                 }
             }
 
             &__content {
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+
+                @include onMobile {
+                    flex-direction: column;
+                    align-items: start;
+                }
+
                 &__img {
                     width: 30vw;
+
+                    @include onMobile {
+                        width: 100%;
+                        max-width: 360px;
+                        margin-bottom: 25px;
+                    }
                 }
 
                 &__info {
                     width: 54.7vw;
 
+                    @include onMobile {
+                        width: 100%;
+                    }
+
                     &__title {
                         margin-bottom: 15px;
 
                         font-size: 1.25vw;
+
+                        @include onMobile {
+                            font-size: 18px;
+                        }
                     }
 
                     &__block {
@@ -112,10 +262,18 @@
                         &:last-of-type {
                             margin-bottom: 30px;
                         }
+
+                        @include onMobile {
+                            width: 100%;
+                        }
                     }
 
                     &__desc {
                         opacity: 0.75;
+
+                        @include onMobile {
+                            width: 100%;
+                        }
 
                         &--mb {
                             margin-bottom: 15px;

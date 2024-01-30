@@ -206,19 +206,18 @@
         <x-header />
 
         <div class="accountEdit__section">
-            <div class="article__path d-flex flex-row ">
-                <a href="/" class="article__path__item article__path__item--links title-little">
-                    Home \&#160;
-                </a>
-
-                <a href="/account" class="article__path__item article__path__item--links title-little">
-                    My Account \&#160;
-                </a>
-
-                <p class="article__path__item title-little">
-                    Edit Account
-                </p>
-            </div>
+            <p class="article__path title-little">
+                <span>
+                    <a href="/" class="article__path article__path--links title-little">
+                        Home \&#160; </a>
+                    </span>
+                <span>
+                    <a href="/account" class="article__path article__path--links title-little">
+                        My Account \&#160;
+                    </a>
+                </span>
+                Edit Account
+            </p>
 
             <form
                 action="#"
@@ -228,7 +227,7 @@
                     Edit Account
                 </h1>
 
-                <div class="register__container__form__inputs accountEdit__section__form__inputs d-flex flex-row">
+                <div class="register__container__form__inputs accountEdit__section__form__inputs d-flex">
                     <div class="register__container__form__inputs__left d-flex flex-column accountEdit__section__form__left">
                         <label
                             for="registerName"
@@ -348,7 +347,7 @@
                     required
                 >
 
-                <div class="register__container__form__inputs accountEdit__section__form__inputs d-flex flex-row">
+                <div class="register__container__form__inputs accountEdit__section__form__inputs d-flex">
                     <div class="d-flex flex-column accountEdit__section__form__first">
                         <label
                             for="registerAge"
@@ -493,15 +492,14 @@
                     type="submit"
                     class="
                         complete__btn
+                        accountEdit__section__form__btn
                         d-flex
                         flex-row
                         align-items-center
                         button
                     "
                     style="
-                        gap: 15px;
                         font-size: 16px;
-                        width: 195px;
                     "
                 >
                     <img
