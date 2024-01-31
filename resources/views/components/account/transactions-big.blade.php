@@ -75,36 +75,37 @@
 
         <div class="transactionsBig d-flex flex-column">
             <div class="article__path d-flex flex-row ">
-                <a href="/" class="article__path__item article__path__item--links title-little">
-                    Home \&#160;
-                </a>
-
-                <a href="/referral" class="article__path__item article__path__item--links title-little">
-                   Referral Sytem \&#160;
-                </a>
-
-                <p class="article__path__item title-little">
+                <p class="article__path title-little">
+                    <span>
+                        <a href="/" class="article__path article__path--links title-little">
+                            Home \&#160; </a>
+                        </span>
+                    <span>
+                        <a href="/referral" class="article__path article__path--links title-little">
+                            Referral System \&#160;
+                        </a>
+                    </span>
                     Transactions
                 </p>
             </div>
 
-            <div class="transactionsBig__top d-flex flex-row justify-content-between align-items-end">
+            <div class="transactionsBig__top d-flex justify-content-between">
                 <h2 class="transactionsBig__title title-main">
                     Transactions
                 </h2>
 
                 <div class="transactionsBig__top__btns d-flex flex-row align-items-center">
-                    <button type="submit" class="
+                    <button
+                        type="submit"
+                        class="
                             complete__btn
+                            transactionsBig__top__btns__sec
                             d-flex
                             flex-row
                             align-items-center
                             button
-                        " style="
-                            gap: 0.7vw;
-                            font-size: 0.8vw;
-                            width: 6.9vw;
-                        ">
+                        "
+                    >
                         <img src="{{asset('src/img/icons/filter.svg')}}" alt="Send" class="complete__btn__img" style="
                                             padding: 12px;
                                         ">
@@ -112,17 +113,17 @@
                         Filter
                     </button>
 
-                    <button type="submit" class="
+                    <button
+                        type="submit"
+                        class="
                             complete__btn
+                            transactionsBig__top__btns__first
                             d-flex
                             flex-row
                             align-items-center
                             button
-                        " style="
-                            gap: 0.7vw;
-                            font-size: 0.8vw;
-                            width: 10vw;
-                        ">
+                        "
+                    >
                         <img src="{{asset('src/img/icons/arrows/arrow-download2.svg')}}" alt="Send" class="complete__btn__img" style="
                                             padding: 12px 14px;
                                         ">
@@ -137,5 +138,4 @@
 
         <x-footer />
     </section>
-
 </x-base>

@@ -52,12 +52,12 @@ const currentURL = window.location.href;
 //pagination
     if (currentURL.includes('/referral/transactions') || currentURL.includes('/friends') || currentURL.includes('/exchange-market*')) {
         let cardsPerPage;
-        const dataContainer = document.querySelector('.catalog');
+        const dataContainer = document.querySelector('.catalog') || document.querySelector('.catalogMob');
 
         if (dataContainer && dataContainer.classList.contains('exchange__container__table__catalog')) {
             cardsPerPage = (window.innerWidth <= 1300) ? 8 : 12;
         } else {
-            cardsPerPage = 10;
+            cardsPerPage = (window.innerWidth <= 1300) ? 5 : 10;
         }
 
         const pagination = document.getElementById('pagination') || document.getElementById('paginationT');

@@ -4,6 +4,11 @@
     table {
         width: 100%;
         margin-bottom: 35px;
+
+        @include onMobile {
+            display: none;
+
+        }
     }
 
     &__head {
@@ -80,20 +85,127 @@
             }
         }
     }
+
+    &__mob {
+        @include onDesktop {
+            display: none;
+        }
+
+        width: 100%;
+
+        &__main,
+        &__block {
+            width: 100%;
+
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__head {
+            font-size: 20px;
+            padding-left: 13px;
+        }
+
+        &__title {
+            padding: 20px 40px 20px 25px;
+            margin-left: -12px;
+            justify-content: space-between;
+
+            background-color: #ffffff0d;
+            width: 100%;
+
+            &:not(:last-of-type) {
+                margin-bottom: 5px;
+            }
+        }
+
+        &__date {
+            font-size: 18px;
+        }
+
+        &__img {
+            width: 40px;
+            height: 40px;
+        }
+
+        &__info {
+            display: none;
+
+            gap: 10px;
+            padding-left: 20px;
+            margin-bottom: 10px;
+            margin-top: 15px;
+
+            &__row {
+                gap: 10px;
+
+                &__title {
+                    margin-bottom: 0;
+                }
+
+                &__text {
+                    font-style: 16px;
+                }
+            }
+        }
+    }
 }
 
 .transactionsBig {
     padding: 6.5vh 2vw 8vh 105px;
 
+    @include onMobile {
+        padding: 25px 3.2vw 110px 48px;
+    }
+
     &__top {
         width: 100%;
-
         margin-bottom: 6.9vh;
+
+        flex-direction: row;
+        align-items: end;
+
+        @include onMobile {
+            margin-bottom: 25px;
+
+            flex-direction: column;
+            align-items: start;
+        }
 
         &__btns {
             gap: 15px;
 
             height: min-content;
+
+            @include onMobile {
+                gap: 6px;
+            }
+
+            &__first,
+            &__sec {
+                gap: 15px;
+                font-size: 16px;
+
+                @include onMobile {
+                    font-size: 14px;
+                }
+            }
+
+            &__first {
+                width: 194px;
+
+                @include onMobile {
+                    width: 182px;
+                }
+            }
+
+            &__sec {
+                width: 134px;
+
+                @include onMobile {
+                    width: 129px;
+                }
+            }
         }
     }
 }

@@ -168,23 +168,11 @@
             'link' => '#',
             'status' => 'completed',
         ],
-        'item15' => [
-            'id' => 15,
-            'nickname' => 'TrinitySap',
-            'img' => 'src/img/icons/transactions/L.svg',
-            'time' => '16:46',
-            'date' => '12 Dec 2023',
-            'amount' => '2.454665',
-            'vat' => '0.0435',
-            'profit' => '0.236564',
-            'link' => '#',
-            'status' => 'pending',
-        ],
     ];
 @endphp
 
 <div class="transactions">
-    <table>
+    <table class="transactions__table">
         <thead
             class="
                 transactions__head
@@ -233,9 +221,7 @@
 
         <tbody
             class="
-                @if (request()->is('referral/transactions'))
-                    catalog
-                @endif
+                transactions__table__tbody
             "
         >
             @foreach ($transactions as $item)
@@ -337,6 +323,135 @@
         </tbody>
     </table>
 
+    <div class="transactions__mob">
+        <h5 class="transactions__mob__head title-little">
+            Date
+        </h5>
+
+        <div
+            class=" transactions__mob__main
+                @if (request()->is('referral/transactions'))
+                    catalog
+                @endif
+            "
+        >
+            @foreach($transactions as $key => $item)
+                <div class="
+                    transactions__mob__block
+                    @if (request()->is('referral/transactions'))
+                        catalog__block
+                    @endif
+
+                    @if (request()->is('referral'))
+                        {{ $loop->index > 4 ? 'd-none' : '' }}
+                    @endif
+                    "
+                >
+                    <div class="transactions__mob__title d-flex flex-row align-items-center">
+                        <p class="transactions__item__date title-little">
+                            {{ $item['time']}}, {{ $item['date']}}
+                        </p>
+
+                        <img src="{{ asset($item['img'])}}" alt="Item icon" class="transactions__mob__img">
+                    </div>
+
+                    <div class="transactions__mob__info flex-column">
+                        <div class="transactions__mob__info__row d-flex flex-row align-items-center">
+                            <h5 class="transactions__mob__info__row__title title-little">
+                                Nickname:
+                            </h5>
+
+                            <p class="transactions__mob__info__row__text title-little">
+                                {{ $item['nickname']}}
+                            </p>
+                        </div>
+
+                        <div class="transactions__mob__info__row d-flex flex-row align-items-center">
+                            <h5 class="transactions__mob__info__row__title title-little">
+                                Amount:
+                            </h5>
+
+                            <p class="transactions__mob__info__row__text title-little">
+                                {{ $item['amount']}}
+                            </p>
+                        </div>
+
+                        <div class="transactions__mob__info__row d-flex flex-row align-items-center">
+                            <h5 class="transactions__mob__info__row__title title-little">
+                                VAT:
+                            </h5>
+
+                            <p class="transactions__mob__info__row__text">
+                                ${{ $item['vat'] }}
+                            </p>
+                        </div>
+
+                        <div class="transactions__mob__info__row d-flex flex-row align-items-center">
+                            <h5 class="transactions__mob__info__row__title title-little">
+                                Profit:
+                            </h5>
+
+                            <p class="transactions__mob__info__row__text">
+                                {{ $item['profit'] }}
+                            </p>
+                        </div>
+
+                        @if (request()->is('referral/transactions'))
+                            <div class="transactions__mob__info__row d-flex flex-row align-items-center">
+                                <h5 class="transactions__mob__info__row__title title-little">
+                                    Link:
+                                </h5>
+
+                                <div class="d-flex flex-row align-items-center transactions__item__status">
+                                    <img src="{{ asset('src/img/icons/download.svg')}}" alt="">
+
+                                    <p class="transactions__mob__info__row__text title-little">
+                                        Download
+                                    </p>
+                                </div>
+                        </div>
+                        @endif
+
+                        @if ($item['status'] == 'completed')
+                            <div
+                                class="transactions__item__status--completed transactions__mob__info__row d-flex flex-row align-items-center"
+                            >
+                                <h5 class="transactions__mob__info__row__title title-little">
+                                    Status:
+                                </h5>
+
+                                <div class="d-flex flex-row align-items-center justify-content-end transactions__item__status ">
+                                    <p class="transactions__mob__info__row__text title-little">
+                                        Completed
+                                    </p>
+
+                                    <img src="{{asset('src/img/icons/transactions/check.svg')}}" alt="">
+                                </div>
+                            </div>
+                        @else
+                            <div
+                                class="transactions__item__status--pending transactions__mob__info__row d-flex flex-row align-items-center"
+                            >
+                                <h5 class="transactions__mob__info__row__title title-little">
+                                    Status:
+                                </h5>
+
+                                <div class="d-flex flex-row align-items-center justify-content-end transactions__item__status">
+                                    <p class="transactions__mob__info__row__text title-little">
+                                        Pending
+                                    </p>
+
+                                    <img src="{{asset('src/img/icons/transactions/pending.svg')}}" alt="">
+                                </div>
+                            </div>
+                        @endif
+                    </div>
+                </div>
+            @endforeach
+        </div>
+
+    </div>
+
     @if (request()->is('referral/transactions'))
         <div class="pagination">
             <ul id="paginationT" class="pagination d-flex align-items-center">
@@ -344,4 +459,31 @@
             </ul>
         </div>
     @endif
+
+
+    <script>
+        const tbody = document.querySelector('.transactions__table__tbody')
+
+        if (window.innerWidth > 1300 && location.pathname === '/referral/transactions') {
+            tbody.classList.add('catalog');
+        } else {
+            tbody.classList.remove('catalog');
+        }
+
+        //mob open/close
+            const container = document.querySelectorAll('.transactions__mob__block')
+
+            container.forEach((block) => {
+                const button = block.querySelector('.transactions__mob__title');
+                const info = block.querySelector('.transactions__mob__info');
+
+                button.addEventListener('click', function() {
+                    if (info.style.display != 'flex') {
+                        info.style.display = 'flex';
+                    } else {
+                        info.style.display = 'none';
+                    }
+                });
+            });
+    </script>
 </div>

@@ -128,11 +128,6 @@
                         button
                         referral__top__copy__btn
                     "
-                    style="
-                        gap: 0.4vw;
-                        font-size: 0.8vw;
-                        width: 9vw;
-                    "
                     id="copy"
                 >
                     <img
@@ -187,12 +182,12 @@
     </section>
 
     <section id="referrals" class="referral__blocks">
-        <div class="referral__referrals d-flex flex-row  justify-content-between">
+        <div class="referral__referrals d-flex justify-content-between">
             <div class="referral__referrals__content">
                 <div class="referral__referrals__top">
-                    <div class="referral__referrals__top__text d-flex flex-row align-items-center">
+                    <div class="referral__referrals__top__text d-flex">
                         <h2 class="referral__referrals__top__text__title title-main">
-                            Your
+                            Your <span class="referral__referrals__top__title--mob title-main title-main--stroke">Referral</span>
                         </h2>
 
                         <p class="referral__referrals__top__text__desc desc">
@@ -200,7 +195,7 @@
                         </p>
                     </div>
 
-                    <h2 class="referral__referrals__top__title title-main title-main--stroke">
+                    <h2 class="referral__referrals__top__title referral__referrals__top__title--big title-main title-main--stroke">
                         Referral
                     </h2>
                 </div>
@@ -245,27 +240,27 @@
             <img src="{{ asset('src/img/referrals-bitcoin.png')}}" alt="" class="referral__referrals__img">
         </div>
 
-        <div class="referral__statistic d-flex flex-row align-items-center justify-content-between">
+        <div class="referral__statistic d-flex">
             <img src="{{ asset('src/img/referrals-statistic.png')}}" alt="Referral Statistic" class="referral__statistic__img">
 
             <div class="referral__statistic__block">
                 <div class="referral__statistic__top d-flex flex-column align-items-end">
-                    <div class="referral__statistic__top__text d-flex flex-row align-items-center">
+                    <div class="referral__statistic__top__text d-flex">
                         <p class="referral__statistic__top__text__desc desc">
                             Monotonectally productivate virtual benefits vis-a-vis clicks-and-mortar lead ship. Seamlessly generate user friendly opportunitie after principle-centered e-markets. Proactively visualize functional
                         </p>
 
                         <h2 class="referral__statistic__top__text__title title-main">
-                            Your
+                            Your <span class="referral__statistic__top__title--mob title-main title-main--stroke">Statistic</span>
                         </h2>
                     </div>
 
-                    <h2 class="referral__statistic__top__title title-main title-main--stroke">
+                    <h2 class="referral__statistic__top__title referral__statistic__top__title--big title-main title-main--stroke">
                         Statistic
                     </h2>
                 </div>
 
-                <div class="referral__statistic__info d-flex flex-row align-items-center justify-content-between">
+                <div class="referral__statistic__info d-flex flex-row align-items-center">
                     <div class="referral__statistic__info__item d-flex flex-column align-items-center text-center">
                         <p class="referral__statistic__info__item__top">
                             Registered referrals
@@ -335,7 +330,7 @@
             </a>
         </div>
 
-        <div class="referral__invite d-flex flex-column align-items-center justify-content-center">
+        <div class="referral__invite  text-center d-flex flex-column align-items-center justify-content-center">
             <h3 class="referral__invite__title title-main">
                 Invite friends right now!
             </h3>
@@ -357,11 +352,6 @@
                         align-items-center
                         button
                         referral__top__copy__btn
-                    "
-                    style="
-                        gap: 0.4vw;
-                        font-size: 0.8vw;
-                        width: 9vw;
                     "
                     id="copy"
                 >
@@ -441,24 +431,24 @@
             });
 
         //showMore
-        document.addEventListener('DOMContentLoaded', function() {
-            const blocks = document.querySelectorAll('.referral__referrals__table__item--hide');
+            document.addEventListener('DOMContentLoaded', function() {
+                const blocks = document.querySelectorAll('.referral__referrals__table__item--hide');
 
-            blocks.forEach((block) => {
-                const button = document.querySelector('.referral__referrals__table__btn');
+                blocks.forEach((block) => {
+                    const button = document.querySelector('.referral__referrals__table__btn');
 
-                button.addEventListener('click', function() {
-                    if (block.style.display != 'flex') {
-                        block.style.display = 'flex';
+                    button.addEventListener('click', function() {
+                        if (block.style.display != 'flex') {
+                            block.style.display = 'flex';
 
-                        button.innerHTML = 'Hide <img src="src/img/icons/arrows/arrow-up.svg" alt="Show less">';
-                    } else {
-                        block.style.display = 'none';
+                            button.innerHTML = 'Hide <img src="src/img/icons/arrows/arrow-up.svg" alt="Show less">';
+                        } else {
+                            block.style.display = 'none';
 
-                        button.innerHTML = 'Show all referrals <img src="src/img/icons/arrows/arrow-down.svg" alt="Show more">';
-                    }
+                            button.innerHTML = 'Show all referrals <img src="src/img/icons/arrows/arrow-down.svg" alt="Show more">';
+                        }
+                    });
                 });
             });
-        });
     </script>
 </x-base>

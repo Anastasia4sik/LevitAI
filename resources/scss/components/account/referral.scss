@@ -4,23 +4,51 @@
     background-size: cover;
     background-position: center;
 
+    @include onMobile {
+        background: none;
+    }
+
     &__top {
         margin-top: 15vh;
 
+        @include onMobile {
+            margin-top: 0;
+            padding: 150px 0 180px 0;
+        }
+
         &__title {
             margin-bottom: 2vh;
+
+            @include onMobile {
+                margin-bottom: 15px;
+                padding: 0 3.2vw 0 48px;
+            }
         }
 
         &__desc {
             margin-bottom: 5vh;
 
             width: 33.8vw;
+
+            @include onMobile {
+                margin-bottom: 15px;
+                padding: 0 3.2vw 0 48px;
+
+                width: 100%;
+                max-width: 360px;
+            }
         }
 
         &__copy {
             position: relative;
 
             margin-bottom: 3vh;
+
+            @include onMobile {
+                margin-bottom: 25px;
+                padding: 0 3.2vw 0 48px;
+
+            }
 
             &__input {
                 border-radius: 40px;
@@ -32,6 +60,11 @@
                 font-size: 14px;
 
                 width: 36vw;
+
+                @include onMobile {
+                    width: 80vw;
+                    padding-right: 163px;
+                }
             }
 
             &__btn {
@@ -39,6 +72,17 @@
                 right: 0;
 
                 background-color: $main-bc;
+                width: 9vw;
+                gap: 0.4vw;
+
+                font-size: 0.8vw;
+
+                @include onMobile {
+                    width: 159px;
+                    gap: 10%;
+
+                    font-size: 14px;
+                }
             }
         }
 
@@ -47,12 +91,22 @@
 
             margin-bottom: 3.9vh;
 
+            @include onMobile {
+                gap: 2.9vw;
+                margin-bottom: 15px;
+                padding-left: 36px;
+            }
+
             hr {
                 height: 1px;
                 width: 8.8vw;
 
                 opacity: 0.75;
                 color: $white;
+
+                @include onMobile {
+                    width: 17.6vw;
+                }
             }
 
             &__text {
@@ -64,6 +118,12 @@
             gap: 0.7vw;
             margin-bottom: 5vh;
 
+            @include onMobile {
+                gap: 15px;
+                margin-bottom: 60px;
+                padding: 0 3.2vw 0 48px;
+            }
+
             &__img {
                 width: 30px;
             }
@@ -71,34 +131,84 @@
 
         &__button {
             margin-bottom: 16vh;
+
+            @include onMobile {
+                margin-bottom: 0;
+                padding: 0 3.2vw 0 48px;
+            }
         }
     }
 
     &__blocks {
         padding: 0 2vw 0 105px;
+
+        @include onMobile {
+            padding: 0;
+        }
     }
 
     &__referrals {
         margin-bottom: 10vh;
+        flex-direction: row;
+
+        @include onMobile {
+            flex-direction: column;
+            margin-bottom: 90px;
+
+            padding: 0 3.2vw 0 48px;
+        }
 
         &__top {
             margin-bottom: 6.9vh;
 
+            @include onMobile {
+                margin-bottom: 25px;
+            }
+
             &__text {
                 gap: 1.8vw;
+                flex-direction: row;
+                align-items: center;
+
+                @include onMobile {
+                    flex-direction: column;
+                    align-items: start;
+                }
 
                 &__desc {
                     width: 20vw;
+
+                    @include onMobile {
+                        width: 100%;
+                    }
                 }
             }
 
             &__title {
                 margin-top: -25px;
+
+                &--big {
+                    @include onMobile {
+                        display: none;
+                    }
+                }
+
+                &--mob {
+                    @include onDesktop {
+                        display: none;
+                    }
+
+                    margin-bottom: 15px;
+                }
             }
         }
 
         &__table {
             width: 35vw;
+
+            @include onMobile {
+                width: 100%;
+            }
 
             &__item {
                 display: flex;
@@ -108,18 +218,32 @@
 
                 background-color: #180D38;
 
+                @include onMobile {
+                    padding: 10px 8px;
+                    margin-bottom: 5px;
+                }
+
                 &--hide {
                     display: none;
                 }
 
                 &__left {
                     gap: 10px;
+
+                    @include onMobile {
+                        gap: 5px;
+                    }
                 }
 
                 &__main {
                     &__name {
                         margin-bottom: 3px;
                         font-size: 16px;
+
+                        @include onMobile {
+                            margin-bottom: 5px;
+                            font-size: 14px;
+                        }
                     }
 
                     &__date {
@@ -130,76 +254,180 @@
 
                 &__info {
                     font-size: 16px;
+
+                    @include onMobile {
+                        font-size: 14px;
+                    }
                 }
             }
 
             &__btn {
                 gap: 15px;
+
+                @include onMobile {
+                    gap: 10px;
+                }
             }
         }
 
         &__img {
             width: 38vw;
             height: fit-content;
+
+            @include onMobile {
+                width: 100%;
+                max-width: 360px;
+            }
         }
     }
 
     &__statistic {
         margin-bottom: 9vh;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+        @include onMobile {
+            flex-direction: column-reverse;
+            align-items: start;
+
+            margin-bottom: 90px;
+            padding: 0 3.2vw 0 48px;
+        }
 
         &__img {
             width: 35vw;
             height: fit-content;
+
+            @include onMobile {
+                width: 100%;
+                max-width: 360px;
+            }
         }
 
         &__top {
             margin-bottom: 6.9vh;
 
+            @include onMobile {
+                margin-bottom: 25px;
+            }
+
             &__text {
                 gap: 1.8vw;
+                flex-direction: row;
+                align-items: center;
+
+                @include onMobile {
+                    flex-direction: column-reverse;
+                    align-items: start;
+                    gap: 15px;
+                }
 
                 &__desc {
                     width: 21vw;
+
+                    @include onMobile {
+                        width: 100%;
+                    }
                 }
             }
 
             &__title {
                 margin-top: -25px;
+
+                @include onMobile {
+                    margin-top: 0;
+                }
+
+                &--mob {
+                    @include onDesktop {
+                        display: none;
+                    }
+                }
+
+                &--big {
+                    @include onMobile {
+                        display: none;
+                    }
+                }
             }
         }
 
         &__info {
             gap: 2.6vw;
+            justify-content: space-between;
+
+            @include onMobile {
+                margin-bottom: 25px;
+
+                gap: 25px 35px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
 
             &__item {
                 &__top {
                     margin-bottom: 20px;
+
+                    @include onMobile {
+                        margin-bottom: 5px;
+
+                        font-size: 14px;
+                    }
                 }
 
                 &__block {
                     width: 10vw;
                     height: 18vh;
 
-                    padding: 2.7vh 0;
-
                     background-color: #40219B;
                     border-radius: 5px;
+
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+
+                    @include onMobile {
+                        width: 140px;
+                        height: 134px;
+                    }
 
                     &__img {
                         margin-bottom: 1.3vh;
                         width: 2.8vw;
 
+                        @include onMobile {
+                            margin-bottom: 5px;
+                            width: 40px;
+                            height: 40px;
+                        }
+
                         &--funds {
                             margin-bottom: 2.9vh;
                             width: 2.8vw;
+
+                            @include onMobile {
+                                margin-bottom: 5px;
+                                width: 40px;
+                                height: 40px;
+                            }
                         }
                     }
 
                     &__text {
                         font-size: 2em;
 
+                        @include onMobile {
+                            font-size: 30px;
+                        }
+
                         &--funds {
                             font-size: 1.5em;
+
+                            @include onMobile {
+                                font-size: 18px;
+                            }
                         }
                     }
                 }
@@ -210,8 +438,17 @@
     &__transactions {
         margin-bottom: 9vh;
 
+        @include onMobile {
+            margin-bottom: 90px;
+            padding: 0 3.2vw 0 48px;
+        }
+
         &__title {
             margin-bottom: 6.9vh;
+
+            @include onMobile {
+                margin-bottom: 15px;
+            }
         }
 
         &__btn {
@@ -219,16 +456,34 @@
 
             height: 54px;
             width: 153px;
+
+            @include onMobile {
+                width: 100%;
+                max-width: 360px;
+
+                margin-top: 25px;
+            }
         }
     }
 
     &__invite {
         margin-bottom: 8.5vh;
 
+        @include onMobile {
+            margin-bottom: 50px;
+        }
+
         &__title {
             margin-bottom: 5vh;
 
             font-size: 2.5vw;
+
+            @include onMobile {
+                margin-bottom: 25px;
+                padding: 0 3.2vw 0 48px;
+
+                font-size: 30px;
+            }
         }
     }
 }
