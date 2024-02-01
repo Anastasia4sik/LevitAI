@@ -306,7 +306,7 @@
                             <img src="{{ asset('src/img/icons/search.svg')}}" alt="Search for a friend">
                         </button>
                     </div>
-                    </div>
+                </div>
             </div>
 
             <div class="friends__content catalog d-grid">

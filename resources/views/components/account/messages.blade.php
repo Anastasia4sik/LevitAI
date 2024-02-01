@@ -6,31 +6,32 @@
             'photo' => 'src/img/photo/nft/user1.jpg',
             'online' => true,
             'lastDate' => '13.02.2023',
-            'lastTime' => '12:47',
+            'lastTime' => '17:00',
             'lastMessage' => 'mine',
-            'lastStatus' => 'unread',
+            'lastStatusRead' => 'false',
+            'lastStatusSent' => 'false',
             'messages' => [
                 'message1' => [
                     'id' => 1,
-                    'time' => '17:00',
+                    'time' => '12:53',
                     'date' => '13.02.2023',
                     'content' => 'Proactively visualize functional',
                 ],
                 'message2' => [
                     'id' => 2,
-                    'time' => '17:00',
+                    'time' => '12:53',
                     'date' => '13.02.2023',
                     'content' => 'Monotonectally productivate virtual benefits vis-a-vis clicks-and-mortar lead ship. ',
                 ],
                 'message3' => [
                     'id' => 3,
-                    'time' => '17:00',
+                    'time' => '12:53',
                     'date' => '13.02.2023',
                     'content' => 'Monotonectally productivate virtual benefits vis-a-vis clicks-and-mortar lead ship. Seamlessly generate user friendly opportunitie after principle-centered e-markets. Proactively visualize functional',
                 ],
                 'message4' => [
                     'id' => 4,
-                    'time' => '17:00',
+                    'time' => '12:53',
                     'date' => '13.02.2023',
                     'content' => 'Proactively visualize functional',
                 ],
@@ -48,31 +49,32 @@
             'photo' => 'src/img/photo/nft/user1.jpg',
             'online' => false,
             'lastDate' => '13.02.2023',
-            'lastTime' => '12:47',
+            'lastTime' => '17:00',
             'lastMessage' => 'notMine',
-            'lastStatus' => 'read',
+            'lastStatusRead' => 'true',
+            'lastStatusSent' => 'true',
             'messages' => [
                 'message1' => [
                     'id' => 1,
-                    'time' => '17:00',
+                    'time' => '12:53',
                     'date' => '13.02.2023',
                     'content' => 'Proactively visualize functional',
                 ],
                 'message2' => [
                     'id' => 2,
-                    'time' => '17:00',
+                    'time' => '12:53',
                     'date' => '13.02.2023',
                     'content' => 'Monotonectally productivate virtual benefits vis-a-vis clicks-and-mortar lead ship. ',
                 ],
                 'message3' => [
                     'id' => 3,
-                    'time' => '17:00',
+                    'time' => '12:53',
                     'date' => '13.02.2023',
                     'content' => 'Monotonectally productivate virtual benefits vis-a-vis clicks-and-mortar lead ship. Seamlessly generate user friendly opportunitie after principle-centered e-markets. Proactively visualize functional',
                 ],
                 'message4' => [
                     'id' => 4,
-                    'time' => '17:00',
+                    'time' => '12:53',
                     'date' => '13.02.2023',
                     'content' => 'Proactively visualize functional',
                 ],
@@ -90,31 +92,32 @@
             'photo' => 'src/img/photo/nft/user1.jpg',
             'online' => true,
             'lastDate' => '13.02.2023',
-            'lastTime' => '12:47',
+            'lastTime' => '17:00',
             'lastMessage' => 'mine',
-            'lastStatus' => 'read',
+            'lastStatusRead' => 'true',
+            'lastStatusSent' => 'true',
             'messages' => [
                 'message1' => [
                     'id' => 1,
-                    'time' => '17:00',
+                    'time' => '12:53',
                     'date' => '13.02.2023',
                     'content' => 'Proactively visualize functional',
                 ],
                 'message2' => [
                     'id' => 2,
-                    'time' => '17:00',
+                    'time' => '12:53',
                     'date' => '13.02.2023',
                     'content' => 'Monotonectally productivate virtual benefits vis-a-vis clicks-and-mortar lead ship. ',
                 ],
                 'message3' => [
                     'id' => 3,
-                    'time' => '17:00',
+                    'time' => '12:53',
                     'date' => '13.02.2023',
                     'content' => 'Monotonectally productivate virtual benefits vis-a-vis clicks-and-mortar lead ship. Seamlessly generate user friendly opportunitie after principle-centered e-markets. Proactively visualize functional',
                 ],
                 'message4' => [
                     'id' => 4,
-                    'time' => '17:00',
+                    'time' => '12:53',
                     'date' => '13.02.2023',
                     'content' => 'Proactively visualize functional',
                 ],
@@ -132,31 +135,32 @@
             'photo' => 'src/img/photo/nft/user1.jpg',
             'online' => true,
             'lastDate' => '13.02.2023',
-            'lastTime' => '12:47',
+            'lastTime' => '17:00',
             'lastMessage' => 'mine',
-            'lastStatus' => 'unread',
+            'lastStatusRead' => 'false',
+            'lastStatusSent' => 'false',
             'messages' => [
                 'message1' => [
                     'id' => 1,
-                    'time' => '17:00',
+                    'time' => '12:53',
                     'date' => '13.02.2023',
                     'content' => 'Proactively visualize functional',
                 ],
                 'message2' => [
                     'id' => 2,
-                    'time' => '17:00',
+                    'time' => '12:53',
                     'date' => '13.02.2023',
                     'content' => 'Monotonectally productivate virtual benefits vis-a-vis clicks-and-mortar lead ship. ',
                 ],
                 'message3' => [
                     'id' => 3,
-                    'time' => '17:00',
+                    'time' => '12:53',
                     'date' => '13.02.2023',
                     'content' => 'Monotonectally productivate virtual benefits vis-a-vis clicks-and-mortar lead ship. Seamlessly generate user friendly opportunitie after principle-centered e-markets. Proactively visualize functional',
                 ],
                 'message4' => [
                     'id' => 4,
-                    'time' => '17:00',
+                    'time' => '12:53',
                     'date' => '13.02.2023',
                     'content' => 'Proactively visualize functional',
                 ],
@@ -174,31 +178,32 @@
             'photo' => 'src/img/photo/nft/user1.jpg',
             'online' => true,
             'lastDate' => '13.02.2023',
-            'lastTime' => '12:47',
+            'lastTime' => '17:00',
             'lastMessage' => 'notMine',
-            'lastStatus' => 'read',
+            'lastStatusRead' => 'true',
+            'lastStatusSent' => 'true',
             'messages' => [
                 'message1' => [
                     'id' => 1,
-                    'time' => '17:00',
+                    'time' => '12:53',
                     'date' => '13.02.2023',
                     'content' => 'Proactively visualize functional',
                 ],
                 'message2' => [
                     'id' => 2,
-                    'time' => '17:00',
+                    'time' => '12:53',
                     'date' => '13.02.2023',
                     'content' => 'Monotonectally productivate virtual benefits vis-a-vis clicks-and-mortar lead ship. ',
                 ],
                 'message3' => [
                     'id' => 3,
-                    'time' => '17:00',
+                    'time' => '12:53',
                     'date' => '13.02.2023',
                     'content' => 'Monotonectally productivate virtual benefits vis-a-vis clicks-and-mortar lead ship. Seamlessly generate user friendly opportunitie after principle-centered e-markets. Proactively visualize functional',
                 ],
                 'message4' => [
                     'id' => 4,
-                    'time' => '17:00',
+                    'time' => '12:53',
                     'date' => '13.02.2023',
                     'content' => 'Proactively visualize functional',
                 ],
@@ -216,31 +221,32 @@
             'photo' => 'src/img/photo/nft/user1.jpg',
             'online' => false,
             'lastDate' => '13.02.2023',
-            'lastTime' => '12:47',
+            'lastTime' => '17:00',
             'lastMessage' => 'mine',
-            'lastStatus' => 'read',
+            'lastStatusRead' => 'false',
+            'lastStatusSent' => 'true',
             'messages' => [
                 'message1' => [
                     'id' => 1,
-                    'time' => '17:00',
+                    'time' => '12:53',
                     'date' => '13.02.2023',
                     'content' => 'Proactively visualize functional',
                 ],
                 'message2' => [
                     'id' => 2,
-                    'time' => '17:00',
+                    'time' => '12:53',
                     'date' => '13.02.2023',
                     'content' => 'Monotonectally productivate virtual benefits vis-a-vis clicks-and-mortar lead ship. ',
                 ],
                 'message3' => [
                     'id' => 3,
-                    'time' => '17:00',
+                    'time' => '12:53',
                     'date' => '13.02.2023',
                     'content' => 'Monotonectally productivate virtual benefits vis-a-vis clicks-and-mortar lead ship. Seamlessly generate user friendly opportunitie after principle-centered e-markets. Proactively visualize functional',
                 ],
                 'message4' => [
                     'id' => 4,
-                    'time' => '17:00',
+                    'time' => '12:53',
                     'date' => '13.02.2023',
                     'content' => 'Proactively visualize functional',
                 ],
@@ -359,37 +365,214 @@
                           <img src="{{ asset('src/img/icons/messages/add.svg')}}" alt="Add" class="messages__dialogs__top__add__img">
                       </a>
                     </div>
-
                 </div>
 
-                <div class="messages__dialogs__item d-flex flex-row align-items-center">
-                    <img src="" alt="Photo" class="messages__dialogs__item__img">
+                <div class="messages__dialogs__block">
+                    @foreach($dialogs as $dialog)
+                        <div class="messages__dialogs__item d-flex flex-row align-items-center">
+                            <div class="messages__dialogs__item__photo">
+                                <img src="{{ asset($dialog['photo'])}}" alt="Photo" class="messages__dialogs__item__photo__img">
 
-                    <div class="messages__dialogs__item__content">
-                        <div class="messages__dialogs__item__content__top d-flex flex-row justify-content-between align-items-center">
-                            <h4 class="messages__dialogs__item__content__top__name title-little">
+                                @if($dialog['online'] === true)
+                                    <div class="messages__dialogs__item__photo__status messages__dialogs__item__photo__status--true"></div>
+                                @elseif($dialog['online'] === false)
+                                    <div class="messages__dialogs__item__photo__status messages__dialogs__item__photo__status--false"></div>
+                                @endif
+                            </div>
 
-                            </h4>
+                            <div class="messages__dialogs__item__content d-flex flex-row align-items-center">
+                                <div class="messages__dialogs__item__content__top d-flex flex-column justify-content-between">
+                                    <h4 class="messages__dialogs__item__content__top__name title-little">
+                                        {{ $dialog['name']}}
+                                    </h4>
 
-                            <p class="messages__dialogs__item__content__top__time desc">
+                                    <p class="messages__dialogs__item__content__top__text desc">
+                                        @php
+                                            $latestMessage = null;
+                                            $latestId = null;
+                                        @endphp
 
-                            </p>
+                                        @foreach ($dialog['messages'] as $message)
+                                            @if ($message['time'] === $dialog['lastTime'] && ($latestId === null || $message['id'] > $latestId))
+                                                @php
+                                                    $latestMessage = $message['content'];
+                                                    $latestId = $message['id'];
+                                                @endphp
+                                            @endif
+                                        @endforeach
+
+                                        {{ $latestMessage }}
+                                    </p>
+                                </div>
+
+                                    <div class="messages__dialogs__item__content__bottom d-flex flex-column justify-content-between align-items-end">
+                                        <p class="messages__dialogs__item__content__bottom__time desc">
+                                            {{ $dialog['lastTime']}}
+                                        </p>
+
+                                        @if($dialog['lastMessage'] === 'mine' && $dialog['lastStatusSent'] === 'false')
+                                            <img
+                                                src="{{ asset('src/img/icons/messages/status/unsent.svg')}}"
+                                                alt="Not sent"
+                                                class="messages__dialogs__item__content__bottom__check"
+                                            >
+                                        @elseif($dialog['lastMessage'] === 'mine' && $dialog['lastStatusSent'] === 'true' && $dialog['lastStatusRead'] === 'false')
+                                            <img
+                                                src="{{ asset('src/img/icons/messages/status/unread.svg')}}"
+                                                alt="Not read"
+                                                class="messages__dialogs__item__content__bottom__check"
+                                            >
+                                        @elseif($dialog['lastMessage'] === 'mine' && $dialog['lastStatusSent'] === 'true' && $dialog['lastStatusRead'] === 'true')
+                                            <img
+                                                src="{{ asset('src/img/icons/messages/status/read.svg')}}"
+                                                alt="Read"
+                                                class="messages__dialogs__item__content__bottom__check"
+                                            >
+                                        @endif
+                                </div>
+                            </div>
                         </div>
-
-                        <div class="messages__dialogs__item__content__bottom d-flex flex-row justify-content-between align-items-center">
-                            <p class="messages__dialogs__item__content__bottom__text desc">
-
-                            </p>
-
-                            <img src="" alt="Read it" class="messages__dialogs__item__content__bottom__check">
-                        </div>
-                    </div>
+                    @endforeach
                 </div>
+
             </div>
 
             <div class="messages__chat">
-                <div class="messages__chat__top d-flex flex-row">
+                <div class="messages__chat__top d-flex flex-row justify-content-between">
+                    <div class="messages__chat__top__right d-flex flex-row">
+                        <img src="{{ asset('src/img/photo/nft/user1.jpg')}}" alt="User photo" class="messages__chat__top__img">
 
+                        <div class="messages__chat__top__info d-flex flex-column justify-content-between">
+                            <p class="messages__chat__top__info__name title-little">
+                                Name
+                            </p>
+
+                            <p class="messages__chat__top__info__status messages__chat__top__info__status--true desc">
+                                Online
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="messages__chat__top__btns d-flex flex-row align-items-center justify-content-center">
+                        <a href="#" class="messages__chat__top__btns__search">
+                            <img src="{{ asset('src/img/icons/search.svg')}}" alt="Search" class="messages__dialogs__top__search__img">
+                        </a>
+
+                        <a href="#" class="messages__chat__top__btns__options">
+                            <img src="{{ asset('src/img/icons/messages/options.svg')}}" alt="Options" class="messages__dialogs__top__search__img">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="messages__chat__block">
+                    <div class="messages__chat__block__item recieved">
+                        <div class="messages__chat__block__item__text">
+                            <p class="messages__chat__block__item__text__content desc">Hello, how are you?</p>
+                        </div>
+
+                        <div class="messages__chat__block__item__text">
+                            <p class="messages__chat__block__item__text__content desc">Hello, how are you?</p>
+                        </div>
+                    </div>
+
+                    <div class="messages__chat__block__item sent">
+                        <div class="messages__chat__block__item__text">
+                            <p class="messages__chat__block__item__text__content desc">Hello, how are you?</p>
+                        </div>
+                    </div>
+
+                    <div class="messages__chat__block__item recieved">
+                        <div class="messages__chat__block__item__text">
+                            <p class="messages__chat__block__item__text__content desc">Hello, how are you?</p>
+                        </div>
+                    </div>
+
+                    <div class="messages__chat__block__item sent">
+                        <div class="messages__chat__block__item__text">
+                            <p class="messages__chat__block__item__text__content desc">Hello, how are you?</p>
+                        </div>
+                    </div>
+
+                    <div class="messages__chat__block__item recieved">
+                        <div class="messages__chat__block__item__text">
+                            <p class="messages__chat__block__item__text__content desc">Hello, how are you?</p>
+                        </div>
+
+                        <div class="messages__chat__block__item__text">
+                            <p class="messages__chat__block__item__text__content desc">Hello, how are you?</p>
+                        </div>
+                    </div>
+
+                    <div class="messages__chat__block__item sent">
+                        <div class="messages__chat__block__item__text">
+                            <p class="messages__chat__block__item__text__content desc">Hello, how are you?</p>
+                        </div>
+
+                        <div class="messages__chat__block__item__text">
+                            <p class="messages__chat__block__item__text__content desc">Hello, how are you?</p>
+                        </div>
+                    </div>
+
+                    <div class="messages__chat__block__item recieved">
+                        <div class="messages__chat__block__item__text">
+                            <p class="messages__chat__block__item__text__content desc">Hello, how are you?</p>
+                        </div>
+                    </div>
+
+                    <div class="messages__chat__block__item sent">
+                        <div class="messages__chat__block__item__text">
+                            <p class="messages__chat__block__item__text__content desc">Hello, how are you?</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="messages__chat__new d-flex flex-row align-items-center justify-content-between">
+                    <div class="messages__chat__new__wrap">
+                        <div class="messages__chat__new__wrap__search">
+                            <input
+                                type="text"
+                                class="messages__chat__new__wrap__search__input desc"
+                                placeholder="To write a message..."
+                            >
+
+                            <div class="messages__chat__new__wrap__search__btns">
+                                <button type="submit" class="messages__chat__new__wrap__search__btn">
+                                    <img src="{{ asset('src/img/icons/messages/plus.svg')}}" alt="Add file">
+                                </button>
+
+                                <button type="submit" class="messages__chat__new__wrap__search__btn">
+                                    <img src="{{ asset('src/img/icons/messages/smile.svg')}}" alt="Add smile">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button
+                        type="submit"
+                        class="
+                            complete__btn
+                            d-flex
+                            flex-row
+                            align-items-center
+                            button
+                        "
+                        style="
+                            gap: 15px;
+                            font-size: 16px;
+                            width: 132px;
+                        "
+                    >
+                        <img
+                            src="{{asset('src/img/icons/messages/send.svg')}}"
+                            alt="Send message"
+                            class="complete__btn__img"
+                            style="
+                                padding: 12px;
+                            "
+                        >
+
+                        Send
+                    </button>
                 </div>
             </div>
         </div>
