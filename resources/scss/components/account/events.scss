@@ -2,19 +2,53 @@
     &__top {
         padding: 15px 2vw 13vh 105px;
 
+        flex-direction: row;
+        align-items: center;
+
+        @include onMobile {
+            padding: 15px 3.2vw 25px 48px;
+
+            flex-direction: column;
+            align-items: start;
+        }
+
         &__text {
             &__content {
                 gap: 35px;
+
+                flex-direction: row;
+                align-items: center;
+
+                @include onMobile {
+                    gap: 15px;
+
+                    flex-direction: column;
+                    align-items: start;
+                }
             }
         }
 
         &__desc {
             width: 33vw;
+
+            @include onMobile {
+                width: 100%;
+            }
         }
 
         &__title {
             &--sec {
                 margin-top: -25px;
+
+                @include onMobile {
+                    display: none;
+                }
+            }
+
+            &--mob {
+                @include onDesktop {
+                    display: none;
+                }
             }
         }
     }
@@ -24,15 +58,21 @@
     }
 
     &__disable {
+        background: rgba(12, 0, 46, 0.80);
+
+        backdrop-filter: blur(7.5px);
         position: absolute;
         top: 0;
         bottom: 0;
         right: 0;
         left: 0;
 
-        background: rgba(12, 0, 46, 0.80);
-
-        backdrop-filter: blur(7.5px);
+        @include onMobile {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
 
         &__text {
             transform: translate(33vw, 50%);
@@ -47,6 +87,19 @@
 
             font-size: 2vw;
             text-align: center;
+
+            @include onMobile {
+                transform: translateY(-300%);
+                margin-left: 48px;
+                padding: 0 7px;
+
+                width: 317px;
+                height: 204px;
+
+                border-radius: 15px;
+
+                font-size: 30px;
+            }
         }
     }
 }

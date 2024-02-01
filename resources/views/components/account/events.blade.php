@@ -49,11 +49,11 @@
 
         <x-header />
 
-        <div class="myEvents__top d-flex flex-row align-items-center justify-content-between">
+        <div class="myEvents__top d-flex align-items-center justify-content-between">
             <div class="myEvents__top__text">
-                <div class="myEvents__top__text__content d-flex flex-row align-items-center">
+                <div class="myEvents__top__text__content d-flex">
                     <h2 class="myEvents__top__title title-main">
-                        My
+                        My <span class="myEvents__top__title--mob title-main title-main--stroke">Events</span>
                     </h2>
 
                     <p class="myEvents__top__desc desc">
@@ -69,7 +69,7 @@
             <img src="{{ asset('src/img/photo/my-events.png')}}" alt="">
         </div>
 
-        <div class="eventsSection__content myEvents__content d-flex flex-row disable">
+        <div class="eventsSection__content myEvents__content d-flex flex-row">
             @foreach($myEvents as $event)
                     <div
                         class="eventsSection__content__block"
@@ -137,12 +137,12 @@
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             const mainBlock = document.querySelector('.eventsSection__content');
-            const disableBlock = mainBlock.querySelector('.myEvents__disable__text');
+            const disableBlock = mainBlock.querySelector('.myEvents__disable');
 
-            if (!mainBlock.classList.contains('disable')) {
-                disableBlock.style.display = 'none';
-            } else {
+            if (mainBlock.classList.contains('disable')) {
                 disableBlock.style.display = 'block';
+            } else {
+                disableBlock.style.display = 'none';
             }
         });
     </script>
