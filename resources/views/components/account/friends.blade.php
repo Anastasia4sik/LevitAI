@@ -259,14 +259,14 @@
     <x-header />
 
     <section class="friends">
-        <div class="friends__top d-flex flex-column text-center">
+        <div class="friends__top d-flex flex-column">
             <h1 class="friends__top__title title-main">
                 My <span class="title-main title-main--stroke">Friends</span>
             </h1>
         </div>
 
         <div class="content">
-            <div class="friends__top__btns d-flex flex-row justify-content-end align-items-center">
+            <div class="friends__top__btns d-flex">
                 <button
                     type="submit"
                     class="

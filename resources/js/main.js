@@ -56,6 +56,8 @@ const currentURL = window.location.href;
 
         if (dataContainer && dataContainer.classList.contains('exchange__container__table__catalog')) {
             cardsPerPage = (window.innerWidth <= 1300) ? 8 : 12;
+        } else if (dataContainer && dataContainer.classList.contains('friends__content')) {
+            cardsPerPage = (window.innerWidth <= 1300) ? 3 : 10;
         } else {
             cardsPerPage = (window.innerWidth <= 1300) ? 5 : 10;
         }

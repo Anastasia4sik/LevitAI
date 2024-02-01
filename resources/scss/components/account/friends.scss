@@ -6,18 +6,47 @@
 
     padding: 8.7vh 2vw 9vh 105px;
 
+    @include onMobile {
+        padding: 15px 3.2vw 110px 48px;
+    }
+
     &__top {
+        text-align: center;
+
+        @include onMobile {
+            text-align: left;
+        }
+
         &__title {
             margin-bottom: 11.6vh;
+
+            @include onMobile {
+                margin-bottom: 90px;
+            }
         }
 
         &__btns {
             gap: 35px;
+            flex-direction: row;
+            justify-content: end;
+            align-items: center;
 
             margin-bottom: 4.1vh;
 
+            @include onMobile {
+                flex-direction: column;
+                gap: 25px;
+                justify-content: start;
+                align-items: start;
+
+                margin-bottom: 25px;
+            }
 
             &__wrap {
+                @include onMobile {
+                    width: 100%;
+                }
+
                 &__search {
                     width: 100%;
                     position: relative;
@@ -34,6 +63,10 @@
 
                         font-size: 0.8vw;
                         color: $white;
+
+                        @include onMobile {
+                            font-size: 16px;
+                        }
 
                         &::placeholder {
                             opacity: .25;
@@ -60,6 +93,11 @@
 
         position: relative;
 
+        @include onMobile {
+            grid-template-columns: repeat(auto-fill, minmax(317px, 1fr));
+            grid-gap: 25px;
+        }
+
         &__block {
             border-radius: 5px;
 
@@ -67,6 +105,10 @@
 
             &__info {
                 padding: 30px;
+
+                @include onMobile {
+                    padding: 22px 20px;
+                }
             }
 
             &__top {
@@ -80,6 +122,10 @@
 
                 &__title {
                     padding: 4.6vh 4vw 4.6vh 7.8vw;
+
+                    @include onMobile {
+                        padding: 41px 21% 41px 40%;
+                    }
                 }
             }
 
@@ -91,6 +137,10 @@
 
             &__text {
                 margin-bottom: 20px;
+
+                @include onMobile {
+                    margin-bottom: 15px;
+                }
             }
 
             &__bottom {
@@ -99,6 +149,10 @@
                 border-top: 2px solid $main-bc;
 
                 gap: 10px;
+
+                @include onMobile {
+                    padding-top: 15px;
+                }
 
                 &__link {
                     &__img {
