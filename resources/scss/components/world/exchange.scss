@@ -1,6 +1,6 @@
 .exchange {
     position: relative;
-    background-image: url('../../../../public/src/img/bc/bc-market.png');
+    background-image: url('/src/img/bc/bc-market.png');
 
     background-position: right top;
     background-size: 79vw;
@@ -175,7 +175,7 @@
                                     cursor: pointer;
 
                                     &:checked {
-                                      background-image: url('../../../../public/src/img/icons/check.svg');
+                                      background-image: url('/src/img/icons/check.svg');
 
                                       background-position: center;
 

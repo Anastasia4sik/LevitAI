@@ -12,11 +12,11 @@
         background-position: center;
 
         @include onDesktop {
-            background-image: url('../../../../public/src/img/bc/bc-available.png');
+            background-image: url('/src/img/bc/bc-available.png');
         }
 
         @include onMobile {
-            background-image: url('../../../../public/src/img/bc/bc-available-mobile.png');
+            background-image: url('/src/img/bc/bc-available-mobile.png');
         }
     }
 

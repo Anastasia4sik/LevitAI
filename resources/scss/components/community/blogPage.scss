@@ -1,5 +1,5 @@
 .blogPage {
-    background-image: url('../../../../public/src/img/bc/bc-blogPage.png');
+    background-image: url('/src/img/bc/bc-blogPage.png');
 
     background-size: contain;
 
@@ -14,7 +14,7 @@
             padding: 0 3.2vw 120px 48px;
             height: 100vh;
 
-            background-image: url('../../../../public/src/img/bc/bc-blogPage-mobile.png');
+            background-image: url('/src/img/bc/bc-blogPage-mobile.png');
             background-size: cover;
             background-position: center top;
         }

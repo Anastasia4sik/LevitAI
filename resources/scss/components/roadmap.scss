@@ -2,7 +2,7 @@
     &--page {
         padding: 0;
 
-        background-image: url('../../../../public/src/img/bc/bc-roadmap-page.png');
+        background-image: url('/src/img/bc/bc-roadmap-page.png');
 
         background-position: center;
         background-size: cover;
@@ -15,7 +15,7 @@
     @include onMobile {
         padding: 50px 3.2vw 0 48px;
 
-        background-image: url('../../../../public/src/img/bc/bc-roadmap-mobile.png');
+        background-image: url('/src/img/bc/bc-roadmap-mobile.png');
 
         background-position: 70vw top;
         background-size: auto;
