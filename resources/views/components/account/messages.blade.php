@@ -15,30 +15,35 @@
                     'id' => 1,
                     'time' => '12:53',
                     'date' => '13.02.2023',
+                    'sender' => 'sent',
                     'content' => 'Proactively visualize functional',
                 ],
                 'message2' => [
                     'id' => 2,
                     'time' => '12:53',
                     'date' => '13.02.2023',
+                    'sender' => 'recieved',
                     'content' => 'Monotonectally productivate virtual benefits vis-a-vis clicks-and-mortar lead ship. ',
                 ],
                 'message3' => [
                     'id' => 3,
                     'time' => '12:53',
                     'date' => '13.02.2023',
+                    'sender' => 'sent',
                     'content' => 'Monotonectally productivate virtual benefits vis-a-vis clicks-and-mortar lead ship. Seamlessly generate user friendly opportunitie after principle-centered e-markets. Proactively visualize functional',
                 ],
                 'message4' => [
                     'id' => 4,
                     'time' => '12:53',
                     'date' => '13.02.2023',
+                    'sender' => 'sent',
                     'content' => 'Proactively visualize functional',
                 ],
                 'message5' => [
                     'id' => 5,
                     'time' => '17:00',
                     'date' => '13.02.2023',
+                    'sender' => 'sent',
                     'content' => 'Monotonectally productivate virtual benefits vis-a-vis clicks-and-mortar lead ship. ',
                 ],
             ],
@@ -58,30 +63,35 @@
                     'id' => 1,
                     'time' => '12:53',
                     'date' => '13.02.2023',
+                    'sender' => 'sent',
                     'content' => 'Proactively visualize functional',
                 ],
                 'message2' => [
                     'id' => 2,
                     'time' => '12:53',
                     'date' => '13.02.2023',
+                    'sender' => 'sent',
                     'content' => 'Monotonectally productivate virtual benefits vis-a-vis clicks-and-mortar lead ship. ',
                 ],
                 'message3' => [
                     'id' => 3,
                     'time' => '12:53',
                     'date' => '13.02.2023',
+                    'sender' => 'sent',
                     'content' => 'Monotonectally productivate virtual benefits vis-a-vis clicks-and-mortar lead ship. Seamlessly generate user friendly opportunitie after principle-centered e-markets. Proactively visualize functional',
                 ],
                 'message4' => [
                     'id' => 4,
                     'time' => '12:53',
                     'date' => '13.02.2023',
+                    'sender' => 'sent',
                     'content' => 'Proactively visualize functional',
                 ],
                 'message5' => [
                     'id' => 5,
                     'time' => '17:00',
                     'date' => '13.02.2023',
+                    'sender' => 'sent',
                     'content' => 'Monotonectally productivate virtual benefits vis-a-vis clicks-and-mortar lead ship. ',
                 ],
             ],
@@ -101,30 +111,35 @@
                     'id' => 1,
                     'time' => '12:53',
                     'date' => '13.02.2023',
+                    'sender' => 'sent',
                     'content' => 'Proactively visualize functional',
                 ],
                 'message2' => [
                     'id' => 2,
                     'time' => '12:53',
                     'date' => '13.02.2023',
+                    'sender' => 'sent',
                     'content' => 'Monotonectally productivate virtual benefits vis-a-vis clicks-and-mortar lead ship. ',
                 ],
                 'message3' => [
                     'id' => 3,
                     'time' => '12:53',
                     'date' => '13.02.2023',
+                    'sender' => 'sent',
                     'content' => 'Monotonectally productivate virtual benefits vis-a-vis clicks-and-mortar lead ship. Seamlessly generate user friendly opportunitie after principle-centered e-markets. Proactively visualize functional',
                 ],
                 'message4' => [
                     'id' => 4,
                     'time' => '12:53',
                     'date' => '13.02.2023',
+                    'sender' => 'sent',
                     'content' => 'Proactively visualize functional',
                 ],
                 'message5' => [
                     'id' => 5,
                     'time' => '17:00',
                     'date' => '13.02.2023',
+                    'sender' => 'sent',
                     'content' => 'Monotonectally productivate virtual benefits vis-a-vis clicks-and-mortar lead ship. ',
                 ],
             ],
@@ -144,35 +159,41 @@
                     'id' => 1,
                     'time' => '12:53',
                     'date' => '13.02.2023',
+                    'sender' => 'sent',
                     'content' => 'Proactively visualize functional',
                 ],
                 'message2' => [
                     'id' => 2,
                     'time' => '12:53',
                     'date' => '13.02.2023',
+                    'sender' => 'sent',
                     'content' => 'Monotonectally productivate virtual benefits vis-a-vis clicks-and-mortar lead ship. ',
                 ],
                 'message3' => [
                     'id' => 3,
                     'time' => '12:53',
                     'date' => '13.02.2023',
+                    'sender' => 'sent',
                     'content' => 'Monotonectally productivate virtual benefits vis-a-vis clicks-and-mortar lead ship. Seamlessly generate user friendly opportunitie after principle-centered e-markets. Proactively visualize functional',
                 ],
                 'message4' => [
                     'id' => 4,
                     'time' => '12:53',
                     'date' => '13.02.2023',
+                    'sender' => 'sent',
                     'content' => 'Proactively visualize functional',
                 ],
                 'message5' => [
                     'id' => 5,
                     'time' => '17:00',
                     'date' => '13.02.2023',
+                    'sender' => 'sent',
                     'content' => 'Monotonectally productivate virtual benefits vis-a-vis clicks-and-mortar lead ship. ',
                 ],
             ],
         ],
-        'dialog5'=> [
+        'dialog5'=>
+            [
             'id' => 'gro1',
             'name' => 'Artem Jonson',
             'photo' => 'src/img/photo/nft/user1.jpg',
@@ -187,30 +208,35 @@
                     'id' => 1,
                     'time' => '12:53',
                     'date' => '13.02.2023',
+                    'sender' => 'sent',
                     'content' => 'Proactively visualize functional',
                 ],
                 'message2' => [
                     'id' => 2,
                     'time' => '12:53',
                     'date' => '13.02.2023',
+                    'sender' => 'sent',
                     'content' => 'Monotonectally productivate virtual benefits vis-a-vis clicks-and-mortar lead ship. ',
                 ],
                 'message3' => [
                     'id' => 3,
                     'time' => '12:53',
                     'date' => '13.02.2023',
+                    'sender' => 'sent',
                     'content' => 'Monotonectally productivate virtual benefits vis-a-vis clicks-and-mortar lead ship. Seamlessly generate user friendly opportunitie after principle-centered e-markets. Proactively visualize functional',
                 ],
                 'message4' => [
                     'id' => 4,
                     'time' => '12:53',
                     'date' => '13.02.2023',
+                    'sender' => 'sent',
                     'content' => 'Proactively visualize functional',
                 ],
                 'message5' => [
                     'id' => 5,
                     'time' => '17:00',
                     'date' => '13.02.2023',
+                    'sender' => 'sent',
                     'content' => 'Monotonectally productivate virtual benefits vis-a-vis clicks-and-mortar lead ship. ',
                 ],
             ],
@@ -230,30 +256,35 @@
                     'id' => 1,
                     'time' => '12:53',
                     'date' => '13.02.2023',
+                    'sender' => 'sent',
                     'content' => 'Proactively visualize functional',
                 ],
                 'message2' => [
                     'id' => 2,
                     'time' => '12:53',
                     'date' => '13.02.2023',
+                    'sender' => 'sent',
                     'content' => 'Monotonectally productivate virtual benefits vis-a-vis clicks-and-mortar lead ship. ',
                 ],
                 'message3' => [
                     'id' => 3,
                     'time' => '12:53',
                     'date' => '13.02.2023',
+                    'sender' => 'sent',
                     'content' => 'Monotonectally productivate virtual benefits vis-a-vis clicks-and-mortar lead ship. Seamlessly generate user friendly opportunitie after principle-centered e-markets. Proactively visualize functional',
                 ],
                 'message4' => [
                     'id' => 4,
                     'time' => '12:53',
                     'date' => '13.02.2023',
+                    'sender' => 'sent',
                     'content' => 'Proactively visualize functional',
                 ],
                 'message5' => [
                     'id' => 5,
                     'time' => '17:00',
                     'date' => '13.02.2023',
+                    'sender' => 'sent',
                     'content' => 'Monotonectally productivate virtual benefits vis-a-vis clicks-and-mortar lead ship. ',
                 ],
             ],
@@ -268,7 +299,7 @@
         <x-header />
 
         <div class="messages__content d-flex flex-row">
-            <div class="messages__filter d-flex flex-column align-items-center text-center">
+            <div class="messages__filter flex-column align-items-center text-center">
                 <div class="messages__filter__item active">
                     <div class="messages__filter__item__top">
                         <img src="{{ asset('src/img/icons/messages/all.svg')}}" alt="Image of the block of messages" class="messages__filter__item__top__img">
@@ -369,7 +400,7 @@
 
                 <div class="messages__dialogs__block">
                     @foreach($dialogs as $dialog)
-                        <div class="messages__dialogs__item d-flex flex-row align-items-center">
+                        <div class="messages__dialogs__item d-flex flex-row align-items-center" data-dialog-id="{{ $dialog['id']}}">
                             <div class="messages__dialogs__item__photo">
                                 <img src="{{ asset($dialog['photo'])}}" alt="Photo" class="messages__dialogs__item__photo__img">
 
@@ -380,7 +411,7 @@
                                 @endif
                             </div>
 
-                            <div class="messages__dialogs__item__content d-flex flex-row align-items-center">
+                            <div class="messages__dialogs__item__content d-flex flex-row align-items-center justify-content-between">
                                 <div class="messages__dialogs__item__content__top d-flex flex-column justify-content-between">
                                     <h4 class="messages__dialogs__item__content__top__name title-little">
                                         {{ $dialog['name']}}
@@ -434,21 +465,20 @@
                         </div>
                     @endforeach
                 </div>
-
             </div>
 
-            <div class="messages__chat">
+            <div class="messages__chat flex-column">
                 <div class="messages__chat__top d-flex flex-row justify-content-between">
                     <div class="messages__chat__top__right d-flex flex-row">
-                        <img src="{{ asset('src/img/photo/nft/user1.jpg')}}" alt="User photo" class="messages__chat__top__img">
+                        <img src="{{ asset('src/img/icons/messages/photo-default.png')}}" alt="User photo" class="messages__chat__top__img">
 
                         <div class="messages__chat__top__info d-flex flex-column justify-content-between">
                             <p class="messages__chat__top__info__name title-little">
-                                Name
+
                             </p>
 
-                            <p class="messages__chat__top__info__status messages__chat__top__info__status--true desc">
-                                Online
+                            <p class="messages__chat__top__info__status desc">
+
                             </p>
                         </div>
                     </div>
@@ -465,64 +495,10 @@
                 </div>
 
                 <div class="messages__chat__block">
-                    <div class="messages__chat__block__item recieved">
-                        <div class="messages__chat__block__item__text">
-                            <p class="messages__chat__block__item__text__content desc">Hello, how are you?</p>
-                        </div>
-
-                        <div class="messages__chat__block__item__text">
-                            <p class="messages__chat__block__item__text__content desc">Hello, how are you?</p>
-                        </div>
-                    </div>
-
-                    <div class="messages__chat__block__item sent">
-                        <div class="messages__chat__block__item__text">
-                            <p class="messages__chat__block__item__text__content desc">Hello, how are you?</p>
-                        </div>
-                    </div>
-
-                    <div class="messages__chat__block__item recieved">
-                        <div class="messages__chat__block__item__text">
-                            <p class="messages__chat__block__item__text__content desc">Hello, how are you?</p>
-                        </div>
-                    </div>
-
-                    <div class="messages__chat__block__item sent">
-                        <div class="messages__chat__block__item__text">
-                            <p class="messages__chat__block__item__text__content desc">Hello, how are you?</p>
-                        </div>
-                    </div>
-
-                    <div class="messages__chat__block__item recieved">
-                        <div class="messages__chat__block__item__text">
-                            <p class="messages__chat__block__item__text__content desc">Hello, how are you?</p>
-                        </div>
-
-                        <div class="messages__chat__block__item__text">
-                            <p class="messages__chat__block__item__text__content desc">Hello, how are you?</p>
-                        </div>
-                    </div>
-
-                    <div class="messages__chat__block__item sent">
-                        <div class="messages__chat__block__item__text">
-                            <p class="messages__chat__block__item__text__content desc">Hello, how are you?</p>
-                        </div>
-
-                        <div class="messages__chat__block__item__text">
-                            <p class="messages__chat__block__item__text__content desc">Hello, how are you?</p>
-                        </div>
-                    </div>
-
-                    <div class="messages__chat__block__item recieved">
-                        <div class="messages__chat__block__item__text">
-                            <p class="messages__chat__block__item__text__content desc">Hello, how are you?</p>
-                        </div>
-                    </div>
-
-                    <div class="messages__chat__block__item sent">
-                        <div class="messages__chat__block__item__text">
-                            <p class="messages__chat__block__item__text__content desc">Hello, how are you?</p>
-                        </div>
+                    <div class="d-flex justify-content-center align-items-center">
+                        <h3 class="messages__chat__block__default title-little">
+                            Your messages will be here
+                        </h3>
                     </div>
                 </div>
 
@@ -551,7 +527,7 @@
                         type="submit"
                         class="
                             complete__btn
-                            d-flex
+                            messages__chat__new__btn--desk
                             flex-row
                             align-items-center
                             button
@@ -573,8 +549,101 @@
 
                         Send
                     </button>
+
+                    <button
+                        type="submit"
+                        class="
+                            messages__chat__new__btn--mob
+                        "
+                    >
+                        <img
+                            src="{{asset('src/img/icons/messages/send.svg')}}"
+                            alt="Send message"
+                            class="messages__chat__new__btn--mob__img"
+                        >
+                    </button>
                 </div>
             </div>
         </div>
     </section>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const chatDiv = document.querySelector(".messages__chat");
+            const dialogsDiv = document.querySelector(".messages__dialogs");
+            const filterDiv = document.querySelector(".messages__filter");
+
+            const dialogItems = document.querySelectorAll(".messages__dialogs__item");
+            const chatBlock = document.querySelector(".messages__chat__block");
+            const chatName = document.querySelector(".messages__chat__top__info__name");
+            const chatStatus = document.querySelector(".messages__chat__top__info__status");
+            const chatPhoto = document.querySelector(".messages__chat__top__img");
+
+            <?php echo "const dialogs = " . json_encode($dialogs) . ";" ?>
+
+            dialogItems.forEach(dialogItem => {
+                dialogItem.addEventListener("click", function () {
+                    // Clear existing messages in the chat block
+                    chatBlock.innerHTML = "";
+
+                    // Retrieve dialog ID from the clicked item
+                    const dialogId = dialogItem.dataset.dialogId;
+                    let messages;
+
+                    if (window.innerWidth <= 1300) {
+                        chatDiv.style.display = 'block';
+                        dialogsDiv.style.display = 'none';
+                        filterDiv.style.display = 'none';
+                    }
+
+                    for (const key in dialogs) {
+                        if (Object.hasOwnProperty.call(dialogs, key)) {
+                            const dialog = dialogs[key];
+                            if (dialog.id === dialogId) {
+                                messages = dialog.messages;
+
+                                // Update chat name with the dialog's name
+                                chatName.textContent = dialog.name;
+                                chatPhoto.src = dialog.photo;
+
+                                // Update chat status based on dialog's online status
+                                if (dialog.online) {
+                                    chatStatus.textContent = "Online";
+                                    chatStatus.classList.add('true');
+                                    chatStatus.classList.remove('false');
+                                } else {
+                                    chatStatus.textContent = "Offline";
+                                    chatStatus.classList.add('false');
+                                    chatStatus.classList.remove('true');
+                                }
+
+                                break;
+                            }
+                        }
+                    }
+
+                    // Populate the chat block with messages
+                    let currentSender;
+                    let currentMessageBlock;
+
+                    Object.values(messages).forEach(message => {
+                        if (currentSender !== message.sender) {
+                            // Create a new message block for a new sender
+                            currentSender = message.sender;
+                            currentMessageBlock = document.createElement("div");
+                            currentMessageBlock.classList.add("messages__chat__block__item", message.sender);
+                            chatBlock.appendChild(currentMessageBlock);
+                        }
+
+                        const messageDiv = document.createElement("div");
+                        messageDiv.classList.add("messages__chat__block__item__text");
+                        messageDiv.innerHTML = `
+                            <p class="messages__chat__block__item__text__content desc">${message.content}</p>
+                        `;
+                        currentMessageBlock.appendChild(messageDiv);
+                    });
+                });
+            });
+        });
+    </script>
 </x-base>

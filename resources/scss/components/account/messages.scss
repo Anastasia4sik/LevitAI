@@ -5,13 +5,22 @@
     background-repeat: no-repeat;
     background-size: contain;
 
+    
+
     &__content {
         margin: 6.4vh 2vw 0 105px;
         padding-bottom: 8.5vh;
 
         gap: 15px;
 
-        height: 92vh;
+        height: 88vh;
+
+        @include onMobile {
+            margin: 25px 3.2vw 25px 48px;
+            gap: 5px;
+
+            height: 93vh;
+        }
     }
 
     &__filter,
@@ -23,6 +32,8 @@
     }
 
     &__filter {
+        display: flex;
+
         background-color: #180D38;
 
         &__item {
@@ -31,6 +42,10 @@
 
             transition: all .3s ease-in-out;
             cursor: pointer;
+
+            @include onMobile {
+                padding: 16px 5px 12px;
+            }
 
             &:first-of-type {
                 border-radius: 10px 10px 0 0;
@@ -61,10 +76,26 @@
                     background-color: #582FD0;
                     border-radius: 50%;
 
+                    @include onMobile {
+                        width: 19px;
+                        height: 19px;
+                        right: 0;
+                    }
+
                     &__text {
                         font-size: 14px;
                         line-height: 100%;
+
+                        @include onMobile {
+                            font-size: 12px;
+                        }
                     }
+                }
+            }
+
+            &__title {
+                @include onMobile {
+                    display: none;
                 }
             }
         }
@@ -76,13 +107,20 @@
         background-color: #261656;
         width: 426px;
 
-        &__top {
-            gap: 9.4vw;
+        @include onMobile {
+            padding: 10px 5px 5px 5px;
+            width: 70.6vw;
+        }
 
+        &__top {
             padding: 0 0 15px 5px;
             margin-bottom: 25px;
 
             border-bottom: 1px solid #ffffff0d;
+
+            @include onMobile {
+                padding: 0 5px 15px;
+            }
 
             &__title {
                 width: max-content;
@@ -101,6 +139,10 @@
 
             &::-webkit-scrollbar {
                 width: 10px;
+
+                @include onMobile {
+                    width: 6px;
+                }
             }
             &::-webkit-scrollbar-track {
                 background: #341D79;
@@ -110,6 +152,11 @@
                 background: #180D38;
                 border-radius: 10px;
                 padding: 0 3px;
+
+                width: 6px;
+                @include onMobile {
+                    width: 2px;
+                }
             }
         }
 
@@ -118,6 +165,7 @@
 
             border-radius: 10px;
             background-color: #180D38;
+            cursor: pointer;
 
             &:not(:last-of-type) {
                 margin-bottom: 5px;
@@ -134,17 +182,29 @@
                     height: 50px;
 
                     object-fit: cover;
+
+                    @include onMobile {
+                        width: 34px;
+                        height: 34px;
+
+                        margin-right: 5px;
+                    }
                 }
 
                 &__status {
                     position: absolute;
                     bottom: 0;
-                    right: 12px;
+                    right: 4px;
 
                     width: 10px;
                     height: 10px;
 
                     border-radius: 50%;
+
+                    @include onMobile {
+                        width: 6.8px;
+                        height: 6.8px;
+                    }
 
                     &--true {
                         background-color: #13C930;
@@ -157,10 +217,19 @@
             }
 
             &__content {
-                gap: 16px;
-
                 &__top {
+                    gap: 5px;
                     height: 50px;
+
+                    @include onMobile {
+                        height: 41px;
+                    }
+
+                    &__name {
+                        @include onMobile {
+                            font-size: 14px;
+                        }
+                    }
 
                     &__text {
                         color: $grey;
@@ -171,11 +240,19 @@
                         text-overflow: ellipsis;
                         -webkit-line-clamp: 1;
                         white-space: normal;
+
+                        @include onMobile {
+                            font-size: 12px;
+                        }
                     }
                 }
 
                 &__bottom {
                     height: 50px;
+
+                    @include onMobile {
+                        height: 41px;
+                    }
 
                     &__check {
                         width: 20px;
@@ -188,14 +265,30 @@
 
     &__chat {
         width: 63vw;
+        display: flex;
         background-color: #180D38;
+        height: 100%;
+
+        @include onMobile {
+            width: 100%;
+
+            display: none;
+        }
 
         &__top {
             background-image: url('../../../../public/src/img/icons/messages/bc-top.png');
             background-repeat: no-repeat;
 
+            @include onMobile {
+                background-image: url('../../../../public/src/img/icons/messages/bc-top-mobile.png');
+            }
+
             &__right {
-                padding: 15px 17% 15px 25px;
+                padding: 15px 0 15px 25px;
+
+                @include onMobile {
+                    padding: 7px 0 13px 9px;
+                }
             }
 
             &__img {
@@ -207,23 +300,61 @@
                 border-radius: 50%;
 
                 object-fit: cover;
+
+                @include onMobile {
+                    width: 34px;
+                    height: 34px;
+
+                    margin-right: 5px;
+                }
             }
 
             &__info {
-                &--true {
-                    color: #3EAF6B
+                &__status {
+                    &.true {
+                        color: #3EAF6B;
+                    }
+
+                    &.false {
+                        color: #EB0000;
+                    }
+                }
+
+                &__name {
+                    width: max-content;
+
+                    @include onMobile {
+                        font-size: 16px;
+                    }
+                }
+
+                &__status {
+                    @include onMobile {
+                        font-size: 12px;
+                    }
                 }
             }
 
             &__btns {
                 height: 50px;
 
-                padding: 15px 25px 15px 60%;
+                padding: 15px 25px 15px 0;
                 gap: 20px;
+
+                @include onMobile {
+                    height: fit-content;
+                    gap: 10px;
+
+                    padding: 7px 9px 10px 0;
+                }
 
                 &__search {
                     &__img {
                         height: 20px;
+
+                        @include onMobile {
+                            height: 17px;
+                        }
                     }
                 }
             }
@@ -232,11 +363,22 @@
         &__block {
             padding: 0 13px 31px 20px;
             overflow-y: scroll;
+            overflow-x: hidden;
 
             height: 65%;
 
+            @include onMobile {
+                padding: 0 5px 9px 13px;
+
+                height: 79%;
+            }
+
             &::-webkit-scrollbar {
                 width: 10px;
+
+                @include onMobile{
+                    width: 6px;
+                }
             }
             &::-webkit-scrollbar-track {
                 background: #341D79;
@@ -246,63 +388,43 @@
                 background: #180D38;
                 border-radius: 10px;
                 padding: 0 3px;
+                width: 6px;
+
+                @include onMobile {
+                    width: 3px;
+                }
             }
 
             &__item {
-                margin-bottom: 50px;
-
                 &.recieved,
                 &.sent {
                     display: flex;
                     flex-direction: column;
-                    gap: 5px;
+                    margin-bottom: 15px;
+
+                    & .messages__chat__block__item__text {
+                        &:not(:last-of-type) {
+                            margin-bottom: 5px;
+                        }
+                    }
                 }
 
                 &.sent {
                     justify-content: end;
                     align-items: end;
-
-                    & .messages__chat__block__item__text {
-                        &:not(:last-of-type) {
-                            margin-right: 13px;
-                        }
-
-                        &:last-of-type {
-                            padding-right: 48px;
-
-                            background-image: url('../../../../public/src/img/icons/messages/edge-sent.png');
-                            background-repeat: no-repeat;
-                            background-size: contain;
-                            background-position: center;
-                        }
-                    }
-                }
-
-                &.recieved {
-                    & .messages__chat__block__item__text {
-                        &:not(:last-of-type) {
-                            margin-left: 13px;
-                        }
-
-                        &:last-of-type {
-                            padding-left: 48px;
-
-                            background-image: url('../../../../public/src/img/icons/messages/edge.png');
-                            background-repeat: no-repeat;
-                            background-size: contain;
-                            background-position: center;
-                        }
-                    }
                 }
 
                 &__text {
                     padding: 13px 8px 13px 15px;
                     width: max-content;
+                    max-width: 511px;
 
                     border-radius: 10px;
+                    background-color: #40219B;
 
-                    &:not(:last-of-type) {
-                        background-color: #40219B;
+                    @include onMobile {
+                        padding: 6px 10px 10px;
+                        width: 254px;
                     }
                 }
             }
@@ -311,12 +433,15 @@
         &__new {
             margin: 30px;
 
+            @include onMobile {
+                margin: 12px;
+            }
+
             &__wrap {
                 position: relative;
                 width: 77%;
 
                 &__search {
-
                     &__input {
                         padding: 20px;
                         width: 100%;
@@ -326,13 +451,49 @@
 
                         color: $white;
 
+                        @include onMobile {
+                            padding: 11px;
+                        }
                     }
 
                     &__btns {
                         position: absolute;
                         right: 20px;
                         top: 20px;
+
+                        @include onMobile {
+                            right: 11px;
+                            top: 11px;
+                        }
                     }
+
+                    &__btn {
+                        @include onMobile {
+                            width: 19px;
+                            height: 19px;
+                        }
+                    }
+                }
+            }
+
+            &__btn {
+                &--desk {
+                    display: flex;
+
+                    @include onMobile {
+                        display: none;
+                    }
+                }
+
+                &--mob {
+                    @include onDesktop {
+                        display: none;
+                    }
+
+                    padding: 8px;
+
+                    background-color: $white;
+                    border-radius: 50%;
                 }
             }
         }

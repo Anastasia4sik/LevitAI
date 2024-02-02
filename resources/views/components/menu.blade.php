@@ -296,7 +296,6 @@
             menuOpenBtn.style.opacity = "1";
             menuOpenBtn.src = '/src/img/icons/sidemenu/menu-hover.svg';
         }, 300);
-
     })
 
     menuOpenBtn.addEventListener("mouseleave", function() {
@@ -306,7 +305,6 @@
             menuOpenBtn.style.opacity = "1";
             menuOpenBtn.src = '/src/img/icons/sidemenu/menu.svg';
         }, 300);
-
     })
 
     menuCloseBtn.addEventListener("click", function() {

@@ -50,7 +50,7 @@
 
     &__container {
         position: absolute;
-        min-height: 100vh;
+        height: 100vh;
         width: 212px;
 
         padding: 25px 18px 42px;
@@ -59,6 +59,14 @@
 
         transform: translateX(-100%);
         transition: all 0.5s ease-in-out;
+        overflow-y: scroll;
+
+        &::-webkit-scrollbar {
+            width: 0;
+        }
+        &::-webkit-scrollbar-track {
+            width: 0;
+        }
 
         &__btn {
             width: 24px;
