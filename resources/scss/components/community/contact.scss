@@ -6,13 +6,13 @@
     }
 
     &__container {
-        background-image: url('/src/img/bc/bc-contactPage-top.png');
+        background-image: url('../../../public/src/img/bc/bc-contactPage-top.png');
 
         @include onMobile {
             height: 100vh;
             padding: 0 3.2vw 0 48px;
 
-            background-image: url('/src/img/bc/bc-contactPage-top-mobile.png');
+            background-image: url('../../../public/src/img/bc/bc-contactPage-top-mobile.png');
             background-size: cover;
             background-position: center bottom;
         }

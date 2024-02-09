@@ -6,13 +6,13 @@
     }
 
     &-main {
-        background-image: url('/src/img/bc/bc-qna.png');
+        background-image: url('../../../public/src/img/bc/bc-qna.png');
 
         background-position: right top;
         background-size: auto;
 
         @include onMobile {
-            background-image: url('/src/img/bc/bc-qna-mobile.png');
+            background-image: url('../../../public/src/img/bc/bc-qna-mobile.png');
         }
     }
 

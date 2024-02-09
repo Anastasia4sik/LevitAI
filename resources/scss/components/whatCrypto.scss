@@ -16,7 +16,7 @@
         margin-bottom: 0;
         padding: 0 3.2vw 0 48px;
 
-        background-image: url('/src/img/bc/bc-whatCrypto-mobile.png');
+        background-image: url('../../../public/src/img/bc/bc-whatCrypto-mobile.png');
         background-repeat: no-repeat;
         background-size: cover;
 
@@ -125,7 +125,7 @@
 
 .what-complete-block {
     @include onDesktop {
-        background-image: url('/src/img/bc/bc-complete.png');
+        background-image: url('../../../public/src/img/bc/bc-complete.png');
 
         background-position: center;
         background-size: cover;
