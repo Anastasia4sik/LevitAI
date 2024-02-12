@@ -379,56 +379,60 @@
                 </div>
 
                 <div class="wallet__content__percentages d-flex">
-                    <div class="wallet__content__circles d-flex flex-row">
-                        @foreach ($circles as $circle)
-                        @php
-                            $back = 360 - $circle['percentage'];
-                        @endphp
-                            <div class="wallet__content__circles__item d-flex flex-column align-items-center">
-                                <div class="wallet__content__circles__item__circle">
-                                    <div
-                                        class="wallet__content__circles__item__circle__radial progress-{{ $circle['percentage']}}"
-                                        style="background-image: linear-gradient(90deg, #4A10EF {{$circle['percentage']}}%, #2f3439 {{$circle['percentage']}}%, #2f3439 {{$back}}%);"
-                                    >
-                                        <div class="wallet__content__circles__item__circle__radial__overlay"></div>
+                    <div class="wallet__content__circles">
+                        <div class="wallet__content__circles__container d-flex flex-row">
+                            @foreach ($circles as $circle)
+                            @php
+                                $back = 360 - $circle['percentage'];
+                            @endphp
+                                <div class="wallet__content__circles__item d-flex flex-column align-items-center">
+                                    <div class="wallet__content__circles__item__circle">
+                                        <div
+                                            class="wallet__content__circles__item__circle__radial progress-{{ $circle['percentage']}}"
+                                            style="background-image: linear-gradient(90deg, #4A10EF {{$circle['percentage']}}%, #0C002E {{$circle['percentage']}}%, #0C002E {{$back}}%);"
+                                        >
+                                            <div class="wallet__content__circles__item__circle__radial__overlay"></div>
+                                        </div>
                                     </div>
+
+                                    <p class="wallet__content__circles__item__amount desc">
+                                        {{ $circle['percentage']}}%
+                                    </p>
+
+                                    <p class="wallet__content__circles__item__name title-little">
+                                        {{ $circle['name']}}
+                                    </p>
                                 </div>
-
-                                <p class="wallet__content__circles__item__amount desc">
-                                    {{ $circle['percentage']}}%
-                                </p>
-
-                                <p class="wallet__content__circles__item__name title-little">
-                                    {{ $circle['name']}}
-                                </p>
-                            </div>
-                        @endforeach
+                            @endforeach
+                        </div>
                     </div>
 
-                    <div class="wallet__content__circles d-flex flex-row">
-                        @foreach ($circles as $circle)
-                        @php
-                            $back = 360 - $circle['percentage'];
-                        @endphp
-                            <div class="wallet__content__circles__item d-flex flex-column align-items-center">
-                                <div class="wallet__content__circles__item__circle">
-                                    <div
-                                        class="wallet__content__circles__item__circle__radial progress-{{ $circle['percentage']}}"
-                                        style="background-image: linear-gradient(90deg, #4A10EF {{$circle['percentage']}}%, #2f3439 {{$circle['percentage']}}%, #2f3439 {{$back}}%);"
-                                    >
-                                        <div class="wallet__content__circles__item__circle__radial__overlay"></div>
+                    <div class="wallet__content__circles">
+                        <div class="wallet__content__circles__container d-flex flex-row">
+                            @foreach ($circles as $circle)
+                            @php
+                                $back = 360 - $circle['percentage'];
+                            @endphp
+                                <div class="wallet__content__circles__item d-flex flex-column align-items-center">
+                                    <div class="wallet__content__circles__item__circle">
+                                        <div
+                                            class="wallet__content__circles__item__circle__radial progress-{{ $circle['percentage']}}"
+                                            style="background-image: linear-gradient(90deg, #4A10EF {{$circle['percentage']}}%, #0C002E {{$circle['percentage']}}%, #0C002E {{$back}}%);"
+                                        >
+                                            <div class="wallet__content__circles__item__circle__radial__overlay"></div>
+                                        </div>
                                     </div>
+
+                                    <p class="wallet__content__circles__item__amount desc">
+                                        {{ $circle['percentage']}}%
+                                    </p>
+
+                                    <p class="wallet__content__circles__item__name title-little">
+                                        {{ $circle['name']}}
+                                    </p>
                                 </div>
-
-                                <p class="wallet__content__circles__item__amount desc">
-                                    {{ $circle['percentage']}}%
-                                </p>
-
-                                <p class="wallet__content__circles__item__name title-little">
-                                    {{ $circle['name']}}
-                                </p>
-                            </div>
-                        @endforeach
+                            @endforeach
+                        </div>
                     </div>
                 </div>
             </div>
@@ -476,8 +480,6 @@
                 </div>
         </div>
     </section>
-
-    <x-transactions />
 
     <x-footer />
 

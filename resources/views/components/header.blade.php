@@ -230,7 +230,7 @@
 
     <div class="header__dropdown">
       <div class="header__dropdown__label">
-        My Account
+        Log In \ Sign In
         <span class="arrow-down">&#9662;</span>
       </div>
 
