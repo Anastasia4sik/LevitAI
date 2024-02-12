@@ -17,16 +17,19 @@
         &__percentages {
             flex-direction: row;
 
+            height: 194px;
             gap: 30px;
 
             @include onMobile {
                 flex-direction: column;
+                gap: 15px;
+                height: fit-content;
             }
         }
 
         &__top {
             @include onDesktop {
-                margin-right: 30px;
+                margin-right: 1.5vw;
             }
 
             @include onMobile {
@@ -332,7 +335,7 @@
 
             background-color: #180D38;
 
-            height: min-content;
+            height: 100%;
 
             @include onDesktop {
                 width: 17vw;
@@ -344,7 +347,7 @@
             }
 
             &__container {
-                gap: 46px;
+                gap: 2vw;
 
                 overflow-x: scroll;
 
@@ -365,8 +368,8 @@
                     background-color: #341D79;
                     border-radius: 10px;
 
-                    border-top: 2px solid $main-bc;
-                    border-bottom: 2px solid $main-bc;
+                    border-top: 2px solid #180D38;
+                    border-bottom: 2px solid #180D38;
 
                     @include onMobile {
                         height: 6px;
@@ -412,6 +415,120 @@
                             border-radius: 50%;
                           }
                     }
+                }
+            }
+        }
+
+        &__send {
+            padding: 20px 0.78vw;
+            width: 18vw;
+            height: 100%;
+
+            background-color: #180D38;
+
+            @include onMobile {
+                width: 100%;
+                height: fit-content;
+
+                padding: 10px;
+
+                margin-bottom: 25px;
+            }
+
+            label {
+                color: #BBB;
+            }
+
+            &__top {
+                margin-bottom: 25px;
+
+                &__dropdown,
+                &__amount {
+                    gap: 5px;
+
+                    &__select,
+                    &__input {
+                        padding: 10px 6px;
+                        width: 4.4vw;
+
+                        border: 1.5px solid #858097;
+                        border-radius: 10px;
+                        background-color: transparent;
+
+                        color: $white;
+
+                        @include onMobile {
+                            width: 78px;
+                        }
+                    }
+                }
+
+                &__dropdown {
+                    &__select {
+                        option {
+                            background-color: #180D38;
+                            padding: 5px;
+                        }
+                    }
+                }
+
+                &__amount {
+                    &__input {
+                        font-size: 14px;
+                        width: 86px;
+
+                        text-align: center;
+
+                        &::placeholder {
+                            font-size: 14px;
+                            color: $white;
+                            opacity: 0.7;
+                        }
+                    }
+                }
+            }
+
+            &__to {
+                margin-bottom: 20px;
+                gap: 5px;
+
+                @include onMobile {
+                    margin-bottom: 10px;
+                }
+
+                &__input {
+                    padding: 10px 6px;
+                    width: 12.8vw;
+
+                    border: 1.5px solid #858097;
+                    border-radius: 10px;
+                    background-color: transparent;
+
+                    color: $white;
+
+                    @include onMobile {
+                        width: 221px;
+                    }
+                }
+            }
+
+            &__btn {
+                padding: 9px 26px;
+
+                border: 1.5px solid $white;
+                border-radius: 50px;
+
+                transition: all .5s ease-in-out;
+
+                font-size: 14px;
+
+                &:hover {
+                    background-color: white;
+                    color: #180D38;
+                }
+
+                @include onMobile {
+                    padding: 7px 25px;
                 }
             }
         }

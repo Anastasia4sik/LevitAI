@@ -283,20 +283,28 @@
         <x-header />
 
         <div class="wallet__content d-flex">
-            <div class="wallet__content__top">
-                <div class="wallet__content__top__row d-flex">
-                    <h1 class="wallet__content__top__title title-main">
-                        My <span class="wallet__content__top__title--span title-main title-main--stroke">Wallet</span>
-                    </h1>
+            <div class="wallet__content__left d-flex flex-column">
+                <div class="wallet__content__top">
+                    <div class="wallet__content__top__row d-flex">
+                        <h1 class="wallet__content__top__title title-main">
+                            My <span class="wallet__content__top__title--span title-main title-main--stroke">Wallet</span>
+                        </h1>
 
-                    <p class="wallet__content__top__desc desc">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt labore dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                    </p>
+                        <p class="wallet__content__top__desc desc">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt labore dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        </p>
+                    </div>
+
+                    <h1 class="wallet__content__top__title wallet__content__top__title--desk title-main title-main--stroke">
+                        Wallet
+                    </h1>
                 </div>
 
-                <h1 class="wallet__content__top__title wallet__content__top__title--desk title-main title-main--stroke">
-                    Wallet
-                </h1>
+                <div class="wallet__content__calc">
+                    <h3 class="wallet__content__calc__title">
+                        Calculator
+                    </h3>
+                </div>
             </div>
 
             <div class="wallet__content__big d-flex">
@@ -407,33 +415,41 @@
                         </div>
                     </div>
 
-                    <div class="wallet__content__circles">
-                        <div class="wallet__content__circles__container d-flex flex-row">
-                            @foreach ($circles as $circle)
-                            @php
-                                $back = 360 - $circle['percentage'];
-                            @endphp
-                                <div class="wallet__content__circles__item d-flex flex-column align-items-center">
-                                    <div class="wallet__content__circles__item__circle">
-                                        <div
-                                            class="wallet__content__circles__item__circle__radial progress-{{ $circle['percentage']}}"
-                                            style="background-image: linear-gradient(90deg, #4A10EF {{$circle['percentage']}}%, #0C002E {{$circle['percentage']}}%, #0C002E {{$back}}%);"
-                                        >
-                                            <div class="wallet__content__circles__item__circle__radial__overlay"></div>
-                                        </div>
-                                    </div>
+                    <form action="" class="wallet__content__send">
+                        <div class="wallet__content__send__top d-flex flex-row justify-content-between">
+                            <div class="wallet__content__send__top__dropdown d-flex flex-row align-items-center">
+                                <label for="wallet" class="wallet__content__send__top__dropdown__label desc">
+                                    Wallet:
+                                </label>
 
-                                    <p class="wallet__content__circles__item__amount desc">
-                                        {{ $circle['percentage']}}%
-                                    </p>
+                                <select name="wallet" id="wallet" class="wallet__content__send__top__dropdown__select">
+                                    <option value="BTC">BTC</option>
+                                    <option value="Ethereum">Ethtreum</option>
+                                    <option value="Litecoin">Litecoin</option>
+                                </select>
+                            </div>
 
-                                    <p class="wallet__content__circles__item__name title-little">
-                                        {{ $circle['name']}}
-                                    </p>
-                                </div>
-                            @endforeach
+                            <div class="wallet__content__send__top__amount d-flex flex-row align-items-center">
+                                <label for="amount" class="wallet__content__send__top__amount__label desc">
+                                    Amount:
+                                </label>
+
+                                <input name="amount" id="amount" class="wallet__content__send__top__amount__input" placeholder="None">
+                            </div>
                         </div>
-                    </div>
+
+                        <div class="wallet__content__send__to d-flex flex-row align-items-center">
+                            <label for="sendTo" class="wallet__content__send__to__label desc">
+                                Send to:
+                            </label>
+
+                            <input name="sendTo" id="sendTo" class="wallet__content__send__to__input" placeholder="None">
+                        </div>
+
+                        <button type="submit" class="wallet__content__send__btn">
+                            Send
+                        </button>
+                    </form>
                 </div>
             </div>
 
