@@ -1,7 +1,7 @@
 .messages{
     height: 100vh;
 
-    background-image: url('../../../public/src/img/bc/bc-messages.png');
+    background-image: url('/src/img/bc/bc-messages.png');
     background-repeat: no-repeat;
     background-size: contain;
 
@@ -285,11 +285,11 @@
         }
 
         &__top {
-            background-image: url('../../../public/src/img/icons/messages/bc-top.png');
+            background-image: url('/src/img/icons/messages/bc-top.png');
             background-repeat: no-repeat;
 
             @include onMobile {
-                background-image: url('../../../public/src/img/icons/messages/bc-top-mobile.png');
+                background-image: url('/src/img/icons/messages/bc-top-mobile.png');
             }
 
             &__right {
