@@ -11,6 +11,8 @@
             'profit' => '0.236564',
             'link' => '#',
             'status' => 'completed',
+            'address' => 'EfkgmEMfkkjEDOf.hkfdnEfkgmEMfkkjEDOf.hkfdn',
+            'direction' => 'output',
         ],
         'item2' => [
             'id' => 2,
@@ -23,6 +25,8 @@
             'profit' => '0.236564',
             'link' => '#',
             'status' => 'completed',
+            'address' => 'EfkgmEMfkkjEDOf.hkfdnEfkgmEMfkkjEDOf.hkfdn',
+            'direction' => 'input',
         ],
         'item3' => [
             'id' => 3,
@@ -35,6 +39,8 @@
             'profit' => '0.236564',
             'link' => '#',
             'status' => 'pending',
+            'address' => 'EfkgmEMfkkjEDOf.hkfdnEfkgmEMfkkjEDOf.hkfdn',
+            'direction' => 'input',
         ],
         'item4' => [
             'id' => 4,
@@ -47,6 +53,8 @@
             'profit' => '0.236564',
             'link' => '#',
             'status' => 'completed',
+            'address' => 'EfkgmEMfkkjEDOf.hkfdnEfkgmEMfkkjEDOf.hkfdn',
+            'direction' => 'output',
         ],
         'item5' => [
             'id' => 5,
@@ -59,6 +67,8 @@
             'profit' => '0.236564',
             'link' => '#',
             'status' => 'completed',
+            'address' => 'EfkgmEMfkkjEDOf.hkfdnEfkgmEMfkkjEDOf.hkfdn',
+            'direction' => 'output',
         ],
         'item6' => [
             'id' => 6,
@@ -71,6 +81,8 @@
             'profit' => '0.236564',
             'link' => '#',
             'status' => 'pending',
+            'address' => 'EfkgmEMfkkjEDOf.hkfdnEfkgmEMfkkjEDOf.hkfdn',
+            'direction' => 'input',
         ],
         'item7' => [
             'id' => 7,
@@ -83,6 +95,8 @@
             'profit' => '0.236564',
             'link' => '#',
             'status' => 'completed',
+            'address' => 'EfkgmEMfkkjEDOf.hkfdnEfkgmEMfkkjEDOf.hkfdn',
+            'direction' => 'output',
         ],
         'item8' => [
             'id' => 8,
@@ -95,6 +109,8 @@
             'profit' => '0.236564',
             'link' => '#',
             'status' => 'completed',
+            'address' => 'EfkgmEMfkkjEDOf.hkfdnEfkgmEMfkkjEDOf.hkfdn',
+            'direction' => 'output',
         ],
         'item9' => [
             'id' => 9,
@@ -107,6 +123,8 @@
             'profit' => '0.236564',
             'link' => '#',
             'status' => 'pending',
+            'address' => 'EfkgmEMfkkjEDOf.hkfdnEfkgmEMfkkjEDOf.hkfdn',
+            'direction' => 'input',
         ],
         'item10' => [
             'id' => 10,
@@ -119,6 +137,8 @@
             'profit' => '0.236564',
             'link' => '#',
             'status' => 'completed',
+            'address' => 'EfkgmEMfkkjEDOf.hkfdnEfkgmEMfkkjEDOf.hkfdn',
+            'direction' => 'output',
         ],
         'item11' => [
             'id' => 11,
@@ -131,6 +151,8 @@
             'profit' => '0.236564',
             'link' => '#',
             'status' => 'completed',
+            'address' => 'EfkgmEMfkkjEDOf.hkfdnEfkgmEMfkkjEDOf.hkfdn',
+            'direction' => 'output',
         ],
         'item12' => [
             'id' => 12,
@@ -143,6 +165,8 @@
             'profit' => '0.236564',
             'link' => '#',
             'status' => 'pending',
+            'address' => 'EfkgmEMfkkjEDOf.hkfdnEfkgmEMfkkjEDOf.hkfdn',
+            'direction' => 'input',
         ],
         'item13' => [
             'id' => 13,
@@ -155,6 +179,8 @@
             'profit' => '0.236564',
             'link' => '#',
             'status' => 'completed',
+            'address' => 'EfkgmEMfkkjEDOf.hkfdnEfkgmEMfkkjEDOf.hkfdn',
+            'direction' => 'output',
         ],
         'item14' => [
             'id' => 14,
@@ -167,15 +193,24 @@
             'profit' => '0.236564',
             'link' => '#',
             'status' => 'completed',
+            'address' => 'EfkgmEMfkkjEDOf.hkfdnEfkgmEMfkkjEDOf.hkfdn',
+            'direction' => 'output',
         ],
     ];
 @endphp
 
 <div class="transactions">
-    <table class="transactions__table">
+    <table
+        class="
+            transactions__table
+        "
+    >
         <thead
             class="
                 transactions__head
+                @if (request()->is('wallet'))
+                    d-none
+                @endif
             "
         >
             <tr>
@@ -231,7 +266,7 @@
                         @if (request()->is('referral/transactions'))
                             catalog__block
                         @endif
-                        @if (request()->is('referral'))
+                        @if (request()->is('referral') || request()->is('wallet'))
                             {{ $loop->index > 4 ? 'd-none' : '' }}
                         @endif
                     "
@@ -247,23 +282,36 @@
                         </div>
                     </td>
 
-                    <td class="transactions__item__name transactions__item__text">
-                        <p class="title-little">
-                            {{ $item['nickname']}}
-                        </p>
-                    </td>
+                    @if (!request()->is('wallet'))
+                        <td class="transactions__item__name transactions__item__text">
+                            <p class="title-little">
+                                {{ $item['nickname']}}
+                            </p>
+                        </td>
 
-                    <td class="transactions__item__amount transactions__item__text">
-                        <p class="title-little">
-                            {{ $item['amount']}}
-                        </p>
-                    </td>
+                        <td class="transactions__item__amount transactions__item__text">
+                            <p class="title-little">
+                                {{ $item['amount']}}
+                            </p>
+                        </td>
 
-                    <td class="transactions__item__vat transactions__item__text">
-                        <p class="title-little">
-                            {{ $item['vat']}}
-                        </p>
-                    </td>
+                        <td class="transactions__item__vat transactions__item__text">
+                            <p class="title-little">
+                                {{ $item['vat']}}
+                            </p>
+                        </td>
+                    @else
+                        <td class="transactions__item__vat transactions__item__text d-flex flex-row align-items-center">
+                            @if ($item['direction'] === 'input')
+                                <img src="{{ asset('src/img/icons/transactions/input.svg')}}" alt="Input arrow" class="transactions__item__vat__img">
+                            @else
+                                <img src="{{ asset('src/img/icons/transactions/output.svg')}}" alt="Input arrow" class="transactions__item__vat__img">
+                            @endif
+                            <p class="title-little">
+                                {{ $item['address']}}
+                            </p>
+                        </td>
+                    @endif
 
                     <td
                         class="transactions__item__profit transactions__item__text"
@@ -342,7 +390,7 @@
                         catalog__block
                     @endif
 
-                    @if (request()->is('referral'))
+                    @if (request()->is('referral') || request()->is('wallet'))
                         {{ $loop->index > 4 ? 'd-none' : '' }}
                     @endif
                     "
@@ -356,35 +404,53 @@
                     </div>
 
                     <div class="transactions__mob__info flex-column">
-                        <div class="transactions__mob__info__row d-flex flex-row align-items-center">
-                            <h5 class="transactions__mob__info__row__title title-little">
-                                Nickname:
-                            </h5>
+                        @if (!request()->is('wallet'))
+                            <div class="transactions__mob__info__row d-flex flex-row align-items-center">
+                                <h5 class="transactions__mob__info__row__title title-little">
+                                    Nickname:
+                                </h5>
 
-                            <p class="transactions__mob__info__row__text title-little">
-                                {{ $item['nickname']}}
-                            </p>
-                        </div>
+                                <p class="transactions__mob__info__row__text title-little">
+                                    {{ $item['nickname']}}
+                                </p>
+                            </div>
 
-                        <div class="transactions__mob__info__row d-flex flex-row align-items-center">
-                            <h5 class="transactions__mob__info__row__title title-little">
-                                Amount:
-                            </h5>
+                            <div class="transactions__mob__info__row d-flex flex-row align-items-center">
+                                <h5 class="transactions__mob__info__row__title title-little">
+                                    Amount:
+                                </h5>
 
-                            <p class="transactions__mob__info__row__text title-little">
-                                {{ $item['amount']}}
-                            </p>
-                        </div>
+                                <p class="transactions__mob__info__row__text title-little">
+                                    {{ $item['amount']}}
+                                </p>
+                            </div>
 
-                        <div class="transactions__mob__info__row d-flex flex-row align-items-center">
-                            <h5 class="transactions__mob__info__row__title title-little">
-                                VAT:
-                            </h5>
+                            <div class="transactions__mob__info__row d-flex flex-row align-items-center">
+                                <h5 class="transactions__mob__info__row__title title-little">
+                                    VAT:
+                                </h5>
 
-                            <p class="transactions__mob__info__row__text">
-                                ${{ $item['vat'] }}
-                            </p>
-                        </div>
+                                <p class="transactions__mob__info__row__text">
+                                    ${{ $item['vat'] }}
+                                </p>
+                            </div>
+                        @else
+                            <div class="transactions__mob__info__row d-flex flex-row align-items-center">
+                                <h5 class="transactions__mob__info__row__title title-little">
+                                    Status:
+                                </h5>
+
+                                @if ($item['direction'] === 'input')
+                                    <img src="{{ asset('src/img/icons/transactions/input.svg')}}" alt="Input arrow" class="transactions__item__vat__img">
+                                @else
+                                    <img src="{{ asset('src/img/icons/transactions/output.svg')}}" alt="Input arrow" class="transactions__item__vat__img">
+                                @endif
+
+                                <p class="title-little">
+                                    {{ $item['address']}}
+                                </p>
+                            </div>
+                        @endif
 
                         <div class="transactions__mob__info__row d-flex flex-row align-items-center">
                             <h5 class="transactions__mob__info__row__title title-little">

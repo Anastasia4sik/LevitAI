@@ -1,11 +1,11 @@
 .wallet {
     &__content {
-        padding: 8.7vh 2vw 9vh 105px;
+        padding: 8.7vh 2vw 0 105px;
 
         flex-direction: row;
 
         @include onMobile {
-            padding: 15px 3.2vw 110px 48px;
+            padding: 15px 3.2vw 0 48px;
 
             flex-direction: column;
         }
@@ -962,6 +962,36 @@
                         display: none;
                     }
                 }
+            }
+        }
+    }
+
+    &__transactions {
+        padding: 60px 2vw 150px 105px;
+
+        @include onMobile {
+            padding: 90px 3.2vw 110px 48px;
+        }
+
+        &__title {
+            margin-bottom: 6.9vh;
+
+            @include onMobile {
+                margin-bottom: 15px;
+            }
+        }
+
+        &__btn {
+            align-self: center;
+
+            height: 54px;
+            width: 153px;
+
+            @include onMobile {
+                width: 100%;
+                max-width: 360px;
+
+                margin-top: 25px;
             }
         }
     }

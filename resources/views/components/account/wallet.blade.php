@@ -802,6 +802,18 @@
                 </div>
             </div>
         </div>
+
+        <div class="wallet__transactions d-flex flex-column">
+            <h2 class="wallet__transactions__title title-main">
+                Transactions
+            </h2>
+
+            <x-transactions />
+
+            <a href="/referral/transactions" class="wallet__transactions__btn complete__btn d-flex justify-content-center align-items-center">
+                Show more
+            </a>
+        </div>
     </section>
 
     <x-footer />
