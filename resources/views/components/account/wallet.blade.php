@@ -418,39 +418,83 @@
             </div>
 
             <div class="wallet__content__big d-flex">
-                <div class="wallet__content__wallets">
-                    <div class="wallet__content__wallets__top d-flex flex-row align-items-center justify-content-between">
-                        <h4 class="wallet__content__wallets__top__title title-little">
-                            My Wallets
-                        </h4>
+                <div class="wallet__content__big__top">
+                    <div class="wallet__content__wallets">
+                        <div class="wallet__content__wallets__top d-flex flex-row align-items-center justify-content-between">
+                            <h4 class="wallet__content__wallets__top__title title-little">
+                                My Wallets
+                            </h4>
 
-                        <a href="#" target="_blank" class="wallet__content__wallets__top__link desc">
-                            Read more
-                        </a>
+                            <a href="#" target="_blank" class="wallet__content__wallets__top__link desc">
+                                Read more
+                            </a>
+                        </div>
+
+                        <div class="wallet__content__wallets__list d-flex flex-row">
+                            @foreach ($wallets as $wallet)
+                                <div class="wallet__content__wallets__list__item d-flex flex-column justify-content-between">
+                                    <div class="wallet__content__wallets__list__item__top d-flex flex-row align-items-center justify-content-between">
+                                        <p class="wallet__content__wallets__list__item__top__acronym title-little">
+                                            {{ $wallet['acronym']}}
+                                        </p>
+
+                                        <img src="{{ asset($wallet['icon'])}}" alt="Wallet icon" class="wallet__content__wallets__list__item__top__icon">
+                                    </div>
+
+                                    <div class="wallet__content__wallets__list__item__bottom d-flex flex-row align-items-center justify-content-between">
+                                        <p class="wallet__content__wallets__list__item__bottom__name title-little">
+                                            {{ $wallet['name']}}
+                                        </p>
+
+                                        <p class="wallet__content__wallets__list__item__bottom__amount title-little">
+                                            {{ $wallet['amount']}}
+                                        </p>
+                                    </div>
+                                </div>
+                            @endforeach
+                        </div>
                     </div>
 
-                    <div class="wallet__content__wallets__list d-flex flex-row">
-                        @foreach ($wallets as $wallet)
-                            <div class="wallet__content__wallets__list__item d-flex flex-column justify-content-between">
-                                <div class="wallet__content__wallets__list__item__top d-flex flex-row align-items-center justify-content-between">
-                                    <p class="wallet__content__wallets__list__item__top__acronym title-little">
-                                        {{ $wallet['acronym']}}
-                                    </p>
+                    <div class="wallet__content__info wallet__content__info--desk">
+                        <div class="wallet__content__info__top d-flex flex-row justify-content-between">
+                            <div class="wallet__content__info__top__transactions d-flex flex-column">
+                                <p class="wallet__content__info__top__transactions__nums title-little">
+                                    2.354
+                                </p>
 
-                                    <img src="{{ asset($wallet['icon'])}}" alt="Wallet icon" class="wallet__content__wallets__list__item__top__icon">
-                                </div>
-
-                                <div class="wallet__content__wallets__list__item__bottom d-flex flex-row align-items-center justify-content-between">
-                                    <p class="wallet__content__wallets__list__item__bottom__name title-little">
-                                        {{ $wallet['name']}}
-                                    </p>
-
-                                    <p class="wallet__content__wallets__list__item__bottom__amount title-little">
-                                        {{ $wallet['amount']}}
-                                    </p>
-                                </div>
+                                <p class="wallet__content__info__top__transactions__name title-little">
+                                    Transactions
+                                </p>
                             </div>
-                        @endforeach
+
+                            <p class="wallet__content__info__top__wallets title-little">
+                                <span>5</span> <br> Wallet
+                            </p>
+                        </div>
+
+                        <div class="wallet__content__info__current d-flex flex-column">
+                            <p class="wallet__content__info__current__name title-little">
+                                Current Balance
+                            </p>
+
+                            <p class="wallet__content__info__current__amount title-little d-flex align-items-center">
+                                4.3440 <span class="wallet__content__info__current__amount__span title-little">USD</span>
+                            </p>
+                        </div>
+
+                        <div class="wallet__content__info__bottom d-flex flex-row justify-content-end">
+                            <p class="wallet__content__info__bottom__num desc">
+                                2.7994
+                            </p>
+
+                            <p class="wallet__content__info__bottom__cur desc">
+                                EUR
+                            </p>
+
+                            <p class="wallet__content__info__bottom__perc desc">
+                                +12%
+                            </p>
+                        </div>
                     </div>
                 </div>
 
@@ -561,47 +605,84 @@
                         </button>
                     </form>
                 </div>
-            </div>
 
-            <div class="wallet__content__info wallet__content__info--desk">
-                <div class="wallet__content__info__top d-flex flex-row justify-content-between">
-                    <div class="wallet__content__info__top__transactions d-flex flex-column">
-                        <p class="wallet__content__info__top__transactions__nums title-little">
-                            2.354
-                        </p>
+                <div class="wallet__content__graph">
+                    <div class="wallet__content__graph__top d-flex flex-row align-items-center">
+                        <select
+                            name="chart"
+                            id="chart"
+                            class="wallet__content__graph__chart"
+                        >
+                            <option value="bitcoin-chart">
+                                Bitcoin Chart
+                            </option>
 
-                        <p class="wallet__content__info__top__transactions__name title-little">
-                            Transactions
-                        </p>
+                            <option value="ethereum-chart">
+                                Ethereum Chart
+                            </option>
+
+                            <option value="litecoin-chart">
+                                Litecoin Chart
+                            </option>
+                        </select>
+
+                        <div class="wallet__content__graph__amount d-flex flex-row align-items-center">
+                            <label for="graph-amount">$</label>
+                            <input
+                                type="number"
+                                id="graph-amount"
+                                class="wallet__content__graph__amount__input"
+                                placeholder="1903.59"
+                            >
+                        </div>
                     </div>
 
-                    <p class="wallet__content__info__top__wallets title-little">
-                        <span>5</span> <br> Wallet
-                    </p>
-                </div>
+                    <div class="wallet__content__graph__info d-flex">
+                        <div class="wallet__content__graph__info__left d-flex flex-row align-items-center">
+                            <p class="wallet__content__graph__info__left__num">
+                                +0.36%
+                            </p>
 
-                <div class="wallet__content__info__current d-flex flex-column">
-                    <p class="wallet__content__info__current__name title-little">
-                        Current Balance
-                    </p>
+                            <p class="wallet__content__graph__info__left__desc">
+                                Market up in the last 24 hours
+                            </p>
+                        </div>
 
-                    <p class="wallet__content__info__current__amount title-little d-flex align-items-center">
-                        4.3440 <span class="wallet__content__info__current__amount__span title-little">USD</span>
-                    </p>
-                </div>
+                        <div class="wallet__content__graph__info__right d-flex flex-row align-items-center">
+                            <p
+                                class="wallet__content__graph__info__right__item"
+                            >
+                                1H
+                            </p>
 
-                <div class="wallet__content__info__bottom d-flex flex-row justify-content-end">
-                    <p class="wallet__content__info__bottom__num desc">
-                        2.7994
-                    </p>
+                            <p
+                                class="wallet__content__graph__info__right__item active"
+                            >
+                                1D
+                            </p>
 
-                    <p class="wallet__content__info__bottom__cur desc">
-                        EUR
-                    </p>
+                            <p
+                                class="wallet__content__graph__info__right__item"
+                            >
+                                1W
+                            </p>
 
-                    <p class="wallet__content__info__bottom__perc desc">
-                        +12%
-                    </p>
+                            <p
+                                class="wallet__content__graph__info__right__item"
+                            >
+                                1M
+                            </p>
+
+                            <p
+                                class="wallet__content__graph__info__right__item"
+                            >
+                                1Y
+                            </p>
+                        </div>
+                    </div>
+
+                    <img src="{{ asset('src/img/photo/wallet-graph.png')}}" alt="Graph" class="wallet__content__graph__img wallet__content__graph__img--desk">
+                    <img src="{{ asset('src/img/photo/wallet-graph-mob.png')}}" alt="Graph" class="wallet__content__graph__img wallet__content__graph__img--mob">
                 </div>
             </div>
 
@@ -794,6 +875,21 @@
                 input.value = input.getAttribute('max');
             }
         }
+
+        //graph
+            const items = document.querySelectorAll('.wallet__content__graph__info__right__item');
+
+            items.forEach((item) => {
+                item.addEventListener('click', () => {
+                    items.forEach((checkItem) => {
+                        if (checkItem.classList.contains('active')) {
+                            checkItem.classList.remove('active');
+                        };
+                    });
+
+                    item.classList.add('active');
+                });
+            });
 
         //disable
             document.addEventListener('DOMContentLoaded', function() {

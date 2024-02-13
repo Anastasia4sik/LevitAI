@@ -12,6 +12,15 @@
 
         &__big {
             flex-direction: column;
+
+            &__top {
+                @include onDesktop {
+                    display: flex;
+                    flex-direction: row;
+
+                    margin-bottom: 0;
+                }
+            }
         }
 
         &__percentages {
@@ -20,10 +29,18 @@
             height: 194px;
             gap: 30px;
 
+            margin-bottom: 30px;
+
+            @include onDesktop {
+                margin-top: -88px;
+            }
+
             @include onMobile {
                 flex-direction: column;
                 gap: 15px;
                 height: fit-content;
+
+                margin-bottom: 0;
             }
         }
 
@@ -440,7 +457,6 @@
             width: 418px;
 
             margin-bottom: 30px;
-            height: fit-content;
 
             &--desk {
                 margin-bottom: 0;
@@ -759,6 +775,192 @@
 
                 @include onMobile {
                     padding: 7px 25px;
+                }
+            }
+        }
+
+        &__graph {
+            width: 62vw;
+            padding: 39px;
+
+            background-color: #180D38;
+
+            @include onMobile {
+                width: 100%;
+
+                padding: 25px 11px;
+                margin-bottom: 25px;
+            }
+
+            &__top {
+                gap: 25px;
+                margin-bottom: 20px;
+
+                @include onMobile {
+                    margin-bottom: 15px;
+                }
+            }
+
+            &__chart {
+                border: none;
+                background-color: transparent;
+                color: $white;
+
+                font-size: 1.25vw;
+
+                @include onMobile {
+                    font-size: 18px;
+                }
+
+                & option {
+                    border: 1px solid $white;
+                    background-color: $main-bc;
+
+                    color: $white;
+                    font-size: 1.25vw;
+
+                    @include onMobile {
+                        font-size: 18px;
+                    }
+
+                    &:checked {
+                        background-color: $main-bc;
+                    }
+                }
+            }
+
+            &__amount {
+                width: 131px;
+
+                @include onMobile {
+                    width: 107px;
+                }
+
+                input::-webkit-outer-spin-button,
+                input::-webkit-inner-spin-button {
+                    -webkit-appearance: none;
+                    margin: 0;
+                }
+
+                input[type=number] {
+                    -moz-appearance: textfield;
+                }
+
+                &__input {
+                    background-color: transparent;
+                    color: $white;
+
+                    font-size: 1.25vw;
+
+                    &::placeholder {
+                        color: $white;
+                        font-size: 1.25vw;
+
+                        @include onMobile {
+                            font-size: 18px;
+                        }
+                    }
+
+                    @include onMobile {
+                        font-size: 18px;
+                    }
+                }
+            }
+
+            &__info {
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+
+                margin-bottom: 15px;
+
+                @include onMobile {
+                    flex-direction: column;
+                    align-items: start;
+                    justify-content: start;
+
+                    gap: 10px;
+
+                    margin-bottom: 10px;
+                }
+
+                &__left {
+                    gap: 10px;
+
+                    @include onMobile {
+                        gap: 5px;
+
+                        margin-bottom: 14px;
+                    }
+
+                    &__num {
+                        padding: 8px 10px;
+
+                        border: 2px solid #4A10EF;
+                        border-radius: 10px;
+
+                        font-size: 16px;
+
+                        @include onMobile {
+                            font-size: 14px;
+                        }
+                    }
+
+                    &__desc {
+                        font-size: 16px;
+                        color: #BBB;
+
+                        @include onMobile {
+                            font-size: 12px;
+                        }
+                    }
+                }
+
+                &__right {
+                    gap: 40px;
+
+                    @include onMobile {
+                        gap: 45px;
+                        justify-content: center;
+                        width: 100%;
+                    }
+
+                    &__item {
+                        font-size: 0.8vw;
+
+                        opacity: 0.7;
+
+                        cursor: pointer;
+
+                        @include onMobile {
+                            font-size: 12px;
+                        }
+
+                        &.active {
+                            font-size: 1vw;
+                            opacity: 1;
+
+                            @include onMobile {
+                                font-size: 18px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            &__img {
+                width: 100%;
+
+                &--desk {
+                    @include onMobile {
+                        display: none;
+                    }
+                }
+
+                &--mob {
+                    @include onDesktop {
+                        display: none;
+                    }
                 }
             }
         }
