@@ -300,10 +300,120 @@
                     </h1>
                 </div>
 
-                <div class="wallet__content__calc">
+                <div class="wallet__content__calc wallet__content__calc--desc flex-column align-items-center disable">
                     <h3 class="wallet__content__calc__title">
                         Calculator
                     </h3>
+
+                    <form action="#" class="wallet__content__calc__form d-flex flex-column align-items-center">
+                        <div class="wallet__content__calc__form__block d-flex flex-column align-items-center">
+                            <label for="amount" class="wallet__content__calc__form__block__label title-little">
+                                VR amount to stake
+                            </label>
+
+                            <div
+                                class="
+                                    wallet__content__calc__form__block__ranges
+                                    range-input
+                                    d-flex
+                                    flex-row
+                                    align-items-center
+
+                                "
+                            >
+                                <p class="wallet__content__calc__form__block__ranges__desc title-little">0</p>
+
+                                <input type="range" class="outputAmount-range" min="0" max="100000000" value="168" step="1" oninput="outputAmountValue(this.value)">
+
+                                <p class="wallet__content__calc__form__block__ranges__desc title-little">100M</p>
+                            </div>
+
+                            <input type="number" class="wallet__content__calc__form__block__input outputAmount-input" value="168" max="100000000" oninput="inputAmountValue(this.value)" onblur="checkMax(this)">
+                        </div>
+
+                        <div class="wallet__content__calc__form__block d-flex flex-column align-items-center">
+                            <label for="amount" class="wallet__content__calc__form__block__label title-little">
+                                Number of days you want to lock up for
+                            </label>
+
+                            <div
+                                class="
+                                    wallet__content__calc__form__block__ranges
+                                    range-input
+                                    d-flex
+                                    flex-row
+                                    align-items-center
+
+                                "
+                            >
+                                <p class="wallet__content__calc__form__block__ranges__desc title-little">0</p>
+
+                                <input type="range" class="outputDays-range" min="0" max="4000" value="30" step="1" oninput="outputDaysValue(this.value)">
+
+                                <p class="wallet__content__calc__form__block__ranges__desc title-little">4K</p>
+                            </div>
+
+                            <input type="number" class="wallet__content__calc__form__block__input outputDays-input" value="30" max="4000" oninput="inputDaysValue(this.value)" onblur="checkMax(this)">
+                        </div>
+
+                        <p class="wallet__content__calc__form__desc text-center title-little">
+                            VR Shares Bonus:<span class="wallet__content__calc__form__desc__span">66%</span>
+                            <br>
+                            VR Shares:<span class="wallet__content__calc__form__desc__span">278</span>
+                            <br>
+                            Staker’s share in the VR Pool<<span class="wallet__content__calc__form__desc__span"> 0.0001%</span>
+                            <br><br>
+                            VR Lands Tickets:<span class="wallet__content__calc__form__desc__span">0</span>
+                            <br>
+                            Mystery Airdrops Tickets:<span class="wallet__content__calc__form__desc__span">0</span>
+                            <br><br>
+                            Estimated Annual Rewards:<span class="wallet__content__calc__form__desc__span">1%</span>
+                            <br>
+                            Estimated Annual Rewards (3 Years):<span class="wallet__content__calc__form__desc__span">1%</span>
+                            <br>
+                            Your next estimated rewards:<span class="wallet__content__calc__form__desc__span">0.2020 VR</span>
+                        </p>
+
+                        <div class="wallet__content__calc__form__block d-flex flex-column align-items-center">
+                            <label for="amount" class="wallet__content__calc__form__block__label title-little">
+                                Total VR Shares
+                            </label>
+
+                            <div
+                                class="
+                                    wallet__content__calc__form__block__ranges
+                                    range-input
+                                    d-flex
+                                    flex-row
+                                    align-items-center
+                                "
+                            >
+                                <p class="wallet__content__calc__form__block__ranges__desc title-little">0</p>
+
+                                <input type="range" class="outputTotal-range" min="0" max="988" value="30" step="1" oninput="outputTotalValue(this.value)">
+
+                                <p class="wallet__content__calc__form__block__ranges__desc title-little">988</p>
+                            </div>
+
+                            <div class="wallet__content__calc__form__block__bottom d-flex flex-row align-items-center justify-content-center">
+                                <input type="number" class="wallet__content__calc__form__block__input outputTotal-input" value="30" max="988" oninput="inputTotalValue(this.value)" onblur="checkMax(this)">
+
+                                <p class="wallet__content__calc__form__block__bottom__desc title-little">Default</p>
+                            </div>
+                        </div>
+
+                        <p class="wallet__content__calc__form__bottomText desc">
+                            the default value represents the actual, real value
+                        </p>
+                    </form>
+
+                    <div class="wallet__content__calc__disable d-flex align-items-center justify-content-center">
+                        <p
+                            class="wallet__content__calc__disable__desc desc d-flex align-items-center justify-content-center"
+                        >
+                            Will be available after token launch on July 24th
+                        </p>
+                    </div>
                 </div>
             </div>
 
@@ -415,7 +525,7 @@
                         </div>
                     </div>
 
-                    <form action="" class="wallet__content__send">
+                    <form action="#" class="wallet__content__send">
                         <div class="wallet__content__send__top d-flex flex-row justify-content-between">
                             <div class="wallet__content__send__top__dropdown d-flex flex-row align-items-center">
                                 <label for="wallet" class="wallet__content__send__top__dropdown__label desc">
@@ -454,46 +564,162 @@
             </div>
 
             <div class="wallet__content__info wallet__content__info--desk">
-                    <div class="wallet__content__info__top d-flex flex-row justify-content-between">
-                        <div class="wallet__content__info__top__transactions d-flex flex-column">
-                            <p class="wallet__content__info__top__transactions__nums title-little">
-                                2.354
-                            </p>
+                <div class="wallet__content__info__top d-flex flex-row justify-content-between">
+                    <div class="wallet__content__info__top__transactions d-flex flex-column">
+                        <p class="wallet__content__info__top__transactions__nums title-little">
+                            2.354
+                        </p>
 
-                            <p class="wallet__content__info__top__transactions__name title-little">
-                                Transactions
-                            </p>
+                        <p class="wallet__content__info__top__transactions__name title-little">
+                            Transactions
+                        </p>
+                    </div>
+
+                    <p class="wallet__content__info__top__wallets title-little">
+                        <span>5</span> <br> Wallet
+                    </p>
+                </div>
+
+                <div class="wallet__content__info__current d-flex flex-column">
+                    <p class="wallet__content__info__current__name title-little">
+                        Current Balance
+                    </p>
+
+                    <p class="wallet__content__info__current__amount title-little d-flex align-items-center">
+                        4.3440 <span class="wallet__content__info__current__amount__span title-little">USD</span>
+                    </p>
+                </div>
+
+                <div class="wallet__content__info__bottom d-flex flex-row justify-content-end">
+                    <p class="wallet__content__info__bottom__num desc">
+                        2.7994
+                    </p>
+
+                    <p class="wallet__content__info__bottom__cur desc">
+                        EUR
+                    </p>
+
+                    <p class="wallet__content__info__bottom__perc desc">
+                        +12%
+                    </p>
+                </div>
+            </div>
+
+            <div class="wallet__content__calc wallet__content__calc--mob flex-column align-items-center disable">
+                <h3 class="wallet__content__calc__title">
+                    Calculator
+                </h3>
+
+                <form action="#" class="wallet__content__calc__form d-flex flex-column align-items-center">
+                    <div class="wallet__content__calc__form__block d-flex flex-column align-items-center">
+                        <label for="amount" class="wallet__content__calc__form__block__label title-little">
+                            VR amount to stake
+                        </label>
+
+                        <div
+                            class="
+                                wallet__content__calc__form__block__ranges
+                                range-input
+                                d-flex
+                                flex-row
+                                align-items-center
+
+                            "
+                        >
+                            <p class="wallet__content__calc__form__block__ranges__desc title-little">0</p>
+
+                            <input type="range" class="outputAmount-range" min="0" max="100000000" value="168" step="1" oninput="outputAmountValue(this.value)">
+
+                            <p class="wallet__content__calc__form__block__ranges__desc title-little">100M</p>
                         </div>
 
-                        <p class="wallet__content__info__top__wallets title-little">
-                            <span>5</span> <br> Wallet
-                        </p>
+                        <input type="number" class="wallet__content__calc__form__block__input outputAmount-input" value="168" max="100000000" oninput="inputAmountValue(this.value)" onblur="checkMax(this)">
                     </div>
 
-                    <div class="wallet__content__info__current d-flex flex-column">
-                        <p class="wallet__content__info__current__name title-little">
-                            Current Balance
-                        </p>
+                    <div class="wallet__content__calc__form__block d-flex flex-column align-items-center">
+                        <label for="amount" class="wallet__content__calc__form__block__label title-little">
+                            Number of days you want to lock up for
+                        </label>
 
-                        <p class="wallet__content__info__current__amount title-little d-flex align-items-center">
-                            4.3440 <span class="wallet__content__info__current__amount__span title-little">USD</span>
-                        </p>
+                        <div
+                            class="
+                                wallet__content__calc__form__block__ranges
+                                range-input
+                                d-flex
+                                flex-row
+                                align-items-center
+
+                            "
+                        >
+                            <p class="wallet__content__calc__form__block__ranges__desc title-little">0</p>
+
+                            <input type="range" class="outputDays-range" min="0" max="4000" value="30" step="1" oninput="outputDaysValue(this.value)">
+
+                            <p class="wallet__content__calc__form__block__ranges__desc title-little">4K</p>
+                        </div>
+
+                        <input type="number" class="wallet__content__calc__form__block__input outputDays-input" value="30" max="4000" oninput="inputDaysValue(this.value)" onblur="checkMax(this)">
                     </div>
 
-                    <div class="wallet__content__info__bottom d-flex flex-row justify-content-end">
-                        <p class="wallet__content__info__bottom__num desc">
-                            2.7994
-                        </p>
+                    <p class="wallet__content__calc__form__desc text-center title-little">
+                        VR Shares Bonus:<span class="wallet__content__calc__form__desc__span">66%</span>
+                        <br>
+                        VR Shares:<span class="wallet__content__calc__form__desc__span">278</span>
+                        <br>
+                        Staker’s share in the VR Pool<<span class="wallet__content__calc__form__desc__span"> 0.0001%</span>
+                        <br><br>
+                        VR Lands Tickets:<span class="wallet__content__calc__form__desc__span">0</span>
+                        <br>
+                        Mystery Airdrops Tickets:<span class="wallet__content__calc__form__desc__span">0</span>
+                        <br><br>
+                        Estimated Annual Rewards:<span class="wallet__content__calc__form__desc__span">1%</span>
+                        <br>
+                        Estimated Annual Rewards (3 Years):<span class="wallet__content__calc__form__desc__span">1%</span>
+                        <br>
+                        Your next estimated rewards:<span class="wallet__content__calc__form__desc__span">0.2020 VR</span>
+                    </p>
 
-                        <p class="wallet__content__info__bottom__cur desc">
-                            EUR
-                        </p>
+                    <div class="wallet__content__calc__form__block d-flex flex-column align-items-center">
+                        <label for="amount" class="wallet__content__calc__form__block__label title-little">
+                            Total VR Shares
+                        </label>
 
-                        <p class="wallet__content__info__bottom__perc desc">
-                            +12%
-                        </p>
+                        <div
+                            class="
+                                wallet__content__calc__form__block__ranges
+                                range-input
+                                d-flex
+                                flex-row
+                                align-items-center
+                            "
+                        >
+                            <p class="wallet__content__calc__form__block__ranges__desc title-little">0</p>
+
+                            <input type="range" class="outputTotal-range" min="0" max="988" value="30" step="1" oninput="outputTotalValue(this.value)">
+
+                            <p class="wallet__content__calc__form__block__ranges__desc title-little">988</p>
+                        </div>
+
+                        <div class="wallet__content__calc__form__block__bottom d-flex flex-row align-items-center justify-content-center">
+                            <input type="number" class="wallet__content__calc__form__block__input outputTotal-input" value="30" max="988" oninput="inputTotalValue(this.value)" onblur="checkMax(this)">
+
+                            <p class="wallet__content__calc__form__block__bottom__desc title-little">Default</p>
+                        </div>
                     </div>
+
+                    <p class="wallet__content__calc__form__bottomText desc">
+                        the default value represents the actual, real value
+                    </p>
+                </form>
+
+                <div class="wallet__content__calc__disable d-flex align-items-center justify-content-center">
+                    <p
+                        class="wallet__content__calc__disable__desc desc d-flex align-items-center justify-content-center"
+                    >
+                        Will be available after token launch on July 24th
+                    </p>
                 </div>
+            </div>
         </div>
     </section>
 
@@ -511,5 +737,77 @@
                 item.classList.add('active');
             });
         });
+
+        //amount value
+            function outputAmountValue(value) {
+                const outputInputs = document.querySelectorAll('.outputAmount-input');
+
+                outputInputs.forEach((input) => {
+                    input.value = value;
+                })
+            }
+
+            function inputAmountValue(value) {
+                const outputRanges = document.querySelectorAll('.outputAmount-range');
+
+                outputRanges.forEach((range) => {
+                    range.value = value;
+                })
+            }
+
+        //days value
+            function outputDaysValue(value) {
+                const outputInputs = document.querySelectorAll('.outputDays-input');
+
+                outputInputs.forEach((input) => {
+                    input.value = value;
+                })
+            }
+
+            function inputDaysValue(value) {
+                const outputRanges = document.querySelectorAll('.outputDays-range');
+
+                outputRanges.forEach((range) => {
+                    range.value = value;
+                })
+            }
+
+        //total value
+            function outputTotalValue(value) {
+                const outputInputs = document.querySelectorAll('.outputTotal-input');
+
+                outputInputs.forEach((input) => {
+                    input.value = value;
+                })
+            }
+
+            function inputTotalValue(value) {
+                const outputRanges = document.querySelectorAll('.outputTotal-range');
+
+                outputRanges.forEach((range) => {
+                    range.value = value;
+                })
+            }
+
+        function checkMax(input) {
+            if (parseInt(input.value) > parseInt(input.getAttribute('max'))) {
+                input.value = input.getAttribute('max');
+            }
+        }
+
+        //disable
+            document.addEventListener('DOMContentLoaded', function() {
+                const mainBlocks = document.querySelectorAll('.wallet__content__calc');
+
+                mainBlocks.forEach((block) => {
+                    const disableBlock = block.querySelector('.wallet__content__calc__disable');
+
+                    if (!block.classList.contains('disable')) {
+                        disableBlock.style.display = 'none';
+                    } else {
+                        disableBlock.style.display = 'block';
+                    }
+                })
+            });
     </script>
 </x-base>

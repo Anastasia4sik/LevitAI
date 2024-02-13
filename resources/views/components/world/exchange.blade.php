@@ -424,27 +424,44 @@
 
                 <div class="exchange__container__filter__dropdown__content__block__range">
                     <div class="exchange__container__filter__dropdown__content__block__range__slider slider">
-                    <div class="progress">
-
-                    </div>
-                    </div>
-
-                    <div class="exchange__container__filter__dropdown__content__block__range__values range-input">
-                    <input type="range" class="range-min" min="0" max="10000" value="2500" step="100">
-                    <input type="range" class="range-max" min="0" max="10000" value="7500" step="100">
+                        <div class="progress">
+                        </div>
                     </div>
 
                     <div
-                    class="exchange__container__filter__dropdown__content__block__range__input d-flex flex-row align-items-center price-input">
-                    <div class="exchange__container__filter__dropdown__content__block__range__input__field">
-                        <input type="number" class="input-min" value="2500">
+                        class="
+                            exchange__container__filter__dropdown__content__block__range__values
+                            range-input
+                        "
+                    >
+                        <input type="range" class="range-min" min="0" max="10000" value="2500" step="100">
+                        <input type="range" class="range-max" min="0" max="10000" value="7500" step="100">
                     </div>
 
-                    <div class="exchange__container__filter__dropdown__content__block__range__input__span">to</div>
+                    <div
+                        class="
+                            exchange__container__filter__dropdown__content__block__range__input
+                            d-flex
+                            flex-row
+                            align-items-center
+                            price-input
+                        "
+                    >
+                        <div
+                            class="
+                                exchange__container__filter__dropdown__content__block__range__input__field
+                            "
+                        >
+                            <input type="number" class="input-min" value="2500">
+                        </div>
 
-                    <div class="exchange__container__filter__dropdown__content__block__range__input__field">
-                        <input type="number" class="input-max" value="7500">
-                    </div>
+                        <div class="exchange__container__filter__dropdown__content__block__range__input__span">
+                            to
+                        </div>
+
+                        <div class="exchange__container__filter__dropdown__content__block__range__input__field">
+                            <input type="number" class="input-max" value="7500">
+                        </div>
                     </div>
                 </div>
 

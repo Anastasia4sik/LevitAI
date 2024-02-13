@@ -158,6 +158,15 @@
                     height: 2px;
                 }
             }
+
+            scrollbar-width: thin;
+            overflow-y: scroll;
+            scrollbar-color: #341D79 #180D38;
+            scrollbar-width: thin;
+
+            @include onMobile {
+                scrollbar-width: thin; /* Adjust width for mobile */
+            }
         }
 
         &__item {
@@ -393,6 +402,15 @@
                 @include onMobile {
                     width: 3px;
                 }
+            }
+
+            scrollbar-width: thin;
+            overflow-y: scroll;
+            scrollbar-color: #341D79 #180D38;
+            scrollbar-width: thin;
+
+            @include onMobile {
+                scrollbar-width: thin; /* Adjust width for mobile */
             }
 
             &__item {

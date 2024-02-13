@@ -265,7 +265,7 @@
             </h1>
         </div>
 
-        <div class="content">
+        <div class="content disable">
             <div class="friends__top__btns d-flex">
                 <button
                     type="submit"
