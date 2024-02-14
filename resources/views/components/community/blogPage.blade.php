@@ -169,7 +169,7 @@
 
         <x-header />
 
-        <section class="blogPage__blog topPage d-flex flex-column align-items-center justify-content-center">
+        <section class="blogPage__blog topPage">
             <div
                 class="
                     blogPage__blog__container
@@ -328,24 +328,15 @@
                 const itemsContainer = document.getElementById("blogItemsContainer");
                 const items = itemsContainer.querySelectorAll(".blogPage__all__content__block__item");
 
-                if (theme !== 'all') {
-                    itemsContainer.style.display = 'flex';
-                    itemsContainer.style.width = "100%";
-                    itemsContainer.style.justifyContent = "start";
-                    itemsContainer.style.flexDirection = "row";
+                const loadMoreButton = document.getElementById("loadMoreButton");
 
-                    const loadMoreButton = document.getElementById("loadMoreButton");
-                    if (loadMoreButton) {
-                        loadMoreButton.style.display = "none";
-                    }
-                } else {
-                    itemsContainer.style.display = 'grid';
+                if (loadMoreButton) {
+                    loadMoreButton.style.display = "none";
                 }
 
                 items.forEach((item) => {
                     const itemTheme = item.getAttribute('data-theme');
                     item.style.display = (theme === 'all' || theme === itemTheme) ? 'block' : 'none';
-                    item.style.width = "311px";
                 });
 
                 const mainPost = document.querySelector('.blogPage__all__content__main');

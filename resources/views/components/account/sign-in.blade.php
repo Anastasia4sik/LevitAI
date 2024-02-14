@@ -42,6 +42,7 @@
           <button type="submit" class="
                             complete__btn
                             register__container__form__btns__btn
+                            register__container__form__btns__btn--sign
                             d-flex
                             flex-row
                             align-items-center
@@ -61,6 +62,7 @@
           <button type="button" class="
                             complete__btn
                             register__container__form__btns__btn
+                            register__container__form__btns__btn--sign
                             d-flex
                             flex-row
                             align-items-center

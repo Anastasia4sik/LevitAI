@@ -16,7 +16,7 @@
         }
 
         &__top {
-            margin-bottom: 100px;
+            padding-bottom: 100px;
 
             flex-direction: row;
 
@@ -41,8 +41,13 @@
             }
 
             &__img {
-                width: 100%;
-                max-width: 360px;
+                @include onDesktop {
+                    height: 100%;
+                }
+                @include onMobile {
+                    width: 100%;
+                    max-width: 360px;
+                }
             }
         }
 

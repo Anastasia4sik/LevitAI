@@ -200,9 +200,11 @@
                                 padding: 14px 0;
 
                                 @include onMobile {
-                                    padding: 10px 22px;
+                                    padding: 2px 22px;
 
-                                    font-size: 14px;
+                                    font-size: 12px;
+
+                                    word-wrap: break-word;
                                 }
                             }
 

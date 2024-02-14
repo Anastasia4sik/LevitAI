@@ -81,35 +81,37 @@
 
     <x-header />
 
-    <section class="teamPage__top topPage d-flex flex-column align-items-center">
-      <div class="
-                    teamPage__blog__container
-                    topPage__top
-                    d-flex
-                    flex-column
-                    justify-content-center
-                ">
-        <h2 class="topPage__top__title title-main">
-          Team Member
-        </h2>
+    <section class="teamPage__top topPage">
+        <div
+            class="
+                teamPage__blog__container
+                topPage__top
+                d-flex
+                flex-column
+                justify-content-center
+            "
+        >
+            <h2 class="topPage__top__title title-main">
+                Team Member
+            </h2>
 
-        <div class="topPage__top__text d-flex align-items-center justify-content-center">
-          <h2 class="topPage__top__text__title title-main title-main--stroke">
-            LevitAI
-          </h2>
+            <div class="topPage__top__text d-flex align-items-center justify-content-center">
+                <h2 class="topPage__top__text__title title-main title-main--stroke">
+                    LevitAI
+                </h2>
 
-          <p class="topPage__top__text__desc desc">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt labore dolore
-            magna aliqua. Ut ad minim veniam, nostrud exercitation ullamco laboris ut ea consequat. Lorem amet, sed do
-            tempor aliqua.
-          </p>
+                <p class="topPage__top__text__desc desc">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt labore dolore
+                    magna aliqua. Ut ad minim veniam, nostrud exercitation ullamco laboris ut ea consequat. Lorem amet, sed do
+                    tempor aliqua.
+                </p>
+            </div>
+
         </div>
 
-      </div>
-
-      <a href="#team" class="topPage__top__arrowDown">
-        <img src="{{ asset('src/img/icons/arrows/arrow-down-circle.png')}}" alt="To map">
-      </a>
+        <a href="#team" class="topPage__top__arrowDown">
+            <img src="{{ asset('src/img/icons/arrows/arrow-down-circle.png')}}" alt="To map">
+        </a>
     </section>
 
     <div class="teamPage__block">

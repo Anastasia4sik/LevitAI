@@ -54,7 +54,7 @@
 
     <x-header />
 
-    <section class="eventsPage__top topPage d-flex flex-column align-items-center justify-content-center">
+    <section class="eventsPage__top topPage">
       <div class="
                     eventsPage__blog__container
                     topPage__top

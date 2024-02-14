@@ -5,7 +5,7 @@
     background-size: contain;
 
     &__article {
-        padding: 77px 2vw 13.8vh 105px;
+        padding: 125px 2vw 13.8vh 105px;
 
         @include onMobile {
             padding: 25px 3.2vw 110px 48px;
@@ -26,7 +26,7 @@
             }
 
             &.economy {
-                margin-top: -40px;
+                line-height: 100%;
                 margin-bottom: 75px;
 
                 @include onMobile {
@@ -65,11 +65,23 @@
                 @include onDesktop {
                     margin-top: 0;
                     margin-bottom: 0;
+
+                    align-items: center;
                 }
             }
 
             &__title {
                 margin-top: -5px;
+
+                @include onDesktop {
+                    line-height: 100%;
+                }
+
+                & span {
+                    @include onDesktop {
+                        display: none;
+                    }
+                }
             }
         }
 

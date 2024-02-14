@@ -4,7 +4,7 @@
     background-position: center top;
     background-size: contain;
 
-    padding: 8.7vh 2vw 9vh 105px;
+    padding: 125px 2vw 9vh 105px;
 
     @include onMobile {
         padding: 15px 3.2vw 110px 48px;
@@ -182,7 +182,7 @@
 
         backdrop-filter: blur(7.5px);
 
-        z-index: 999;
+        z-index: 99;
 
         &__text {
             transform: translate(27vw, 50%);

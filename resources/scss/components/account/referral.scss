@@ -9,7 +9,7 @@
     }
 
     &__top {
-        margin-top: 15vh;
+        padding-top: 15vh;
 
         @include onMobile {
             margin-top: 0;

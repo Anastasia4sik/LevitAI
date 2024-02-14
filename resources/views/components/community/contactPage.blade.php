@@ -4,7 +4,7 @@
   <x-header />
 
   <section class="contactPage">
-    <div class="contactPage__container topPage d-flex flex-column align-items-center justify-content-center">
+    <div class="contactPage__container topPage">
       <div class="
                         topPage__top
                         d-flex

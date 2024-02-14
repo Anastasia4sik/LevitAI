@@ -203,11 +203,22 @@
 
                 &__btn {
                     gap: 9px;
+
+                    @include onDesktop {
+                        padding-right: 9px;
+                    }
+
                     @include onMobile {
                         width: 100%;
                         max-width: 360px;
 
                         gap: 20%;
+                    }
+
+                    &--sign {
+                        @include onMobile {
+                            gap: 30%;
+                        }
                     }
                 }
             }

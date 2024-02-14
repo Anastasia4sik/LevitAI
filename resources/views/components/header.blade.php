@@ -8,245 +8,245 @@
         @endif
     "
 >
-  <div class="header__dropdown">
+    <div class="header__dropdown">
     <div class="header__dropdown__label align-items-center">
-      <img class="header__dropdown__label__img align-items-center"
+        <img class="header__dropdown__label__img align-items-center"
         src="{{ asset('src/img/photo/account/avatar-small.png')}}" alt="My avatar">
-      My Account
-      <span class="arrow-down">&#9662;</span>
+        My Account
+        <span class="arrow-down">&#9662;</span>
     </div>
 
     <ul class="header__dropdown__options">
-      <li>
+        <li>
         <a href="/avatar">
-          My Avatar
+            My Avatar
         </a>
-      </li>
+        </li>
 
-      <li>
+        <li>
         <a href="/account">
-          My Account
+            My Account
         </a>
-      </li>
+        </li>
 
-      <li>
+        <li>
         <a href="/referral">
-          My Referral System
+            My Referral System
         </a>
-      </li>
+        </li>
 
-      <li>
+        <li>
         <a href="/my-events">
-          My Events
+            My Events
         </a>
-      </li>
+        </li>
 
-      <li>
+        <li>
         <a href="/messages">
-          My Messages
+            My Messages
         </a>
-      </li>
+        </li>
 
-      <li>
+        <li>
         <a href="/friends">
-          My Friends
+            My Friends
         </a>
-      </li>
+        </li>
 
-      <li>
+        <li>
         <a href="/wallet">
-          My Wallet
+            My Wallet
         </a>
-      </li>
+        </li>
     </ul>
-  </div>
+    </div>
 
-  <ul class="header__list d-flex flex-row align-items-center">
+    <ul class="header__list d-flex flex-row align-items-center">
     <a href="/" class="header__list__item">
-      Home
+        Home
     </a>
 
     <div class="header__dropdown">
-      <div class="header__dropdown__label">
+        <div class="header__dropdown__label">
         Community
         <span class="arrow-down">&#9662;</span>
-      </div>
+        </div>
 
-      <ul class="header__dropdown__options">
+        <ul class="header__dropdown__options">
         <li>
-          <a href="/about-us">
+            <a href="/about-us">
             About Us
-          </a>
+            </a>
         </li>
 
         <li>
-          <a href="/team">
+            <a href="/team">
             Our Team
-          </a>
+            </a>
         </li>
 
         <li>
-          <a href="/blog">
+            <a href="/blog">
             Blog
-          </a>
+            </a>
         </li>
 
         <li>
-          <a href="/faq">
+            <a href="/faq">
             FAQ
-          </a>
+            </a>
         </li>
 
         <li>
-          <a href="/contact-us">
+            <a href="/contact-us">
             Contact Us
-          </a>
+            </a>
         </li>
 
         <li>
-          <a href="/events">
+            <a href="/events">
             The Events
-          </a>
+            </a>
         </li>
-      </ul>
+        </ul>
     </div>
 
     <div class="header__dropdown">
-      <div class="header__dropdown__label">
+        <div class="header__dropdown__label">
         Discover
         <span class="arrow-down">&#9662;</span>
-      </div>
+        </div>
 
-      <ul class="header__dropdown__options">
+        <ul class="header__dropdown__options">
         <li>
-          <a href="/economy">
+            <a href="/economy">
             Tokenomics and Economy
-          </a>
+            </a>
         </li>
 
         <li>
-          <a href="/integrations">
+            <a href="/integrations">
             Partner Integrations
-          </a>
+            </a>
         </li>
 
         <li>
-          <a href="/partners">
+            <a href="/partners">
             Partners
-          </a>
+            </a>
         </li>
 
         <li>
-          <a href="/metaverse">
+            <a href="/metaverse">
             The Metaverse
-          </a>
+            </a>
         </li>
 
         <li>
-          <a href="/our-vision">
+            <a href="/our-vision">
             Our Vision
-          </a>
+            </a>
         </li>
-      </ul>
+        </ul>
     </div>
 
     <div class="header__dropdown">
-      <a href="/documentation" class="header__dropdown__label">
+        <a href="/documentation" class="header__dropdown__label">
         Documentation
         <span class="arrow-down">&#9662;</span>
-      </a>
+        </a>
 
-      <ul class="header__dropdown__options">
+        <ul class="header__dropdown__options">
         <li>
-          <a href="/privacy-policy">
+            <a href="/privacy-policy">
             Privacy Policy
-          </a>
+            </a>
         </li>
 
         <li>
-          <a href="/terms-use">
+            <a href="/terms-use">
             Terms Of Use
-          </a>
+            </a>
         </li>
 
         <li>
-          <a href="/roadmap">
+            <a href="/roadmap">
             Roadmap
-          </a>
+            </a>
         </li>
 
         <li>
-          <a href="/documentation">
+            <a href="/documentation">
             White Paper
-          </a>
+            </a>
         </li>
-      </ul>
+        </ul>
     </div>
 
     <div class="header__dropdown">
-      <div class="header__dropdown__label">
+        <div class="header__dropdown__label">
         Your LevitAI World
         <span class="arrow-down">&#9662;</span>
-      </div>
+        </div>
 
-      <ul class="header__dropdown__options">
+        <ul class="header__dropdown__options">
         <li>
-          <a href="/what-is-levitai-world">
+            <a href="/what-is-levitai-world">
             What is LevitAI
-          </a>
+            </a>
         </li>
 
         <li>
-          <a href="/why-levitai">
+            <a href="/why-levitai">
             Why LevitAI?
-          </a>
+            </a>
         </li>
 
         <li>
-          <a href="/levi-lands">
+            <a href="/levi-lands">
             Levi Lands
-          </a>
+            </a>
         </li>
 
         <li>
-          <a href="/building-the-future">
+            <a href="/building-the-future">
             Bulding the future together
-          </a>
+            </a>
         </li>
 
         <li>
-          <a href="/dao-economy">
+            <a href="/dao-economy">
             DAO Economy
-          </a>
+            </a>
         </li>
 
         <li>
-          <a href="/exchange-market">
+            <a href="/exchange-market">
             Exchange Market
-          </a>
+            </a>
         </li>
-      </ul>
+        </ul>
     </div>
 
     <div class="header__dropdown">
-      <div class="header__dropdown__label">
+        <div class="header__dropdown__label">
         Log In \ Sign In
         <span class="arrow-down">&#9662;</span>
-      </div>
+        </div>
 
-      <ul class="header__dropdown__options">
+        <ul class="header__dropdown__options">
         <li>
-          <a href="/register">
+            <a href="/register">
             Register
-          </a>
+            </a>
         </li>
 
         <li>
-          <a href="/sign-in">
+            <a href="/sign-in">
             Sign in
-          </a>
+            </a>
         </li>
-      </ul>
+        </ul>
     </div>
-  </ul>
+    </ul>
 </header>

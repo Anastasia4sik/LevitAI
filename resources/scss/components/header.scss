@@ -1,5 +1,12 @@
 .header {
-    padding: 26px 60px 0 105px;
+    padding: 21px 60px 8px 45px;
+    margin-left: 60px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #0c002e6c;
+    width: calc(100% - 60px);
+    z-index: 999;
 
     @include onMobile {
         display: none;

@@ -39,6 +39,8 @@
         }
 
         &__undertitle {
+            text-transform: uppercase;
+
             @include onMobile {
                 margin-bottom: 5px;
             }

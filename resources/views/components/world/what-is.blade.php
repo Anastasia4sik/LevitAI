@@ -5,7 +5,7 @@
         <x-header />
 
         <section class="whatLevitai__container">
-            <div class="whatLevitai__container__top d-flex align-items-center">
+            <div class="whatLevitai__container__top d-flex align-items-center justify-content-between">
                 <div class="whatLevitai__container__top__text d-flex flex-column">
                     <h2 class="whatLevitai__container__top__title title-main">
                         What is <span class="title-main title-main--stroke">LevitAI</span>
