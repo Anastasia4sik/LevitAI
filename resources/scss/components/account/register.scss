@@ -1,5 +1,5 @@
 .register {
-    background-image: url('../../../public/src/img/bc/bc-signIn.png');
+    background-image: url('/src/img/bc/bc-signIn.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -12,7 +12,7 @@
     @include onMobile {
         margin-bottom: 120px;
 
-        background-image: url('../../../public/src/img/bc/bc-register.png');
+        background-image: url('/src/img/bc/bc-register.png');
         background-repeat: no-repeat;
         background-size: cover;
     }
@@ -28,7 +28,7 @@
             left: 17vw;
             top: 12vh;
 
-            background-image: url('../../../public/src/img/photo/signIn.png');
+            background-image: url('/src/img/photo/signIn.png');
             background-repeat: no-repeat;
             background-size: 43% 100%;
             background-position: left center;
@@ -65,7 +65,7 @@
 
                 margin-right: 0;
 
-                background-image: url('../../../public/src/img/photo/signIn.png');
+                background-image: url('/src/img/photo/signIn.png');
                 background-repeat: no-repeat;
                 background-size: cover;
                 background-position: center;
