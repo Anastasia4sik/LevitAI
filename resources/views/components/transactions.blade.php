@@ -208,7 +208,7 @@
         <thead
             class="
                 transactions__head
-                @if (request()->is('wallet'))
+                @if (request()->is('wallet') || request()->is('wallet/transactions'))
                     d-none
                 @endif
             "
@@ -263,7 +263,7 @@
                 <tr
                     class="
                         transactions__item
-                        @if (request()->is('referral/transactions'))
+                        @if (request()->is('referral/transactions') || request()->is('wallet/transactions'))
                             catalog__block
                         @endif
                         @if (request()->is('referral') || request()->is('wallet'))
@@ -282,7 +282,7 @@
                         </div>
                     </td>
 
-                    @if (!request()->is('wallet'))
+                    @if (!(request()->is('wallet') || request()->is('wallet/transactions')))
                         <td class="transactions__item__name transactions__item__text">
                             <p class="title-little">
                                 {{ $item['nickname']}}
@@ -301,15 +301,18 @@
                             </p>
                         </td>
                     @else
-                        <td class="transactions__item__vat transactions__item__text d-flex flex-row align-items-center">
-                            @if ($item['direction'] === 'input')
-                                <img src="{{ asset('src/img/icons/transactions/input.svg')}}" alt="Input arrow" class="transactions__item__vat__img">
-                            @else
-                                <img src="{{ asset('src/img/icons/transactions/output.svg')}}" alt="Input arrow" class="transactions__item__vat__img">
-                            @endif
-                            <p class="title-little">
-                                {{ $item['address']}}
-                            </p>
+                        <td class=" transactions__item__text">
+                            <div class="transactions__item__address d-flex flex-row align-items-center">
+                                @if ($item['direction'] === 'input')
+                                    <img src="{{ asset('src/img/icons/transactions/input.svg')}}" alt="Input arrow" class="transactions__item__vat__img">
+                                @else
+                                    <img src="{{ asset('src/img/icons/transactions/output.svg')}}" alt="Input arrow" class="transactions__item__vat__img">
+                                @endif
+
+                                <p class="title-little">
+                                    {{ $item['address']}}
+                                </p>
+                            </div>
                         </td>
                     @endif
 
@@ -378,7 +381,7 @@
 
         <div
             class=" transactions__mob__main
-                @if (request()->is('referral/transactions'))
+                @if (request()->is('referral/transactions') || request()->is('wallet/transactions'))
                     catalog
                 @endif
             "
@@ -386,7 +389,7 @@
             @foreach($transactions as $key => $item)
                 <div class="
                     transactions__mob__block
-                    @if (request()->is('referral/transactions'))
+                    @if (request()->is('referral/transactions') || request()->is('wallet/transactions'))
                         catalog__block
                     @endif
 
@@ -404,7 +407,7 @@
                     </div>
 
                     <div class="transactions__mob__info flex-column">
-                        @if (!request()->is('wallet'))
+                        @if (!(request()->is('wallet') || request()->is('wallet/transactions')))
                             <div class="transactions__mob__info__row d-flex flex-row align-items-center">
                                 <h5 class="transactions__mob__info__row__title title-little">
                                     Nickname:
@@ -446,7 +449,7 @@
                                     <img src="{{ asset('src/img/icons/transactions/output.svg')}}" alt="Input arrow" class="transactions__item__vat__img">
                                 @endif
 
-                                <p class="title-little">
+                                <p class="transactions__mob__info__row--address title-little">
                                     {{ $item['address']}}
                                 </p>
                             </div>
@@ -518,7 +521,7 @@
 
     </div>
 
-    @if (request()->is('referral/transactions'))
+    @if (request()->is('referral/transactions') || request()->is('wallet/transactions'))
         <div class="pagination">
             <ul id="paginationT" class="pagination d-flex align-items-center">
                 <!--pages or li are comes from javascript -->
@@ -530,7 +533,7 @@
     <script>
         const tbody = document.querySelector('.transactions__table__tbody')
 
-        if (window.innerWidth > 1300 && location.pathname === '/referral/transactions') {
+        if (window.innerWidth > 1300 && (location.pathname === '/referral/transactions' || location.pathname === '/wallet/transactions')) {
             tbody.classList.add('catalog');
         } else {
             tbody.classList.remove('catalog');

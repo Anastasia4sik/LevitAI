@@ -1,0 +1,83 @@
+.myWallets {
+    &__content {
+        padding: 125px 2vw 0 105px;
+
+        @include onMobile {
+            padding: 15px 3.2vw 0 48px;
+        }
+
+        &__top {
+            margin-bottom: 75px;
+
+            @include onMobile {
+                margin-bottom: 25px;
+            }
+
+            &__title {
+                line-height: 100%;
+                & span {
+                    @include onDesktop {
+                        display: none;
+                    }
+                }
+
+                &--desk {
+                    @include onMobile {
+                        display: none;
+                    }
+                }
+            }
+
+            &__row {
+                @include onDesktop {
+                    align-items: center;
+                    gap: 30px;
+                }
+            }
+
+            &__desc {
+                &__balance {
+                    font-size: 1.8vw;
+
+                    @include onMobile {
+                        font-size: 25px;
+                    }
+                }
+            }
+        }
+
+        &__list {
+            grid-template-columns: repeat(auto-fill, minmax(21vw, 418px));
+            grid-gap: 30px;
+
+            margin-bottom: 150px;
+
+            @include onMobile {
+                grid-template-columns: repeat(1, 100%);
+
+                margin-bottom: 110px;
+            }
+
+            &__item {
+                padding: 30px;
+                background-color: #180D38;
+
+                &__add {
+                    border: 5px dashed #180D38;
+                    height: 315px;
+
+                    cursor: pointer;
+
+                    @include onMobile {
+                        height: 274px;
+                    }
+
+                    &--title {
+                        color: #251553;
+                        font-size: 24px;
+                    }
+                }
+            }
+        }
+    }
+}

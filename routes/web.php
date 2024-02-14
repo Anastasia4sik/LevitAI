@@ -170,7 +170,14 @@ Route::get('/', function () {
         return view('components/account/wallet');
     });
 
+    Route::get('/wallet/transactions', function () {
+        return view('components/account/transactions-big');
+    });
+
+    Route::get('/wallet/my-wallets', function () {
+        return view('components/account/my-wallets');
+    });
+
     Route::get('/friends', function () {
         return view('components/account/friends');
     });
-

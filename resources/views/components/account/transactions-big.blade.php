@@ -78,13 +78,22 @@
                 <p class="article__path title-little">
                     <span>
                         <a href="/" class="article__path article__path--links title-little">
-                            Home \&#160; </a>
-                        </span>
-                    <span>
-                        <a href="/referral" class="article__path article__path--links title-little">
-                            Referral System \&#160;
+                            Home \&#160;
                         </a>
                     </span>
+                    @if(request() -> is('wallet/transactions'))
+                        <span>
+                            <a href="/wallet" class="article__path article__path--links title-little">
+                                My Wallet \&#160;
+                            </a>
+                        </span>
+                    @else
+                        <span>
+                            <a href="/referral" class="article__path article__path--links title-little">
+                                Referral System \&#160;
+                            </a>
+                        </span>
+                    @endif
                     Transactions
                 </p>
             </div>

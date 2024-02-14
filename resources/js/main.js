@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', function() {
 const currentURL = window.location.href;
 
 //pagination
-    if (currentURL.includes('/referral/transactions') || currentURL.includes('/friends') || currentURL.includes('/exchange-market*')) {
+    if (currentURL.includes('/referral/transactions') || currentURL.includes('/wallet/transactions') || currentURL.includes('/friends') || currentURL.includes('/exchange-market*')) {
         let cardsPerPage;
         const dataContainer = document.querySelector('.catalog') || document.querySelector('.catalogMob');
 

@@ -87,6 +87,7 @@
         'wallets' => 6,
         'funds' => '12.454667',
         'operations' => 38,
+        'balance' => '1.299464'
     ];
 
     $wallets = [
@@ -425,7 +426,7 @@
                                 My Wallets
                             </h4>
 
-                            <a href="#" target="_blank" class="wallet__content__wallets__top__link desc">
+                            <a href="/wallet/my-wallets" class="wallet__content__wallets__top__link desc">
                                 Read more
                             </a>
                         </div>
@@ -810,7 +811,7 @@
 
             <x-transactions />
 
-            <a href="/referral/transactions" class="wallet__transactions__btn complete__btn d-flex justify-content-center align-items-center">
+            <a href="/wallet/transactions" class="wallet__transactions__btn complete__btn d-flex justify-content-center align-items-center">
                 Show more
             </a>
         </div>

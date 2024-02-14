@@ -56,6 +56,10 @@
             padding-right: 2vw;
         }
 
+        &__address {
+            gap: 30px;
+        }
+
         &__date {
             margin-right: 1.8vw;
 
@@ -145,6 +149,10 @@
 
                 &__text {
                     font-style: 16px;
+                }
+
+                &--address {
+                    word-break: break-all;
                 }
             }
         }
