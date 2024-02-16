@@ -1,4 +1,5 @@
 .myWallets {
+    background-image: url('/src/img/bc/bc-myWallets.png');
     &__content {
         padding: 125px 2vw 0 105px;
 
@@ -15,6 +16,10 @@
 
             &__title {
                 line-height: 100%;
+
+                @include onMobile {
+                    margin-bottom: 15px;
+                }
                 & span {
                     @include onDesktop {
                         display: none;
@@ -32,6 +37,10 @@
                 @include onDesktop {
                     align-items: center;
                     gap: 30px;
+                }
+
+                @include onMobile {
+                    flex-direction: column;
                 }
             }
 
@@ -61,6 +70,105 @@
             &__item {
                 padding: 30px;
                 background-color: #180D38;
+
+                @include onMobile {
+                    padding: 15px;
+                }
+
+                &__top {
+                    margin-bottom: 25px;
+
+                    @include onMobile {
+                        margin-bottom: 13px;
+                    }
+
+                    &__title {
+                        gap: 15px;
+
+                        @include onMobile {
+                            gap: 5px;
+                        }
+
+                        &__img {
+                            width: 48px;
+                            height: 48px;
+
+                            @include onMobile {
+                                width: 40px;
+                                height: 40px;
+                            }
+                        }
+
+                        &__text {
+                            font-size: 1.25vw;
+
+                            @include onMobile {
+                                font-size: 18px;
+                            }
+                        }
+                    }
+
+                    &__info {
+                        &__acro {
+                            color: #BBB;
+
+                            @include onMobile {
+                                font-size: 18px;
+                            }
+                        }
+
+                        &__amount {
+                            font-size: 1.8vw;
+
+                            @include onMobile {
+                                font-size: 25px;
+                            }
+                        }
+                    }
+                }
+
+                &__graph {
+                    width: 100%;
+
+                    margin-bottom: 12px;
+
+                    @include onMobile {
+                        margin-bottom: 30px;
+                    }
+                }
+
+                &__bottom {
+                    gap: 10px;
+                    width: 100%;
+                    &__block {
+                        padding: 10px;
+                        width: 91%;
+
+                        background-color: rgba(255, 255, 255, 0.05);
+
+                        @include onMobile {
+                            padding: 8px;
+                        }
+
+                        &__info {
+                            margin-bottom: 5px;
+
+                            &__nums {
+                                & .acronym {
+                                    color: #BBB;
+                                }
+                            }
+                        }
+
+                        & p {
+                            font-size: 14px;
+                        }
+
+                        &__address {
+                            color: #BBB;
+                        }
+                    }
+                }
 
                 &__add {
                     border: 5px dashed #180D38;

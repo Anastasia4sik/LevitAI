@@ -6,6 +6,11 @@
             'acronym' => 'BTC',
             'icon' => '/src/img/icons/transactions/bitcoin.svg',
             'amount' => 0.236564,
+            'time' => '16:46',
+            'date' => '12 Dec 2023',
+            'address' => 'EfkgmEMfkkjEDOf.hkfdnEfkgmEMf',
+            'lastChanges' => '1.048',
+            'lastChangesStatus' => 'positive',
         ],
         'myWallets2' => [
             'id' => '2',
@@ -13,6 +18,11 @@
             'acronym' => 'ETH',
             'icon' => 'src/img/icons/transactions/ethereum.svg',
             'amount' => 0.236564,
+            'time' => '16:46',
+            'date' => '12 Dec 2023',
+            'address' => 'EfkgmEMfkkjEDOf.hkfdnEfkgmEMf',
+            'lastChanges' => '1.048',
+            'lastChangesStatus' => 'positive',
         ],
         'myWallets3' => [
             'id' => '3',
@@ -20,6 +30,11 @@
             'acronym' => 'LTK',
             'icon' => 'src/img/icons/transactions/L.svg',
             'amount' => 0.236564,
+            'time' => '16:46',
+            'date' => '12 Dec 2023',
+            'address' => 'EfkgmEMfkkjEDOf.hkfdnEfkgmEMf',
+            'lastChanges' => '1.048',
+            'lastChangesStatus' => 'positive',
         ],
         'myWallets4' => [
             'id' => '4',
@@ -27,6 +42,11 @@
             'acronym' => 'BTC',
             'icon' => 'src/img/icons/transactions/bitcoin.svg',
             'amount' => 0.236564,
+            'time' => '16:46',
+            'date' => '12 Dec 2023',
+            'address' => 'EfkgmEMfkkjEDOf.hkfdnEfkgmEMf',
+            'lastChanges' => '1.048',
+            'lastChangesStatus' => 'positive',
         ],
         'myWallets5' => [
             'id' => '5',
@@ -34,6 +54,11 @@
             'acronym' => 'ETH',
             'icon' => 'src/img/icons/transactions/ethereum.svg',
             'amount' => 0.236564,
+            'time' => '16:46',
+            'date' => '12 Dec 2023',
+            'address' => 'EfkgmEMfkkjEDOf.hkfdnEfkgmEMf',
+            'lastChanges' => '1.048',
+            'lastChangesStatus' => 'positive',
         ],
         'myWallets6' => [
             'id' => '6',
@@ -41,6 +66,11 @@
             'acronym' => 'LTK',
             'icon' => 'src/img/icons/transactions/L.svg',
             'amount' => 0.236564,
+            'time' => '16:46',
+            'date' => '12 Dec 2023',
+            'address' => 'EfkgmEMfkkjEDOf.hkfdnEfkgmEMf',
+            'lastChanges' => '1.048',
+            'lastChangesStatus' => 'positive',
         ],
         'myWallets7' => [
             'id' => '7',
@@ -48,6 +78,11 @@
             'acronym' => 'BTC',
             'icon' => 'src/img/icons/transactions/bitcoin.svg',
             'amount' => 0.236564,
+            'time' => '16:46',
+            'date' => '12 Dec 2023',
+            'address' => 'EfkgmEMfkkjEDOf.hkfdnEfkgmEMf',
+            'lastChanges' => '1.048',
+            'lastChangesStatus' => 'positive',
         ],
         'myWallets8' => [
             'id' => '8',
@@ -55,6 +90,11 @@
             'acronym' => 'ETH',
             'icon' => 'src/img/icons/transactions/ethereum.svg',
             'amount' => 0.236564,
+            'time' => '16:46',
+            'date' => '12 Dec 2023',
+            'address' => 'EfkgmEMfkkjEDOf.hkfdnEfkgmEMf',
+            'lastChanges' => '1.048',
+            'lastChangesStatus' => 'positive',
         ],
         'myWallets9' => [
             'id' => '9',
@@ -62,6 +102,11 @@
             'acronym' => 'LTK',
             'icon' => 'src/img/icons/transactions/L.svg',
             'amount' => 0.236564,
+            'time' => '16:46',
+            'date' => '12 Dec 2023',
+            'address' => 'EfkgmEMfkkjEDOf.hkfdnEfkgmEMf',
+            'lastChanges' => '1.048',
+            'lastChangesStatus' => 'positive',
         ],
         'myWallets10' => [
             'id' => '10',
@@ -69,6 +114,11 @@
             'acronym' => 'BTC',
             'icon' => 'src/img/icons/transactions/bitcoin.svg',
             'amount' => 0.236564,
+            'time' => '16:46',
+            'date' => '12 Dec 2023',
+            'address' => 'EfkgmEMfkkjEDOf.hkfdnEfkgmEMf',
+            'lastChanges' => '1.048',
+            'lastChangesStatus' => 'positive',
         ],
         'walle11' => [
             'id' => '11',
@@ -76,6 +126,11 @@
             'acronym' => 'ETH',
             'icon' => 'src/img/icons/transactions/ethereum.svg',
             'amount' => 0.236564,
+            'time' => '16:46',
+            'date' => '12 Dec 2023',
+            'address' => 'EfkgmEMfkkjEDOf.hkfdnEfkgmEMf',
+            'lastChanges' => '1.048',
+            'lastChangesStatus' => 'positive',
         ],
         'myWallets12' => [
             'id' => '12',
@@ -83,6 +138,11 @@
             'acronym' => 'LTK',
             'icon' => 'src/img/icons/transactions/L.svg',
             'amount' => 0.236564,
+            'time' => '16:46',
+            'date' => '12 Dec 2023',
+            'address' => 'EfkgmEMfkkjEDOf.hkfdnEfkgmEMf',
+            'lastChanges' => '1.048',
+            'lastChangesStatus' => 'positive',
         ],
         'myWallets13' => [
             'id' => '13',
@@ -90,6 +150,11 @@
             'acronym' => 'BTC',
             'icon' => 'src/img/icons/transactions/bitcoin.svg',
             'amount' => 0.236564,
+            'time' => '16:46',
+            'date' => '12 Dec 2023',
+            'address' => 'EfkgmEMfkkjEDOf.hkfdnEfkgmEMf',
+            'lastChanges' => '1.048',
+            'lastChangesStatus' => 'positive',
         ],
         'myWallets14' => [
             'id' => '14',
@@ -97,6 +162,11 @@
             'acronym' => 'ETH',
             'icon' => 'src/img/icons/transactions/ethereum.svg',
             'amount' => 0.236564,
+            'time' => '16:46',
+            'date' => '12 Dec 2023',
+            'address' => 'EfkgmEMfkkjEDOf.hkfdnEfkgmEMf',
+            'lastChanges' => '1.048',
+            'lastChangesStatus' => 'positive',
         ],
         'myWallets15' => [
             'id' => '15',
@@ -104,6 +174,11 @@
             'acronym' => 'LTK',
             'icon' => 'src/img/icons/transactions/L.svg',
             'amount' => 0.236564,
+            'time' => '16:46',
+            'date' => '12 Dec 2023',
+            'address' => 'EfkgmEMfkkjEDOf.hkfdnEfkgmEMf',
+            'lastChanges' => '1.048',
+            'lastChangesStatus' => 'positive',
         ],
     ];
 
@@ -189,12 +264,12 @@
                                 </p>
                             </div>
 
-                            <div class="myWallets__content__list__item__top__title d-flex flex-column align-items-end">
-                                <p class="myWallets__content__list__item__top__title__text">
+                            <div class="myWallets__content__list__item__top__info d-flex flex-column align-items-end">
+                                <p class="myWallets__content__list__item__top__info__acro title-little">
                                     {{ $wallet['acronym'] }}
                                 </p>
 
-                                <p class="myWallets__content__list__item__top__title__text">
+                                <p class="myWallets__content__list__item__top__info__amount">
                                     {{ $wallet['amount'] }}
                                 </p>
                             </div>
@@ -202,7 +277,37 @@
 
                         <img src="{{ asset('src/img/icons/transactions/graph.png')}}" alt="Graph of the wallets activities" class="myWallets__content__list__item__graph">
 
+                        <div class="myWallets__content__list__item__bottom d-flex flex-row align-items-center">
+                            <div class="myWallets__content__list__item__bottom__block">
+                                <div class="myWallets__content__list__item__bottom__block__info d-flex flex-row align-items-center justify-content-between">
+                                    <p class="myWallets__content__list__item__bottom__block__info__time desc">
+                                        {{ $wallet['time']}},   {{ $wallet['date']}}
+                                    </p>
 
+                                    <p class="myWallets__content__list__item__bottom__block__info__nums desc">
+                                        <span class="status">
+                                            @if($wallet['lastChangesStatus'] === 'positive')
+                                                +
+                                            @else
+                                                -
+                                            @endif
+                                        </span>
+
+                                        {{ $wallet['lastChanges']}}
+
+                                        <span class="acronym">
+                                            {{ $wallet['acronym']}}
+                                        </span>
+                                    </p>
+                                </div>
+
+                                <p class="myWallets__content__list__item__bottom__block__address desc">
+                                    {{ $wallet['address']}}
+                                </p>
+                            </div>
+
+                            <img src="{{ asset('src/img/icons/trash.svg')}}" alt="Delete Wallet" class="myWallets__content__list__item__bottom__delete">
+                        </div>
                     </div>
                 @endforeach
 
